@@ -1,0 +1,20 @@
+[ 2019-02-27T10:57:08+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001000s ]
+[ info ] [ LOG ] INIT File
+[ 2019-02-27T10:57:08+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-02-27T10:57:08+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.010000s ]
+[ 2019-02-27T10:57:08+08:00 ][ info ] [ DB ] INIT mysql
+[ 2019-02-27T10:57:08+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.003001s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ 2019-02-27T10:57:08+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'project_construct' [ RunTime:0.002000s ]
+[ 2019-02-27T10:57:08+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'fa_project_construct' [ RunTime:0.002000s ]
+[ 2019-02-27T10:57:08+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'category' [ RunTime:0.001000s ]
+[ 2019-02-27T10:57:08+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'fa_category' [ RunTime:0.001000s ]
+[ 2019-02-27T10:57:08+08:00 ][ sql ] [ SQL ] SELECT * FROM `information_schema`.`columns` WHERE TABLE_SCHEMA = 'fastadmin' AND table_name = 'fa_project_construct' ORDER BY ORDINAL_POSITION [ RunTime:0.024001s ]
+[ 2019-02-27T10:57:08+08:00 ][ sql ] [ SQL ] SELECT * FROM `information_schema`.`columns` WHERE TABLE_SCHEMA = 'fastadmin' AND table_name = 'fa_category' ORDER BY ORDINAL_POSITION [ RunTime:0.009001s ]
+[ 2019-02-27T11:01:21+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ LOG ] INIT File
+[ 2019-02-27T11:01:21+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-02-27T11:01:21+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.009000s ]
+[ 2019-02-27T11:01:21+08:00 ][ info ] [ DB ] INIT mysql
+[ 2019-02-27T11:01:21+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.005001s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ 2019-02-27T11:01:21+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'project_construct' [ RunTime:0.002000s ]
+[ 2019-02-27T11:01:21+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'fa_project_construct' [ RunTime:0.002000s ]

@@ -26,11 +26,11 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
                         {checkbox: true},
                         {field: 'id', title: __('Id')},
                         {field: 'name', title: __('Name')},
-                        {field: 'cid', title: __('Cid')},
                         {field: 'phone', title: __('Phone')},
+                        {field: 'idcard', title: __('Idcard')},
                         {field: 'address', title: __('Address')},
+                        {field: 'uploadimages', title: __('Uploadimages'), formatter: Table.api.formatter.images},
                         {field: 'createtime', title: __('Createtime'), operate:'RANGE', addclass:'datetimerange', formatter: Table.api.formatter.datetime},
-                        {field: 'updatetime', title: __('Updatetime'), operate:'RANGE', addclass:'datetimerange', formatter: Table.api.formatter.datetime},
                         {field: 'operate', title: __('Operate'), table: table, events: Table.api.events.operate, formatter: Table.api.formatter.operate}
                     ]
                 ]

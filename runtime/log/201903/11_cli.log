@@ -1,0 +1,96 @@
+[ 2019-03-11T08:36:34+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ LOG ] INIT File
+[ 2019-03-11T08:36:34+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-03-11T08:36:34+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.011001s ]
+[ 2019-03-11T08:36:34+08:00 ][ info ] [ DB ] INIT mysql
+[ 2019-03-11T08:36:34+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.004000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ 2019-03-11T08:36:34+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'project_manager' [ RunTime:0.007001s ]
+[ 2019-03-11T08:36:34+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'fa_project_manager' [ RunTime:0.002000s ]
+[ 2019-03-11T08:39:51+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ LOG ] INIT File
+[ 2019-03-11T08:39:51+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-03-11T08:39:51+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.008000s ]
+[ 2019-03-11T08:39:51+08:00 ][ info ] [ DB ] INIT mysql
+[ 2019-03-11T08:39:51+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ 2019-03-11T08:39:51+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'company' [ RunTime:0.004000s ]
+[ 2019-03-11T08:39:51+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'fa_company' [ RunTime:0.002000s ]
+[ 2019-03-11T11:31:36+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ LOG ] INIT File
+[ 2019-03-11T11:31:36+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-03-11T11:31:36+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.009001s ]
+[ 2019-03-11T11:31:36+08:00 ][ info ] [ DB ] INIT mysql
+[ 2019-03-11T11:31:36+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.004001s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ 2019-03-11T11:31:36+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'project_info' [ RunTime:0.004000s ]
+[ 2019-03-11T11:31:36+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'fa_project_info' [ RunTime:0.002000s ]
+[ 2019-03-11T11:37:26+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ LOG ] INIT File
+[ 2019-03-11T11:37:26+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-03-11T11:37:26+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.008000s ]
+[ 2019-03-11T11:37:26+08:00 ][ info ] [ DB ] INIT mysql
+[ 2019-03-11T11:37:26+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.003001s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ 2019-03-11T11:37:26+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'project_info' [ RunTime:0.003000s ]
+[ 2019-03-11T11:37:26+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'fa_project_info' [ RunTime:0.002000s ]
+[ 2019-03-11T11:43:03+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ LOG ] INIT File
+[ 2019-03-11T11:43:03+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-03-11T11:43:03+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.009000s ]
+[ 2019-03-11T11:43:03+08:00 ][ info ] [ DB ] INIT mysql
+[ 2019-03-11T11:43:03+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.003001s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ 2019-03-11T11:43:03+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'project_section' [ RunTime:0.002000s ]
+[ 2019-03-11T11:43:03+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'fa_project_section' [ RunTime:0.002000s ]
+[ 2019-03-11T11:44:47+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ LOG ] INIT File
+[ 2019-03-11T11:44:47+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-03-11T11:44:47+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.009001s ]
+[ 2019-03-11T11:44:47+08:00 ][ info ] [ DB ] INIT mysql
+[ 2019-03-11T11:44:47+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.003001s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ 2019-03-11T11:44:47+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'project_section' [ RunTime:0.004000s ]
+[ 2019-03-11T11:44:47+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'fa_project_section' [ RunTime:0.002000s ]
+[ 2019-03-11T11:49:41+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001000s ]
+[ info ] [ LOG ] INIT File
+[ 2019-03-11T11:49:41+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-03-11T11:49:41+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.009000s ]
+[ 2019-03-11T11:49:41+08:00 ][ info ] [ DB ] INIT mysql
+[ 2019-03-11T11:49:41+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.005001s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ 2019-03-11T11:49:41+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'project_section' [ RunTime:0.003000s ]
+[ 2019-03-11T11:49:41+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'fa_project_section' [ RunTime:0.002000s ]
+[ 2019-03-11T12:22:55+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ LOG ] INIT File
+[ 2019-03-11T12:22:55+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-03-11T12:22:55+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.026001s ]
+[ 2019-03-11T12:22:55+08:00 ][ info ] [ DB ] INIT mysql
+[ 2019-03-11T12:22:55+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ 2019-03-11T12:22:55+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'project_build' [ RunTime:0.002000s ]
+[ 2019-03-11T12:22:55+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'fa_project_build' [ RunTime:0.010000s ]
+[ 2019-03-11T12:23:17+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001000s ]
+[ info ] [ LOG ] INIT File
+[ 2019-03-11T12:23:17+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-03-11T12:23:17+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.010001s ]
+[ 2019-03-11T12:23:17+08:00 ][ info ] [ DB ] INIT mysql
+[ 2019-03-11T12:23:17+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ 2019-03-11T12:23:17+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'project_info' [ RunTime:0.002000s ]
+[ 2019-03-11T12:23:17+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'fa_project_info' [ RunTime:0.002000s ]
+[ 2019-03-11T12:23:40+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ LOG ] INIT File
+[ 2019-03-11T12:23:40+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-03-11T12:23:40+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.009000s ]
+[ 2019-03-11T12:23:40+08:00 ][ info ] [ DB ] INIT mysql
+[ 2019-03-11T12:23:40+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.004001s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ 2019-03-11T12:23:40+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'project_manager' [ RunTime:0.003000s ]
+[ 2019-03-11T12:23:40+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'fa_project_manager' [ RunTime:0.002000s ]
+[ 2019-03-11T12:24:09+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ LOG ] INIT File
+[ 2019-03-11T12:24:09+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-03-11T12:24:09+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.010000s ]
+[ 2019-03-11T12:24:09+08:00 ][ info ] [ DB ] INIT mysql
+[ 2019-03-11T12:24:09+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ 2019-03-11T12:24:09+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'project_section' [ RunTime:0.002000s ]
+[ 2019-03-11T12:24:09+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'fa_project_section' [ RunTime:0.003000s ]
+[ 2019-03-11T12:24:31+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ LOG ] INIT File
+[ 2019-03-11T12:24:31+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-03-11T12:24:31+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.010001s ]
+[ 2019-03-11T12:24:31+08:00 ][ info ] [ DB ] INIT mysql
+[ 2019-03-11T12:24:31+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.004000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ 2019-03-11T12:24:31+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'project_supervision' [ RunTime:0.002000s ]
+[ 2019-03-11T12:24:31+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'fa_project_supervision' [ RunTime:0.010001s ]

@@ -19,9 +19,9 @@ return array (
     'page' => 'Page',
     'article' => 'Article',
     'test' => 'Test',
-    'classify' => 'Classify',
-    'gener' => 'Gener',
-    'property' => 'Property',
+    'classify' => '合同类别',
+    'property' => '企业性质',
+    'cost' => '费用类别',
   ),
   'configgroup' => 
   array (

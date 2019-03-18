@@ -1,10 +1,10 @@
 <?php
 
-namespace app\admin\validate\company;
+namespace app\admin\validate\project;
 
 use think\Validate;
 
-class Info extends Validate
+class Construct extends Validate
 {
     /**
      * 验证规则

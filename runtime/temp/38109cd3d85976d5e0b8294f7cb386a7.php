@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:81:"C:\xampp\htdocs\fastadmin\public/../application/admin\view\project\info\edit.html";i:1552375461;s:68:"C:\xampp\htdocs\fastadmin\application\admin\view\layout\default.html";i:1545959258;s:65:"C:\xampp\htdocs\fastadmin\application\admin\view\common\meta.html";i:1547016869;s:67:"C:\xampp\htdocs\fastadmin\application\admin\view\common\script.html";i:1545959258;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:81:"C:\xampp\htdocs\fastadmin\public/../application/admin\view\project\info\edit.html";i:1552613924;s:68:"C:\xampp\htdocs\fastadmin\application\admin\view\layout\default.html";i:1545959258;s:65:"C:\xampp\htdocs\fastadmin\application\admin\view\common\meta.html";i:1547016869;s:67:"C:\xampp\htdocs\fastadmin\application\admin\view\common\script.html";i:1545959258;}*/ ?>
 <!DOCTYPE html>
 <html lang="<?php echo $config['language']; ?>">
     <head>
@@ -89,15 +89,21 @@
         </div>
     </div>
     <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Finance_manager_id'); ?>:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-finance_manager_id" data-rule="required" data-source="finance/manager/index" class="form-control selectpage" name="row[finance_manager_id]" type="text" value="<?php echo $row['finance_manager_id']; ?>">
+        </div>
+    </div>
+    <div class="form-group">
         <label class="control-label col-xs-12 col-sm-2"><?php echo __('Surveycontent'); ?>:</label>
         <div class="col-xs-12 col-sm-8">
             <textarea id="c-surveycontent" class="form-control editor" rows="5" name="row[surveycontent]" cols="50"><?php echo $row['surveycontent']; ?></textarea>
         </div>
     </div>
     <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Project_build_id'); ?>:</label>
+        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Project_construct_id'); ?>:</label>
         <div class="col-xs-12 col-sm-8">
-            <input id="c-project_build_id" data-source="project/build/index" class="form-control selectpage" name="row[project_build_id]" type="text" value="<?php echo $row['project_build_id']; ?>">
+            <input id="c-project_construct_id" data-rule="required" data-source="project/construct/index" class="form-control selectpage" name="row[project_construct_id]" type="text" value="<?php echo $row['project_construct_id']; ?>">
         </div>
     </div>
     <div class="form-group">
@@ -115,7 +121,7 @@
     <div class="form-group">
         <label class="control-label col-xs-12 col-sm-2"><?php echo __('Project_supervision_id'); ?>:</label>
         <div class="col-xs-12 col-sm-8">
-            <input id="c-project_supervision_id" data-source="project/supervision/index" class="form-control selectpage" name="row[project_supervision_id]" type="text" value="<?php echo $row['project_supervision_id']; ?>">
+            <input id="c-project_supervision_id" data-rule="required" data-source="project/supervision/index" class="form-control selectpage" name="row[project_supervision_id]" type="text" value="<?php echo $row['project_supervision_id']; ?>">
         </div>
     </div>
     <div class="form-group">

@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:85:"C:\xampp\htdocs\fastadmin\public/../application/admin\view\project\construct\add.html";i:1551315781;s:68:"C:\xampp\htdocs\fastadmin\application\admin\view\layout\default.html";i:1545959258;s:65:"C:\xampp\htdocs\fastadmin\application\admin\view\common\meta.html";i:1547016869;s:67:"C:\xampp\htdocs\fastadmin\application\admin\view\common\script.html";i:1545959258;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:85:"C:\xampp\htdocs\fastadmin\public/../application/admin\view\project\construct\add.html";i:1552613541;s:68:"C:\xampp\htdocs\fastadmin\application\admin\view\layout\default.html";i:1545959258;s:65:"C:\xampp\htdocs\fastadmin\application\admin\view\common\meta.html";i:1547016869;s:67:"C:\xampp\htdocs\fastadmin\application\admin\view\common\script.html";i:1545959258;}*/ ?>
 <!DOCTYPE html>
 <html lang="<?php echo $config['language']; ?>">
     <head>
@@ -53,18 +53,6 @@
                                 <form id="add-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="">
 
     <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Genre_id'); ?>:</label>
-        <div class="col-xs-12 col-sm-8">
-            <input id="c-genre_id" data-rule="required" data-source="category/selectpage" data-params='{"custom[type]":"gener"}' class="form-control selectpage" name="row[genre_id]" type="text" value="">
-        </div>
-    </div>
-    <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Property_id'); ?>:</label>
-        <div class="col-xs-12 col-sm-8">
-            <input id="c-property_id" data-rule="required" data-source="category/selectpage" data-params='{"custom[type]":"property"}' class="form-control selectpage" name="row[property_id]" type="text" value="">
-        </div>
-    </div>
-    <div class="form-group">
         <label class="control-label col-xs-12 col-sm-2"><?php echo __('Name'); ?>:</label>
         <div class="col-xs-12 col-sm-8">
             <input id="c-name" data-rule="required" class="form-control" name="row[name]" type="text">
@@ -77,21 +65,35 @@
         </div>
     </div>
     <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2"><?php echo __('City'); ?>:</label>
+        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Category_id'); ?>:</label>
         <div class="col-xs-12 col-sm-8">
-            <div class='control-relative'><input id="c-city" class="form-control" data-toggle="city-picker" name="row[city]" type="text"></div>
+            <input id="c-category_id" data-rule="required" data-source="category/selectpage" data-params='{"custom[type]":"project_construct"}' class="form-control selectpage" name="row[category_id]" type="text" value="">
         </div>
     </div>
     <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Contacts'); ?>:</label>
+        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Address'); ?>:</label>
         <div class="col-xs-12 col-sm-8">
-            <input id="c-contacts" data-rule="required" class="form-control" name="row[contacts]" type="text">
+            <input id="c-address" class="form-control" name="row[address]" type="text">
         </div>
     </div>
     <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Phone'); ?>:</label>
+        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Uploadimages'); ?>:</label>
         <div class="col-xs-12 col-sm-8">
-            <input id="c-phone" data-rule="required" class="form-control" name="row[phone]" type="text">
+            <div class="input-group">
+                <input id="c-uploadimages" class="form-control" size="50" name="row[uploadimages]" type="text">
+                <div class="input-group-addon no-border no-padding">
+                    <span><button type="button" id="plupload-uploadimages" class="btn btn-danger plupload" data-input-id="c-uploadimages" data-mimetype="image/gif,image/jpeg,image/png,image/jpg,image/bmp" data-multiple="true" data-preview-id="p-uploadimages"><i class="fa fa-upload"></i> <?php echo __('Upload'); ?></button></span>
+                    <span><button type="button" id="fachoose-uploadimages" class="btn btn-primary fachoose" data-input-id="c-uploadimages" data-mimetype="image/*" data-multiple="true"><i class="fa fa-list"></i> <?php echo __('Choose'); ?></button></span>
+                </div>
+                <span class="msg-box n-right" for="c-uploadimages"></span>
+            </div>
+            <ul class="row list-inline plupload-preview" id="p-uploadimages"></ul>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Remarkcontext'); ?>:</label>
+        <div class="col-xs-12 col-sm-8">
+            <textarea id="c-remarkcontext" class="form-control " rows="5" name="row[remarkcontext]" cols="50"></textarea>
         </div>
     </div>
     <div class="form-group layer-footer">

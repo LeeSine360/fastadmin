@@ -20,6 +20,11 @@ class ProjectInfo extends Model
     protected $append = [
         'starttime_text'
     ];
+    
+
+    
+
+
 
     public function getStarttimeTextAttr($value, $data)
     {
@@ -33,20 +38,26 @@ class ProjectInfo extends Model
     }
 
 
+    public function admin()
+    {
+        return $this->belongsTo('Admin', 'admin_id', 'id', [], 'LEFT')->setEagerlyType(0);
+    }
+
+
+    public function category()
+    {
+        return $this->belongsTo('Category', 'category_id', 'id', [], 'LEFT')->setEagerlyType(0);
+    }
+
+
     public function construct()
     {
-        return $this->belongsTo('ProjectConstruct', 'project_construct_id', 'id', [], 'LEFT')->setEagerlyType(0);
+        return $this->belongsTo('ContractInfo', 'project_construct_id', 'id', [], 'LEFT')->setEagerlyType(0);
     }
 
 
     public function supervision()
     {
         return $this->belongsTo('ProjectSupervision', 'project_supervision_id', 'id', [], 'LEFT')->setEagerlyType(0);
-    }
-
-
-    public function admin()
-    {
-        return $this->belongsTo('Admin', 'finance_manager_id', 'id', [], 'LEFT')->setEagerlyType(0);
     }
 }

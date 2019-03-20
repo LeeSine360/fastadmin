@@ -443,6 +443,7 @@ class Backend extends Controller
                 }
             };
         }
+
         $adminIds = $this->getDataLimitAdminIds();
         if (is_array($adminIds)) {
             $this->model->where($this->dataLimitField, 'in', $adminIds);

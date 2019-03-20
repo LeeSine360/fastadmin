@@ -1,13 +1,13 @@
 <?php
 
-namespace app\admin\model\project;
+namespace app\admin\model;
 
 use think\Model;
 
-class Supervision extends Model
+class CompanyInfo extends Model
 {
     // 表名
-    protected $name = 'project_supervision';
+    protected $name = 'company_info';
     
     // 自动写入时间戳字段
     protected $autoWriteTimestamp = 'int';
@@ -30,8 +30,4 @@ class Supervision extends Model
 
 
 
-    public function category()
-    {
-        return $this->belongsTo('Category', 'category_id', 'id', [], 'LEFT')->setEagerlyType(0);
-    }
 }

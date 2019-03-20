@@ -4,11 +4,12 @@ return [
     'Id'  =>  'ID',
     'Name'  =>  '项目名称',
     'Short'  =>  '项目简称',
+    'Category_id'  =>  '项目类型',
     'Price'  =>  '合同金额',
     'Starttime'  =>  '开工日期',
     'Days'  =>  '工期',
-    'Address'  =>  '项目地址',
-    'Finance_manager_id'  =>  '财务分管专员',
+    'City'  =>  '城市',
+    'Address'  =>  '详细地址',
     'Surveycontent'  =>  '项目概况',
     'Project_construct_id'  =>  '建设单位ID',
     'Build_contactsname'  =>  '建设单位联系人',
@@ -20,7 +21,7 @@ return [
     'Createtime'  =>  '创建日期',
     'Updatetime'  =>  '更新日期',
     'Admin_id'  =>  '操作人',
+    'Admin.username'  =>  '用户名',
     'Construct.name'  =>  '建设单位名称',
-    'Supervision.name'  =>  '监理单位名称',
-    'Admin.username'  =>  '分管财务'
+    'Supervision.name'  =>  '监理单位名称'
 ];

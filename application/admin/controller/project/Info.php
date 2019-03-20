@@ -50,26 +50,28 @@ class Info extends Backend
             }
             list($where, $sort, $order, $offset, $limit) = $this->buildparams();
             $total = $this->model
-                    ->with(['construct','supervision','admin'])
+                    ->with(['admin','category','construct','supervision'])
                     ->where($where)
                     ->order($sort, $order)
                     ->count();
 
             $list = $this->model
-                    ->with(['construct','supervision','admin'])
+                    ->with(['admin','category','construct','supervision'])
                     ->where($where)
                     ->order($sort, $order)
                     ->limit($offset, $limit)
                     ->select();
 
             foreach ($list as $row) {
-                $row->visible(['id','short','price','starttime','days','address','createtime']);
-                $row->visible(['construct']);
+                $row->visible(['id','short','price','starttime','days','city','createtime']);
+                $row->visible(['admin']);
+				$row->getRelation('admin')->visible(['username']);
+				$row->visible(['category']);
+				$row->getRelation('category')->visible(['name']);
+				$row->visible(['construct']);
 				$row->getRelation('construct')->visible(['name']);
 				$row->visible(['supervision']);
 				$row->getRelation('supervision')->visible(['name']);
-				$row->visible(['admin']);
-				$row->getRelation('admin')->visible(['username']);
             }
             $list = collection($list)->toArray();
             $result = array("total" => $total, "rows" => $list);

@@ -1,0 +1,30 @@
+<?php
+
+return [
+    'Id'  =>  'ID',
+    'Contract_info_id'  =>  '合同名称',
+    'Admin_id'  =>  '审核人',
+    'Agreedata'  =>  '合同审核',
+    'Agreedata wait'  =>  '待审核',
+    'Agreedata agree'  =>  '同意',
+    'Agreedata veto'  =>  '不同意',
+    'Opinioncontent'  =>  '审核意见',
+    'Sealdata'  =>  '盖章审核',
+    'Sealdata wait'  =>  '待审核',
+    'Sealdata agree'  =>  '已确认',
+    'Sealdata veto'  =>  '驳回',
+    'Savedata'  =>  '合同状态',
+    'Savedata wait'  =>  '待存档',
+    'Savedata normal'  =>  '已存档',
+    'Savedata  back'  =>  '待返回',
+    'Savedata  borrow'  =>  '借阅',
+    'Savedata  delet'  =>  '作废',
+    'Number'  =>  '领走份数',
+    'Contacts'  =>  '领走人',
+    'Phone'  =>  '联系电话',
+    'Remarkcontent'  =>  '备注',
+    'Createtime'  =>  '创建日期',
+    'Updatetime'  =>  '更新日期',
+    'Admin.username'  =>  '用户名',
+    'Info.name'  =>  '合同名称'
+];

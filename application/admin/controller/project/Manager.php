@@ -21,7 +21,7 @@ class Manager extends Backend
     public function _initialize()
     {
         parent::_initialize();
-        $this->model = new \app\admin\model\project\Manager;
+        $this->model = new \app\admin\model\ProjectManager;
 
     }
     

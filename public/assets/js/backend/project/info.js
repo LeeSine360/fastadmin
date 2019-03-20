@@ -29,11 +29,12 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
                         {field: 'price', title: __('Price'), operate:'BETWEEN'},
                         {field: 'starttime', title: __('Starttime'), operate:'RANGE', addclass:'datetimerange', formatter: Table.api.formatter.datetime},
                         {field: 'days', title: __('Days')},
-                        {field: 'address', title: __('Address')},
+                        {field: 'city', title: __('City')},
                         {field: 'createtime', title: __('Createtime'), operate:'RANGE', addclass:'datetimerange', formatter: Table.api.formatter.datetime},
+                        {field: 'admin.username', title: __('Admin.username')},
+                        {field: 'category.name', title: __('Category.name')},
                         {field: 'construct.name', title: __('Construct.name')},
                         {field: 'supervision.name', title: __('Supervision.name')},
-                        {field: 'admin.username', title: __('Admin.username')},
                         {field: 'operate', title: __('Operate'), table: table, events: Table.api.events.operate, formatter: Table.api.formatter.operate}
                     ]
                 ]

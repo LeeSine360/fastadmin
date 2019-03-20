@@ -21,7 +21,7 @@ class Construct extends Backend
     public function _initialize()
     {
         parent::_initialize();
-        $this->model = new \app\admin\model\project\Construct;
+        $this->model = new \app\admin\model\ProjectConstruct;
 
     }
     

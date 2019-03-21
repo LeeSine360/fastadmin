@@ -1,0 +1,58 @@
+<form id="edit-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="">
+
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Finance_info_id')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-finance_info_id" data-rule="required" data-source="finance/info/index" class="form-control selectpage" name="row[finance_info_id]" type="text" value="{$row.finance_info_id}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Project_agreedata')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            
+            <div class="radio">
+            {foreach name="projectAgreedataList" item="vo"}
+            <label for="row[project_agreedata]-{$key}"><input id="row[project_agreedata]-{$key}" name="row[project_agreedata]" type="radio" value="{$key}" {in name="key" value="$row.project_agreedata"}checked{/in} /> {$vo}</label> 
+            {/foreach}
+            </div>
+
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Project_content')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <textarea id="c-project_content" class="form-control editor" rows="5" name="row[project_content]" cols="50">{$row.project_content}</textarea>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Finance_agreedata')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            
+            <div class="radio">
+            {foreach name="financeAgreedataList" item="vo"}
+            <label for="row[finance_agreedata]-{$key}"><input id="row[finance_agreedata]-{$key}" name="row[finance_agreedata]" type="radio" value="{$key}" {in name="key" value="$row.finance_agreedata"}checked{/in} /> {$vo}</label> 
+            {/foreach}
+            </div>
+
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Finace_content')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <textarea id="c-finace_content" class="form-control editor" rows="5" name="row[finace_content]" cols="50">{$row.finace_content}</textarea>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Remarkcontent')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <textarea id="c-remarkcontent" class="form-control editor" rows="5" name="row[remarkcontent]" cols="50">{$row.remarkcontent}</textarea>
+        </div>
+    </div>
+    <div class="form-group layer-footer">
+        <label class="control-label col-xs-12 col-sm-2"></label>
+        <div class="col-xs-12 col-sm-8">
+            <button type="submit" class="btn btn-success btn-embossed disabled">{:__('OK')}</button>
+            <button type="reset" class="btn btn-default btn-embossed">{:__('Reset')}</button>
+        </div>
+    </div>
+</form>

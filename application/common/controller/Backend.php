@@ -443,6 +443,7 @@ class Backend extends Controller
                 }
             };
         }
+        return $query->where;
 
         $adminIds = $this->getDataLimitAdminIds();
         if (is_array($adminIds)) {

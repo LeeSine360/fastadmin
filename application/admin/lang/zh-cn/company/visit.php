@@ -9,7 +9,7 @@ return [
     'State call'  =>  '通话中',
     'State wait'  =>  '待回复',
     'State error'  =>  '号码错误',
-    'Complete'  =>  '是否已结清',
+    'Completedata'  =>  '是否已结清',
     'Situationcontext'  =>  '回访情况',
     'Money'  =>  '欠款金额',
     'Uploadimages'  =>  '附件上传',
@@ -18,5 +18,6 @@ return [
     'Admin_id'  =>  '回访人',
     'Info.short'  =>  '项目简称',
     'Section.name'  =>  '标段名称',
-    'Info.name'  =>  '供应商名称'
+    'Info.name'  =>  '供应商名称',
+    'Admin.username'  =>  '用户名'
 ];

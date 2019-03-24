@@ -27,13 +27,13 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
                         {field: 'id', title: __('Id')},
                         {field: 'phone', title: __('Phone')},
                         {field: 'state', title: __('State'), searchList: {"call":__('State call'),"wait":__('State wait'),"error":__('State error')}, operate:'FIND_IN_SET', formatter: Table.api.formatter.label},
-                        {field: 'complete', title: __('Complete'), searchList: {"no":__('No'),"yes":__('Yes')}, formatter: Table.api.formatter.normal},
+                        {field: 'completedata', title: __('Completedata'), searchList: {"no":__('No'),"yes":__('Yes')}, formatter: Table.api.formatter.normal},
                         {field: 'money', title: __('Money'), operate:'BETWEEN'},
-                        {field: 'uploadimages', title: __('Uploadimages'), formatter: Table.api.formatter.images},
-                        {field: 'createtime', title: __('Createtime'), operate:'RANGE', addclass:'datetimerange', formatter: Table.api.formatter.datetime},
+                        {field: 'admin_id', title: __('Admin_id')},
                         {field: 'info.short', title: __('Info.short')},
                         {field: 'section.name', title: __('Section.name')},
                         {field: 'info.name', title: __('Info.name')},
+                        {field: 'admin.username', title: __('Admin.username')},
                         {field: 'operate', title: __('Operate'), table: table, events: Table.api.events.operate, formatter: Table.api.formatter.operate}
                     ]
                 ]

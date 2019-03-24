@@ -9,74 +9,70 @@ use app\common\controller\Backend;
  *
  * @icon fa fa-circle-o
  */
-class Visit extends Backend
-{
-    
-    /**
-     * Visit模型对象
-     * @var \app\admin\model\company\Visit
-     */
-    protected $model = null;
+class Visit extends Backend {
 
-    public function _initialize()
-    {
-        parent::_initialize();
-        $this->model = new \app\admin\model\CompanyVisit;
-        $this->view->assign("stateList", $this->model->getStateList());
-        $this->view->assign("completeList", $this->model->getCompleteList());
-    }
-    
-    /**
-     * 默认生成的控制器所继承的父类中有index/add/edit/del/multi五个基础方法、destroy/restore/recyclebin三个回收站方法
-     * 因此在当前控制器中可不用编写增删改查的代码,除非需要自己控制这部分逻辑
-     * 需要将application/admin/library/traits/Backend.php中对应的方法复制到当前控制器,然后进行修改
-     */
-    
+	/**
+	 * Visit模型对象
+	 * @var \app\admin\model\company\Visit
+	 */
+	protected $model = null;
 
-    /**
-     * 查看
-     */
-    public function index()
-    {
-        //当前是否为关联查询
-        $this->relationSearch = true;
-        //设置过滤方法
-        $this->request->filter(['strip_tags']);
-        if ($this->request->isAjax())
-        {
-            //如果发送的来源是Selectpage，则转发到Selectpage
-            if ($this->request->request('keyField'))
-            {
-                return $this->selectpage();
-            }
-            list($where, $sort, $order, $offset, $limit) = $this->buildparams();
-            $total = $this->model
-                    ->with(['projectInfo','projectSection','companyInfo'])
-                    ->where($where)
-                    ->order($sort, $order)
-                    ->count();
+	public function _initialize() {
+		parent::_initialize();
+		$this->model = new \app\admin\model\CompanyVisit;
+		$this->view->assign("stateList", $this->model->getStateList());
+		$this->view->assign("completedataList", $this->model->getCompletedataList());
+	}
 
-            $list = $this->model
-                    ->with(['projectInfo','projectSection','companyInfo'])
-                    ->where($where)
-                    ->order($sort, $order)
-                    ->limit($offset, $limit)
-                    ->select();
+	/**
+	 * 默认生成的控制器所继承的父类中有index/add/edit/del/multi五个基础方法、destroy/restore/recyclebin三个回收站方法
+	 * 因此在当前控制器中可不用编写增删改查的代码,除非需要自己控制这部分逻辑
+	 * 需要将application/admin/library/traits/Backend.php中对应的方法复制到当前控制器,然后进行修改
+	 */
 
-            foreach ($list as $row) {
-                $row->visible(['id','phone','state','complete','situationcontext','money','uploadimages','createtime']);
-                $row->visible(['projectInfo']);
+	/**
+	 * 查看
+	 */
+	public function index() {
+		//当前是否为关联查询
+		$this->relationSearch = true;
+		//设置过滤方法
+		$this->request->filter(['strip_tags']);
+		if ($this->request->isAjax()) {
+			//如果发送的来源是Selectpage，则转发到Selectpage
+			if ($this->request->request('keyField')) {
+				return $this->selectpage();
+			}
+			list($where, $sort, $order, $offset, $limit) = $this->buildparams();
+			$total = $this->model
+				->with(['projectInfo', 'projectSection', 'companyInfo', 'admin'])
+				->where($where)
+				->order($sort, $order)
+				->count();
+
+			$list = $this->model
+				->with(['projectInfo', 'projectSection', 'companyInfo', 'admin'])
+				->where($where)
+				->order($sort, $order)
+				->limit($offset, $limit)
+				->select();
+
+			foreach ($list as $row) {
+				$row->visible(['id', 'phone', 'state', 'completedata', 'situationcontext', 'money', 'admin_id']);
+				$row->visible(['projectInfo']);
 				$row->getRelation('projectInfo')->visible(['short']);
 				$row->visible(['projectSection']);
 				$row->getRelation('projectSection')->visible(['name']);
 				$row->visible(['companyInfo']);
 				$row->getRelation('companyInfo')->visible(['name']);
-            }
-            $list = collection($list)->toArray();
-            $result = array("total" => $total, "rows" => $list);
+				$row->visible(['admin']);
+				$row->getRelation('admin')->visible(['username']);
+			}
+			$list = collection($list)->toArray();
+			$result = array("total" => $total, "rows" => $list);
 
-            return json($result);
-        }
-        return $this->view->fetch();
-    }
+			return json($result);
+		}
+		return $this->view->fetch();
+	}
 }

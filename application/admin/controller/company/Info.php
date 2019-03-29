@@ -73,9 +73,9 @@ class Info extends Backend
 
     public function test()
     {
-        $string = "湖南浩宇建设有限公司";
+        $key = $this->request->get("key", '');
         $url    = "https://xin.baidu.com/";
-        $txt    = file_get_contents($url . "s?q=" . $string);
+        $txt    = file_get_contents($url . "s?q=" . $key);
 
         $start  = stripos($txt, 'zx-list-op-mask');
         $end    = stripos($txt, 'zx-side-con') - $start;
@@ -87,12 +87,11 @@ class Info extends Backend
             preg_match("/compinfo\?pid=(.*)\"/U", $value, $url_array);
             preg_match("/title=\"(.*)\"/U", $value, $name_array);
 
-            if ($name_array[1] == $string) {
+            if ($name_array[1] == $key) {
                 $jsonTxt = file_get_contents($url . "detail/basicAjax?pid=" . $url_array[1]);
                 $arrayResult = json_decode($jsonTxt,true);
                 var_dump($arrayResult['data']);
             }
         }
-        //return $result;
     }
 }

@@ -10,6 +10,7 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
                     edit_url: 'company/info/edit',
                     del_url: 'company/info/del',
                     multi_url: 'company/info/multi',
+                    import_url: 'company/info/import',
                     table: 'company_info',
                 }
             });
@@ -24,16 +25,12 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
                 columns: [
                     [
                         {checkbox: true},
-                        {field: 'id', title: __('Id')},
                         {field: 'name', title: __('Name')},
                         {field: 'code', title: __('Code')},
-                        {field: 'city', title: __('City')},
-                        {field: 'contacts', title: __('Contacts')},
                         {field: 'phone', title: __('Phone')},
                         {field: 'account', title: __('Account')},
                         {field: 'bankname', title: __('Bankname')},
-                        {field: 'uploadimages', title: __('Uploadimages'), formatter: Table.api.formatter.images},
-                        {field: 'createtime', title: __('Createtime'), operate:'RANGE', addclass:'datetimerange', formatter: Table.api.formatter.datetime},
+                        {field: 'admin.username', title: __('Admin.username')},
                         {field: 'operate', title: __('Operate'), table: table, events: Table.api.events.operate, formatter: Table.api.formatter.operate}
                     ]
                 ]

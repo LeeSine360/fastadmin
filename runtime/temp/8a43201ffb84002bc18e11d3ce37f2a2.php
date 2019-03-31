@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:78:"/Users/work/WEB/fastadmin/public/../application/admin/view/category/index.html";i:1553321532;s:68:"/Users/work/WEB/fastadmin/application/admin/view/layout/default.html";i:1553167192;s:65:"/Users/work/WEB/fastadmin/application/admin/view/common/meta.html";i:1553167192;s:67:"/Users/work/WEB/fastadmin/application/admin/view/common/script.html";i:1553167192;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:86:"/Users/work/WEB/fastadmin/public/../application/admin/view/general/attachment/add.html";i:1553167192;s:68:"/Users/work/WEB/fastadmin/application/admin/view/layout/default.html";i:1553167192;s:65:"/Users/work/WEB/fastadmin/application/admin/view/common/meta.html";i:1553167192;s:67:"/Users/work/WEB/fastadmin/application/admin/view/common/script.html";i:1553167192;}*/ ?>
 <!DOCTYPE html>
 <html lang="<?php echo $config['language']; ?>">
     <head>
@@ -50,42 +50,50 @@
                             <!-- END RIBBON -->
                             <?php endif; ?>
                             <div class="content">
-                                <div class="panel panel-default panel-intro">
-    <div class="panel-heading">
-        <?php echo build_heading(null,FALSE); ?>
-        <ul class="nav nav-tabs">
-            <li class="active"><a href="#all" data-toggle="tab"><?php echo __('All'); ?></a></li>
-            <?php if(is_array($typeList) || $typeList instanceof \think\Collection || $typeList instanceof \think\Paginator): if( count($typeList)==0 ) : echo "" ;else: foreach($typeList as $key=>$vo): ?>
-                <li><a href="#<?php echo $key; ?>" data-toggle="tab"><?php echo $vo; ?></a></li>
-            <?php endforeach; endif; else: echo "" ;endif; ?>
-        </ul>
-
-    </div>
-    <div class="panel-body">
-        <div id="myTabContent" class="tab-content">
-            <div class="tab-pane fade active in" id="one">
-                <div class="widget-body no-padding">
-                    <div id="toolbar" class="toolbar">
-                        <?php echo build_toolbar('refresh,add,edit,del'); ?>
-                        <div class="dropdown btn-group <?php echo $auth->check('category/multi')?'':'hide'; ?>">
-                            <a class="btn btn-primary btn-more dropdown-toggle btn-disabled disabled" data-toggle="dropdown"><i class="fa fa-cog"></i> <?php echo __('More'); ?></a>
-                            <ul class="dropdown-menu text-left" role="menu">
-                                <li><a class="btn btn-link btn-multi btn-disabled disabled" href="javascript:;" data-params="status=normal"><i class="fa fa-eye"></i> <?php echo __('Set to normal'); ?></a></li>
-                                <li><a class="btn btn-link btn-multi btn-disabled disabled" href="javascript:;" data-params="status=hidden"><i class="fa fa-eye-slash"></i> <?php echo __('Set to hidden'); ?></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <table id="table" class="table table-striped table-bordered table-hover" 
-                           data-operate-edit="<?php echo $auth->check('category/edit'); ?>" 
-                           data-operate-del="<?php echo $auth->check('category/del'); ?>" 
-                           width="100%">
-                    </table>
-                </div>
-            </div>
-
+                                <form id="add-form" class="form-horizontal form-ajax" role="form" data-toggle="validator" method="POST" action="">
+    <?php if($config['upload']['cdnurl']): ?>
+    <div class="form-group">
+        <label for="c-third" class="control-label col-xs-12 col-sm-2"><?php echo __('Upload'); ?>:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input type="text" name="row[third]" id="c-third" class="form-control" />
         </div>
     </div>
-</div>
+
+    <div class="form-group">
+        <label for="c-third" class="control-label col-xs-12 col-sm-2"></label>
+        <div class="col-xs-12 col-sm-8">
+            <button id="plupload-third" class="btn btn-danger plupload" data-multiple="true" data-input-id="c-third" ><i class="fa fa-upload"></i> <?php echo __("Upload to third"); ?></button>
+        </div>
+    </div>
+    <?php endif; ?>
+
+    <div class="form-group">
+        <label for="c-local" class="control-label col-xs-12 col-sm-2"><?php echo __('Upload'); ?>:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input type="text" name="row[local]" id="c-local" class="form-control" />
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="c-local" class="control-label col-xs-12 col-sm-2"></label>
+        <div class="col-xs-12 col-sm-8">
+            <button id="plupload-local" class="btn btn-primary plupload" data-input-id="c-local" data-url="<?php echo url('ajax/upload'); ?>"><i class="fa fa-upload"></i> <?php echo __("Upload to local"); ?></button>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="c-editor" class="control-label col-xs-12 col-sm-2"><?php echo __('Upload from editor'); ?>:</label>
+        <div class="col-xs-12 col-sm-8">
+            <textarea name="row[editor]" id="c-editor" cols="60" rows="5" class="form-control editor"></textarea>
+        </div>
+    </div>
+    <div class="form-group hidden layer-footer">
+        <div class="col-xs-2"></div>
+        <div class="col-xs-12 col-sm-8">
+            <button type="reset" class="btn btn-default btn-embossed"><?php echo __('Reset'); ?></button>
+        </div>
+    </div>
+</form>
 
                             </div>
                         </div>

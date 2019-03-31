@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:78:"/Users/work/WEB/fastadmin/public/../application/admin/view/category/index.html";i:1553321532;s:68:"/Users/work/WEB/fastadmin/application/admin/view/layout/default.html";i:1553167192;s:65:"/Users/work/WEB/fastadmin/application/admin/view/common/meta.html";i:1553167192;s:67:"/Users/work/WEB/fastadmin/application/admin/view/common/script.html";i:1553167192;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:88:"/Users/work/WEB/fastadmin/public/../application/admin/view/example/multitable/index.html";i:1554036316;s:68:"/Users/work/WEB/fastadmin/application/admin/view/layout/default.html";i:1553167192;s:65:"/Users/work/WEB/fastadmin/application/admin/view/common/meta.html";i:1553167192;s:67:"/Users/work/WEB/fastadmin/application/admin/view/common/script.html";i:1553167192;}*/ ?>
 <!DOCTYPE html>
 <html lang="<?php echo $config['language']; ?>">
     <head>
@@ -52,41 +52,33 @@
                             <div class="content">
                                 <div class="panel panel-default panel-intro">
     <div class="panel-heading">
-        <?php echo build_heading(null,FALSE); ?>
+        <div class="panel-lead"><em>多表格（Multitable）</em>用于展示在一个页面展示多个表格数据,并且每次切换时刷新</div>
         <ul class="nav nav-tabs">
-            <li class="active"><a href="#all" data-toggle="tab"><?php echo __('All'); ?></a></li>
-            <?php if(is_array($typeList) || $typeList instanceof \think\Collection || $typeList instanceof \think\Paginator): if( count($typeList)==0 ) : echo "" ;else: foreach($typeList as $key=>$vo): ?>
-                <li><a href="#<?php echo $key; ?>" data-toggle="tab"><?php echo $vo; ?></a></li>
-            <?php endforeach; endif; else: echo "" ;endif; ?>
+            <li class="active"><a href="#first" data-toggle="tab">表格1</a></li>
+            <li><a href="#second" data-toggle="tab">表格2</a></li>
         </ul>
-
     </div>
     <div class="panel-body">
         <div id="myTabContent" class="tab-content">
-            <div class="tab-pane fade active in" id="one">
-                <div class="widget-body no-padding">
-                    <div id="toolbar" class="toolbar">
-                        <?php echo build_toolbar('refresh,add,edit,del'); ?>
-                        <div class="dropdown btn-group <?php echo $auth->check('category/multi')?'':'hide'; ?>">
-                            <a class="btn btn-primary btn-more dropdown-toggle btn-disabled disabled" data-toggle="dropdown"><i class="fa fa-cog"></i> <?php echo __('More'); ?></a>
-                            <ul class="dropdown-menu text-left" role="menu">
-                                <li><a class="btn btn-link btn-multi btn-disabled disabled" href="javascript:;" data-params="status=normal"><i class="fa fa-eye"></i> <?php echo __('Set to normal'); ?></a></li>
-                                <li><a class="btn btn-link btn-multi btn-disabled disabled" href="javascript:;" data-params="status=hidden"><i class="fa fa-eye-slash"></i> <?php echo __('Set to hidden'); ?></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <table id="table" class="table table-striped table-bordered table-hover" 
-                           data-operate-edit="<?php echo $auth->check('category/edit'); ?>" 
-                           data-operate-del="<?php echo $auth->check('category/del'); ?>" 
-                           width="100%">
-                    </table>
+            <div class="tab-pane fade active in" id="first">
+                <div id="toolbar1" class="toolbar">
+                    <?php echo build_toolbar('refresh'); ?>
                 </div>
+                <table id="table1" class="table table-striped table-bordered table-hover" width="100%">
+                </table>
             </div>
+            <div class="tab-pane fade" id="second">
+                <div id="toolbar2" class="toolbar">
+                    <?php echo build_toolbar('refresh'); ?>
+                </div>
 
+                <table id="table2" class="table table-striped table-bordered table-hover" width="100%">
+                </table>
+
+            </div>
         </div>
     </div>
 </div>
-
                             </div>
                         </div>
                     </div>

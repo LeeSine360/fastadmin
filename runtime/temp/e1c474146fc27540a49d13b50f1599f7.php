@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:80:"/Users/work/WEB/fastadmin/public/../application/admin/view/company/info/add.html";i:1553878282;s:68:"/Users/work/WEB/fastadmin/application/admin/view/layout/default.html";i:1553167192;s:65:"/Users/work/WEB/fastadmin/application/admin/view/common/meta.html";i:1553167192;s:67:"/Users/work/WEB/fastadmin/application/admin/view/common/script.html";i:1553167192;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:87:"/Users/work/WEB/fastadmin/public/../application/admin/view/general/attachment/edit.html";i:1553167192;s:68:"/Users/work/WEB/fastadmin/application/admin/view/layout/default.html";i:1553167192;s:65:"/Users/work/WEB/fastadmin/application/admin/view/common/meta.html";i:1553167192;s:67:"/Users/work/WEB/fastadmin/application/admin/view/common/script.html";i:1553167192;}*/ ?>
 <!DOCTYPE html>
 <html lang="<?php echo $config['language']; ?>">
     <head>
@@ -50,95 +50,69 @@
                             <!-- END RIBBON -->
                             <?php endif; ?>
                             <div class="content">
-                                <form id="add-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="">
+                                <form id="edit-form" class="form-horizontal form-ajax" role="form" data-toggle="validator" method="POST" action="">
 
     <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Name'); ?>:</label>
+        <label for="c-url" class="control-label col-xs-12 col-sm-2"><?php echo __('Url'); ?>:</label>
         <div class="col-xs-12 col-sm-8">
-            <input id="c-name" data-rule="required" class="form-control" name="row[name]" type="text">
+            <input type="text" name="row[url]" value="<?php echo $row['url']; ?>"  id="c-url" class="form-control" required />
         </div>
     </div>
     <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Code'); ?>:</label>
+        <label for="c-imagewidth" class="control-label col-xs-12 col-sm-2"><?php echo __('Imagewidth'); ?>:</label>
         <div class="col-xs-12 col-sm-8">
-            <input id="c-code" class="form-control" name="row[code]" type="text">
+            <input type="text" name="row[imagewidth]" value="<?php echo $row['imagewidth']; ?>"  id="c-imagewidth" class="form-control" required />
         </div>
     </div>
     <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Type'); ?>:</label>
+        <label for="c-imageheight" class="control-label col-xs-12 col-sm-2"><?php echo __('Imageheight'); ?>:</label>
         <div class="col-xs-12 col-sm-8">
-            <input id="c-type" class="form-control" name="row[type]" type="text">
+            <input type="text" name="row[imageheight]" value="<?php echo $row['imageheight']; ?>"  id="c-imageheight" class="form-control" required />
         </div>
     </div>
     <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Regcapital'); ?>:</label>
+        <label for="c-imagetype" class="control-label col-xs-12 col-sm-2"><?php echo __('Imagetype'); ?>:</label>
         <div class="col-xs-12 col-sm-8">
-            <input id="c-regCapital" class="form-control" name="row[regCapital]" type="text">
+            <input type="text" name="row[imagetype]" value="<?php echo $row['imagetype']; ?>"  id="c-imagetype" class="form-control" required />
         </div>
     </div>
     <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Scope'); ?>:</label>
+        <label for="c-imageframes" class="control-label col-xs-12 col-sm-2"><?php echo __('Imageframes'); ?>:</label>
         <div class="col-xs-12 col-sm-8">
-            <input id="c-scope" class="form-control" name="row[scope]" type="text">
+            <input type="number" name="row[imageframes]" value="<?php echo $row['imageframes']; ?>"  id="c-imageframes" class="form-control" />
         </div>
     </div>
     <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2"><?php echo __('City'); ?>:</label>
+        <label for="c-filesize" class="control-label col-xs-12 col-sm-2"><?php echo __('Filesize'); ?>:</label>
         <div class="col-xs-12 col-sm-8">
-            <div class='control-relative'><input id="c-city" class="form-control" data-toggle="city-picker" name="row[city]" type="text"></div>
+            <input type="number" name="row[filesize]" value="<?php echo $row['filesize']; ?>"  id="c-filesize" class="form-control" />
         </div>
     </div>
     <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Address'); ?>:</label>
+        <label for="c-mimetype" class="control-label col-xs-12 col-sm-2"><?php echo __('Mimetype'); ?>:</label>
         <div class="col-xs-12 col-sm-8">
-            <input id="c-address" class="form-control" name="row[address]" type="text">
+            <input type="text" name="row[mimetype]" value="<?php echo $row['mimetype']; ?>"  id="c-mimetype" class="form-control" />
         </div>
     </div>
     <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Contacts'); ?>:</label>
+        <label for="c-extparam" class="control-label col-xs-12 col-sm-2"><?php echo __('Extparam'); ?>:</label>
         <div class="col-xs-12 col-sm-8">
-            <input id="c-contacts" class="form-control" name="row[contacts]" type="text">
+            <input type="text" name="row[extparam]" value="<?php echo $row['extparam']; ?>"  id="c-extparam" class="form-control" />
         </div>
     </div>
     <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Phone'); ?>:</label>
+        <label for="c-uploadtime" class="control-label col-xs-12 col-sm-2"><?php echo __('Uploadtime'); ?>:</label>
         <div class="col-xs-12 col-sm-8">
-            <input id="c-phone" class="form-control" name="row[phone]" type="text">
+            <input type="datetime" name="row[uploadtime]" value="<?php echo datetime($row['uploadtime']); ?>"  id="c-uploadtime" class="form-control datetimepicker" />
         </div>
     </div>
     <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Account'); ?>:</label>
+        <label for="c-storage" class="control-label col-xs-12 col-sm-2"><?php echo __('Storage'); ?>:</label>
         <div class="col-xs-12 col-sm-8">
-            <input id="c-account" class="form-control" name="row[account]" type="text">
+            <input type="text" name="row[storage]" value="<?php echo $row['storage']; ?>"  id="c-storage" class="form-control" />
         </div>
     </div>
-    <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Bankname'); ?>:</label>
-        <div class="col-xs-12 col-sm-8">
-            <input id="c-bankname" class="form-control" name="row[bankname]" type="text">
-        </div>
-    </div>
-    <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Uploadimages'); ?>:</label>
-        <div class="col-xs-12 col-sm-8">
-            <div class="input-group">
-                <input id="c-uploadimages" class="form-control" size="50" name="row[uploadimages]" type="text">
-                <div class="input-group-addon no-border no-padding">
-                    <span><button type="button" id="plupload-uploadimages" class="btn btn-danger plupload" data-input-id="c-uploadimages" data-mimetype="image/gif,image/jpeg,image/png,image/jpg,image/bmp" data-multiple="true" data-preview-id="p-uploadimages"><i class="fa fa-upload"></i> <?php echo __('Upload'); ?></button></span>
-                    <span><button type="button" id="fachoose-uploadimages" class="btn btn-primary fachoose" data-input-id="c-uploadimages" data-mimetype="image/*" data-multiple="true"><i class="fa fa-list"></i> <?php echo __('Choose'); ?></button></span>
-                </div>
-                <span class="msg-box n-right" for="c-uploadimages"></span>
-            </div>
-            <ul class="row list-inline plupload-preview" id="p-uploadimages"></ul>
-        </div>
-    </div>
-    <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Remarkcontent'); ?>:</label>
-        <div class="col-xs-12 col-sm-8">
-            <textarea id="c-remarkcontent" class="form-control editor" rows="5" name="row[remarkcontent]" cols="50"></textarea>
-        </div>
-    </div>
-    <div class="form-group layer-footer">
+    <div class="form-group hide layer-footer">
         <label class="control-label col-xs-12 col-sm-2"></label>
         <div class="col-xs-12 col-sm-8">
             <button type="submit" class="btn btn-success btn-embossed disabled"><?php echo __('OK'); ?></button>

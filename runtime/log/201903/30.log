@@ -1,0 +1,2388 @@
+---------------------------------------------------------------
+[ 2019-03-30T23:07:40+08:00 ] 127.0.0.1 GET 127.0.0.1/assets/css/backend.css.map
+[运行时间：0.025544s] [吞吐率：39.15req/s] [内存消耗：1,918.91kb] [文件加载：58]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000023s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002295s ]
+[ info ] [ LANG ] /Users/work/WEB/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'assets',
+    1 => 'css',
+    2 => 'backend.css.map',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+  'cookie' => 'Hm_lpvt_baca6fe3dceaf818f5f835b0ae97e4cc=1553930228; Hm_lpvt_3456bee468c83cc63fb5147f119f1075=1553788642; Hm_lpvt_bfc6c23974fbad0bbfed25f88a973fb0=1553777905; PHPSESSID=2aph93tipahci51qk2kpbe6l07; CNZZDATA1254842228=871315088-1553774523-%7C1553785334; Hm_lvt_3456bee468c83cc63fb5147f119f1075=1553777939; Hm_lvt_baca6fe3dceaf818f5f835b0ae97e4cc=1553930228; Hm_lvt_bfc6c23974fbad0bbfed25f88a973fb0=1553516742,1553777905; UM_distinctid=169c461cfa0434-067f298972c8a-3f636f4d-13c680-169c461cfa150d',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.1 Safari/605.1.15',
+  'accept-language' => 'zh-cn',
+  'referer' => 'http://127.0.0.1/admin/index/index',
+  'accept-encoding' => 'gzip, deflate',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run \addons\loginvideo\Loginvideo @response_send [ RunTime:0.002959s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-03-30T23:07:40+08:00 ] 127.0.0.1 GET 127.0.0.1/assets/css/skins/skin-green.css.map
+[运行时间：0.025753s] [吞吐率：38.83req/s] [内存消耗：1,989.95kb] [文件加载：60]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000021s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002077s ]
+[ info ] [ LANG ] /Users/work/WEB/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'assets',
+    1 => 'css',
+    2 => 'skins',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+  'cookie' => 'Hm_lpvt_baca6fe3dceaf818f5f835b0ae97e4cc=1553930228; Hm_lpvt_3456bee468c83cc63fb5147f119f1075=1553788642; Hm_lpvt_bfc6c23974fbad0bbfed25f88a973fb0=1553777905; PHPSESSID=2aph93tipahci51qk2kpbe6l07; CNZZDATA1254842228=871315088-1553774523-%7C1553785334; Hm_lvt_3456bee468c83cc63fb5147f119f1075=1553777939; Hm_lvt_baca6fe3dceaf818f5f835b0ae97e4cc=1553930228; Hm_lvt_bfc6c23974fbad0bbfed25f88a973fb0=1553516742,1553777905; UM_distinctid=169c461cfa0434-067f298972c8a-3f636f4d-13c680-169c461cfa150d',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.1 Safari/605.1.15',
+  'accept-language' => 'zh-cn',
+  'referer' => 'http://127.0.0.1/admin/index/index',
+  'accept-encoding' => 'gzip, deflate',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run \addons\loginvideo\Loginvideo @response_send [ RunTime:0.002762s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-03-30T23:07:40+08:00 ] 127.0.0.1 GET 127.0.0.1/assets/css/fastadmin.css.map
+[运行时间：0.027224s] [吞吐率：36.73req/s] [内存消耗：1,919.01kb] [文件加载：58]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000019s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002354s ]
+[ info ] [ LANG ] /Users/work/WEB/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'assets',
+    1 => 'css',
+    2 => 'fastadmin.css.map',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+  'cookie' => 'Hm_lpvt_baca6fe3dceaf818f5f835b0ae97e4cc=1553930228; Hm_lpvt_3456bee468c83cc63fb5147f119f1075=1553788642; Hm_lpvt_bfc6c23974fbad0bbfed25f88a973fb0=1553777905; PHPSESSID=2aph93tipahci51qk2kpbe6l07; CNZZDATA1254842228=871315088-1553774523-%7C1553785334; Hm_lvt_3456bee468c83cc63fb5147f119f1075=1553777939; Hm_lvt_baca6fe3dceaf818f5f835b0ae97e4cc=1553930228; Hm_lvt_bfc6c23974fbad0bbfed25f88a973fb0=1553516742,1553777905; UM_distinctid=169c461cfa0434-067f298972c8a-3f636f4d-13c680-169c461cfa150d',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.1 Safari/605.1.15',
+  'accept-language' => 'zh-cn',
+  'referer' => 'http://127.0.0.1/admin/index/index',
+  'accept-encoding' => 'gzip, deflate',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run \addons\loginvideo\Loginvideo @response_send [ RunTime:0.002322s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-03-30T23:07:40+08:00 ] 127.0.0.1 GET 127.0.0.1/admin/dashboard?addtabs=1
+[运行时间：0.052570s] [吞吐率：19.02req/s] [内存消耗：3,940.44kb] [文件加载：84]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000018s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.006241s ]
+[ info ] [ LANG ] /Users/work/WEB/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'dashboard',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'cookie' => 'Hm_lpvt_baca6fe3dceaf818f5f835b0ae97e4cc=1553930228; Hm_lpvt_3456bee468c83cc63fb5147f119f1075=1553788642; Hm_lpvt_bfc6c23974fbad0bbfed25f88a973fb0=1553777905; PHPSESSID=2aph93tipahci51qk2kpbe6l07; CNZZDATA1254842228=871315088-1553774523-%7C1553785334; Hm_lvt_3456bee468c83cc63fb5147f119f1075=1553777939; Hm_lvt_baca6fe3dceaf818f5f835b0ae97e4cc=1553930228; Hm_lvt_bfc6c23974fbad0bbfed25f88a973fb0=1553516742,1553777905; UM_distinctid=169c461cfa0434-067f298972c8a-3f636f4d-13c680-169c461cfa150d',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.1 Safari/605.1.15',
+  'referer' => 'http://127.0.0.1/admin/index/index',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+)
+[ info ] [ PARAM ] array (
+  'addtabs' => '1',
+)
+[ info ] [ LANG ] /Users/work/WEB/fastadmin/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001627s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /Users/work/WEB/fastadmin/public/../application/admin/lang/zh-cn/dashboard.php
+[ info ] [ RUN ] app\admin\controller\Dashboard->index[ /Users/work/WEB/fastadmin/application/admin/controller/Dashboard.php ]
+[ info ] [ VIEW ] /Users/work/WEB/fastadmin/public/../application/admin/view/dashboard/index.html [ array (
+  0 => 'breadcrumb',
+  1 => 'site',
+  2 => 'config',
+  3 => 'auth',
+  4 => 'admin',
+  5 => 'totaluser',
+  6 => 'totalviews',
+  7 => 'totalorder',
+  8 => 'totalorderamount',
+  9 => 'todayuserlogin',
+  10 => 'todayusersignup',
+  11 => 'todayorder',
+  12 => 'unsettleorder',
+  13 => 'sevendnu',
+  14 => 'sevendau',
+  15 => 'paylist',
+  16 => 'createlist',
+  17 => 'addonversion',
+  18 => 'uploadmode',
+) ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000090s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginvideo\Loginvideo @response_send [ RunTime:0.000128s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000695s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.001618s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000510s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.001393s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001498s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `fa_auth_rule` WHERE  `name` = 'dashboard' LIMIT 1 [ RunTime:0.000612s ]
+---------------------------------------------------------------
+[ 2019-03-30T23:07:40+08:00 ] 127.0.0.1 GET 127.0.0.1/admin/ajax/lang?callback=define&controllername=index&v=1553958460
+[运行时间：0.033661s] [吞吐率：29.71req/s] [内存消耗：2,887.07kb] [文件加载：75]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000016s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001702s ]
+[ info ] [ LANG ] /Users/work/WEB/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+  'cookie' => 'Hm_lpvt_baca6fe3dceaf818f5f835b0ae97e4cc=1553930228; Hm_lpvt_3456bee468c83cc63fb5147f119f1075=1553788642; Hm_lpvt_bfc6c23974fbad0bbfed25f88a973fb0=1553777905; PHPSESSID=2aph93tipahci51qk2kpbe6l07; CNZZDATA1254842228=871315088-1553774523-%7C1553785334; Hm_lvt_3456bee468c83cc63fb5147f119f1075=1553777939; Hm_lvt_baca6fe3dceaf818f5f835b0ae97e4cc=1553930228; Hm_lvt_bfc6c23974fbad0bbfed25f88a973fb0=1553516742,1553777905; UM_distinctid=169c461cfa0434-067f298972c8a-3f636f4d-13c680-169c461cfa150d',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.1 Safari/605.1.15',
+  'accept-language' => 'zh-cn',
+  'referer' => 'http://127.0.0.1/admin/index/index',
+  'accept-encoding' => 'gzip, deflate',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'index',
+  'v' => '1553958460',
+)
+[ info ] [ LANG ] /Users/work/WEB/fastadmin/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001235s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] /Users/work/WEB/fastadmin/public/../application/admin/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\admin\controller\Ajax->lang[ /Users/work/WEB/fastadmin/application/admin/controller/Ajax.php ]
+[ info ] [ LANG ] /Users/work/WEB/fastadmin/public/../application/admin/lang/zh-cn/index.php
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000084s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginvideo\Loginvideo @response_send [ RunTime:0.000143s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-03-30T23:07:40+08:00 ] 127.0.0.1 GET 127.0.0.1/apple-touch-icon-precomposed.png
+[运行时间：0.025330s] [吞吐率：39.48req/s] [内存消耗：1,913.32kb] [文件加载：58]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000040s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002320s ]
+[ info ] [ LANG ] /Users/work/WEB/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'apple-touch-icon-precomposed.png',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'accept' => '*/*',
+  'accept-language' => 'zh-cn',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Safari%20%E6%B5%8F%E8%A7%88%E5%99%A8/13607.1.40.1.5 CFNetwork/902.3.1 Darwin/17.7.0 (x86_64)',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run \addons\loginvideo\Loginvideo @response_send [ RunTime:0.001988s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-03-30T23:07:41+08:00 ] 127.0.0.1 GET 127.0.0.1/assets/css/backend.css.map
+[运行时间：0.034046s] [吞吐率：29.37req/s] [内存消耗：1,919.02kb] [文件加载：58]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000023s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005238s ]
+[ info ] [ LANG ] /Users/work/WEB/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'assets',
+    1 => 'css',
+    2 => 'backend.css.map',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+  'cookie' => 'Hm_lpvt_baca6fe3dceaf818f5f835b0ae97e4cc=1553930228; Hm_lpvt_3456bee468c83cc63fb5147f119f1075=1553788642; Hm_lpvt_bfc6c23974fbad0bbfed25f88a973fb0=1553777905; PHPSESSID=2aph93tipahci51qk2kpbe6l07; CNZZDATA1254842228=871315088-1553774523-%7C1553785334; Hm_lvt_3456bee468c83cc63fb5147f119f1075=1553777939; Hm_lvt_baca6fe3dceaf818f5f835b0ae97e4cc=1553930228; Hm_lvt_bfc6c23974fbad0bbfed25f88a973fb0=1553516742,1553777905; UM_distinctid=169c461cfa0434-067f298972c8a-3f636f4d-13c680-169c461cfa150d',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.1 Safari/605.1.15',
+  'accept-language' => 'zh-cn',
+  'referer' => 'http://127.0.0.1/admin/dashboard?addtabs=1',
+  'accept-encoding' => 'gzip, deflate',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run \addons\loginvideo\Loginvideo @response_send [ RunTime:0.002849s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-03-30T23:07:41+08:00 ] 127.0.0.1 GET 127.0.0.1/assets/css/fastadmin.css.map
+[运行时间：0.034225s] [吞吐率：29.22req/s] [内存消耗：1,919.05kb] [文件加载：58]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000021s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002822s ]
+[ info ] [ LANG ] /Users/work/WEB/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'assets',
+    1 => 'css',
+    2 => 'fastadmin.css.map',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+  'cookie' => 'Hm_lpvt_baca6fe3dceaf818f5f835b0ae97e4cc=1553930228; Hm_lpvt_3456bee468c83cc63fb5147f119f1075=1553788642; Hm_lpvt_bfc6c23974fbad0bbfed25f88a973fb0=1553777905; PHPSESSID=2aph93tipahci51qk2kpbe6l07; CNZZDATA1254842228=871315088-1553774523-%7C1553785334; Hm_lvt_3456bee468c83cc63fb5147f119f1075=1553777939; Hm_lvt_baca6fe3dceaf818f5f835b0ae97e4cc=1553930228; Hm_lvt_bfc6c23974fbad0bbfed25f88a973fb0=1553516742,1553777905; UM_distinctid=169c461cfa0434-067f298972c8a-3f636f4d-13c680-169c461cfa150d',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.1 Safari/605.1.15',
+  'accept-language' => 'zh-cn',
+  'referer' => 'http://127.0.0.1/admin/dashboard?addtabs=1',
+  'accept-encoding' => 'gzip, deflate',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run \addons\loginvideo\Loginvideo @response_send [ RunTime:0.003898s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-03-30T23:07:41+08:00 ] 127.0.0.1 GET 127.0.0.1/assets/css/skins/skin-green.css.map
+[运行时间：0.035329s] [吞吐率：28.31req/s] [内存消耗：1,919.02kb] [文件加载：58]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000020s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003321s ]
+[ info ] [ LANG ] /Users/work/WEB/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'assets',
+    1 => 'css',
+    2 => 'skins',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+  'cookie' => 'Hm_lpvt_baca6fe3dceaf818f5f835b0ae97e4cc=1553930228; Hm_lpvt_3456bee468c83cc63fb5147f119f1075=1553788642; Hm_lpvt_bfc6c23974fbad0bbfed25f88a973fb0=1553777905; PHPSESSID=2aph93tipahci51qk2kpbe6l07; CNZZDATA1254842228=871315088-1553774523-%7C1553785334; Hm_lvt_3456bee468c83cc63fb5147f119f1075=1553777939; Hm_lvt_baca6fe3dceaf818f5f835b0ae97e4cc=1553930228; Hm_lvt_bfc6c23974fbad0bbfed25f88a973fb0=1553516742,1553777905; UM_distinctid=169c461cfa0434-067f298972c8a-3f636f4d-13c680-169c461cfa150d',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.1 Safari/605.1.15',
+  'accept-language' => 'zh-cn',
+  'referer' => 'http://127.0.0.1/admin/dashboard?addtabs=1',
+  'accept-encoding' => 'gzip, deflate',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run \addons\loginvideo\Loginvideo @response_send [ RunTime:0.003731s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-03-30T23:07:41+08:00 ] 127.0.0.1 GET 127.0.0.1/assets/css/bootstrap.css.map
+[运行时间：0.037645s] [吞吐率：26.56req/s] [内存消耗：1,919.05kb] [文件加载：58]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000021s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.006883s ]
+[ info ] [ LANG ] /Users/work/WEB/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'assets',
+    1 => 'css',
+    2 => 'bootstrap.css.map',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+  'cookie' => 'Hm_lpvt_baca6fe3dceaf818f5f835b0ae97e4cc=1553930228; Hm_lpvt_3456bee468c83cc63fb5147f119f1075=1553788642; Hm_lpvt_bfc6c23974fbad0bbfed25f88a973fb0=1553777905; PHPSESSID=2aph93tipahci51qk2kpbe6l07; CNZZDATA1254842228=871315088-1553774523-%7C1553785334; Hm_lvt_3456bee468c83cc63fb5147f119f1075=1553777939; Hm_lvt_baca6fe3dceaf818f5f835b0ae97e4cc=1553930228; Hm_lvt_bfc6c23974fbad0bbfed25f88a973fb0=1553516742,1553777905; UM_distinctid=169c461cfa0434-067f298972c8a-3f636f4d-13c680-169c461cfa150d',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.1 Safari/605.1.15',
+  'accept-language' => 'zh-cn',
+  'referer' => 'http://127.0.0.1/admin/dashboard?addtabs=1',
+  'accept-encoding' => 'gzip, deflate',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run \addons\loginvideo\Loginvideo @response_send [ RunTime:0.003004s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-03-30T23:07:41+08:00 ] 127.0.0.1 GET 127.0.0.1/apple-touch-icon.png
+[运行时间：0.031432s] [吞吐率：31.81req/s] [内存消耗：1,913.20kb] [文件加载：58]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000116s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003871s ]
+[ info ] [ LANG ] /Users/work/WEB/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'apple-touch-icon.png',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'accept' => '*/*',
+  'accept-language' => 'zh-cn',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Safari%20%E6%B5%8F%E8%A7%88%E5%99%A8/13607.1.40.1.5 CFNetwork/902.3.1 Darwin/17.7.0 (x86_64)',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run \addons\loginvideo\Loginvideo @response_send [ RunTime:0.003485s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-03-30T23:07:41+08:00 ] 127.0.0.1 GET 127.0.0.1/admin/ajax/lang?callback=define&controllername=dashboard&v=1553958460
+[运行时间：0.048911s] [吞吐率：20.45req/s] [内存消耗：2,885.59kb] [文件加载：75]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000031s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001921s ]
+[ info ] [ LANG ] /Users/work/WEB/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+  'cookie' => 'Hm_lpvt_baca6fe3dceaf818f5f835b0ae97e4cc=1553930228; Hm_lpvt_3456bee468c83cc63fb5147f119f1075=1553788642; Hm_lpvt_bfc6c23974fbad0bbfed25f88a973fb0=1553777905; PHPSESSID=2aph93tipahci51qk2kpbe6l07; CNZZDATA1254842228=871315088-1553774523-%7C1553785334; Hm_lvt_3456bee468c83cc63fb5147f119f1075=1553777939; Hm_lvt_baca6fe3dceaf818f5f835b0ae97e4cc=1553930228; Hm_lvt_bfc6c23974fbad0bbfed25f88a973fb0=1553516742,1553777905; UM_distinctid=169c461cfa0434-067f298972c8a-3f636f4d-13c680-169c461cfa150d',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.1 Safari/605.1.15',
+  'accept-language' => 'zh-cn',
+  'referer' => 'http://127.0.0.1/admin/dashboard?addtabs=1',
+  'accept-encoding' => 'gzip, deflate',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'dashboard',
+  'v' => '1553958460',
+)
+[ info ] [ LANG ] /Users/work/WEB/fastadmin/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002473s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] /Users/work/WEB/fastadmin/public/../application/admin/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\admin\controller\Ajax->lang[ /Users/work/WEB/fastadmin/application/admin/controller/Ajax.php ]
+[ info ] [ LANG ] /Users/work/WEB/fastadmin/public/../application/admin/lang/zh-cn/dashboard.php
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000119s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginvideo\Loginvideo @response_send [ RunTime:0.000156s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-03-30T23:07:44+08:00 ] 127.0.0.1 GET 127.0.0.1/admin/company/info?addtabs=1
+[运行时间：0.043747s] [吞吐率：22.86req/s] [内存消耗：3,892.01kb] [文件加载：83]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000017s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.006919s ]
+[ info ] [ LANG ] /Users/work/WEB/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'company.info',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'cookie' => '_uab_collina=155377793871011809706564; Hm_lpvt_baca6fe3dceaf818f5f835b0ae97e4cc=1553930228; Hm_lpvt_3456bee468c83cc63fb5147f119f1075=1553788642; Hm_lpvt_bfc6c23974fbad0bbfed25f88a973fb0=1553777905; PHPSESSID=2aph93tipahci51qk2kpbe6l07; CNZZDATA1254842228=871315088-1553774523-%7C1553785334; Hm_lvt_3456bee468c83cc63fb5147f119f1075=1553777939; Hm_lvt_baca6fe3dceaf818f5f835b0ae97e4cc=1553930228; Hm_lvt_bfc6c23974fbad0bbfed25f88a973fb0=1553516742,1553777905; UM_distinctid=169c461cfa0434-067f298972c8a-3f636f4d-13c680-169c461cfa150d',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.1 Safari/605.1.15',
+  'referer' => 'http://127.0.0.1/admin/company/info?ref=addtabs',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+)
+[ info ] [ PARAM ] array (
+  'addtabs' => '1',
+)
+[ info ] [ LANG ] /Users/work/WEB/fastadmin/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001110s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /Users/work/WEB/fastadmin/public/../application/admin/lang/zh-cn/company/info.php
+[ info ] [ RUN ] app\admin\controller\company\Info->index[ /Users/work/WEB/fastadmin/application/admin/controller/company/Info.php ]
+[ info ] [ VIEW ] /Users/work/WEB/fastadmin/public/../application/admin/view/company/info/index.html [ array (
+  0 => 'breadcrumb',
+  1 => 'site',
+  2 => 'config',
+  3 => 'auth',
+  4 => 'admin',
+) ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000075s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginvideo\Loginvideo @response_send [ RunTime:0.000123s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000633s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.001636s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000757s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.001302s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001416s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `fa_auth_rule` WHERE  `name` = 'company/info' LIMIT 1 [ RunTime:0.000396s ]
+---------------------------------------------------------------
+[ 2019-03-30T23:07:44+08:00 ] 127.0.0.1 GET 127.0.0.1/assets/css/bootstrap.css.map
+[运行时间：0.020780s] [吞吐率：48.12req/s] [内存消耗：1,919.05kb] [文件加载：58]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000021s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001811s ]
+[ info ] [ LANG ] /Users/work/WEB/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'assets',
+    1 => 'css',
+    2 => 'bootstrap.css.map',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+  'cookie' => 'Hm_lpvt_baca6fe3dceaf818f5f835b0ae97e4cc=1553930228; Hm_lpvt_3456bee468c83cc63fb5147f119f1075=1553788642; Hm_lpvt_bfc6c23974fbad0bbfed25f88a973fb0=1553777905; PHPSESSID=2aph93tipahci51qk2kpbe6l07; CNZZDATA1254842228=871315088-1553774523-%7C1553785334; Hm_lvt_3456bee468c83cc63fb5147f119f1075=1553777939; Hm_lvt_baca6fe3dceaf818f5f835b0ae97e4cc=1553930228; Hm_lvt_bfc6c23974fbad0bbfed25f88a973fb0=1553516742,1553777905; UM_distinctid=169c461cfa0434-067f298972c8a-3f636f4d-13c680-169c461cfa150d',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.1 Safari/605.1.15',
+  'accept-language' => 'zh-cn',
+  'referer' => 'http://127.0.0.1/admin/company/info?addtabs=1',
+  'accept-encoding' => 'gzip, deflate',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run \addons\loginvideo\Loginvideo @response_send [ RunTime:0.002750s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-03-30T23:07:44+08:00 ] 127.0.0.1 GET 127.0.0.1/admin/ajax/lang?callback=define&controllername=company.info&v=1553958464
+[运行时间：0.024690s] [吞吐率：40.50req/s] [内存消耗：2,883.34kb] [文件加载：75]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000020s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001547s ]
+[ info ] [ LANG ] /Users/work/WEB/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+  'cookie' => 'Hm_lpvt_baca6fe3dceaf818f5f835b0ae97e4cc=1553930228; Hm_lpvt_3456bee468c83cc63fb5147f119f1075=1553788642; Hm_lpvt_bfc6c23974fbad0bbfed25f88a973fb0=1553777905; PHPSESSID=2aph93tipahci51qk2kpbe6l07; CNZZDATA1254842228=871315088-1553774523-%7C1553785334; Hm_lvt_3456bee468c83cc63fb5147f119f1075=1553777939; Hm_lvt_baca6fe3dceaf818f5f835b0ae97e4cc=1553930228; Hm_lvt_bfc6c23974fbad0bbfed25f88a973fb0=1553516742,1553777905; UM_distinctid=169c461cfa0434-067f298972c8a-3f636f4d-13c680-169c461cfa150d',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.1 Safari/605.1.15',
+  'accept-language' => 'zh-cn',
+  'referer' => 'http://127.0.0.1/admin/company/info?addtabs=1',
+  'accept-encoding' => 'gzip, deflate',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'company.info',
+  'v' => '1553958464',
+)
+[ info ] [ LANG ] /Users/work/WEB/fastadmin/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001241s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] /Users/work/WEB/fastadmin/public/../application/admin/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\admin\controller\Ajax->lang[ /Users/work/WEB/fastadmin/application/admin/controller/Ajax.php ]
+[ info ] [ LANG ] /Users/work/WEB/fastadmin/public/../application/admin/lang/zh-cn/company/info.php
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000089s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginvideo\Loginvideo @response_send [ RunTime:0.000117s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-03-30T23:07:44+08:00 ] 127.0.0.1 GET 127.0.0.1/assets/css/backend.css.map
+[运行时间：0.024634s] [吞吐率：40.59req/s] [内存消耗：1,919.02kb] [文件加载：58]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000018s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001746s ]
+[ info ] [ LANG ] /Users/work/WEB/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'assets',
+    1 => 'css',
+    2 => 'backend.css.map',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+  'cookie' => 'Hm_lpvt_baca6fe3dceaf818f5f835b0ae97e4cc=1553930228; Hm_lpvt_3456bee468c83cc63fb5147f119f1075=1553788642; Hm_lpvt_bfc6c23974fbad0bbfed25f88a973fb0=1553777905; PHPSESSID=2aph93tipahci51qk2kpbe6l07; CNZZDATA1254842228=871315088-1553774523-%7C1553785334; Hm_lvt_3456bee468c83cc63fb5147f119f1075=1553777939; Hm_lvt_baca6fe3dceaf818f5f835b0ae97e4cc=1553930228; Hm_lvt_bfc6c23974fbad0bbfed25f88a973fb0=1553516742,1553777905; UM_distinctid=169c461cfa0434-067f298972c8a-3f636f4d-13c680-169c461cfa150d',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.1 Safari/605.1.15',
+  'accept-language' => 'zh-cn',
+  'referer' => 'http://127.0.0.1/admin/company/info?addtabs=1',
+  'accept-encoding' => 'gzip, deflate',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run \addons\loginvideo\Loginvideo @response_send [ RunTime:0.003693s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-03-30T23:07:44+08:00 ] 127.0.0.1 GET 127.0.0.1/assets/css/fastadmin.css.map
+[运行时间：0.025057s] [吞吐率：39.91req/s] [内存消耗：1,919.05kb] [文件加载：58]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000021s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001715s ]
+[ info ] [ LANG ] /Users/work/WEB/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'assets',
+    1 => 'css',
+    2 => 'fastadmin.css.map',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+  'cookie' => 'Hm_lpvt_baca6fe3dceaf818f5f835b0ae97e4cc=1553930228; Hm_lpvt_3456bee468c83cc63fb5147f119f1075=1553788642; Hm_lpvt_bfc6c23974fbad0bbfed25f88a973fb0=1553777905; PHPSESSID=2aph93tipahci51qk2kpbe6l07; CNZZDATA1254842228=871315088-1553774523-%7C1553785334; Hm_lvt_3456bee468c83cc63fb5147f119f1075=1553777939; Hm_lvt_baca6fe3dceaf818f5f835b0ae97e4cc=1553930228; Hm_lvt_bfc6c23974fbad0bbfed25f88a973fb0=1553516742,1553777905; UM_distinctid=169c461cfa0434-067f298972c8a-3f636f4d-13c680-169c461cfa150d',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.1 Safari/605.1.15',
+  'accept-language' => 'zh-cn',
+  'referer' => 'http://127.0.0.1/admin/company/info?addtabs=1',
+  'accept-encoding' => 'gzip, deflate',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run \addons\loginvideo\Loginvideo @response_send [ RunTime:0.003809s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-03-30T23:07:44+08:00 ] 127.0.0.1 GET 127.0.0.1/assets/css/skins/skin-green.css.map
+[运行时间：0.025547s] [吞吐率：39.14req/s] [内存消耗：1,919.02kb] [文件加载：58]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000015s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001542s ]
+[ info ] [ LANG ] /Users/work/WEB/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'assets',
+    1 => 'css',
+    2 => 'skins',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+  'cookie' => 'Hm_lpvt_baca6fe3dceaf818f5f835b0ae97e4cc=1553930228; Hm_lpvt_3456bee468c83cc63fb5147f119f1075=1553788642; Hm_lpvt_bfc6c23974fbad0bbfed25f88a973fb0=1553777905; PHPSESSID=2aph93tipahci51qk2kpbe6l07; CNZZDATA1254842228=871315088-1553774523-%7C1553785334; Hm_lvt_3456bee468c83cc63fb5147f119f1075=1553777939; Hm_lvt_baca6fe3dceaf818f5f835b0ae97e4cc=1553930228; Hm_lvt_bfc6c23974fbad0bbfed25f88a973fb0=1553516742,1553777905; UM_distinctid=169c461cfa0434-067f298972c8a-3f636f4d-13c680-169c461cfa150d',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.1 Safari/605.1.15',
+  'accept-language' => 'zh-cn',
+  'referer' => 'http://127.0.0.1/admin/company/info?addtabs=1',
+  'accept-encoding' => 'gzip, deflate',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run \addons\loginvideo\Loginvideo @response_send [ RunTime:0.003638s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-03-30T23:07:45+08:00 ] 127.0.0.1 GET 127.0.0.1/admin/company/info/index?sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1553958464879
+[运行时间：0.061820s] [吞吐率：16.18req/s] [内存消耗：4,062.27kb] [文件加载：89]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000031s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002133s ]
+[ info ] [ LANG ] /Users/work/WEB/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'company.info',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'content-type' => 'application/json',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => '_uab_collina=155377793871011809706564; Hm_lpvt_baca6fe3dceaf818f5f835b0ae97e4cc=1553930228; Hm_lpvt_3456bee468c83cc63fb5147f119f1075=1553788642; Hm_lpvt_bfc6c23974fbad0bbfed25f88a973fb0=1553777905; PHPSESSID=2aph93tipahci51qk2kpbe6l07; CNZZDATA1254842228=871315088-1553774523-%7C1553785334; Hm_lvt_3456bee468c83cc63fb5147f119f1075=1553777939; Hm_lvt_baca6fe3dceaf818f5f835b0ae97e4cc=1553930228; Hm_lvt_bfc6c23974fbad0bbfed25f88a973fb0=1553516742,1553777905; UM_distinctid=169c461cfa0434-067f298972c8a-3f636f4d-13c680-169c461cfa150d',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.1 Safari/605.1.15',
+  'referer' => 'http://127.0.0.1/admin/company/info?addtabs=1',
+  'accept-language' => 'zh-cn',
+  'x-requested-with' => 'XMLHttpRequest',
+)
+[ info ] [ PARAM ] array (
+  'sort' => 'id',
+  'order' => 'desc',
+  'offset' => '0',
+  'limit' => '10',
+  'filter' => '{}',
+  'op' => '{}',
+  '_' => '1553958464879',
+)
+[ info ] [ LANG ] /Users/work/WEB/fastadmin/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001516s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /Users/work/WEB/fastadmin/public/../application/admin/lang/zh-cn/company/info.php
+[ info ] [ RUN ] app\admin\controller\company\Info->index[ /Users/work/WEB/fastadmin/application/admin/controller/company/Info.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000162s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginvideo\Loginvideo @response_send [ RunTime:0.000349s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000657s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.001165s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000501s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.001241s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.002031s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_company_info` [ RunTime:0.001788s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin` [ RunTime:0.001778s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_company_info` `company_info` LEFT JOIN `fa_admin` `admin` ON `company_info`.`admin_id`=`admin`.`id` ORDER BY `company_info`.`id` DESC LIMIT 1 [ RunTime:0.000773s ]
+[ sql ] [ SQL ] SELECT `company_info`.`id`,`company_info`.`name`,`company_info`.`code`,`company_info`.`type`,`company_info`.`status`,`company_info`.`regCapital`,`company_info`.`scope`,`company_info`.`city`,`company_info`.`address`,`company_info`.`contacts`,`company_info`.`phone`,`company_info`.`account`,`company_info`.`bankname`,`company_info`.`uploadimages`,`company_info`.`remarkcontent`,`company_info`.`createtime`,`company_info`.`updatetime`,`company_info`.`admin_id`,admin.id AS admin__id,admin.username AS admin__username,admin.nickname AS admin__nickname,admin.password AS admin__password,admin.salt AS admin__salt,admin.avatar AS admin__avatar,admin.email AS admin__email,admin.loginfailure AS admin__loginfailure,admin.logintime AS admin__logintime,admin.createtime AS admin__createtime,admin.updatetime AS admin__updatetime,admin.token AS admin__token,admin.status AS admin__status FROM `fa_company_info` `company_info` LEFT JOIN `fa_admin` `admin` ON `company_info`.`admin_id`=`admin`.`id` ORDER BY `company_info`.`id` DESC LIMIT 0,10 [ RunTime:0.002811s ]
+---------------------------------------------------------------
+[ 2019-03-30T23:07:50+08:00 ] 127.0.0.1 GET 127.0.0.1/admin/company/info/index?sort=id&order=desc&offset=10&limit=10&filter=%7B%7D&op=%7B%7D&_=1553958464880
+[运行时间：0.039480s] [吞吐率：25.33req/s] [内存消耗：4,064.34kb] [文件加载：89]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000017s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001696s ]
+[ info ] [ LANG ] /Users/work/WEB/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'company.info',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'content-type' => 'application/json',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => '_uab_collina=155377793871011809706564; Hm_lpvt_baca6fe3dceaf818f5f835b0ae97e4cc=1553930228; Hm_lpvt_3456bee468c83cc63fb5147f119f1075=1553788642; Hm_lpvt_bfc6c23974fbad0bbfed25f88a973fb0=1553777905; PHPSESSID=2aph93tipahci51qk2kpbe6l07; CNZZDATA1254842228=871315088-1553774523-%7C1553785334; Hm_lvt_3456bee468c83cc63fb5147f119f1075=1553777939; Hm_lvt_baca6fe3dceaf818f5f835b0ae97e4cc=1553930228; Hm_lvt_bfc6c23974fbad0bbfed25f88a973fb0=1553516742,1553777905; UM_distinctid=169c461cfa0434-067f298972c8a-3f636f4d-13c680-169c461cfa150d',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.1 Safari/605.1.15',
+  'referer' => 'http://127.0.0.1/admin/company/info?addtabs=1',
+  'accept-language' => 'zh-cn',
+  'x-requested-with' => 'XMLHttpRequest',
+)
+[ info ] [ PARAM ] array (
+  'sort' => 'id',
+  'order' => 'desc',
+  'offset' => '10',
+  'limit' => '10',
+  'filter' => '{}',
+  'op' => '{}',
+  '_' => '1553958464880',
+)
+[ info ] [ LANG ] /Users/work/WEB/fastadmin/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001025s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /Users/work/WEB/fastadmin/public/../application/admin/lang/zh-cn/company/info.php
+[ info ] [ RUN ] app\admin\controller\company\Info->index[ /Users/work/WEB/fastadmin/application/admin/controller/company/Info.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000072s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginvideo\Loginvideo @response_send [ RunTime:0.000125s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000698s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.001455s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000719s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.001028s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001327s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_company_info` [ RunTime:0.001136s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin` [ RunTime:0.000962s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_company_info` `company_info` LEFT JOIN `fa_admin` `admin` ON `company_info`.`admin_id`=`admin`.`id` ORDER BY `company_info`.`id` DESC LIMIT 1 [ RunTime:0.000511s ]
+[ sql ] [ SQL ] SELECT `company_info`.`id`,`company_info`.`name`,`company_info`.`code`,`company_info`.`type`,`company_info`.`status`,`company_info`.`regCapital`,`company_info`.`scope`,`company_info`.`city`,`company_info`.`address`,`company_info`.`contacts`,`company_info`.`phone`,`company_info`.`account`,`company_info`.`bankname`,`company_info`.`uploadimages`,`company_info`.`remarkcontent`,`company_info`.`createtime`,`company_info`.`updatetime`,`company_info`.`admin_id`,admin.id AS admin__id,admin.username AS admin__username,admin.nickname AS admin__nickname,admin.password AS admin__password,admin.salt AS admin__salt,admin.avatar AS admin__avatar,admin.email AS admin__email,admin.loginfailure AS admin__loginfailure,admin.logintime AS admin__logintime,admin.createtime AS admin__createtime,admin.updatetime AS admin__updatetime,admin.token AS admin__token,admin.status AS admin__status FROM `fa_company_info` `company_info` LEFT JOIN `fa_admin` `admin` ON `company_info`.`admin_id`=`admin`.`id` ORDER BY `company_info`.`id` DESC LIMIT 10,10 [ RunTime:0.001371s ]
+---------------------------------------------------------------
+[ 2019-03-30T23:07:52+08:00 ] 127.0.0.1 GET 127.0.0.1/admin/company/info/index?sort=id&order=desc&offset=20&limit=10&filter=%7B%7D&op=%7B%7D&_=1553958464881
+[运行时间：0.042929s] [吞吐率：23.29req/s] [内存消耗：4,064.48kb] [文件加载：89]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000018s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001727s ]
+[ info ] [ LANG ] /Users/work/WEB/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'company.info',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'content-type' => 'application/json',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => '_uab_collina=155377793871011809706564; Hm_lpvt_baca6fe3dceaf818f5f835b0ae97e4cc=1553930228; Hm_lpvt_3456bee468c83cc63fb5147f119f1075=1553788642; Hm_lpvt_bfc6c23974fbad0bbfed25f88a973fb0=1553777905; PHPSESSID=2aph93tipahci51qk2kpbe6l07; CNZZDATA1254842228=871315088-1553774523-%7C1553785334; Hm_lvt_3456bee468c83cc63fb5147f119f1075=1553777939; Hm_lvt_baca6fe3dceaf818f5f835b0ae97e4cc=1553930228; Hm_lvt_bfc6c23974fbad0bbfed25f88a973fb0=1553516742,1553777905; UM_distinctid=169c461cfa0434-067f298972c8a-3f636f4d-13c680-169c461cfa150d',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.1 Safari/605.1.15',
+  'referer' => 'http://127.0.0.1/admin/company/info?addtabs=1',
+  'accept-language' => 'zh-cn',
+  'x-requested-with' => 'XMLHttpRequest',
+)
+[ info ] [ PARAM ] array (
+  'sort' => 'id',
+  'order' => 'desc',
+  'offset' => '20',
+  'limit' => '10',
+  'filter' => '{}',
+  'op' => '{}',
+  '_' => '1553958464881',
+)
+[ info ] [ LANG ] /Users/work/WEB/fastadmin/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001019s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /Users/work/WEB/fastadmin/public/../application/admin/lang/zh-cn/company/info.php
+[ info ] [ RUN ] app\admin\controller\company\Info->index[ /Users/work/WEB/fastadmin/application/admin/controller/company/Info.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000095s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginvideo\Loginvideo @response_send [ RunTime:0.000218s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000889s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.001404s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000474s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.001156s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001368s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_company_info` [ RunTime:0.001070s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin` [ RunTime:0.001069s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_company_info` `company_info` LEFT JOIN `fa_admin` `admin` ON `company_info`.`admin_id`=`admin`.`id` ORDER BY `company_info`.`id` DESC LIMIT 1 [ RunTime:0.000972s ]
+[ sql ] [ SQL ] SELECT `company_info`.`id`,`company_info`.`name`,`company_info`.`code`,`company_info`.`type`,`company_info`.`status`,`company_info`.`regCapital`,`company_info`.`scope`,`company_info`.`city`,`company_info`.`address`,`company_info`.`contacts`,`company_info`.`phone`,`company_info`.`account`,`company_info`.`bankname`,`company_info`.`uploadimages`,`company_info`.`remarkcontent`,`company_info`.`createtime`,`company_info`.`updatetime`,`company_info`.`admin_id`,admin.id AS admin__id,admin.username AS admin__username,admin.nickname AS admin__nickname,admin.password AS admin__password,admin.salt AS admin__salt,admin.avatar AS admin__avatar,admin.email AS admin__email,admin.loginfailure AS admin__loginfailure,admin.logintime AS admin__logintime,admin.createtime AS admin__createtime,admin.updatetime AS admin__updatetime,admin.token AS admin__token,admin.status AS admin__status FROM `fa_company_info` `company_info` LEFT JOIN `fa_admin` `admin` ON `company_info`.`admin_id`=`admin`.`id` ORDER BY `company_info`.`id` DESC LIMIT 20,10 [ RunTime:0.001429s ]
+---------------------------------------------------------------
+[ 2019-03-30T23:07:53+08:00 ] 127.0.0.1 GET 127.0.0.1/admin/company/info/index?sort=id&order=desc&offset=30&limit=10&filter=%7B%7D&op=%7B%7D&_=1553958464882
+[运行时间：0.041034s] [吞吐率：24.37req/s] [内存消耗：4,063.29kb] [文件加载：89]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000020s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001678s ]
+[ info ] [ LANG ] /Users/work/WEB/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'company.info',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'content-type' => 'application/json',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => '_uab_collina=155377793871011809706564; Hm_lpvt_baca6fe3dceaf818f5f835b0ae97e4cc=1553930228; Hm_lpvt_3456bee468c83cc63fb5147f119f1075=1553788642; Hm_lpvt_bfc6c23974fbad0bbfed25f88a973fb0=1553777905; PHPSESSID=2aph93tipahci51qk2kpbe6l07; CNZZDATA1254842228=871315088-1553774523-%7C1553785334; Hm_lvt_3456bee468c83cc63fb5147f119f1075=1553777939; Hm_lvt_baca6fe3dceaf818f5f835b0ae97e4cc=1553930228; Hm_lvt_bfc6c23974fbad0bbfed25f88a973fb0=1553516742,1553777905; UM_distinctid=169c461cfa0434-067f298972c8a-3f636f4d-13c680-169c461cfa150d',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.1 Safari/605.1.15',
+  'referer' => 'http://127.0.0.1/admin/company/info?addtabs=1',
+  'accept-language' => 'zh-cn',
+  'x-requested-with' => 'XMLHttpRequest',
+)
+[ info ] [ PARAM ] array (
+  'sort' => 'id',
+  'order' => 'desc',
+  'offset' => '30',
+  'limit' => '10',
+  'filter' => '{}',
+  'op' => '{}',
+  '_' => '1553958464882',
+)
+[ info ] [ LANG ] /Users/work/WEB/fastadmin/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000969s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /Users/work/WEB/fastadmin/public/../application/admin/lang/zh-cn/company/info.php
+[ info ] [ RUN ] app\admin\controller\company\Info->index[ /Users/work/WEB/fastadmin/application/admin/controller/company/Info.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000075s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginvideo\Loginvideo @response_send [ RunTime:0.000134s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000761s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.001213s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000517s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.001199s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001279s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_company_info` [ RunTime:0.001630s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin` [ RunTime:0.001018s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_company_info` `company_info` LEFT JOIN `fa_admin` `admin` ON `company_info`.`admin_id`=`admin`.`id` ORDER BY `company_info`.`id` DESC LIMIT 1 [ RunTime:0.000596s ]
+[ sql ] [ SQL ] SELECT `company_info`.`id`,`company_info`.`name`,`company_info`.`code`,`company_info`.`type`,`company_info`.`status`,`company_info`.`regCapital`,`company_info`.`scope`,`company_info`.`city`,`company_info`.`address`,`company_info`.`contacts`,`company_info`.`phone`,`company_info`.`account`,`company_info`.`bankname`,`company_info`.`uploadimages`,`company_info`.`remarkcontent`,`company_info`.`createtime`,`company_info`.`updatetime`,`company_info`.`admin_id`,admin.id AS admin__id,admin.username AS admin__username,admin.nickname AS admin__nickname,admin.password AS admin__password,admin.salt AS admin__salt,admin.avatar AS admin__avatar,admin.email AS admin__email,admin.loginfailure AS admin__loginfailure,admin.logintime AS admin__logintime,admin.createtime AS admin__createtime,admin.updatetime AS admin__updatetime,admin.token AS admin__token,admin.status AS admin__status FROM `fa_company_info` `company_info` LEFT JOIN `fa_admin` `admin` ON `company_info`.`admin_id`=`admin`.`id` ORDER BY `company_info`.`id` DESC LIMIT 30,10 [ RunTime:0.001528s ]
+---------------------------------------------------------------
+[ 2019-03-30T23:07:54+08:00 ] 127.0.0.1 GET 127.0.0.1/admin/company/info/index?sort=id&order=desc&offset=40&limit=10&filter=%7B%7D&op=%7B%7D&_=1553958464883
+[运行时间：0.043075s] [吞吐率：23.22req/s] [内存消耗：4,063.65kb] [文件加载：89]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000020s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001746s ]
+[ info ] [ LANG ] /Users/work/WEB/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'company.info',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'content-type' => 'application/json',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => '_uab_collina=155377793871011809706564; Hm_lpvt_baca6fe3dceaf818f5f835b0ae97e4cc=1553930228; Hm_lpvt_3456bee468c83cc63fb5147f119f1075=1553788642; Hm_lpvt_bfc6c23974fbad0bbfed25f88a973fb0=1553777905; PHPSESSID=2aph93tipahci51qk2kpbe6l07; CNZZDATA1254842228=871315088-1553774523-%7C1553785334; Hm_lvt_3456bee468c83cc63fb5147f119f1075=1553777939; Hm_lvt_baca6fe3dceaf818f5f835b0ae97e4cc=1553930228; Hm_lvt_bfc6c23974fbad0bbfed25f88a973fb0=1553516742,1553777905; UM_distinctid=169c461cfa0434-067f298972c8a-3f636f4d-13c680-169c461cfa150d',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.1 Safari/605.1.15',
+  'referer' => 'http://127.0.0.1/admin/company/info?addtabs=1',
+  'accept-language' => 'zh-cn',
+  'x-requested-with' => 'XMLHttpRequest',
+)
+[ info ] [ PARAM ] array (
+  'sort' => 'id',
+  'order' => 'desc',
+  'offset' => '40',
+  'limit' => '10',
+  'filter' => '{}',
+  'op' => '{}',
+  '_' => '1553958464883',
+)
+[ info ] [ LANG ] /Users/work/WEB/fastadmin/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001014s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /Users/work/WEB/fastadmin/public/../application/admin/lang/zh-cn/company/info.php
+[ info ] [ RUN ] app\admin\controller\company\Info->index[ /Users/work/WEB/fastadmin/application/admin/controller/company/Info.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000086s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginvideo\Loginvideo @response_send [ RunTime:0.000144s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000671s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.001300s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000443s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.000963s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001231s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_company_info` [ RunTime:0.001070s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin` [ RunTime:0.000942s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_company_info` `company_info` LEFT JOIN `fa_admin` `admin` ON `company_info`.`admin_id`=`admin`.`id` ORDER BY `company_info`.`id` DESC LIMIT 1 [ RunTime:0.000529s ]
+[ sql ] [ SQL ] SELECT `company_info`.`id`,`company_info`.`name`,`company_info`.`code`,`company_info`.`type`,`company_info`.`status`,`company_info`.`regCapital`,`company_info`.`scope`,`company_info`.`city`,`company_info`.`address`,`company_info`.`contacts`,`company_info`.`phone`,`company_info`.`account`,`company_info`.`bankname`,`company_info`.`uploadimages`,`company_info`.`remarkcontent`,`company_info`.`createtime`,`company_info`.`updatetime`,`company_info`.`admin_id`,admin.id AS admin__id,admin.username AS admin__username,admin.nickname AS admin__nickname,admin.password AS admin__password,admin.salt AS admin__salt,admin.avatar AS admin__avatar,admin.email AS admin__email,admin.loginfailure AS admin__loginfailure,admin.logintime AS admin__logintime,admin.createtime AS admin__createtime,admin.updatetime AS admin__updatetime,admin.token AS admin__token,admin.status AS admin__status FROM `fa_company_info` `company_info` LEFT JOIN `fa_admin` `admin` ON `company_info`.`admin_id`=`admin`.`id` ORDER BY `company_info`.`id` DESC LIMIT 40,10 [ RunTime:0.001398s ]
+---------------------------------------------------------------
+[ 2019-03-30T23:07:56+08:00 ] 127.0.0.1 GET 127.0.0.1/admin/company/info/index?sort=id&order=desc&offset=50&limit=10&filter=%7B%7D&op=%7B%7D&_=1553958464884
+[运行时间：0.040911s] [吞吐率：24.44req/s] [内存消耗：4,064.03kb] [文件加载：89]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000018s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001571s ]
+[ info ] [ LANG ] /Users/work/WEB/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'company.info',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'content-type' => 'application/json',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => '_uab_collina=155377793871011809706564; Hm_lpvt_baca6fe3dceaf818f5f835b0ae97e4cc=1553930228; Hm_lpvt_3456bee468c83cc63fb5147f119f1075=1553788642; Hm_lpvt_bfc6c23974fbad0bbfed25f88a973fb0=1553777905; PHPSESSID=2aph93tipahci51qk2kpbe6l07; CNZZDATA1254842228=871315088-1553774523-%7C1553785334; Hm_lvt_3456bee468c83cc63fb5147f119f1075=1553777939; Hm_lvt_baca6fe3dceaf818f5f835b0ae97e4cc=1553930228; Hm_lvt_bfc6c23974fbad0bbfed25f88a973fb0=1553516742,1553777905; UM_distinctid=169c461cfa0434-067f298972c8a-3f636f4d-13c680-169c461cfa150d',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.1 Safari/605.1.15',
+  'referer' => 'http://127.0.0.1/admin/company/info?addtabs=1',
+  'accept-language' => 'zh-cn',
+  'x-requested-with' => 'XMLHttpRequest',
+)
+[ info ] [ PARAM ] array (
+  'sort' => 'id',
+  'order' => 'desc',
+  'offset' => '50',
+  'limit' => '10',
+  'filter' => '{}',
+  'op' => '{}',
+  '_' => '1553958464884',
+)
+[ info ] [ LANG ] /Users/work/WEB/fastadmin/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001037s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /Users/work/WEB/fastadmin/public/../application/admin/lang/zh-cn/company/info.php
+[ info ] [ RUN ] app\admin\controller\company\Info->index[ /Users/work/WEB/fastadmin/application/admin/controller/company/Info.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000077s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginvideo\Loginvideo @response_send [ RunTime:0.000133s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000945s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.001274s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000515s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.001197s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001283s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_company_info` [ RunTime:0.001134s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin` [ RunTime:0.000946s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_company_info` `company_info` LEFT JOIN `fa_admin` `admin` ON `company_info`.`admin_id`=`admin`.`id` ORDER BY `company_info`.`id` DESC LIMIT 1 [ RunTime:0.000539s ]
+[ sql ] [ SQL ] SELECT `company_info`.`id`,`company_info`.`name`,`company_info`.`code`,`company_info`.`type`,`company_info`.`status`,`company_info`.`regCapital`,`company_info`.`scope`,`company_info`.`city`,`company_info`.`address`,`company_info`.`contacts`,`company_info`.`phone`,`company_info`.`account`,`company_info`.`bankname`,`company_info`.`uploadimages`,`company_info`.`remarkcontent`,`company_info`.`createtime`,`company_info`.`updatetime`,`company_info`.`admin_id`,admin.id AS admin__id,admin.username AS admin__username,admin.nickname AS admin__nickname,admin.password AS admin__password,admin.salt AS admin__salt,admin.avatar AS admin__avatar,admin.email AS admin__email,admin.loginfailure AS admin__loginfailure,admin.logintime AS admin__logintime,admin.createtime AS admin__createtime,admin.updatetime AS admin__updatetime,admin.token AS admin__token,admin.status AS admin__status FROM `fa_company_info` `company_info` LEFT JOIN `fa_admin` `admin` ON `company_info`.`admin_id`=`admin`.`id` ORDER BY `company_info`.`id` DESC LIMIT 50,10 [ RunTime:0.001402s ]
+---------------------------------------------------------------
+[ 2019-03-30T23:07:57+08:00 ] 127.0.0.1 GET 127.0.0.1/admin/company/info/index?sort=id&order=desc&offset=60&limit=10&filter=%7B%7D&op=%7B%7D&_=1553958464885
+[运行时间：0.041195s] [吞吐率：24.27req/s] [内存消耗：4,063.62kb] [文件加载：89]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000032s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001617s ]
+[ info ] [ LANG ] /Users/work/WEB/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'company.info',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'content-type' => 'application/json',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => '_uab_collina=155377793871011809706564; Hm_lpvt_baca6fe3dceaf818f5f835b0ae97e4cc=1553930228; Hm_lpvt_3456bee468c83cc63fb5147f119f1075=1553788642; Hm_lpvt_bfc6c23974fbad0bbfed25f88a973fb0=1553777905; PHPSESSID=2aph93tipahci51qk2kpbe6l07; CNZZDATA1254842228=871315088-1553774523-%7C1553785334; Hm_lvt_3456bee468c83cc63fb5147f119f1075=1553777939; Hm_lvt_baca6fe3dceaf818f5f835b0ae97e4cc=1553930228; Hm_lvt_bfc6c23974fbad0bbfed25f88a973fb0=1553516742,1553777905; UM_distinctid=169c461cfa0434-067f298972c8a-3f636f4d-13c680-169c461cfa150d',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.1 Safari/605.1.15',
+  'referer' => 'http://127.0.0.1/admin/company/info?addtabs=1',
+  'accept-language' => 'zh-cn',
+  'x-requested-with' => 'XMLHttpRequest',
+)
+[ info ] [ PARAM ] array (
+  'sort' => 'id',
+  'order' => 'desc',
+  'offset' => '60',
+  'limit' => '10',
+  'filter' => '{}',
+  'op' => '{}',
+  '_' => '1553958464885',
+)
+[ info ] [ LANG ] /Users/work/WEB/fastadmin/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001014s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /Users/work/WEB/fastadmin/public/../application/admin/lang/zh-cn/company/info.php
+[ info ] [ RUN ] app\admin\controller\company\Info->index[ /Users/work/WEB/fastadmin/application/admin/controller/company/Info.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000072s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginvideo\Loginvideo @response_send [ RunTime:0.000129s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000687s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.001247s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000591s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.001911s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001493s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_company_info` [ RunTime:0.001049s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin` [ RunTime:0.000958s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_company_info` `company_info` LEFT JOIN `fa_admin` `admin` ON `company_info`.`admin_id`=`admin`.`id` ORDER BY `company_info`.`id` DESC LIMIT 1 [ RunTime:0.000568s ]
+[ sql ] [ SQL ] SELECT `company_info`.`id`,`company_info`.`name`,`company_info`.`code`,`company_info`.`type`,`company_info`.`status`,`company_info`.`regCapital`,`company_info`.`scope`,`company_info`.`city`,`company_info`.`address`,`company_info`.`contacts`,`company_info`.`phone`,`company_info`.`account`,`company_info`.`bankname`,`company_info`.`uploadimages`,`company_info`.`remarkcontent`,`company_info`.`createtime`,`company_info`.`updatetime`,`company_info`.`admin_id`,admin.id AS admin__id,admin.username AS admin__username,admin.nickname AS admin__nickname,admin.password AS admin__password,admin.salt AS admin__salt,admin.avatar AS admin__avatar,admin.email AS admin__email,admin.loginfailure AS admin__loginfailure,admin.logintime AS admin__logintime,admin.createtime AS admin__createtime,admin.updatetime AS admin__updatetime,admin.token AS admin__token,admin.status AS admin__status FROM `fa_company_info` `company_info` LEFT JOIN `fa_admin` `admin` ON `company_info`.`admin_id`=`admin`.`id` ORDER BY `company_info`.`id` DESC LIMIT 60,10 [ RunTime:0.001403s ]
+---------------------------------------------------------------
+[ 2019-03-30T23:07:58+08:00 ] 127.0.0.1 GET 127.0.0.1/admin/company/info/index?sort=id&order=desc&offset=70&limit=10&filter=%7B%7D&op=%7B%7D&_=1553958464886
+[运行时间：0.041017s] [吞吐率：24.38req/s] [内存消耗：4,063.68kb] [文件加载：89]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000026s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001530s ]
+[ info ] [ LANG ] /Users/work/WEB/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'company.info',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'content-type' => 'application/json',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => '_uab_collina=155377793871011809706564; Hm_lpvt_baca6fe3dceaf818f5f835b0ae97e4cc=1553930228; Hm_lpvt_3456bee468c83cc63fb5147f119f1075=1553788642; Hm_lpvt_bfc6c23974fbad0bbfed25f88a973fb0=1553777905; PHPSESSID=2aph93tipahci51qk2kpbe6l07; CNZZDATA1254842228=871315088-1553774523-%7C1553785334; Hm_lvt_3456bee468c83cc63fb5147f119f1075=1553777939; Hm_lvt_baca6fe3dceaf818f5f835b0ae97e4cc=1553930228; Hm_lvt_bfc6c23974fbad0bbfed25f88a973fb0=1553516742,1553777905; UM_distinctid=169c461cfa0434-067f298972c8a-3f636f4d-13c680-169c461cfa150d',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.1 Safari/605.1.15',
+  'referer' => 'http://127.0.0.1/admin/company/info?addtabs=1',
+  'accept-language' => 'zh-cn',
+  'x-requested-with' => 'XMLHttpRequest',
+)
+[ info ] [ PARAM ] array (
+  'sort' => 'id',
+  'order' => 'desc',
+  'offset' => '70',
+  'limit' => '10',
+  'filter' => '{}',
+  'op' => '{}',
+  '_' => '1553958464886',
+)
+[ info ] [ LANG ] /Users/work/WEB/fastadmin/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001137s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /Users/work/WEB/fastadmin/public/../application/admin/lang/zh-cn/company/info.php
+[ info ] [ RUN ] app\admin\controller\company\Info->index[ /Users/work/WEB/fastadmin/application/admin/controller/company/Info.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000074s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginvideo\Loginvideo @response_send [ RunTime:0.000142s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000949s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.001172s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000516s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.001097s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001250s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_company_info` [ RunTime:0.001112s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin` [ RunTime:0.000953s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_company_info` `company_info` LEFT JOIN `fa_admin` `admin` ON `company_info`.`admin_id`=`admin`.`id` ORDER BY `company_info`.`id` DESC LIMIT 1 [ RunTime:0.000609s ]
+[ sql ] [ SQL ] SELECT `company_info`.`id`,`company_info`.`name`,`company_info`.`code`,`company_info`.`type`,`company_info`.`status`,`company_info`.`regCapital`,`company_info`.`scope`,`company_info`.`city`,`company_info`.`address`,`company_info`.`contacts`,`company_info`.`phone`,`company_info`.`account`,`company_info`.`bankname`,`company_info`.`uploadimages`,`company_info`.`remarkcontent`,`company_info`.`createtime`,`company_info`.`updatetime`,`company_info`.`admin_id`,admin.id AS admin__id,admin.username AS admin__username,admin.nickname AS admin__nickname,admin.password AS admin__password,admin.salt AS admin__salt,admin.avatar AS admin__avatar,admin.email AS admin__email,admin.loginfailure AS admin__loginfailure,admin.logintime AS admin__logintime,admin.createtime AS admin__createtime,admin.updatetime AS admin__updatetime,admin.token AS admin__token,admin.status AS admin__status FROM `fa_company_info` `company_info` LEFT JOIN `fa_admin` `admin` ON `company_info`.`admin_id`=`admin`.`id` ORDER BY `company_info`.`id` DESC LIMIT 70,10 [ RunTime:0.001479s ]
+---------------------------------------------------------------
+[ 2019-03-30T23:08:00+08:00 ] 127.0.0.1 GET 127.0.0.1/admin/company/info/index?sort=id&order=desc&offset=270&limit=10&filter=%7B%7D&op=%7B%7D&_=1553958464887
+[运行时间：0.041791s] [吞吐率：23.93req/s] [内存消耗：4,055.30kb] [文件加载：89]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000024s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001681s ]
+[ info ] [ LANG ] /Users/work/WEB/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'company.info',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'content-type' => 'application/json',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => '_uab_collina=155377793871011809706564; Hm_lpvt_baca6fe3dceaf818f5f835b0ae97e4cc=1553930228; Hm_lpvt_3456bee468c83cc63fb5147f119f1075=1553788642; Hm_lpvt_bfc6c23974fbad0bbfed25f88a973fb0=1553777905; PHPSESSID=2aph93tipahci51qk2kpbe6l07; CNZZDATA1254842228=871315088-1553774523-%7C1553785334; Hm_lvt_3456bee468c83cc63fb5147f119f1075=1553777939; Hm_lvt_baca6fe3dceaf818f5f835b0ae97e4cc=1553930228; Hm_lvt_bfc6c23974fbad0bbfed25f88a973fb0=1553516742,1553777905; UM_distinctid=169c461cfa0434-067f298972c8a-3f636f4d-13c680-169c461cfa150d',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.1 Safari/605.1.15',
+  'referer' => 'http://127.0.0.1/admin/company/info?addtabs=1',
+  'accept-language' => 'zh-cn',
+  'x-requested-with' => 'XMLHttpRequest',
+)
+[ info ] [ PARAM ] array (
+  'sort' => 'id',
+  'order' => 'desc',
+  'offset' => '270',
+  'limit' => '10',
+  'filter' => '{}',
+  'op' => '{}',
+  '_' => '1553958464887',
+)
+[ info ] [ LANG ] /Users/work/WEB/fastadmin/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001049s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /Users/work/WEB/fastadmin/public/../application/admin/lang/zh-cn/company/info.php
+[ info ] [ RUN ] app\admin\controller\company\Info->index[ /Users/work/WEB/fastadmin/application/admin/controller/company/Info.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000081s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginvideo\Loginvideo @response_send [ RunTime:0.000131s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000795s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.001241s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000499s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.001019s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001288s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_company_info` [ RunTime:0.001138s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin` [ RunTime:0.000950s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_company_info` `company_info` LEFT JOIN `fa_admin` `admin` ON `company_info`.`admin_id`=`admin`.`id` ORDER BY `company_info`.`id` DESC LIMIT 1 [ RunTime:0.000544s ]
+[ sql ] [ SQL ] SELECT `company_info`.`id`,`company_info`.`name`,`company_info`.`code`,`company_info`.`type`,`company_info`.`status`,`company_info`.`regCapital`,`company_info`.`scope`,`company_info`.`city`,`company_info`.`address`,`company_info`.`contacts`,`company_info`.`phone`,`company_info`.`account`,`company_info`.`bankname`,`company_info`.`uploadimages`,`company_info`.`remarkcontent`,`company_info`.`createtime`,`company_info`.`updatetime`,`company_info`.`admin_id`,admin.id AS admin__id,admin.username AS admin__username,admin.nickname AS admin__nickname,admin.password AS admin__password,admin.salt AS admin__salt,admin.avatar AS admin__avatar,admin.email AS admin__email,admin.loginfailure AS admin__loginfailure,admin.logintime AS admin__logintime,admin.createtime AS admin__createtime,admin.updatetime AS admin__updatetime,admin.token AS admin__token,admin.status AS admin__status FROM `fa_company_info` `company_info` LEFT JOIN `fa_admin` `admin` ON `company_info`.`admin_id`=`admin`.`id` ORDER BY `company_info`.`id` DESC LIMIT 270,10 [ RunTime:0.001703s ]
+---------------------------------------------------------------
+[ 2019-03-30T23:08:03+08:00 ] 127.0.0.1 POST 127.0.0.1/admin/ajax/upload
+[运行时间：0.104219s] [吞吐率：9.60req/s] [内存消耗：3,693.02kb] [文件加载：85]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000021s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001469s ]
+[ info ] [ LANG ] /Users/work/WEB/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'upload',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundary5ZGiRhkCrO6zlZOZ',
+  'origin' => 'http://127.0.0.1',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'Hm_lpvt_baca6fe3dceaf818f5f835b0ae97e4cc=1553930228; Hm_lpvt_3456bee468c83cc63fb5147f119f1075=1553788642; Hm_lpvt_bfc6c23974fbad0bbfed25f88a973fb0=1553777905; PHPSESSID=2aph93tipahci51qk2kpbe6l07; CNZZDATA1254842228=871315088-1553774523-%7C1553785334; Hm_lvt_3456bee468c83cc63fb5147f119f1075=1553777939; Hm_lvt_baca6fe3dceaf818f5f835b0ae97e4cc=1553930228; Hm_lvt_bfc6c23974fbad0bbfed25f88a973fb0=1553516742,1553777905; UM_distinctid=169c461cfa0434-067f298972c8a-3f636f4d-13c680-169c461cfa150d',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.1 Safari/605.1.15',
+  'referer' => 'http://127.0.0.1/admin/company/info?addtabs=1',
+  'content-length' => '9894',
+  'accept-language' => 'zh-cn',
+)
+[ info ] [ PARAM ] array (
+  'name' => 'test.xlsx',
+)
+[ info ] [ LANG ] /Users/work/WEB/fastadmin/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001121s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] /Users/work/WEB/fastadmin/public/../application/admin/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\admin\controller\Ajax->upload[ /Users/work/WEB/fastadmin/application/admin/controller/Ajax.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\thumb\Thumb @upload_after [ RunTime:0.000217s ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.003764s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginvideo\Loginvideo @response_send [ RunTime:0.000238s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001086s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_attachment` [ RunTime:0.001341s ]
+[ sql ] [ SQL ] INSERT INTO `fa_attachment` (`admin_id` , `filesize` , `imagetype` , `mimetype` , `url` , `uploadtime` , `storage` , `sha1` , `createtime` , `updatetime`) VALUES (1 , 9556 , 'xlsx' , 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet' , '/uploads/20190330/2ebdfe9cdf1967b24b1462616b931939.xlsx' , 1553958483 , 'local' , '06d9afa7218081f9de304681bffa12b3208581a5' , 1553958483 , 1553958483) [ RunTime:0.066355s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin_log` [ RunTime:0.001563s ]
+[ sql ] [ SQL ] INSERT INTO `fa_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('' , '{\"name\":\"test.xlsx\"}' , '/admin/ajax/upload' , 1 , 'admin' , 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.1 Safari/605.1.15' , '127.0.0.1' , 1553958483) [ RunTime:0.001392s ]
+---------------------------------------------------------------
+[ 2019-03-30T23:08:33+08:00 ] 127.0.0.1 POST 127.0.0.1/admin/company/info/import
+[运行时间：30.071922s] [吞吐率：0.03req/s] [内存消耗：6,617.63kb] [文件加载：130]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000021s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001685s ]
+[ info ] [ LANG ] /Users/work/WEB/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'company.info',
+    2 => 'import',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'origin' => 'http://127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.1 Safari/605.1.15',
+  'connection' => 'keep-alive',
+  'referer' => 'http://127.0.0.1/admin/company/info?addtabs=1',
+  'content-length' => '66',
+  'cookie' => '_uab_collina=155377793871011809706564; Hm_lpvt_baca6fe3dceaf818f5f835b0ae97e4cc=1553930228; Hm_lpvt_3456bee468c83cc63fb5147f119f1075=1553788642; Hm_lpvt_bfc6c23974fbad0bbfed25f88a973fb0=1553777905; PHPSESSID=2aph93tipahci51qk2kpbe6l07; CNZZDATA1254842228=871315088-1553774523-%7C1553785334; Hm_lvt_3456bee468c83cc63fb5147f119f1075=1553777939; Hm_lvt_baca6fe3dceaf818f5f835b0ae97e4cc=1553930228; Hm_lvt_bfc6c23974fbad0bbfed25f88a973fb0=1553516742,1553777905; UM_distinctid=169c461cfa0434-067f298972c8a-3f636f4d-13c680-169c461cfa150d',
+)
+[ info ] [ PARAM ] array (
+  'file' => '/uploads/20190330/2ebdfe9cdf1967b24b1462616b931939.xlsx',
+)
+[ info ] [ LANG ] /Users/work/WEB/fastadmin/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001248s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /Users/work/WEB/fastadmin/public/../application/admin/lang/zh-cn/company/info.php
+[ info ] [ RUN ] app\admin\controller\company\Info->import[ /Users/work/WEB/fastadmin/application/admin/controller/company/Info.php ]
+[ info ] [ BEHAVIOR ] Run \addons\loginvideo\Loginvideo @response_send [ RunTime:0.000195s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000544s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.001112s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000624s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.001075s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001382s ]
+[ sql ] [ SQL ] SELECT COLUMN_NAME,COLUMN_COMMENT FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'fa_company_info' AND TABLE_SCHEMA = 'fastadmin' [ RunTime:0.000954s ]
+[ error ] [2]file_get_contents(): php_network_getaddresses: getaddrinfo failed: nodename nor servname provided, or not known[/Users/work/WEB/fastadmin/application/admin/controller/company/Info.php:75]
+---------------------------------------------------------------
+[ 2019-03-30T23:16:15+08:00 ] 127.0.0.1 GET 127.0.0.1/admin/company/info/test?key=%E6%A1%83%E6%BA%90%E5%8E%BF%E6%A3%AE%E5%92%8C%E7%9F%B3%E6%96%99%E5%9C%BA
+[运行时间：0.931897s] [吞吐率：1.07req/s] [内存消耗：3,802.15kb] [文件加载：81]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000024s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001978s ]
+[ info ] [ LANG ] /Users/work/WEB/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'company.info',
+    2 => 'test',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'cookie' => '_uab_collina=155377793871011809706564; Hm_lpvt_baca6fe3dceaf818f5f835b0ae97e4cc=1553930228; Hm_lpvt_3456bee468c83cc63fb5147f119f1075=1553788642; Hm_lpvt_bfc6c23974fbad0bbfed25f88a973fb0=1553777905; PHPSESSID=2aph93tipahci51qk2kpbe6l07; CNZZDATA1254842228=871315088-1553774523-%7C1553785334; Hm_lvt_3456bee468c83cc63fb5147f119f1075=1553777939; Hm_lvt_baca6fe3dceaf818f5f835b0ae97e4cc=1553930228; Hm_lvt_bfc6c23974fbad0bbfed25f88a973fb0=1553516742,1553777905; UM_distinctid=169c461cfa0434-067f298972c8a-3f636f4d-13c680-169c461cfa150d',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.1 Safari/605.1.15',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'key' => '桃源县森和石料场',
+)
+[ info ] [ LANG ] /Users/work/WEB/fastadmin/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001056s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /Users/work/WEB/fastadmin/public/../application/admin/lang/zh-cn/company/info.php
+[ info ] [ RUN ] app\admin\controller\company\Info->test[ /Users/work/WEB/fastadmin/application/admin/controller/company/Info.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000170s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginvideo\Loginvideo @response_send [ RunTime:0.000264s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000605s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.001202s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000540s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.001046s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001282s ]
+---------------------------------------------------------------
+[ 2019-03-30T23:16:15+08:00 ] 127.0.0.1 GET 127.0.0.1/favicon.ico
+[运行时间：0.017745s] [吞吐率：56.35req/s] [内存消耗：1,919.02kb] [文件加载：58]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000017s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001549s ]
+[ info ] [ LANG ] /Users/work/WEB/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'favicon.ico',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+  'cookie' => 'Hm_lpvt_baca6fe3dceaf818f5f835b0ae97e4cc=1553930228; Hm_lpvt_3456bee468c83cc63fb5147f119f1075=1553788642; Hm_lpvt_bfc6c23974fbad0bbfed25f88a973fb0=1553777905; PHPSESSID=2aph93tipahci51qk2kpbe6l07; CNZZDATA1254842228=871315088-1553774523-%7C1553785334; Hm_lvt_3456bee468c83cc63fb5147f119f1075=1553777939; Hm_lvt_baca6fe3dceaf818f5f835b0ae97e4cc=1553930228; Hm_lvt_bfc6c23974fbad0bbfed25f88a973fb0=1553516742,1553777905; UM_distinctid=169c461cfa0434-067f298972c8a-3f636f4d-13c680-169c461cfa150d',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.1 Safari/605.1.15',
+  'accept-language' => 'zh-cn',
+  'referer' => 'http://127.0.0.1/admin/company/info/test?key=%E6%A1%83%E6%BA%90%E5%8E%BF%E6%A3%AE%E5%92%8C%E7%9F%B3%E6%96%99%E5%9C%BA',
+  'accept-encoding' => 'gzip, deflate',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run \addons\loginvideo\Loginvideo @response_send [ RunTime:0.001658s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-03-30T23:16:21+08:00 ] 127.0.0.1 GET 127.0.0.1/admin/company/info/test?key=%E6%A1%83%E6%BA%90%E5%8E%BF%E6%A3%AE%E5%92%8C%E7%9F%B3
+[运行时间：0.573389s] [吞吐率：1.74req/s] [内存消耗：3,802.04kb] [文件加载：81]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000025s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001740s ]
+[ info ] [ LANG ] /Users/work/WEB/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'company.info',
+    2 => 'test',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'cookie' => '_uab_collina=155377793871011809706564; Hm_lpvt_baca6fe3dceaf818f5f835b0ae97e4cc=1553930228; Hm_lpvt_3456bee468c83cc63fb5147f119f1075=1553788642; Hm_lpvt_bfc6c23974fbad0bbfed25f88a973fb0=1553777905; PHPSESSID=2aph93tipahci51qk2kpbe6l07; CNZZDATA1254842228=871315088-1553774523-%7C1553785334; Hm_lvt_3456bee468c83cc63fb5147f119f1075=1553777939; Hm_lvt_baca6fe3dceaf818f5f835b0ae97e4cc=1553930228; Hm_lvt_bfc6c23974fbad0bbfed25f88a973fb0=1553516742,1553777905; UM_distinctid=169c461cfa0434-067f298972c8a-3f636f4d-13c680-169c461cfa150d',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.1 Safari/605.1.15',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'key' => '桃源县森和石',
+)
+[ info ] [ LANG ] /Users/work/WEB/fastadmin/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000999s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /Users/work/WEB/fastadmin/public/../application/admin/lang/zh-cn/company/info.php
+[ info ] [ RUN ] app\admin\controller\company\Info->test[ /Users/work/WEB/fastadmin/application/admin/controller/company/Info.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000172s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginvideo\Loginvideo @response_send [ RunTime:0.000261s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000738s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.001144s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000544s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.001228s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001276s ]
+---------------------------------------------------------------
+[ 2019-03-30T23:16:21+08:00 ] 127.0.0.1 GET 127.0.0.1/favicon.ico
+[运行时间：0.016660s] [吞吐率：60.02req/s] [内存消耗：1,918.93kb] [文件加载：58]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000019s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001909s ]
+[ info ] [ LANG ] /Users/work/WEB/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'favicon.ico',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+  'cookie' => 'Hm_lpvt_baca6fe3dceaf818f5f835b0ae97e4cc=1553930228; Hm_lpvt_3456bee468c83cc63fb5147f119f1075=1553788642; Hm_lpvt_bfc6c23974fbad0bbfed25f88a973fb0=1553777905; PHPSESSID=2aph93tipahci51qk2kpbe6l07; CNZZDATA1254842228=871315088-1553774523-%7C1553785334; Hm_lvt_3456bee468c83cc63fb5147f119f1075=1553777939; Hm_lvt_baca6fe3dceaf818f5f835b0ae97e4cc=1553930228; Hm_lvt_bfc6c23974fbad0bbfed25f88a973fb0=1553516742,1553777905; UM_distinctid=169c461cfa0434-067f298972c8a-3f636f4d-13c680-169c461cfa150d',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.1 Safari/605.1.15',
+  'accept-language' => 'zh-cn',
+  'referer' => 'http://127.0.0.1/admin/company/info/test?key=%E6%A1%83%E6%BA%90%E5%8E%BF%E6%A3%AE%E5%92%8C%E7%9F%B3',
+  'accept-encoding' => 'gzip, deflate',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run \addons\loginvideo\Loginvideo @response_send [ RunTime:0.001625s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-03-30T23:16:37+08:00 ] 127.0.0.1 GET 127.0.0.1/admin/company/info/test?key=%E6%B9%96%E5%8D%97%E6%B5%A9%E5%AE%87%E5%BB%BA%E8%AE%BE%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8
+[运行时间：0.836243s] [吞吐率：1.20req/s] [内存消耗：3,802.29kb] [文件加载：81]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000016s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001453s ]
+[ info ] [ LANG ] /Users/work/WEB/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'company.info',
+    2 => 'test',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'cookie' => '_uab_collina=155377793871011809706564; Hm_lpvt_baca6fe3dceaf818f5f835b0ae97e4cc=1553930228; Hm_lpvt_3456bee468c83cc63fb5147f119f1075=1553788642; Hm_lpvt_bfc6c23974fbad0bbfed25f88a973fb0=1553777905; PHPSESSID=2aph93tipahci51qk2kpbe6l07; CNZZDATA1254842228=871315088-1553774523-%7C1553785334; Hm_lvt_3456bee468c83cc63fb5147f119f1075=1553777939; Hm_lvt_baca6fe3dceaf818f5f835b0ae97e4cc=1553930228; Hm_lvt_bfc6c23974fbad0bbfed25f88a973fb0=1553516742,1553777905; UM_distinctid=169c461cfa0434-067f298972c8a-3f636f4d-13c680-169c461cfa150d',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.1 Safari/605.1.15',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'key' => '湖南浩宇建设有限公司',
+)
+[ info ] [ LANG ] /Users/work/WEB/fastadmin/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001110s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /Users/work/WEB/fastadmin/public/../application/admin/lang/zh-cn/company/info.php
+[ info ] [ RUN ] app\admin\controller\company\Info->test[ /Users/work/WEB/fastadmin/application/admin/controller/company/Info.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000162s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginvideo\Loginvideo @response_send [ RunTime:0.000212s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000687s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.001089s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000490s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.001018s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001273s ]
+---------------------------------------------------------------
+[ 2019-03-30T23:17:06+08:00 ] 127.0.0.1 POST 127.0.0.1/admin/ajax/upload
+[运行时间：0.106957s] [吞吐率：9.35req/s] [内存消耗：3,693.02kb] [文件加载：85]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000018s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001590s ]
+[ info ] [ LANG ] /Users/work/WEB/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'upload',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryHs1WBSM6E5cEFYEh',
+  'origin' => 'http://127.0.0.1',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'Hm_lpvt_baca6fe3dceaf818f5f835b0ae97e4cc=1553930228; Hm_lpvt_3456bee468c83cc63fb5147f119f1075=1553788642; Hm_lpvt_bfc6c23974fbad0bbfed25f88a973fb0=1553777905; PHPSESSID=2aph93tipahci51qk2kpbe6l07; CNZZDATA1254842228=871315088-1553774523-%7C1553785334; Hm_lvt_3456bee468c83cc63fb5147f119f1075=1553777939; Hm_lvt_baca6fe3dceaf818f5f835b0ae97e4cc=1553930228; Hm_lvt_bfc6c23974fbad0bbfed25f88a973fb0=1553516742,1553777905; UM_distinctid=169c461cfa0434-067f298972c8a-3f636f4d-13c680-169c461cfa150d',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.1 Safari/605.1.15',
+  'referer' => 'http://127.0.0.1/admin/company/info?addtabs=1',
+  'content-length' => '9894',
+  'accept-language' => 'zh-cn',
+)
+[ info ] [ PARAM ] array (
+  'name' => 'test.xlsx',
+)
+[ info ] [ LANG ] /Users/work/WEB/fastadmin/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001123s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] /Users/work/WEB/fastadmin/public/../application/admin/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\admin\controller\Ajax->upload[ /Users/work/WEB/fastadmin/application/admin/controller/Ajax.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\thumb\Thumb @upload_after [ RunTime:0.000169s ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.003512s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginvideo\Loginvideo @response_send [ RunTime:0.000375s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000633s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_attachment` [ RunTime:0.001179s ]
+[ sql ] [ SQL ] INSERT INTO `fa_attachment` (`admin_id` , `filesize` , `imagetype` , `mimetype` , `url` , `uploadtime` , `storage` , `sha1` , `createtime` , `updatetime`) VALUES (1 , 9556 , 'xlsx' , 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet' , '/uploads/20190330/2ebdfe9cdf1967b24b1462616b931939.xlsx' , 1553959026 , 'local' , '06d9afa7218081f9de304681bffa12b3208581a5' , 1553959026 , 1553959026) [ RunTime:0.069565s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin_log` [ RunTime:0.001390s ]
+[ sql ] [ SQL ] INSERT INTO `fa_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('' , '{\"name\":\"test.xlsx\"}' , '/admin/ajax/upload' , 1 , 'admin' , 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.1 Safari/605.1.15' , '127.0.0.1' , 1553959026) [ RunTime:0.001298s ]
+---------------------------------------------------------------
+[ 2019-03-30T23:17:43+08:00 ] 127.0.0.1 POST 127.0.0.1/admin/company/info/import
+[运行时间：36.717131s] [吞吐率：0.03req/s] [内存消耗：6,648.34kb] [文件加载：129]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000024s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001801s ]
+[ info ] [ LANG ] /Users/work/WEB/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'company.info',
+    2 => 'import',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'origin' => 'http://127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.1 Safari/605.1.15',
+  'connection' => 'keep-alive',
+  'referer' => 'http://127.0.0.1/admin/company/info?addtabs=1',
+  'content-length' => '66',
+  'cookie' => '_uab_collina=155377793871011809706564; Hm_lpvt_baca6fe3dceaf818f5f835b0ae97e4cc=1553930228; Hm_lpvt_3456bee468c83cc63fb5147f119f1075=1553788642; Hm_lpvt_bfc6c23974fbad0bbfed25f88a973fb0=1553777905; PHPSESSID=2aph93tipahci51qk2kpbe6l07; CNZZDATA1254842228=871315088-1553774523-%7C1553785334; Hm_lvt_3456bee468c83cc63fb5147f119f1075=1553777939; Hm_lvt_baca6fe3dceaf818f5f835b0ae97e4cc=1553930228; Hm_lvt_bfc6c23974fbad0bbfed25f88a973fb0=1553516742,1553777905; UM_distinctid=169c461cfa0434-067f298972c8a-3f636f4d-13c680-169c461cfa150d',
+)
+[ info ] [ PARAM ] array (
+  'file' => '/uploads/20190330/2ebdfe9cdf1967b24b1462616b931939.xlsx',
+)
+[ info ] [ LANG ] /Users/work/WEB/fastadmin/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001128s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /Users/work/WEB/fastadmin/public/../application/admin/lang/zh-cn/company/info.php
+[ info ] [ RUN ] app\admin\controller\company\Info->import[ /Users/work/WEB/fastadmin/application/admin/controller/company/Info.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.004649s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginvideo\Loginvideo @response_send [ RunTime:0.000219s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000711s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.001243s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000445s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.000966s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001417s ]
+[ sql ] [ SQL ] SELECT COLUMN_NAME,COLUMN_COMMENT FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'fa_company_info' AND TABLE_SCHEMA = 'fastadmin' [ RunTime:0.001059s ]
+[ sql ] [ SQL ] 'fastadmin'fa_company_info'HOW COLUMNS FROM `fa_company_info` [ RunTime:0.001960s ]
+[ sql ] [ SQL ] INSERT INTO `fa_company_info` (`name` , `code` , `type` , `status` , `regCapital` , `scope` , `address` , `contacts` , `createtime` , `updatetime`) VALUES ('常德市永安金属制品有限公司' , '9143070258899106XT' , '有限责任公司(自然人独资)' , '开业' , '200万(元)' , '金属材料、金属制品的销售；金属结构制造；活动房屋、金属护栏的租赁及销售。' , '常德市武陵区丹阳街道办事处柏子园社区丹阳路56号(紫金华庭3幢6楼602号)' , '颜志永' , 1553959063 , 1553959063) [ RunTime:0.000706s ]
+[ sql ] [ SQL ] INSERT INTO `fa_company_info` (`name` , `code` , `type` , `status` , `regCapital` , `scope` , `address` , `contacts` , `createtime` , `updatetime`) VALUES ('常德市勇哥金属材料销售有限公司' , '91430702MA4LBT8T0L' , '有限责任公司(自然人独资)' , '开业' , '-' , '-' , '常德市武陵区南坪街道办事处汇金社区市场中路29号(恒福花苑1幢101号)' , '阳文勇' , 1553959063 , 1553959063) [ RunTime:0.000495s ]
+[ sql ] [ SQL ] INSERT INTO `fa_company_info` (`name` , `code` , `type` , `status` , `regCapital` , `scope` , `address` , `contacts` , `createtime` , `updatetime`) VALUES ('常德市有强建筑设备器材租赁有限公司' , '914307033447636420' , '有限责任公司(自然人独资)' , '开业' , '-' , '-' , '常德市鼎城区玉霞街道永安社区新民巷安置小区18号' , '陈天喜' , 1553959063 , 1553959063) [ RunTime:0.000523s ]
+[ sql ] [ SQL ] INSERT INTO `fa_company_info` (`name` , `code` , `type` , `status` , `regCapital` , `scope` , `address` , `contacts` , `createtime` , `updatetime`) VALUES ('常德市雨田建筑设备租赁有限公司' , '91430700MA4PDXLK51' , '有限责任公司(自然人独资)' , '开业' , '-' , '-' , '湖南省常德经济技术开发区樟木桥街道苏家渡社区二十七组' , '邱建忠' , 1553959063 , 1553959063) [ RunTime:0.000429s ]
+[ sql ] [ SQL ] INSERT INTO `fa_company_info` (`name` , `code` , `type` , `status` , `regCapital` , `scope` , `address` , `contacts` , `createtime` , `updatetime`) VALUES ('常德市禹农防水保温工程有限公司' , '91430702MA4L2DP25W' , '有限责任公司(自然人独资)' , '开业' , '-' , '-' , '常德市武陵区白马湖街道办事处长家山社区洞庭大道(德景园4栋701号)' , '张艳' , 1553959063 , 1553959063) [ RunTime:0.000466s ]
+[ sql ] [ SQL ] INSERT INTO `fa_company_info` (`name` , `code` , `type` , `status` , `regCapital` , `scope` , `address` , `contacts` , `createtime` , `updatetime`) VALUES ('常德市裕泰木业销售有限公司' , '914307020891890723' , '有限责任公司(自然人投资或控股)' , '开业' , '50万(元)' , '楠竹及制品、原木、原条的销售。（依法须经批准的项目，经相关部门批准后方可开展经营活动）' , '常德市武陵区芷兰街道办事处腰路铺村10组' , '张松果' , 1553959063 , 1553959063) [ RunTime:0.000421s ]
+[ sql ] [ SQL ] INSERT INTO `fa_company_info` (`name` , `code` , `type` , `status` , `regCapital` , `scope` , `address` , `contacts` , `createtime` , `updatetime`) VALUES ('常德市远航塑管科技有限公司' , '91430700062211946M' , '有限责任公司(自然人投资或控股)' , '开业' , '1,680万(元)' , '塑料制品的研发、生产与销售。（涉及行政许可的项目凭许可证经营）' , '常德经济技术开发区德山镇五一居委会(塑料厂院内)' , '王五老' , 1553959063 , 1553959063) [ RunTime:0.000453s ]
+[ sql ] [ SQL ] INSERT INTO `fa_company_info` (`name` , `code` , `type` , `status` , `regCapital` , `scope` , `address` , `contacts` , `createtime` , `updatetime`) VALUES ('常德市远通贸易有限公司' , '914307000982245708' , '有限责任公司(自然人投资或控股)' , '开业' , '201万(元)' , '国家法律、法规、政策允许的电子产品、家用电器、计算机软硬件及辅助设备、五金产品、机电设备、机械设备（不含起重设备）、仪器仪表、电线电缆、文教体育用品及器材、家具、工艺品（不含文物）、日用百货、一类医疗器械的销售。（以上涉及行政许可的项目凭许可证经营）' , '湖南省常德市武陵区丹阳街道建民巷社区建设中路348号(鸿鑫桃林2栋四单元503室)' , '聂仁义' , 1553959063 , 1553959063) [ RunTime:0.000430s ]
+[ sql ] [ SQL ] INSERT INTO `fa_company_info` (`name` , `code` , `type` , `status` , `regCapital` , `scope` , `address` , `contacts` , `createtime` , `updatetime`) VALUES ('常德市月月红建筑设备租赁有限公司' , '91430700091991101L' , '有限责任公司(自然人独资)' , '开业' , '50万(元)' , '建筑工程设备租赁' , '常德柳叶湖旅游度假区柳叶湖街道双桥社区九组' , '何平' , 1553959063 , 1553959063) [ RunTime:0.000419s ]
+[ sql ] [ SQL ] INSERT INTO `fa_company_info` (`name` , `code` , `type` , `status` , `regCapital` , `scope` , `address` , `contacts` , `createtime` , `updatetime`) VALUES ('常德市跃财工程机械租赁有限公司' , '91430700MA4M5B159X' , '有限责任公司(自然人投资或控股)' , '开业' , '-' , '-' , '常德市西洞庭祝丰镇育才路' , '毛跃清' , 1553959063 , 1553959063) [ RunTime:0.000429s ]
+[ sql ] [ SQL ] INSERT INTO `fa_company_info` (`name` , `code` , `type` , `status` , `regCapital` , `scope` , `address` , `contacts` , `createtime` , `updatetime`) VALUES ('常德市云飞建筑设备租赁有限公司' , '914307023206818292' , '有限责任公司(自然人独资)' , '开业' , '200万(元)' , '建筑工程机械与设备租赁。(依法须经批准的项目，经相关部门批准后方可开展经营活动)' , '常德市武陵区芷兰街道办事处柳菱社区朝阳路1350号(泽云广场1栋606室)' , '李云飞' , 1553959063 , 1553959063) [ RunTime:0.000363s ]
+[ sql ] [ SQL ] INSERT INTO `fa_company_info` (`name` , `code` , `type` , `status` , `regCapital` , `scope` , `address` , `contacts` , `createtime` , `updatetime`) VALUES ('常德市振兴道路建设工程有限公司' , '91430721338394799D' , '有限责任公司(自然人投资或控股)' , '开业' , '1,000万(元)' , '市政公用工程施工、公路工程施工、土石方工程施工；沥青混凝土加工、施工及销售。(依法须经批准的项目，经相关部门批准后方可开展经营活动)。' , '湖南省安乡县大鲸港镇七家村(原七家砖厂)' , '刘文斌' , 1553959063 , 1553959063) [ RunTime:0.000388s ]
+[ sql ] [ SQL ] INSERT INTO `fa_company_info` (`name` , `code` , `type` , `status` , `regCapital` , `scope` , `address` , `contacts` , `createtime` , `updatetime`) VALUES ('常德市正泰电器销售有限公司' , '91430702722554304R' , '有限责任公司(自然人投资或控股)' , '开业' , '50万(元)' , '经销机电产品、低压电器元件、电子仪表、电线电缆。' , '常德市武陵区南坪街道办事处东风社区常德大道火车站大市场客运站综合楼' , '李荣芳' , 1553959063 , 1553959063) [ RunTime:0.001326s ]
+[ sql ] [ SQL ] INSERT INTO `fa_company_info` (`name` , `code` , `type` , `status` , `regCapital` , `scope` , `address` , `contacts` , `createtime` , `updatetime`) VALUES ('常德市正威机械设备租赁有限公司' , '91430700MA4LTPX85A' , '有限责任公司(自然人独资)' , '开业' , '-' , '-' , '湖南省常德经济技术开发区石门桥镇大坪村五组' , '卜正颖' , 1553959063 , 1553959063) [ RunTime:0.000407s ]
+[ sql ] [ SQL ] INSERT INTO `fa_company_info` (`name` , `code` , `type` , `status` , `regCapital` , `scope` , `address` , `contacts` , `createtime` , `updatetime`) VALUES ('常德市志强建筑工程有限公司' , '91430700344863387R' , '有限责任公司(自然人投资或控股)' , '开业' , '500万(元)' , '房屋建筑工程；土木工程施工服务；市政道路工程建筑；公园、园林土地平整；假山、假石等人造景观及公园索道施工；管道和设备安装服务。(依法须经批准的项目，经相关部门批准后方可开展经营活动)' , '湖南省常德市武陵区河洑镇雷坛岗村5组' , '李孟军' , 1553959063 , 1553959063) [ RunTime:0.000398s ]
+[ sql ] [ SQL ] INSERT INTO `fa_company_info` (`name` , `code` , `type` , `status` , `regCapital` , `scope` , `address` , `contacts` , `createtime` , `updatetime`) VALUES ('常德市中达道路运输有限公司' , '9143070032059918XG' , '有限责任公司(自然人投资或控股)' , '开业' , '200万(元)' , '普通货运；土石方工程施工；建筑机械设备租赁服务（不含特种设备）；建筑材料销售。(依法须经批准的项目，经相关部门批准后方可开展经营活动)' , '湖南省常德市武陵区河洑镇岩桥村三组' , '高德伟' , 1553959063 , 1553959063) [ RunTime:0.000400s ]
+[ sql ] [ SQL ] INSERT INTO `fa_company_info` (`name` , `code` , `type` , `status` , `regCapital` , `scope` , `address` , `contacts` , `createtime` , `updatetime`) VALUES ('常德市中旭建筑设备租赁有限公司' , '91430702MA4PM9QT46' , '有限责任公司(自然人独资)' , '开业' , '50万(元)' , '建筑工程机械与设备经营租赁；建筑物拆除活动（不含爆破作业）；废旧物资的回收与销售（不含危险废物）。（依法须经批准的项目，经相关部门批准后方可开展经营活动）' , '湖南省常德市武陵区东江街道新坡社区人民路（武陵区东江乡废旧物资市场5栋115号）' , '胡希能' , 1553959063 , 1553959063) [ RunTime:0.000384s ]
+[ sql ] [ SQL ] INSERT INTO `fa_company_info` (`name` , `code` , `type` , `status` , `regCapital` , `scope` , `address` , `contacts` , `createtime` , `updatetime`) VALUES ('常德市仲文土石方工程有限公司' , '91430702MA4M4R253B' , '有限责任公司(自然人独资)' , '开业' , '-' , '-' , '常德市武陵区河洑镇朱湖村13组(朱湖村民委员会办公楼旁)' , '李忠文' , 1553959063 , 1553959063) [ RunTime:0.000360s ]
+[ sql ] [ SQL ] INSERT INTO `fa_company_info` (`name` , `code` , `type` , `status` , `regCapital` , `scope` , `address` , `contacts` , `createtime` , `updatetime`) VALUES ('常德市桩工机械厂' , '4307021030101' , '个人独资企业' , '开业' , '-' , '桩机生产、销售、租赁；建筑材料销售；土石方工程及地基与基础工程施工。（依法须经批准的项目，经相关部门批准后方可开展经营活动）。' , '常德市武陵区护城乡岩坪村2组' , '黄云政' , 1553959063 , 1553959063) [ RunTime:0.000365s ]
+[ sql ] [ SQL ] INSERT INTO `fa_company_info` (`name` , `code` , `type` , `status` , `regCapital` , `scope` , `address` , `contacts` , `createtime` , `updatetime`) VALUES ('常德市紫薇兴盛建材厂' , '9143070259757337XD' , '个人独资企业' , '开业' , '-' , '耐火材料制品、水泥混凝土预制件的制造及销售。（依法须经批准的项目，经相关部门批准后方可开展经营活动）' , '常德市武陵区南坪街道办事处东风社区皂果路7组' , '周新全' , 1553959063 , 1553959063) [ RunTime:0.000340s ]
+[ sql ] [ SQL ] INSERT INTO `fa_company_info` (`name` , `code` , `type` , `status` , `regCapital` , `scope` , `address` , `contacts` , `createtime` , `updatetime`) VALUES ('常德双咿建筑设备租赁有限公司' , '91430702MA4L44R83N' , '有限责任公司(自然人独资)' , '开业' , '-' , '-' , '常德市武陵区南坪街道办事处东风社区常德大道3569号(农产品大市场干货市场)' , '汪洛' , 1553959063 , 1553959063) [ RunTime:0.000331s ]
+[ sql ] [ SQL ] INSERT INTO `fa_company_info` (`name` , `code` , `type` , `status` , `regCapital` , `scope` , `address` , `contacts` , `createtime` , `updatetime`) VALUES ('常德顺幸利钢材贸易有限公司' , '91430702MA4LD4AT63' , '有限责任公司(自然人投资或控股)' , '开业' , '-' , '-' , '常德市武陵区东江街道办事处新坡社区常德大道1508号钢材市场综合楼1栋416号门面' , '周少峰' , 1553959063 , 1553959063) [ RunTime:0.000344s ]
+[ sql ] [ SQL ] INSERT INTO `fa_company_info` (`name` , `code` , `type` , `status` , `regCapital` , `scope` , `address` , `contacts` , `createtime` , `updatetime`) VALUES ('常德天成设备租赁有限公司' , '91430702MA4PA6307J' , '有限责任公司(自然人投资或控股)' , '开业' , '-' , '-' , '湖南省常德市武陵区丹阳街道办事处紫桥社区滨湖路(紫桥小区4栋002号)' , '詹世伟' , 1553959063 , 1553959063) [ RunTime:0.000368s ]
+[ sql ] [ SQL ] INSERT INTO `fa_company_info` (`name` , `code` , `type` , `status` , `regCapital` , `scope` , `address` , `contacts` , `createtime` , `updatetime`) VALUES ('常德天厦建材有限公司' , '914307035809435224' , '有限责任公司(自然人投资或控股)' , '开业' , '100万(元)' , '页岩砖生产及销售（烧结空心砌块、烧结多孔砌块）；瓦加工，五金交电、化工原料及产品（不含危险化学品）、机械设备及配件、建筑材料（不含危险化学品）销售；水电安装；软件开发与推广。（依法须经批准的项目，经相关部门批准后方可开展经营活动）' , '常德市鼎城区双桥坪镇南洋坪村九组' , '孙朝晖' , 1553959063 , 1553959063) [ RunTime:0.000387s ]
+[ sql ] [ SQL ] INSERT INTO `fa_company_info` (`name` , `code` , `type` , `status` , `regCapital` , `scope` , `address` , `contacts` , `createtime` , `updatetime`) VALUES ('常德天宇机械设备租赁有限公司' , '91430702MA4L6UU17W' , '有限责任公司(自然人投资或控股)' , '开业' , '-' , '-' , '常德市武陵区长庚街道办事处仙源社区柳叶大道(烟厂宿舍楼旁)' , '段惠勇' , 1553959063 , 1553959063) [ RunTime:0.000324s ]
+[ sql ] [ SQL ] INSERT INTO `fa_company_info` (`name` , `code` , `type` , `status` , `regCapital` , `scope` , `address` , `contacts` , `createtime` , `updatetime`) VALUES ('常德同兴测绘仪器销售有限公司' , '91430700096601256G' , '有限责任公司(自然人投资或控股)' , '开业' , '201万(元)' , '测量仪器及附件、仪器仪表、采矿专用设备、文具用品、电子元件、通讯终端设备、计算机、软件及辅助设备、摄录像机的销售；国家法律法规允许的仪器仪表的维修；计算机系统服务；基础软件服务；应用软件服务；测绘服务。（以上涉及行政许可的项目凭许可证或资质证经营）' , '湖南省常德市武陵区芷兰街道办事处柳菱社区武陵大道785号' , '余仁明' , 1553959063 , 1553959063) [ RunTime:0.000427s ]
+[ sql ] [ SQL ] INSERT INTO `fa_company_info` (`name` , `code` , `type` , `status` , `regCapital` , `scope` , `address` , `contacts` , `createtime` , `updatetime`) VALUES ('常德威盛金属制品有限公司' , '91430700MA4L6YWQ5W' , '有限责任公司(自然人独资)' , '开业' , '-' , '-' , '湖南省常德市武陵区东江街道办事处新波社区人民路常德千里酒坊旁' , '李威' , 1553959063 , 1553959063) [ RunTime:0.000336s ]
+[ sql ] [ SQL ] INSERT INTO `fa_company_info` (`name` , `code` , `type` , `status` , `regCapital` , `scope` , `address` , `contacts` , `createtime` , `updatetime`) VALUES ('常德伟兴建筑材料有限公司' , '91430703MA4PB2C763' , '有限责任公司(自然人独资)' , '开业' , '-' , '-' , '湖南省常德市鼎城区郭家铺街道孔家溶社区十二组(廉租房20号)' , '成伟' , 1553959063 , 1553959063) [ RunTime:0.000359s ]
+[ sql ] [ SQL ] INSERT INTO `fa_company_info` (`name` , `code` , `type` , `status` , `regCapital` , `scope` , `address` , `contacts` , `createtime` , `updatetime`) VALUES ('常德卫华建筑设备租赁有限公司' , '914307023293516152' , '有限责任公司(自然人投资或控股)' , '开业' , '50万(元)' , '建筑工程机械及设备租赁服务。(依法须经批准的项目，经相关部门批准后方可开展经营活动)' , '常德市武陵区芦荻山乡芦山村六组' , '郑卫' , 1553959063 , 1553959063) [ RunTime:0.000352s ]
+[ sql ] [ SQL ] INSERT INTO `fa_company_info` (`name` , `code` , `type` , `status` , `regCapital` , `scope` , `address` , `contacts` , `createtime` , `updatetime`) VALUES ('常德湘北建材制造有限公司' , '91430702678006668C' , '有限责任公司(自然人投资或控股)' , '开业' , '1,000万(元)' , '生产、加工、销售钢筋混凝土输水管、混凝土、混凝土制品及建筑材料（不含砂砾）。（依法须经批准的项目，经相关部门批准后方可开展经营活动）' , '常德市武陵区启明街道办事处皇木关社区8组' , '张家仁' , 1553959063 , 1553959063) [ RunTime:0.000313s ]
+[ sql ] [ SQL ] INSERT INTO `fa_company_info` (`name` , `code` , `type` , `status` , `regCapital` , `scope` , `address` , `contacts` , `createtime` , `updatetime`) VALUES ('常德湘诚运输设备制造有限公司' , '914307020985199348' , '有限责任公司(自然人投资或控股)' , '开业' , '100万(元)' , '手推车、金属制卫生器具的制造及销售，冲洗机械装置制造销售及租赁。' , '常德市武陵区东江街道办事处新安社区常德大道(武陵工业新区三号路)' , '康乐' , 1553959063 , 1553959063) [ RunTime:0.000365s ]
+[ sql ] [ SQL ] INSERT INTO `fa_company_info` (`name` , `code` , `type` , `status` , `regCapital` , `scope` , `address` , `contacts` , `createtime` , `updatetime`) VALUES ('常德湘航贸易有限公司' , '9143070039610127XY' , '有限责任公司(自然人独资)' , '开业' , '200万(元)' , '建筑材料（不含木材、沙砾）、煤炭、钢材、五金产品的销售；建筑用石加工。（以上涉及行政许可的项目凭许可证经营）' , '湖南省常德市武陵区长庚街道办事处高车社区高车路2-15号' , '雷青山' , 1553959063 , 1553959063) [ RunTime:0.000372s ]
+[ sql ] [ SQL ] INSERT INTO `fa_company_info` (`name` , `code` , `type` , `status` , `regCapital` , `scope` , `address` , `contacts` , `createtime` , `updatetime`) VALUES ('常德湘江涂料化工有限公司' , '91430702886487910B' , '其他有限责任公司' , '开业' , '50万(元)' , '涂料、化工产品（不含危险和监控化学品）、漆刷的销售；油漆零售（危险化学品经营许可证有效期至2017年8月10日）。（依法须经批准的项目，经相关部门批准后方可开展经营活动）' , '常德市武陵区芷兰街道办事处柳菱社区新河路(火车站建材家饰城292-224号)' , '严陆祥' , 1553959063 , 1553959063) [ RunTime:0.000340s ]
+[ sql ] [ SQL ] INSERT INTO `fa_company_info` (`name` , `code` , `type` , `status` , `regCapital` , `scope` , `address` , `contacts` , `createtime` , `updatetime`) VALUES ('常德湘融建材贸易有限公司' , '91430702MA4PUPC80N' , '有限责任公司(自然人投资或控股)' , '开业' , '-' , '-' , '湖南省常德市武陵区芙蓉街道岩坪社区人民路3593号(常德兴隆装饰城33厅29、30号)' , '戴婧蓉' , 1553959063 , 1553959063) [ RunTime:0.000342s ]
+[ sql ] [ SQL ] INSERT INTO `fa_company_info` (`name` , `code` , `type` , `status` , `regCapital` , `scope` , `address` , `contacts` , `createtime` , `updatetime`) VALUES ('常德湘太工程设备租赁有限公司' , '91430722MA4PJE9J1B' , '有限责任公司(自然人独资)' , '开业' , '-' , '-' , '湖南省常德市汉寿县太子庙镇倒流坪社区杨家塘组' , '曾凡国' , 1553959063 , 1553959063) [ RunTime:0.000362s ]
+[ sql ] [ SQL ] INSERT INTO `fa_company_info` (`name` , `code` , `type` , `status` , `regCapital` , `scope` , `address` , `contacts` , `createtime` , `updatetime`) VALUES ('常德祥义建筑机械设备租赁有限公司' , '914307220908835391' , '有限责任公司(自然人独资)' , '开业' , '180万(元)' , '建筑工程机械与设备租赁服务。（依法须经批准的项目，经相关部门批准后方可开展经营活动）' , '常德市汉寿县龙阳镇南郊社区书院西巷10号' , '丁为祥' , 1553959063 , 1553959063) [ RunTime:0.000356s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin_log` [ RunTime:0.001865s ]
+[ sql ] [ SQL ] INSERT INTO `fa_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('' , '{\"file\":\"\\/uploads\\/20190330\\/2ebdfe9cdf1967b24b1462616b931939.xlsx\"}' , '/admin/company/info/import' , 1 , 'admin' , 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.1 Safari/605.1.15' , '127.0.0.1' , 1553959063) [ RunTime:0.001683s ]
+---------------------------------------------------------------
+[ 2019-03-30T23:30:31+08:00 ] 127.0.0.1 POST 127.0.0.1/admin/ajax/upload
+[运行时间：0.105312s] [吞吐率：9.50req/s] [内存消耗：3,693.02kb] [文件加载：85]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000019s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001702s ]
+[ info ] [ LANG ] /Users/work/WEB/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'upload',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundarytMcBZUpxDsQKYBsD',
+  'origin' => 'http://127.0.0.1',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'Hm_lpvt_baca6fe3dceaf818f5f835b0ae97e4cc=1553930228; Hm_lpvt_3456bee468c83cc63fb5147f119f1075=1553788642; Hm_lpvt_bfc6c23974fbad0bbfed25f88a973fb0=1553777905; PHPSESSID=2aph93tipahci51qk2kpbe6l07; CNZZDATA1254842228=871315088-1553774523-%7C1553785334; Hm_lvt_3456bee468c83cc63fb5147f119f1075=1553777939; Hm_lvt_baca6fe3dceaf818f5f835b0ae97e4cc=1553930228; Hm_lvt_bfc6c23974fbad0bbfed25f88a973fb0=1553516742,1553777905; UM_distinctid=169c461cfa0434-067f298972c8a-3f636f4d-13c680-169c461cfa150d',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.1 Safari/605.1.15',
+  'referer' => 'http://127.0.0.1/admin/company/info?addtabs=1',
+  'content-length' => '9946',
+  'accept-language' => 'zh-cn',
+)
+[ info ] [ PARAM ] array (
+  'name' => 'test.xlsx',
+)
+[ info ] [ LANG ] /Users/work/WEB/fastadmin/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001265s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] /Users/work/WEB/fastadmin/public/../application/admin/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\admin\controller\Ajax->upload[ /Users/work/WEB/fastadmin/application/admin/controller/Ajax.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\thumb\Thumb @upload_after [ RunTime:0.000113s ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.003727s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginvideo\Loginvideo @response_send [ RunTime:0.000169s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000693s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_attachment` [ RunTime:0.001210s ]
+[ sql ] [ SQL ] INSERT INTO `fa_attachment` (`admin_id` , `filesize` , `imagetype` , `mimetype` , `url` , `uploadtime` , `storage` , `sha1` , `createtime` , `updatetime`) VALUES (1 , 9608 , 'xlsx' , 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet' , '/uploads/20190330/db90c687b23e73aca4e1b3b9710b939a.xlsx' , 1553959830 , 'local' , '9e1d551c3749ffdf31abc48dbd09fea5624dac72' , 1553959830 , 1553959830) [ RunTime:0.068612s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin_log` [ RunTime:0.001355s ]
+[ sql ] [ SQL ] INSERT INTO `fa_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('' , '{\"name\":\"test.xlsx\"}' , '/admin/ajax/upload' , 1 , 'admin' , 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.1 Safari/605.1.15' , '127.0.0.1' , 1553959831) [ RunTime:0.001646s ]
+---------------------------------------------------------------
+[ 2019-03-30T23:31:09+08:00 ] 127.0.0.1 POST 127.0.0.1/admin/company/info/import
+[运行时间：38.771627s] [吞吐率：0.03req/s] [内存消耗：6,640.58kb] [文件加载：129]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000017s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001540s ]
+[ info ] [ LANG ] /Users/work/WEB/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'company.info',
+    2 => 'import',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'origin' => 'http://127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.1 Safari/605.1.15',
+  'connection' => 'keep-alive',
+  'referer' => 'http://127.0.0.1/admin/company/info?addtabs=1',
+  'content-length' => '66',
+  'cookie' => '_uab_collina=155377793871011809706564; Hm_lpvt_baca6fe3dceaf818f5f835b0ae97e4cc=1553930228; Hm_lpvt_3456bee468c83cc63fb5147f119f1075=1553788642; Hm_lpvt_bfc6c23974fbad0bbfed25f88a973fb0=1553777905; PHPSESSID=2aph93tipahci51qk2kpbe6l07; CNZZDATA1254842228=871315088-1553774523-%7C1553785334; Hm_lvt_3456bee468c83cc63fb5147f119f1075=1553777939; Hm_lvt_baca6fe3dceaf818f5f835b0ae97e4cc=1553930228; Hm_lvt_bfc6c23974fbad0bbfed25f88a973fb0=1553516742,1553777905; UM_distinctid=169c461cfa0434-067f298972c8a-3f636f4d-13c680-169c461cfa150d',
+)
+[ info ] [ PARAM ] array (
+  'file' => '/uploads/20190330/db90c687b23e73aca4e1b3b9710b939a.xlsx',
+)
+[ info ] [ LANG ] /Users/work/WEB/fastadmin/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001045s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /Users/work/WEB/fastadmin/public/../application/admin/lang/zh-cn/company/info.php
+[ info ] [ RUN ] app\admin\controller\company\Info->import[ /Users/work/WEB/fastadmin/application/admin/controller/company/Info.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.004009s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginvideo\Loginvideo @response_send [ RunTime:0.000214s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000738s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.001214s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000580s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.001049s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001260s ]
+[ sql ] [ SQL ] SELECT COLUMN_NAME,COLUMN_COMMENT FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'fa_company_info' AND TABLE_SCHEMA = 'fastadmin' [ RunTime:0.001005s ]
+[ sql ] [ SQL ] 'fastadmin'fa_company_info'HOW COLUMNS FROM `fa_company_info` [ RunTime:0.001377s ]
+[ sql ] [ SQL ] INSERT INTO `fa_company_info` (`name` , `code` , `type` , `status` , `regCapital` , `scope` , `address` , `contacts` , `createtime` , `updatetime`) VALUES ('常德欣昌机械设备租赁有限公司' , '91430702MA4LPTE247' , '有限责任公司(自然人投资或控股)' , '开业' , '-' , '-' , '常德柳叶湖旅游度假区七里桥街道七里桥社区紫缘路1118号(星语林汀湘湖畔6号楼2单元306室)' , '朱磊' , 1553959869 , 1553959869) [ RunTime:0.000476s ]
+[ sql ] [ SQL ] INSERT INTO `fa_company_info` (`name` , `code` , `type` , `status` , `regCapital` , `scope` , `address` , `contacts` , `createtime` , `updatetime`) VALUES ('常德新蓝天经贸有限公司' , '914307026616830648' , '有限责任公司(自然人投资或控股)' , '开业' , '200万(元)' , '计算机、软件及辅助设备的批发、零售；信息系统集成；信息技术咨询服务；文化用品、体育用品、五金交电的批发兼零售；网络工程设计、施工；电脑组装、维护、维修。' , '常德市武陵区丹阳街道办事处北正街社区朗州路359号(德高电脑城内)' , '覃业勇' , 1553959869 , 1553959869) [ RunTime:0.000406s ]
+[ sql ] [ SQL ] INSERT INTO `fa_company_info` (`name` , `code` , `type` , `status` , `regCapital` , `scope` , `address` , `contacts` , `createtime` , `updatetime`) VALUES ('常德新淞业工程机械租赁有限公司' , '91430702554910225K' , '有限责任公司(自然人投资或控股)' , '开业' , '50万(元)' , '建筑工程机械与设备的租赁；建筑工程机械与设备的修理。（依法须经批准的项目，经相关部门批准后方可开展经营活动）' , '常德市武陵区穿紫河街道办事处朝阳路社区武陵大道209号（泓鑫城市花园1栋4楼）' , '左海斌' , 1553959869 , 1553959869) [ RunTime:0.000359s ]
+[ sql ] [ SQL ] INSERT INTO `fa_company_info` (`name` , `code` , `type` , `status` , `regCapital` , `scope` , `address` , `contacts` , `createtime` , `updatetime`) VALUES ('常德新新海建材有限公司' , '91430702MA4M5MAM5A' , '有限责任公司(自然人独资)' , '开业' , '-' , '-' , '常德市武陵区芙蓉街道办事处岩坪社区人民路(兴隆装饰城10厅17-18号)' , '田坤' , 1553959869 , 1553959869) [ RunTime:0.000316s ]
+[ sql ] [ SQL ] INSERT INTO `fa_company_info` (`name` , `code` , `type` , `status` , `regCapital` , `scope` , `address` , `contacts` , `createtime` , `updatetime`) VALUES ('常德新印象文化传媒有限公司' , '914307246707784871' , '有限责任公司(自然人投资或控股)' , '开业' , '100万(元)' , '企业形象、赛事活动、公关活动策划;婚庆礼仪、摄影、会议展览服务;广告代理、制作、发布;室内外装修服务;网站建设维护;文化办公用品、装饰建材销售;公路交通安全设施产品销售、安装;土石方工程施工;机械设备租赁。 (依法须经批准的项目,经相关部门批准后方可开展经营活动)' , '常德市临澧县安福镇迎宾路社区居委会迎宾中路409号' , '戴治' , 1553959869 , 1553959869) [ RunTime:0.000356s ]
+[ sql ] [ SQL ] INSERT INTO `fa_company_info` (`name` , `code` , `type` , `status` , `regCapital` , `scope` , `address` , `contacts` , `createtime` , `updatetime`) VALUES ('常德馨跃贸易商行' , '91430703MA4PBKJTXT' , '个人独资企业' , '开业' , '-' , '-' , '湖南省常德市鼎城区玉霞街道永安社区财富广场B9区35号' , '黄跃利' , 1553959869 , 1553959869) [ RunTime:0.001439s ]
+[ sql ] [ SQL ] INSERT INTO `fa_company_info` (`name` , `code` , `type` , `status` , `regCapital` , `scope` , `address` , `contacts` , `createtime` , `updatetime`) VALUES ('常德鑫创贸易有限公司' , '914307007968663433' , '有限责任公司(自然人投资或控股)' , '开业' , '500万(元)' , '经营金属材料、炉料、建筑材料、装饰材料、机械设备、化工产品（不含危险品）。' , '湖南省常德市武陵区东江街道新坡社区常德大道1508号钢材大市场2号综合楼' , '吴湛' , 1553959869 , 1553959869) [ RunTime:0.000373s ]
+[ sql ] [ SQL ] INSERT INTO `fa_company_info` (`name` , `code` , `type` , `status` , `regCapital` , `scope` , `address` , `contacts` , `createtime` , `updatetime`) VALUES ('常德鑫铁土石方工程有限公司' , '91430702MA4PDNPJ5B' , '有限责任公司(自然人投资或控股)' , '开业' , '-' , '-' , '常德市武陵区河洑镇朱湖社区一组' , '滕建明' , 1553959869 , 1553959869) [ RunTime:0.000359s ]
+[ sql ] [ SQL ] INSERT INTO `fa_company_info` (`name` , `code` , `type` , `status` , `regCapital` , `scope` , `address` , `contacts` , `createtime` , `updatetime`) VALUES ('常德雄珍建筑机械设备租赁有限公司' , '91430702MA4LJG8M1G' , '有限责任公司(自然人独资)' , '开业' , '-' , '-' , '常德市武陵区长庚街道办事处高车社区柳叶大道1099号' , '黎川' , 1553959869 , 1553959869) [ RunTime:0.000331s ]
+[ sql ] [ SQL ] INSERT INTO `fa_company_info` (`name` , `code` , `type` , `status` , `regCapital` , `scope` , `address` , `contacts` , `createtime` , `updatetime`) VALUES ('常德雅美仕涂料销售有限公司' , '91430702399534660H' , '有限责任公司(自然人投资或控股)' , '开业' , '50万(元)' , '水性建筑涂料、建材(不含砂砾)的销售。 (依法须经批准的项目,经相关部门批准后方可开展经营活动)' , '常德市武陵区芙蓉街道办事处芙蓉社区芙蓉路221号(烟厂三区宿舍2栋3单元附2号)' , '陈香龙' , 1553959869 , 1553959869) [ RunTime:0.000359s ]
+[ sql ] [ SQL ] INSERT INTO `fa_company_info` (`name` , `code` , `type` , `status` , `regCapital` , `scope` , `address` , `contacts` , `createtime` , `updatetime`) VALUES ('常德益民建筑设备租赁有限责任公司' , '430702000013809' , '有限责任公司(自然人投资或控股)' , '开业' , '10万(元)' , '-' , '常德市武陵区丹洲乡高泗村2组' , '段新林' , 1553959869 , 1553959869) [ RunTime:0.000336s ]
+[ sql ] [ SQL ] INSERT INTO `fa_company_info` (`name` , `code` , `type` , `status` , `regCapital` , `scope` , `address` , `contacts` , `createtime` , `updatetime`) VALUES ('常德永和水泥制品有限公司' , '91430702MA4LQG1N3E' , '有限责任公司(自然人独资)' , '开业' , '-' , '-' , '常德市武陵区长庚街道办事处青林社区4组' , '彭霞' , 1553959869 , 1553959869) [ RunTime:0.000339s ]
+[ sql ] [ SQL ] INSERT INTO `fa_company_info` (`name` , `code` , `type` , `status` , `regCapital` , `scope` , `address` , `contacts` , `createtime` , `updatetime`) VALUES ('常德永利建筑设备租赁有限公司' , '914307003205982401' , '有限责任公司(自然人投资或控股)' , '开业' , '200万(元)' , '建筑工程机械与设备安装及租赁（不含特种设备）；建材（不含木材、砂砾）的销售。(依法须经批准的项目，经相关部门批准后方可开展经营活动)' , '湖南省常德市武陵区芷兰街道办事处腰路铺村9组' , '田波' , 1553959869 , 1553959869) [ RunTime:0.000355s ]
+[ sql ] [ SQL ] INSERT INTO `fa_company_info` (`name` , `code` , `type` , `status` , `regCapital` , `scope` , `address` , `contacts` , `createtime` , `updatetime`) VALUES ('常德永其机械设备租赁有限公司' , '91430702MA4PEH2C02' , '有限责任公司(自然人投资或控股)' , '开业' , '-' , '-' , '湖南省常德市武陵区芦荻山乡芦山村六组' , '吴启珍' , 1553959869 , 1553959869) [ RunTime:0.000283s ]
+[ sql ] [ SQL ] INSERT INTO `fa_company_info` (`name` , `code` , `type` , `status` , `regCapital` , `scope` , `address` , `contacts` , `createtime` , `updatetime`) VALUES ('常德勇航工程机械设备租赁有限公司' , '91430702MA4LWWK45X' , '有限责任公司(自然人独资)' , '开业' , '-' , '-' , '常德市武陵区永安街道办事处竹园社区竹园路(武陵区审计局小区3栋201号)' , '许勇' , 1553959869 , 1553959869) [ RunTime:0.000342s ]
+[ sql ] [ SQL ] INSERT INTO `fa_company_info` (`name` , `code` , `type` , `status` , `regCapital` , `scope` , `address` , `contacts` , `createtime` , `updatetime`) VALUES ('常德友平设备安装有限公司' , '91430702MA4PQQLG4Q' , '有限责任公司(自然人投资或控股)' , '开业' , '-' , '-' , '湖南省常德市桃源县漳江镇二里岗社区桃花大道国税局旁' , '何春喜' , 1553959869 , 1553959869) [ RunTime:0.000300s ]
+[ sql ] [ SQL ] INSERT INTO `fa_company_info` (`name` , `code` , `type` , `status` , `regCapital` , `scope` , `address` , `contacts` , `createtime` , `updatetime`) VALUES ('常德酉福海绵城市建设咨询有限公司' , '91430703MA4L4RWU81' , '其他有限责任公司' , '开业' , '-' , '-' , '湖南省常德市鼎城区玉霞街道常沅社区德沅路南园小区' , '陈龙飞' , 1553959869 , 1553959869) [ RunTime:0.000598s ]
+[ sql ] [ SQL ] INSERT INTO `fa_company_info` (`name` , `code` , `type` , `status` , `regCapital` , `scope` , `address` , `contacts` , `createtime` , `updatetime`) VALUES ('常德榆龙木业有限公司' , '91430703MA4PBGPJ5Y' , '有限责任公司(自然人独资)' , '开业' , '-' , '-' , '湖南省常德市鼎城区玉霞街道永安社区(永安社区居委会左旁100米)' , '胡善清' , 1553959869 , 1553959869) [ RunTime:0.000505s ]
+[ sql ] [ SQL ] INSERT INTO `fa_company_info` (`name` , `code` , `type` , `status` , `regCapital` , `scope` , `address` , `contacts` , `createtime` , `updatetime`) VALUES ('常德宇翔金属材料有限公司' , '914307025507310352' , '有限责任公司(自然人投资或控股)' , '开业' , '100万(元)' , '金属材料、金属制品的销售；金属材料的加工。（依法须经批准的项目，经相关部门批准后方可开展经营活动）' , '常德市武陵区东江街道办事处赵家碈社区启明路常德大道(钢材大市场3-4栋209号)' , '彭学云' , 1553959869 , 1553959869) [ RunTime:0.000316s ]
+[ sql ] [ SQL ] INSERT INTO `fa_company_info` (`name` , `code` , `type` , `status` , `regCapital` , `scope` , `address` , `contacts` , `createtime` , `updatetime`) VALUES ('常德煜杰建筑机械设备安装有限公司' , '914307035954626415' , '有限责任公司(自然人投资或控股)' , '开业' , '50万(元)' , '机械设备安装(不含特种设备安装)；建筑机械设备租赁(以上涉及行政许可或行政审批的凭许可证经营)' , '常德市鼎城区玉霞街道永安社区(财富广场B2-319号)' , '李金勇' , 1553959869 , 1553959869) [ RunTime:0.000298s ]
+[ sql ] [ SQL ] INSERT INTO `fa_company_info` (`name` , `code` , `type` , `status` , `regCapital` , `scope` , `address` , `contacts` , `createtime` , `updatetime`) VALUES ('常德远弘建材销售有限公司' , '91430702MA4L1JT058' , '有限责任公司(自然人投资或控股)' , '开业' , '-' , '-' , '常德市武陵区穿紫河街道办事处惠家坪社区朝阳路499号' , '周远平' , 1553959869 , 1553959869) [ RunTime:0.000331s ]
+[ sql ] [ SQL ] INSERT INTO `fa_company_info` (`name` , `code` , `type` , `status` , `regCapital` , `scope` , `address` , `contacts` , `createtime` , `updatetime`) VALUES ('常德长岭农业科技发展有限公司' , '914307036755500277' , '有限责任公司(自然人投资或控股)' , '开业' , '500万(元)' , '油茶苗木的繁育与推广，园林绿化，蔬菜种植、销售。(依法须经批准的项目，经相关部门批准后方可开展经营活动)' , '常德市鼎城区长岭岗乡古堤溶村古堤溶组' , '许建君' , 1553959869 , 1553959869) [ RunTime:0.000397s ]
+[ sql ] [ SQL ] INSERT INTO `fa_company_info` (`name` , `code` , `type` , `status` , `regCapital` , `scope` , `address` , `contacts` , `createtime` , `updatetime`) VALUES ('常德振德机械设备租赁有限公司' , '91430700MA4M7AJ00M' , '有限责任公司(自然人独资)' , '开业' , '-' , '-' , '湖南省常德市武陵区芙蓉街道办事处高泗社区高泗路189号' , '邹安云' , 1553959869 , 1553959869) [ RunTime:0.000710s ]
+[ sql ] [ SQL ] INSERT INTO `fa_company_info` (`name` , `code` , `type` , `status` , `regCapital` , `scope` , `address` , `contacts` , `createtime` , `updatetime`) VALUES ('常德正发建材制品有限公司' , '91430703MA4M4TPT1P' , '有限责任公司(自然人投资或控股)' , '开业' , '-' , '-' , '湖南省常德市鼎城区周家店镇荷花村八组' , '喻寿华' , 1553959869 , 1553959869) [ RunTime:0.000361s ]
+[ sql ] [ SQL ] INSERT INTO `fa_company_info` (`name` , `code` , `type` , `status` , `regCapital` , `scope` , `address` , `contacts` , `createtime` , `updatetime`) VALUES ('常德正通建材销售有限公司' , '91430703MA4L4TDW97' , '有限责任公司(自然人独资)' , '开业' , '-' , '-' , '湖南省常德市鼎城区玉霞街道永安社区善和街9号(桥南家电城内)' , '伍文通' , 1553959869 , 1553959869) [ RunTime:0.000326s ]
+[ sql ] [ SQL ] INSERT INTO `fa_company_info` (`name` , `code` , `type` , `status` , `regCapital` , `scope` , `address` , `contacts` , `createtime` , `updatetime`) VALUES ('常德志祥钢材有限责任公司' , '91430700MA4M52TG2G' , '有限责任公司(自然人独资)' , '开业' , '-' , '-' , '湖南省常德市武陵区东江街道办事处新坡社区常德大道1508号(钢材大市场2号综合楼206室)' , '张焱' , 1553959869 , 1553959869) [ RunTime:0.000305s ]
+[ sql ] [ SQL ] INSERT INTO `fa_company_info` (`name` , `code` , `type` , `status` , `regCapital` , `scope` , `address` , `contacts` , `createtime` , `updatetime`) VALUES ('常德智德工程设备租赁有限公司' , '91430702MA4PHC5L61' , '有限责任公司(自然人独资)' , '开业' , '-' , '-' , '湖南省常德市武陵区芷兰街道办事处荷花社区柳叶大道1688号(恒大华府小区47幢704室)' , '祁敏' , 1553959869 , 1553959869) [ RunTime:0.000276s ]
+[ sql ] [ SQL ] INSERT INTO `fa_company_info` (`name` , `code` , `type` , `status` , `regCapital` , `scope` , `address` , `contacts` , `createtime` , `updatetime`) VALUES ('常德智君水泥制品有限公司' , '91430700MA4P9QFTX3' , '有限责任公司(自然人投资或控股)' , '开业' , '-' , '-' , '湖南省常德经济技术开发区石门桥镇青龙岗村一组' , '曾志军' , 1553959869 , 1553959869) [ RunTime:0.000262s ]
+[ sql ] [ SQL ] INSERT INTO `fa_company_info` (`name` , `code` , `type` , `status` , `regCapital` , `scope` , `address` , `contacts` , `createtime` , `updatetime`) VALUES ('常德中材混凝土有限公司' , '91430725567692925Y' , '有限责任公司(自然人投资或控股)' , '开业' , '3,000万(元)' , '预拌混凝土、干粉砂浆及水泥制品的生产、销售。' , '常德市桃源县陬市镇东林村四组' , '谷锋' , 1553959869 , 1553959869) [ RunTime:0.000335s ]
+[ sql ] [ SQL ] INSERT INTO `fa_company_info` (`name` , `code` , `type` , `status` , `regCapital` , `scope` , `address` , `contacts` , `createtime` , `updatetime`) VALUES ('常德中城建材有限责任公司' , '9143070269182354XW' , '有限责任公司(自然人投资或控股)' , '开业' , '108万(元)' , '生产、加工、销售钢筋混凝土、水泥预制件、井盖、输水管；建筑材料销售(不含砂砾、木材)。' , '常德市武陵区东江街道办事处浮桥村7组青年中路241号' , '宋波' , 1553959869 , 1553959869) [ RunTime:0.000294s ]
+[ sql ] [ SQL ] INSERT INTO `fa_company_info` (`name` , `code` , `type` , `status` , `regCapital` , `scope` , `address` , `contacts` , `createtime` , `updatetime`) VALUES ('常德中建建科建筑设备租赁有限公司' , '914307000580165588' , '有限责任公司(自然人投资或控股)' , '开业' , '200万(元)' , '建筑工程机械与设备租赁、维修、安装。（涉及行政许可或资质的凭许可证或资质证经营）' , '常德柳叶湖旅游度假区七里桥街道七里桥社区紫缘路1118号（星语林汀湘湖畔6号楼2单元306室）' , '姚必忠' , 1553959869 , 1553959869) [ RunTime:0.000326s ]
+[ sql ] [ SQL ] INSERT INTO `fa_company_info` (`name` , `code` , `type` , `status` , `regCapital` , `scope` , `address` , `contacts` , `createtime` , `updatetime`) VALUES ('常德中旅国际旅行社有限公司' , '91430700732852647N' , '有限责任公司(自然人投资或控股)' , '开业' , '200万(元)' , '凭企业有效许可证从事入境旅游业务、国内旅游业务、出境旅游业务；会展服务；旅游商品销售；广告设计、制作、代理、发布。（以上涉及行政许可的凭许可证经营）' , '湖南省常德市武陵区丹阳街道北正街社区朗州路163号广宇商务楼101号' , '吴勇' , 1553959869 , 1553959869) [ RunTime:0.000297s ]
+[ sql ] [ SQL ] INSERT INTO `fa_company_info` (`name` , `code` , `type` , `status` , `regCapital` , `scope` , `address` , `contacts` , `createtime` , `updatetime`) VALUES ('常德众邦机械设备有限公司' , '91430702MA4LLPW778' , '有限责任公司(自然人投资或控股)' , '开业' , '-' , '-' , '常德市武陵区南坪街道办事处白马社区沙港路(白马青秀1栋2单元604号)' , '杨柏林' , 1553959869 , 1553959869) [ RunTime:0.000311s ]
+[ sql ] [ SQL ] INSERT INTO `fa_company_info` (`name` , `code` , `type` , `status` , `regCapital` , `scope` , `address` , `contacts` , `createtime` , `updatetime`) VALUES ('常德周强金属制品厂' , '91430702MA4PACM98G' , '个人独资企业' , '开业' , '-' , '-' , '湖南省常德市武陵区河洑镇岩桥村4组' , '周强' , 1553959869 , 1553959869) [ RunTime:0.000297s ]
+[ sql ] [ SQL ] INSERT INTO `fa_company_info` (`name` , `code` , `type` , `status` , `regCapital` , `scope` , `address` , `contacts` , `createtime` , `updatetime`) VALUES ('常德紫日欣广告有限公司' , '914307000980495062' , '有限责任公司(自然人投资或控股)' , '开业' , '200万(元)' , '广告的设计、制作、发布与代理；广告位的租赁；金属结构制造；金属门窗制造。（以上涉及行政许可的项目凭许可证或资质证经营）' , '湖南省常德市武陵区护城乡西郊社区人民路3099号(芙蓉路小学旁)' , '贵美群' , 1553959869 , 1553959869) [ RunTime:0.000307s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin_log` [ RunTime:0.001501s ]
+[ sql ] [ SQL ] INSERT INTO `fa_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('' , '{\"file\":\"\\/uploads\\/20190330\\/db90c687b23e73aca4e1b3b9710b939a.xlsx\"}' , '/admin/company/info/import' , 1 , 'admin' , 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.1 Safari/605.1.15' , '127.0.0.1' , 1553959869) [ RunTime:0.001652s ]
+---------------------------------------------------------------
+[ 2019-03-30T23:31:21+08:00 ] 127.0.0.1 GET 127.0.0.1/admin/company/info/index?sort=id&order=desc&offset=260&limit=10&filter=%7B%7D&op=%7B%7D&_=1553958464888
+[运行时间：0.041196s] [吞吐率：24.27req/s] [内存消耗：4,063.70kb] [文件加载：89]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000024s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001548s ]
+[ info ] [ LANG ] /Users/work/WEB/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'company.info',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'content-type' => 'application/json',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => '_uab_collina=155377793871011809706564; Hm_lpvt_baca6fe3dceaf818f5f835b0ae97e4cc=1553930228; Hm_lpvt_3456bee468c83cc63fb5147f119f1075=1553788642; Hm_lpvt_bfc6c23974fbad0bbfed25f88a973fb0=1553777905; PHPSESSID=2aph93tipahci51qk2kpbe6l07; CNZZDATA1254842228=871315088-1553774523-%7C1553785334; Hm_lvt_3456bee468c83cc63fb5147f119f1075=1553777939; Hm_lvt_baca6fe3dceaf818f5f835b0ae97e4cc=1553930228; Hm_lvt_bfc6c23974fbad0bbfed25f88a973fb0=1553516742,1553777905; UM_distinctid=169c461cfa0434-067f298972c8a-3f636f4d-13c680-169c461cfa150d',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.1 Safari/605.1.15',
+  'referer' => 'http://127.0.0.1/admin/company/info?addtabs=1',
+  'accept-language' => 'zh-cn',
+  'x-requested-with' => 'XMLHttpRequest',
+)
+[ info ] [ PARAM ] array (
+  'sort' => 'id',
+  'order' => 'desc',
+  'offset' => '260',
+  'limit' => '10',
+  'filter' => '{}',
+  'op' => '{}',
+  '_' => '1553958464888',
+)
+[ info ] [ LANG ] /Users/work/WEB/fastadmin/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001119s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /Users/work/WEB/fastadmin/public/../application/admin/lang/zh-cn/company/info.php
+[ info ] [ RUN ] app\admin\controller\company\Info->index[ /Users/work/WEB/fastadmin/application/admin/controller/company/Info.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000090s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginvideo\Loginvideo @response_send [ RunTime:0.000150s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000752s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.001185s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000516s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.001057s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001449s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_company_info` [ RunTime:0.001209s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin` [ RunTime:0.000970s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_company_info` `company_info` LEFT JOIN `fa_admin` `admin` ON `company_info`.`admin_id`=`admin`.`id` ORDER BY `company_info`.`id` DESC LIMIT 1 [ RunTime:0.000606s ]
+[ sql ] [ SQL ] SELECT `company_info`.`id`,`company_info`.`name`,`company_info`.`code`,`company_info`.`type`,`company_info`.`status`,`company_info`.`regCapital`,`company_info`.`scope`,`company_info`.`city`,`company_info`.`address`,`company_info`.`contacts`,`company_info`.`phone`,`company_info`.`account`,`company_info`.`bankname`,`company_info`.`uploadimages`,`company_info`.`remarkcontent`,`company_info`.`createtime`,`company_info`.`updatetime`,`company_info`.`admin_id`,admin.id AS admin__id,admin.username AS admin__username,admin.nickname AS admin__nickname,admin.password AS admin__password,admin.salt AS admin__salt,admin.avatar AS admin__avatar,admin.email AS admin__email,admin.loginfailure AS admin__loginfailure,admin.logintime AS admin__logintime,admin.createtime AS admin__createtime,admin.updatetime AS admin__updatetime,admin.token AS admin__token,admin.status AS admin__status FROM `fa_company_info` `company_info` LEFT JOIN `fa_admin` `admin` ON `company_info`.`admin_id`=`admin`.`id` ORDER BY `company_info`.`id` DESC LIMIT 260,10 [ RunTime:0.001619s ]
+---------------------------------------------------------------
+[ 2019-03-30T23:31:22+08:00 ] 127.0.0.1 GET 127.0.0.1/admin/company/info/index?sort=id&order=desc&offset=340&limit=10&filter=%7B%7D&op=%7B%7D&_=1553958464889
+[运行时间：0.045540s] [吞吐率：21.96req/s] [内存消耗：4,056.24kb] [文件加载：89]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000019s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001406s ]
+[ info ] [ LANG ] /Users/work/WEB/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'company.info',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'content-type' => 'application/json',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => '_uab_collina=155377793871011809706564; Hm_lpvt_baca6fe3dceaf818f5f835b0ae97e4cc=1553930228; Hm_lpvt_3456bee468c83cc63fb5147f119f1075=1553788642; Hm_lpvt_bfc6c23974fbad0bbfed25f88a973fb0=1553777905; PHPSESSID=2aph93tipahci51qk2kpbe6l07; CNZZDATA1254842228=871315088-1553774523-%7C1553785334; Hm_lvt_3456bee468c83cc63fb5147f119f1075=1553777939; Hm_lvt_baca6fe3dceaf818f5f835b0ae97e4cc=1553930228; Hm_lvt_bfc6c23974fbad0bbfed25f88a973fb0=1553516742,1553777905; UM_distinctid=169c461cfa0434-067f298972c8a-3f636f4d-13c680-169c461cfa150d',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.1 Safari/605.1.15',
+  'referer' => 'http://127.0.0.1/admin/company/info?addtabs=1',
+  'accept-language' => 'zh-cn',
+  'x-requested-with' => 'XMLHttpRequest',
+)
+[ info ] [ PARAM ] array (
+  'sort' => 'id',
+  'order' => 'desc',
+  'offset' => '340',
+  'limit' => '10',
+  'filter' => '{}',
+  'op' => '{}',
+  '_' => '1553958464889',
+)
+[ info ] [ LANG ] /Users/work/WEB/fastadmin/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000970s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /Users/work/WEB/fastadmin/public/../application/admin/lang/zh-cn/company/info.php
+[ info ] [ RUN ] app\admin\controller\company\Info->index[ /Users/work/WEB/fastadmin/application/admin/controller/company/Info.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000077s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginvideo\Loginvideo @response_send [ RunTime:0.000142s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001029s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.001403s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000599s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.001158s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001538s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_company_info` [ RunTime:0.001144s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin` [ RunTime:0.001158s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_company_info` `company_info` LEFT JOIN `fa_admin` `admin` ON `company_info`.`admin_id`=`admin`.`id` ORDER BY `company_info`.`id` DESC LIMIT 1 [ RunTime:0.000582s ]
+[ sql ] [ SQL ] SELECT `company_info`.`id`,`company_info`.`name`,`company_info`.`code`,`company_info`.`type`,`company_info`.`status`,`company_info`.`regCapital`,`company_info`.`scope`,`company_info`.`city`,`company_info`.`address`,`company_info`.`contacts`,`company_info`.`phone`,`company_info`.`account`,`company_info`.`bankname`,`company_info`.`uploadimages`,`company_info`.`remarkcontent`,`company_info`.`createtime`,`company_info`.`updatetime`,`company_info`.`admin_id`,admin.id AS admin__id,admin.username AS admin__username,admin.nickname AS admin__nickname,admin.password AS admin__password,admin.salt AS admin__salt,admin.avatar AS admin__avatar,admin.email AS admin__email,admin.loginfailure AS admin__loginfailure,admin.logintime AS admin__logintime,admin.createtime AS admin__createtime,admin.updatetime AS admin__updatetime,admin.token AS admin__token,admin.status AS admin__status FROM `fa_company_info` `company_info` LEFT JOIN `fa_admin` `admin` ON `company_info`.`admin_id`=`admin`.`id` ORDER BY `company_info`.`id` DESC LIMIT 340,10 [ RunTime:0.001711s ]
+---------------------------------------------------------------
+[ 2019-03-30T23:32:01+08:00 ] 127.0.0.1 POST 127.0.0.1/admin/ajax/upload
+[运行时间：0.064596s] [吞吐率：15.48req/s] [内存消耗：3,693.02kb] [文件加载：85]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000017s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001747s ]
+[ info ] [ LANG ] /Users/work/WEB/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'upload',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryRUD7gUwgvFuY4v4Z',
+  'origin' => 'http://127.0.0.1',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'Hm_lpvt_baca6fe3dceaf818f5f835b0ae97e4cc=1553930228; Hm_lpvt_3456bee468c83cc63fb5147f119f1075=1553788642; Hm_lpvt_bfc6c23974fbad0bbfed25f88a973fb0=1553777905; PHPSESSID=2aph93tipahci51qk2kpbe6l07; CNZZDATA1254842228=871315088-1553774523-%7C1553785334; Hm_lvt_3456bee468c83cc63fb5147f119f1075=1553777939; Hm_lvt_baca6fe3dceaf818f5f835b0ae97e4cc=1553930228; Hm_lvt_bfc6c23974fbad0bbfed25f88a973fb0=1553516742,1553777905; UM_distinctid=169c461cfa0434-067f298972c8a-3f636f4d-13c680-169c461cfa150d',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.1 Safari/605.1.15',
+  'referer' => 'http://127.0.0.1/admin/company/info?addtabs=1',
+  'content-length' => '10094',
+  'accept-language' => 'zh-cn',
+)
+[ info ] [ PARAM ] array (
+  'name' => 'test.xlsx',
+)
+[ info ] [ LANG ] /Users/work/WEB/fastadmin/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001205s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] /Users/work/WEB/fastadmin/public/../application/admin/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\admin\controller\Ajax->upload[ /Users/work/WEB/fastadmin/application/admin/controller/Ajax.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\thumb\Thumb @upload_after [ RunTime:0.000098s ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.004329s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginvideo\Loginvideo @response_send [ RunTime:0.000311s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000643s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_attachment` [ RunTime:0.001195s ]
+[ sql ] [ SQL ] INSERT INTO `fa_attachment` (`admin_id` , `filesize` , `imagetype` , `mimetype` , `url` , `uploadtime` , `storage` , `sha1` , `createtime` , `updatetime`) VALUES (1 , 9756 , 'xlsx' , 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet' , '/uploads/20190330/d32429720d985c9262ce1b17ab7b755a.xlsx' , 1553959920 , 'local' , '66ac51f62362172128cfb6f685db8114b86eaf1f' , 1553959920 , 1553959920) [ RunTime:0.026398s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin_log` [ RunTime:0.002137s ]
+[ sql ] [ SQL ] INSERT INTO `fa_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('' , '{\"name\":\"test.xlsx\"}' , '/admin/ajax/upload' , 1 , 'admin' , 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.1 Safari/605.1.15' , '127.0.0.1' , 1553959921) [ RunTime:0.001247s ]
+---------------------------------------------------------------
+[ 2019-03-30T23:32:26+08:00 ] 127.0.0.1 POST 127.0.0.1/admin/company/info/import
+[运行时间：25.083056s] [吞吐率：0.04req/s] [内存消耗：6,596.84kb] [文件加载：129]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000016s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001498s ]
+[ info ] [ LANG ] /Users/work/WEB/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'company.info',
+    2 => 'import',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'origin' => 'http://127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.1 Safari/605.1.15',
+  'connection' => 'keep-alive',
+  'referer' => 'http://127.0.0.1/admin/company/info?addtabs=1',
+  'content-length' => '66',
+  'cookie' => '_uab_collina=155377793871011809706564; Hm_lpvt_baca6fe3dceaf818f5f835b0ae97e4cc=1553930228; Hm_lpvt_3456bee468c83cc63fb5147f119f1075=1553788642; Hm_lpvt_bfc6c23974fbad0bbfed25f88a973fb0=1553777905; PHPSESSID=2aph93tipahci51qk2kpbe6l07; CNZZDATA1254842228=871315088-1553774523-%7C1553785334; Hm_lvt_3456bee468c83cc63fb5147f119f1075=1553777939; Hm_lvt_baca6fe3dceaf818f5f835b0ae97e4cc=1553930228; Hm_lvt_bfc6c23974fbad0bbfed25f88a973fb0=1553516742,1553777905; UM_distinctid=169c461cfa0434-067f298972c8a-3f636f4d-13c680-169c461cfa150d',
+)
+[ info ] [ PARAM ] array (
+  'file' => '/uploads/20190330/d32429720d985c9262ce1b17ab7b755a.xlsx',
+)
+[ info ] [ LANG ] /Users/work/WEB/fastadmin/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001211s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /Users/work/WEB/fastadmin/public/../application/admin/lang/zh-cn/company/info.php
+[ info ] [ RUN ] app\admin\controller\company\Info->import[ /Users/work/WEB/fastadmin/application/admin/controller/company/Info.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.003340s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginvideo\Loginvideo @response_send [ RunTime:0.000199s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000598s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.001086s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000442s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.001055s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001263s ]
+[ sql ] [ SQL ] SELECT COLUMN_NAME,COLUMN_COMMENT FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'fa_company_info' AND TABLE_SCHEMA = 'fastadmin' [ RunTime:0.000940s ]
+[ sql ] [ SQL ] 'fastadmin'fa_company_info'HOW COLUMNS FROM `fa_company_info` [ RunTime:0.001235s ]
+[ sql ] [ SQL ] INSERT INTO `fa_company_info` (`name` , `code` , `type` , `status` , `regCapital` , `scope` , `address` , `contacts` , `createtime` , `updatetime`) VALUES ('常德紫园石材有限公司' , '91430700338544638F' , '有限责任公司(自然人投资或控股)' , '开业' , '300万(元)' , '石材加工与销售。(依法须经批准的项目，经相关部门批准后方可开展经营活动)' , '常德柳叶湖旅游度假区白鹤镇长生桥村五组' , '张顺凯' , 1553959946 , 1553959946) [ RunTime:0.000501s ]
+[ sql ] [ SQL ] INSERT INTO `fa_company_info` (`name` , `code` , `type` , `status` , `regCapital` , `scope` , `address` , `contacts` , `createtime` , `updatetime`) VALUES ('成都丰宇木业有限公司' , '91510184350610490P' , '有限责任公司(自然人投资或控股)' , '开业' , '180万(元)' , '家具、木地板、木制品、木饰品、整体家居制造、销售；建材、机械设备、五金产品、电子产品、金属材料、玻璃制品销售；广告设计、制作、代理、发布；商品及技术进出口（依法须经批准的项目，经相关部门批准后方可开展经营活动）。' , '成都崇州经济开发区顺安路955号' , '陈夕泉' , 1553959946 , 1553959946) [ RunTime:0.000468s ]
+[ sql ] [ SQL ] INSERT INTO `fa_company_info` (`name` , `code` , `type` , `status` , `regCapital` , `scope` , `address` , `contacts` , `createtime` , `updatetime`) VALUES ('邓权塑业科技(湖南)有限公司' , '914307005722311628' , '有限责任公司(自然人投资或控股)' , '开业' , '10,100万(元)' , '塑料硬管及管件、管材、塑料零件及塑料合成材料、网络光缆塑料护套材料、建筑装饰材料的研发及制造和销售；水暖器材、卫浴制品、灯饰开关经营；水表、井盖及管件的铜、铁配件经营。（依法须经批准的项目，经相关部门批准后方可开展经营活动）' , '常德市西洞庭管理区祝丰镇沙河居委会龙天东路18号' , '邓权' , 1553959946 , 1553959946) [ RunTime:0.000477s ]
+[ sql ] [ SQL ] INSERT INTO `fa_company_info` (`name` , `code` , `type` , `status` , `regCapital` , `scope` , `address` , `contacts` , `createtime` , `updatetime`) VALUES ('鼎城区蔡家岗镇鼎新建材厂' , '430703600165854' , '个体工商户' , '开业' , '-' , '免烧砖制造及销售(依法须经批准的项目，经相关部门批准后方可开展经营活动)' , '常德市鼎城区蔡家岗镇舒公殿村四组' , '胡宽永' , 1553959946 , 1553959946) [ RunTime:0.000454s ]
+[ sql ] [ SQL ] INSERT INTO `fa_company_info` (`name` , `code` , `type` , `status` , `regCapital` , `scope` , `address` , `contacts` , `createtime` , `updatetime`) VALUES ('鼎城区灌溪镇飞龙建材厂' , '430703600211803' , '个体工商户' , '开业' , '-' , '水泥预制件制作、销售,免烧灰砂砖生产、销售' , '常德市鼎城区灌溪镇富贵坪村十四组' , '皇甫恒久' , 1553959946 , 1553959946) [ RunTime:0.000454s ]
+[ sql ] [ SQL ] INSERT INTO `fa_company_info` (`name` , `code` , `type` , `status` , `regCapital` , `scope` , `address` , `contacts` , `createtime` , `updatetime`) VALUES ('鼎城区灌溪镇江志鸿集装箱租赁部' , '430703600298443' , '个体工商户' , '开业' , '-' , '集装箱租赁。' , '常德市鼎城区灌溪镇黄土山村十七组' , '江学明' , 1553959946 , 1553959946) [ RunTime:0.000407s ]
+[ sql ] [ SQL ] INSERT INTO `fa_company_info` (`name` , `code` , `type` , `status` , `regCapital` , `scope` , `address` , `contacts` , `createtime` , `updatetime`) VALUES ('鼎城区明亮防水材料经营部' , '430703600133500' , '个体工商户' , '开业' , '-' , '防水涂料零售（依法须经批准的项目，经相关部门批准后方可开展经营活动）' , '常德市鼎城区灌溪镇百家坪社区中联大道151号' , '周小华' , 1553959946 , 1553959946) [ RunTime:0.000392s ]
+[ sql ] [ SQL ] INSERT INTO `fa_company_info` (`name` , `code` , `type` , `status` , `regCapital` , `scope` , `address` , `contacts` , `createtime` , `updatetime`) VALUES ('鼎城区武陵镇陈立宪建筑设备租赁部' , '430703600217738' , '个体工商户' , '开业' , '-' , '建筑设备租赁服务.' , '常德市鼎城区武陵镇迎宾社区东旭小区内' , '陈立宪' , 1553959946 , 1553959946) [ RunTime:0.000353s ]
+[ sql ] [ SQL ] INSERT INTO `fa_company_info` (`name` , `code` , `type` , `status` , `regCapital` , `scope` , `address` , `contacts` , `createtime` , `updatetime`) VALUES ('鼎城区武陵镇风顺吸水砖厂' , '430703600244351' , '个体工商户' , '开业' , '-' , '砖、瓦加工销售（依法须经批准的项目，经相关部门批准后方可开展经营活动）**' , '常德市鼎城区郭家铺街道王家铺社区二组' , '黄河' , 1553959946 , 1553959946) [ RunTime:0.000355s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin_log` [ RunTime:0.001486s ]
+[ sql ] [ SQL ] INSERT INTO `fa_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('' , '{\"file\":\"\\/uploads\\/20190330\\/d32429720d985c9262ce1b17ab7b755a.xlsx\"}' , '/admin/company/info/import' , 1 , 'admin' , 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.1 Safari/605.1.15' , '127.0.0.1' , 1553959946) [ RunTime:0.001065s ]
+---------------------------------------------------------------
+[ 2019-03-30T23:52:59+08:00 ] 127.0.0.1 POST 127.0.0.1/admin/ajax/upload
+[运行时间：0.140609s] [吞吐率：7.11req/s] [内存消耗：3,693.02kb] [文件加载：85]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000019s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001581s ]
+[ info ] [ LANG ] /Users/work/WEB/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'upload',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundarylYBt87XeRrBtjFcf',
+  'origin' => 'http://127.0.0.1',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'Hm_lpvt_baca6fe3dceaf818f5f835b0ae97e4cc=1553930228; Hm_lpvt_3456bee468c83cc63fb5147f119f1075=1553788642; Hm_lpvt_bfc6c23974fbad0bbfed25f88a973fb0=1553777905; PHPSESSID=2aph93tipahci51qk2kpbe6l07; CNZZDATA1254842228=871315088-1553774523-%7C1553785334; Hm_lvt_3456bee468c83cc63fb5147f119f1075=1553777939; Hm_lvt_baca6fe3dceaf818f5f835b0ae97e4cc=1553930228; Hm_lvt_bfc6c23974fbad0bbfed25f88a973fb0=1553516742,1553777905; UM_distinctid=169c461cfa0434-067f298972c8a-3f636f4d-13c680-169c461cfa150d',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.1 Safari/605.1.15',
+  'referer' => 'http://127.0.0.1/admin/company/info?addtabs=1',
+  'content-length' => '10211',
+  'accept-language' => 'zh-cn',
+)
+[ info ] [ PARAM ] array (
+  'name' => 'test.xlsx',
+)
+[ info ] [ LANG ] /Users/work/WEB/fastadmin/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001089s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] /Users/work/WEB/fastadmin/public/../application/admin/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\admin\controller\Ajax->upload[ /Users/work/WEB/fastadmin/application/admin/controller/Ajax.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\thumb\Thumb @upload_after [ RunTime:0.000147s ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.004147s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginvideo\Loginvideo @response_send [ RunTime:0.000230s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000708s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_attachment` [ RunTime:0.001244s ]
+[ sql ] [ SQL ] INSERT INTO `fa_attachment` (`admin_id` , `filesize` , `imagetype` , `mimetype` , `url` , `uploadtime` , `storage` , `sha1` , `createtime` , `updatetime`) VALUES (1 , 9873 , 'xlsx' , 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet' , '/uploads/20190330/099d249a742c3cf070dbb8b4f1b9d67e.xlsx' , 1553961178 , 'local' , '615e8adad5c51482de5d3a6cdf93001ba4e776b8' , 1553961178 , 1553961178) [ RunTime:0.102755s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin_log` [ RunTime:0.001911s ]
+[ sql ] [ SQL ] INSERT INTO `fa_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('' , '{\"name\":\"test.xlsx\"}' , '/admin/ajax/upload' , 1 , 'admin' , 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.1 Safari/605.1.15' , '127.0.0.1' , 1553961179) [ RunTime:0.001246s ]
+---------------------------------------------------------------
+[ 2019-03-30T23:53:26+08:00 ] 127.0.0.1 POST 127.0.0.1/admin/company/info/import
+[运行时间：27.740454s] [吞吐率：0.04req/s] [内存消耗：6,608.58kb] [文件加载：133]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000016s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001438s ]
+[ info ] [ LANG ] /Users/work/WEB/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'company.info',
+    2 => 'import',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'origin' => 'http://127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.1 Safari/605.1.15',
+  'connection' => 'keep-alive',
+  'referer' => 'http://127.0.0.1/admin/company/info?addtabs=1',
+  'content-length' => '66',
+  'cookie' => '_uab_collina=155377793871011809706564; Hm_lpvt_baca6fe3dceaf818f5f835b0ae97e4cc=1553930228; Hm_lpvt_3456bee468c83cc63fb5147f119f1075=1553788642; Hm_lpvt_bfc6c23974fbad0bbfed25f88a973fb0=1553777905; PHPSESSID=2aph93tipahci51qk2kpbe6l07; CNZZDATA1254842228=871315088-1553774523-%7C1553785334; Hm_lvt_3456bee468c83cc63fb5147f119f1075=1553777939; Hm_lvt_baca6fe3dceaf818f5f835b0ae97e4cc=1553930228; Hm_lvt_bfc6c23974fbad0bbfed25f88a973fb0=1553516742,1553777905; UM_distinctid=169c461cfa0434-067f298972c8a-3f636f4d-13c680-169c461cfa150d',
+)
+[ info ] [ PARAM ] array (
+  'file' => '/uploads/20190330/099d249a742c3cf070dbb8b4f1b9d67e.xlsx',
+)
+[ info ] [ LANG ] /Users/work/WEB/fastadmin/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001167s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /Users/work/WEB/fastadmin/public/../application/admin/lang/zh-cn/company/info.php
+[ info ] [ RUN ] app\admin\controller\company\Info->import[ /Users/work/WEB/fastadmin/application/admin/controller/company/Info.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.003469s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginvideo\Loginvideo @response_send [ RunTime:0.000248s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000740s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.001030s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000536s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.001163s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001344s ]
+[ sql ] [ SQL ] SELECT COLUMN_NAME,COLUMN_COMMENT FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'fa_company_info' AND TABLE_SCHEMA = 'fastadmin' [ RunTime:0.001413s ]
+[ sql ] [ SQL ] 'fastadmin'fa_company_info'HOW COLUMNS FROM `fa_company_info` [ RunTime:0.001788s ]
+[ sql ] [ SQL ] INSERT INTO `fa_company_info` (`name` , `code` , `type` , `status` , `regCapital` , `scope` , `address` , `contacts` , `createtime` , `updatetime`) VALUES ('鼎城区许家桥乡佰林五金家电批发部' , '430703600043373' , '个体工商户' , '开业' , '-' , '家用电器、日杂、塑料制品、小五金、建材零售(依法须经批准的项目，经相关部门批准后方可开展经营活动)' , '常德市鼎城区许家桥乡麻家巷村九组' , '唐佰林' , 1553961206 , 1553961206) [ RunTime:0.000645s ]
+[ sql ] [ SQL ] INSERT INTO `fa_company_info` (`name` , `code` , `type` , `status` , `regCapital` , `scope` , `address` , `contacts` , `createtime` , `updatetime`) VALUES ('东莞晶瑞源电子科技有限公司' , '91441900MA52EH9Y6W' , '有限责任公司(自然人独资)' , '开业' , '-' , '-' , '东莞市塘厦镇诸佛岭社区大岭古新村别墅区十六巷3号101铺' , '符魏' , 1553961206 , 1553961206) [ RunTime:0.000468s ]
+[ sql ] [ SQL ] INSERT INTO `fa_company_info` (`name` , `code` , `type` , `status` , `regCapital` , `scope` , `address` , `contacts` , `createtime` , `updatetime`) VALUES ('东莞市富利鑫实业有限公司' , '91441900MA4WA8915Q' , '有限责任公司(自然人投资或控股)' , '开业' , '300万(元)' , '实业投资、物业管理、房地产投资、房地产开发；研发、设计、销售、网上销售：塑胶制品、家具、五金制品、包装制品、建筑材料、机械设备、电子产品及配件、模具、体育用品、办公文具；企业管理咨询服务、市场营销策划、室内外装饰工程施工；货物进出口、技术进出口。' , '东莞市东坑镇彭屋村骏发路松源双创科技园3B23号一楼E区' , '吴晓琴' , 1553961206 , 1553961206) [ RunTime:0.000429s ]
+[ sql ] [ SQL ] INSERT INTO `fa_company_info` (`name` , `code` , `type` , `status` , `regCapital` , `scope` , `address` , `contacts` , `createtime` , `updatetime`) VALUES ('东莞市赛通环保建材有限公司' , '91441900324802747D' , '有限责任公司(自然人投资或控股)' , '开业' , '800万(元)' , '产销：混凝土制品。' , '东莞市虎门镇沙角社区象山尾' , '吴志洲' , 1553961206 , 1553961206) [ RunTime:0.000417s ]
+[ sql ] [ SQL ] INSERT INTO `fa_company_info` (`name` , `code` , `type` , `status` , `regCapital` , `scope` , `address` , `contacts` , `createtime` , `updatetime`) VALUES ('佛山市渤峰金属结构有限公司' , '91440605MA4UNXH219' , '有限责任公司(自然人投资或控股)' , '开业' , '1,000万(元)' , '金属结构制造；其他建筑、安全用金属制品制造。' , '佛山市南海区狮山镇狮岭走马营环村路8号之二厂区自编1号' , '张锦峰' , 1553961206 , 1553961206) [ RunTime:0.000471s ]
+[ sql ] [ SQL ] INSERT INTO `fa_company_info` (`name` , `code` , `type` , `status` , `regCapital` , `scope` , `address` , `contacts` , `createtime` , `updatetime`) VALUES ('佛山市鸿长丰科技有限公司' , '914406073039772493' , '有限责任公司(自然人独资)' , '开业' , '800万(元)' , '研发、制造、销售：机电设备、电动闸门、金属制品、电子防盗系统；汽车轻量化及环保型新材料，汽车配件，模具，玻璃钢制品，塑料制品；物业租赁。' , '佛山市三水区白坭镇汇银路27号（自编之一）' , '朱宜文' , 1553961206 , 1553961206) [ RunTime:0.000418s ]
+[ sql ] [ SQL ] INSERT INTO `fa_company_info` (`name` , `code` , `type` , `status` , `regCapital` , `scope` , `address` , `contacts` , `createtime` , `updatetime`) VALUES ('佛山市南海区虹科塑料制品厂' , '91440605787902613K' , '个人独资企业' , '开业' , '-' , '加工，产销：塑料建材制品，铝材喷砂。' , '佛山市南海区狮山镇罗村桂丹路芦塘段金王芝加油站侧' , '陈波' , 1553961206 , 1553961206) [ RunTime:0.000422s ]
+[ sql ] [ SQL ] INSERT INTO `fa_company_info` (`name` , `code` , `type` , `status` , `regCapital` , `scope` , `address` , `contacts` , `createtime` , `updatetime`) VALUES ('佛山市阳光陶瓷有限公司' , '91440607738560215H' , '有限责任公司(自然人投资或控股)' , '开业' , '10,000万(元)' , '生产、销售：陶瓷微晶玉石，陶瓷制品，陶瓷原料，包装材料。' , '佛山市三水区白坭镇白金大道（F2、F3、F4、F5）' , '谢永栋' , 1553961206 , 1553961206) [ RunTime:0.000413s ]
+[ sql ] [ SQL ] INSERT INTO `fa_company_info` (`name` , `code` , `type` , `status` , `regCapital` , `scope` , `address` , `contacts` , `createtime` , `updatetime`) VALUES ('公安县涵塑管业有限公司' , '914210223260552555' , '有限责任公司(自然人投资或控股)' , '开业' , '-' , '-' , '公安县孟家溪镇永新村' , '道银兵' , 1553961206 , 1553961206) [ RunTime:0.000365s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin_log` [ RunTime:0.001515s ]
+[ sql ] [ SQL ] INSERT INTO `fa_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('' , '{\"file\":\"\\/uploads\\/20190330\\/099d249a742c3cf070dbb8b4f1b9d67e.xlsx\"}' , '/admin/company/info/import' , 1 , 'admin' , 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.1 Safari/605.1.15' , '127.0.0.1' , 1553961206) [ RunTime:0.001045s ]
+---------------------------------------------------------------
+[ 2019-03-30T23:54:47+08:00 ] 127.0.0.1 POST 127.0.0.1/admin/ajax/upload
+[运行时间：0.124516s] [吞吐率：8.03req/s] [内存消耗：3,693.02kb] [文件加载：85]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000019s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001670s ]
+[ info ] [ LANG ] /Users/work/WEB/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'upload',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryszXe7rgSCUXR6JAm',
+  'origin' => 'http://127.0.0.1',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'Hm_lpvt_baca6fe3dceaf818f5f835b0ae97e4cc=1553930228; Hm_lpvt_3456bee468c83cc63fb5147f119f1075=1553788642; Hm_lpvt_bfc6c23974fbad0bbfed25f88a973fb0=1553777905; PHPSESSID=2aph93tipahci51qk2kpbe6l07; CNZZDATA1254842228=871315088-1553774523-%7C1553785334; Hm_lvt_3456bee468c83cc63fb5147f119f1075=1553777939; Hm_lvt_baca6fe3dceaf818f5f835b0ae97e4cc=1553930228; Hm_lvt_bfc6c23974fbad0bbfed25f88a973fb0=1553516742,1553777905; UM_distinctid=169c461cfa0434-067f298972c8a-3f636f4d-13c680-169c461cfa150d',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.1 Safari/605.1.15',
+  'referer' => 'http://127.0.0.1/admin/company/info?addtabs=1',
+  'content-length' => '10211',
+  'accept-language' => 'zh-cn',
+)
+[ info ] [ PARAM ] array (
+  'name' => 'test.xlsx',
+)
+[ info ] [ LANG ] /Users/work/WEB/fastadmin/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001218s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] /Users/work/WEB/fastadmin/public/../application/admin/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\admin\controller\Ajax->upload[ /Users/work/WEB/fastadmin/application/admin/controller/Ajax.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\thumb\Thumb @upload_after [ RunTime:0.000091s ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.003669s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginvideo\Loginvideo @response_send [ RunTime:0.000195s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000505s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_attachment` [ RunTime:0.001158s ]
+[ sql ] [ SQL ] INSERT INTO `fa_attachment` (`admin_id` , `filesize` , `imagetype` , `mimetype` , `url` , `uploadtime` , `storage` , `sha1` , `createtime` , `updatetime`) VALUES (1 , 9873 , 'xlsx' , 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet' , '/uploads/20190330/099d249a742c3cf070dbb8b4f1b9d67e.xlsx' , 1553961287 , 'local' , '615e8adad5c51482de5d3a6cdf93001ba4e776b8' , 1553961287 , 1553961287) [ RunTime:0.087809s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin_log` [ RunTime:0.001352s ]
+[ sql ] [ SQL ] INSERT INTO `fa_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('' , '{\"name\":\"test.xlsx\"}' , '/admin/ajax/upload' , 1 , 'admin' , 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.1 Safari/605.1.15' , '127.0.0.1' , 1553961287) [ RunTime:0.001478s ]
+---------------------------------------------------------------
+[ 2019-03-30T23:55:11+08:00 ] 127.0.0.1 POST 127.0.0.1/admin/company/info/import
+[运行时间：23.962589s] [吞吐率：0.04req/s] [内存消耗：6,579.67kb] [文件加载：129]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000027s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001420s ]
+[ info ] [ LANG ] /Users/work/WEB/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'company.info',
+    2 => 'import',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'origin' => 'http://127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.1 Safari/605.1.15',
+  'connection' => 'keep-alive',
+  'referer' => 'http://127.0.0.1/admin/company/info?addtabs=1',
+  'content-length' => '66',
+  'cookie' => '_uab_collina=155377793871011809706564; Hm_lpvt_baca6fe3dceaf818f5f835b0ae97e4cc=1553930228; Hm_lpvt_3456bee468c83cc63fb5147f119f1075=1553788642; Hm_lpvt_bfc6c23974fbad0bbfed25f88a973fb0=1553777905; PHPSESSID=2aph93tipahci51qk2kpbe6l07; CNZZDATA1254842228=871315088-1553774523-%7C1553785334; Hm_lvt_3456bee468c83cc63fb5147f119f1075=1553777939; Hm_lvt_baca6fe3dceaf818f5f835b0ae97e4cc=1553930228; Hm_lvt_bfc6c23974fbad0bbfed25f88a973fb0=1553516742,1553777905; UM_distinctid=169c461cfa0434-067f298972c8a-3f636f4d-13c680-169c461cfa150d',
+)
+[ info ] [ PARAM ] array (
+  'file' => '/uploads/20190330/099d249a742c3cf070dbb8b4f1b9d67e.xlsx',
+)
+[ info ] [ LANG ] /Users/work/WEB/fastadmin/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001348s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /Users/work/WEB/fastadmin/public/../application/admin/lang/zh-cn/company/info.php
+[ info ] [ RUN ] app\admin\controller\company\Info->import[ /Users/work/WEB/fastadmin/application/admin/controller/company/Info.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.004949s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginvideo\Loginvideo @response_send [ RunTime:0.000283s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000803s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.001317s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000525s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.001063s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001361s ]
+[ sql ] [ SQL ] SELECT COLUMN_NAME,COLUMN_COMMENT FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'fa_company_info' AND TABLE_SCHEMA = 'fastadmin' [ RunTime:0.000851s ]
+[ sql ] [ SQL ] 'fastadmin'fa_company_info'HOW COLUMNS FROM `fa_company_info` [ RunTime:0.001685s ]
+[ sql ] [ SQL ] INSERT INTO `fa_company_info` (`name` , `code` , `type` , `status` , `regCapital` , `scope` , `address` , `contacts` , `createtime` , `updatetime`) VALUES ('东莞市赛通环保建材有限公司' , '91441900324802747D' , '有限责任公司(自然人投资或控股)' , '开业' , '800万(元)' , '产销：混凝土制品。' , '东莞市虎门镇沙角社区象山尾' , '吴志洲' , 1553961311 , 1553961311) [ RunTime:0.000674s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin_log` [ RunTime:0.001860s ]
+[ sql ] [ SQL ] INSERT INTO `fa_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('' , '{\"file\":\"\\/uploads\\/20190330\\/099d249a742c3cf070dbb8b4f1b9d67e.xlsx\"}' , '/admin/company/info/import' , 1 , 'admin' , 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.1 Safari/605.1.15' , '127.0.0.1' , 1553961311) [ RunTime:0.001977s ]
+---------------------------------------------------------------
+[ 2019-03-30T23:58:29+08:00 ] 127.0.0.1 POST 127.0.0.1/admin/ajax/upload
+[运行时间：0.121544s] [吞吐率：8.23req/s] [内存消耗：3,693.02kb] [文件加载：85]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000017s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001881s ]
+[ info ] [ LANG ] /Users/work/WEB/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'upload',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryC3qwpUeNBD3rWu8S',
+  'origin' => 'http://127.0.0.1',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'Hm_lpvt_baca6fe3dceaf818f5f835b0ae97e4cc=1553930228; Hm_lpvt_3456bee468c83cc63fb5147f119f1075=1553788642; Hm_lpvt_bfc6c23974fbad0bbfed25f88a973fb0=1553777905; PHPSESSID=2aph93tipahci51qk2kpbe6l07; CNZZDATA1254842228=871315088-1553774523-%7C1553785334; Hm_lvt_3456bee468c83cc63fb5147f119f1075=1553777939; Hm_lvt_baca6fe3dceaf818f5f835b0ae97e4cc=1553930228; Hm_lvt_bfc6c23974fbad0bbfed25f88a973fb0=1553516742,1553777905; UM_distinctid=169c461cfa0434-067f298972c8a-3f636f4d-13c680-169c461cfa150d',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.1 Safari/605.1.15',
+  'referer' => 'http://127.0.0.1/admin/company/info?addtabs=1',
+  'content-length' => '10165',
+  'accept-language' => 'zh-cn',
+)
+[ info ] [ PARAM ] array (
+  'name' => 'test.xlsx',
+)
+[ info ] [ LANG ] /Users/work/WEB/fastadmin/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001179s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] /Users/work/WEB/fastadmin/public/../application/admin/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\admin\controller\Ajax->upload[ /Users/work/WEB/fastadmin/application/admin/controller/Ajax.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\thumb\Thumb @upload_after [ RunTime:0.000154s ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.004253s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginvideo\Loginvideo @response_send [ RunTime:0.000318s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000648s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_attachment` [ RunTime:0.001199s ]
+[ sql ] [ SQL ] INSERT INTO `fa_attachment` (`admin_id` , `filesize` , `imagetype` , `mimetype` , `url` , `uploadtime` , `storage` , `sha1` , `createtime` , `updatetime`) VALUES (1 , 9827 , 'xlsx' , 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet' , '/uploads/20190330/639ddb0240cc9d85d8671d01acbbc4b0.xlsx' , 1553961509 , 'local' , 'a93e1285661dfb145d6dba3dd02da918dac6c24f' , 1553961509 , 1553961509) [ RunTime:0.083184s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin_log` [ RunTime:0.002008s ]
+[ sql ] [ SQL ] INSERT INTO `fa_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('' , '{\"name\":\"test.xlsx\"}' , '/admin/ajax/upload' , 1 , 'admin' , 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.1 Safari/605.1.15' , '127.0.0.1' , 1553961509) [ RunTime:0.001377s ]
+---------------------------------------------------------------
+[ 2019-03-30T23:58:52+08:00 ] 127.0.0.1 POST 127.0.0.1/admin/company/info/import
+[运行时间：22.804731s] [吞吐率：0.04req/s] [内存消耗：6,573.46kb] [文件加载：130]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000017s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001499s ]
+[ info ] [ LANG ] /Users/work/WEB/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'company.info',
+    2 => 'import',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'origin' => 'http://127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.1 Safari/605.1.15',
+  'connection' => 'keep-alive',
+  'referer' => 'http://127.0.0.1/admin/company/info?addtabs=1',
+  'content-length' => '66',
+  'cookie' => '_uab_collina=155377793871011809706564; Hm_lpvt_baca6fe3dceaf818f5f835b0ae97e4cc=1553930228; Hm_lpvt_3456bee468c83cc63fb5147f119f1075=1553788642; Hm_lpvt_bfc6c23974fbad0bbfed25f88a973fb0=1553777905; PHPSESSID=2aph93tipahci51qk2kpbe6l07; CNZZDATA1254842228=871315088-1553774523-%7C1553785334; Hm_lvt_3456bee468c83cc63fb5147f119f1075=1553777939; Hm_lvt_baca6fe3dceaf818f5f835b0ae97e4cc=1553930228; Hm_lvt_bfc6c23974fbad0bbfed25f88a973fb0=1553516742,1553777905; UM_distinctid=169c461cfa0434-067f298972c8a-3f636f4d-13c680-169c461cfa150d',
+)
+[ info ] [ PARAM ] array (
+  'file' => '/uploads/20190330/639ddb0240cc9d85d8671d01acbbc4b0.xlsx',
+)
+[ info ] [ LANG ] /Users/work/WEB/fastadmin/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001074s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /Users/work/WEB/fastadmin/public/../application/admin/lang/zh-cn/company/info.php
+[ info ] [ RUN ] app\admin\controller\company\Info->import[ /Users/work/WEB/fastadmin/application/admin/controller/company/Info.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.064429s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginvideo\Loginvideo @response_send [ RunTime:0.000322s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000779s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.001472s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000660s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.001164s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001394s ]
+[ sql ] [ SQL ] SELECT COLUMN_NAME,COLUMN_COMMENT FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'fa_company_info' AND TABLE_SCHEMA = 'fastadmin' [ RunTime:0.000979s ]
+[ sql ] [ SQL ] 'fastadmin'fa_company_info'HOW COLUMNS FROM `fa_admin_log` [ RunTime:0.001503s ]
+[ sql ] [ SQL ] INSERT INTO `fa_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('' , '{\"file\":\"\\/uploads\\/20190330\\/639ddb0240cc9d85d8671d01acbbc4b0.xlsx\"}' , '/admin/company/info/import' , 1 , 'admin' , 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.1 Safari/605.1.15' , '127.0.0.1' , 1553961532) [ RunTime:0.062088s ]

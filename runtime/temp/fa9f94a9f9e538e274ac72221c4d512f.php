@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:64:"/Users/work/WEB/fastadmin/addons/loginvideo/view/background.html";i:1553167192;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:64:"C:\xampp\htdocs\fastadmin\addons\loginvideo\view\background.html";i:1545959688;}*/ ?>
 <?php if($config['background-video']): ?>
 <div id="video_wrapper">
     <video autoplay muted loop>

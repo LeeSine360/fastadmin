@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:88:"/Users/work/WEB/fastadmin/public/../application/admin/view/finance/companypay/index.html";i:1553167192;s:68:"/Users/work/WEB/fastadmin/application/admin/view/layout/default.html";i:1553167192;s:65:"/Users/work/WEB/fastadmin/application/admin/view/common/meta.html";i:1553167192;s:67:"/Users/work/WEB/fastadmin/application/admin/view/common/script.html";i:1553167192;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:87:"C:\xampp\htdocs\fastadmin\public/../application/admin\view\project\construct\index.html";i:1552881337;s:68:"C:\xampp\htdocs\fastadmin\application\admin\view\layout\default.html";i:1545959258;s:65:"C:\xampp\htdocs\fastadmin\application\admin\view\common\meta.html";i:1547016869;s:67:"C:\xampp\htdocs\fastadmin\application\admin\view\common\script.html";i:1545959258;}*/ ?>
 <!DOCTYPE html>
 <html lang="<?php echo $config['language']; ?>">
     <head>
@@ -59,12 +59,12 @@
                 <div class="widget-body no-padding">
                     <div id="toolbar" class="toolbar">
                         <a href="javascript:;" class="btn btn-primary btn-refresh" title="<?php echo __('Refresh'); ?>" ><i class="fa fa-refresh"></i> </a>
-                        <a href="javascript:;" class="btn btn-success btn-add <?php echo $auth->check('finance/companypay/add')?'':'hide'; ?>" title="<?php echo __('Add'); ?>" ><i class="fa fa-plus"></i> <?php echo __('Add'); ?></a>
-                        <a href="javascript:;" class="btn btn-success btn-edit btn-disabled disabled <?php echo $auth->check('finance/companypay/edit')?'':'hide'; ?>" title="<?php echo __('Edit'); ?>" ><i class="fa fa-pencil"></i> <?php echo __('Edit'); ?></a>
-                        <a href="javascript:;" class="btn btn-danger btn-del btn-disabled disabled <?php echo $auth->check('finance/companypay/del')?'':'hide'; ?>" title="<?php echo __('Delete'); ?>" ><i class="fa fa-trash"></i> <?php echo __('Delete'); ?></a>
-                        <a href="javascript:;" class="btn btn-danger btn-import <?php echo $auth->check('finance/companypay/import')?'':'hide'; ?>" title="<?php echo __('Import'); ?>" id="btn-import-file" data-url="ajax/upload" data-mimetype="csv,xls,xlsx" data-multiple="false"><i class="fa fa-upload"></i> <?php echo __('Import'); ?></a>
+                        <a href="javascript:;" class="btn btn-success btn-add <?php echo $auth->check('project/construct/add')?'':'hide'; ?>" title="<?php echo __('Add'); ?>" ><i class="fa fa-plus"></i> <?php echo __('Add'); ?></a>
+                        <a href="javascript:;" class="btn btn-success btn-edit btn-disabled disabled <?php echo $auth->check('project/construct/edit')?'':'hide'; ?>" title="<?php echo __('Edit'); ?>" ><i class="fa fa-pencil"></i> <?php echo __('Edit'); ?></a>
+                        <a href="javascript:;" class="btn btn-danger btn-del btn-disabled disabled <?php echo $auth->check('project/construct/del')?'':'hide'; ?>" title="<?php echo __('Delete'); ?>" ><i class="fa fa-trash"></i> <?php echo __('Delete'); ?></a>
+                        <a href="javascript:;" class="btn btn-danger btn-import <?php echo $auth->check('project/construct/import')?'':'hide'; ?>" title="<?php echo __('Import'); ?>" id="btn-import-file" data-url="ajax/upload" data-mimetype="csv,xls,xlsx" data-multiple="false"><i class="fa fa-upload"></i> <?php echo __('Import'); ?></a>
 
-                        <div class="dropdown btn-group <?php echo $auth->check('finance/companypay/multi')?'':'hide'; ?>">
+                        <div class="dropdown btn-group <?php echo $auth->check('project/construct/multi')?'':'hide'; ?>">
                             <a class="btn btn-primary btn-more dropdown-toggle btn-disabled disabled" data-toggle="dropdown"><i class="fa fa-cog"></i> <?php echo __('More'); ?></a>
                             <ul class="dropdown-menu text-left" role="menu">
                                 <li><a class="btn btn-link btn-multi btn-disabled disabled" href="javascript:;" data-params="status=normal"><i class="fa fa-eye"></i> <?php echo __('Set to normal'); ?></a></li>
@@ -73,8 +73,8 @@
                         </div>
                     </div>
                     <table id="table" class="table table-striped table-bordered table-hover table-nowrap"
-                           data-operate-edit="<?php echo $auth->check('finance/companypay/edit'); ?>" 
-                           data-operate-del="<?php echo $auth->check('finance/companypay/del'); ?>" 
+                           data-operate-edit="<?php echo $auth->check('project/construct/edit'); ?>" 
+                           data-operate-del="<?php echo $auth->check('project/construct/del'); ?>" 
                            width="100%">
                     </table>
                 </div>

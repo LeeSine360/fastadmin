@@ -36,8 +36,17 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
                 ]
             });
 
+           /* if ($(".com-btn-refresh").size() > 0) {
+                $(".btn-refresh").on('click', function () {
+                    $(this).find(".fa").addClass("fa-spin");
+                    //$(this).find(".fa").removeClass("fa-spin");
+                }
+            }*/
+            console.log($(".com-btn-refresh").size());
+
             // 为表格绑定事件
             Table.api.bindevent(table);
+            Controller.api.bindevent();
         },
         add: function () {
             Controller.api.bindevent();

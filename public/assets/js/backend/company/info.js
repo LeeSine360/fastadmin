@@ -38,8 +38,33 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
 
            if ($(".com-btn-refresh").size() > 0) {
                 $(".com-btn-refresh").on('click', function () {
-                    $(this).find(".fa").addClass("fa-spin");
-                    //$(this).find(".fa").removeClass("fa-spin");
+                    var companyName = $('#c-name').val();
+                    if(companyName == ''){
+                        Toastr.error("请输入供应商名称!");
+                    }else{
+                        $(".com-btn-refresh").find(".fa").addClass("fa-spin");
+                        Fast.api.ajax({
+                                    url: 'company/info/test',
+                                    data: {key: companyName},
+                                }, function (data, ret) {
+                                    $(".com-btn-refresh").find(".fa").removeClass("fa-spin");
+                                    $("#c-code").val(data.regNo);
+                                    $("#c-type").val(data.entType);
+                                    $("#c-regCapital").val(data.regCapital);
+                                    $("#c-contacts").val(data.legalPerson);
+                                    $("#c-scope").val(data.scope);
+                                    $("#c-address").val(data.regAddr);
+                                },function(xhr){
+                                    $(".com-btn-refresh").find(".fa").removeClass("fa-spin");
+                                    $("#c-code").val("");
+                                    $("#c-type").val("");
+                                    $("#c-regCapital").val("");
+                                    $("#c-contacts").val("");
+                                    $("#c-scope").val("");
+                                    $("#c-address").val("");
+                                }
+                        );
+                    }
                 });
             }
 

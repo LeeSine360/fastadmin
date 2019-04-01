@@ -602,6 +602,10 @@ form.form-horizontal .control-label {
   *display: inline;
   *zoom: 1;
 }
+/*表单行间距*/
+.form-row-height {
+  margin-bottom: 10px;
+}
 /*修复nice-validator和summernote的编辑框冲突*/
 .nice-validator .note-editor .note-editing-area .note-editable {
   display: inherit;

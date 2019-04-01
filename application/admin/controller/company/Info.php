@@ -90,8 +90,8 @@ class Info extends Backend {
 			}
 		}
 	}
-	public function test($key) {
-		$key = $this->request->get("key", '');
+	public function test() {
+		$key = $this->request->post("key", '');
 		$url = "https://xin.baidu.com/";
 		$txt = file_get_contents($url . "s?q=" . $key);
 
@@ -107,9 +107,13 @@ class Info extends Backend {
 
 			if ($name_array[1] == $key) {
 				$jsonTxt = file_get_contents($url . "detail/basicAjax?pid=" . $url_array[1]);
-				return $jsonTxt;
+				$result = json_decode($jsonTxt, true);
+				return array('code' => 1, 'msg' => '查询成功!', 'data' => $result['data']);
+			} else {
+				return array('code' => 0, 'msg' => '查询失败!');
 			}
 		}
+		return array('code' => 0, 'msg' => '查询失败!');
 	}
 
 	/**

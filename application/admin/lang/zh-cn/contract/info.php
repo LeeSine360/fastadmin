@@ -26,4 +26,5 @@ return [
 	'Section.name' => '标段名称',
 	'Info.name' => '供应商名称',
 	'Number' => '合同份数',
+	'Category.name' => '合同类型'
 ];

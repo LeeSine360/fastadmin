@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:82:"/Users/work/WEB/fastadmin/public/../application/admin/view/company/info/index.html";i:1554120768;s:68:"/Users/work/WEB/fastadmin/application/admin/view/layout/default.html";i:1553167192;s:65:"/Users/work/WEB/fastadmin/application/admin/view/common/meta.html";i:1553167192;s:67:"/Users/work/WEB/fastadmin/application/admin/view/common/script.html";i:1553167192;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:82:"C:\xampp\htdocs\fastadmin\public/../application/admin\view\company\info\index.html";i:1554163869;s:68:"C:\xampp\htdocs\fastadmin\application\admin\view\layout\default.html";i:1545959258;s:65:"C:\xampp\htdocs\fastadmin\application\admin\view\common\meta.html";i:1547016869;s:67:"C:\xampp\htdocs\fastadmin\application\admin\view\common\script.html";i:1545959258;}*/ ?>
 <!DOCTYPE html>
 <html lang="<?php echo $config['language']; ?>">
     <head>

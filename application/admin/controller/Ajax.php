@@ -231,7 +231,7 @@ class Ajax extends Backend
             if ($type) {
                 $where['type'] = $type;
             }
-            if ($pid) {
+            if ($pid || $pid == 0) {
                 $where['pid'] = $pid;
             }
 

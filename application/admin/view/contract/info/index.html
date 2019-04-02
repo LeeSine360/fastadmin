@@ -34,8 +34,8 @@
             </div>
 
             <div class="tab-pane fade" id="two">
-                <form id="add-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="">
-                    <div class="form-group">
+                <form id="add-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="contract/info/add">
+                    <div class="row form-row-height">
                         <label class="control-label col-xs-12 col-sm-2">{:__('Project_info_id')}:</label>
                         <div class="col-xs-12 col-sm-3">
                             <input id="c-project_info_id" data-rule="required" data-source="project/info/index" class="form-control selectpage" name="row[project_info_id]" type="text" value="">
@@ -45,27 +45,31 @@
                             <input id="c-project_section_ids" data-rule="required" data-source="project/section/index" data-multiple="true" class="form-control selectpage" name="row[project_section_ids]" type="text" value="">
                         </div>
                     </div>
-                    <div class="form-group">
+                    <div class="row form-row-height">
                         <label class="control-label col-xs-12 col-sm-2">{:__('Project_company_id')}:</label>
                         <div class="col-xs-12 col-sm-3">
-                            <input id="c-project_company_id" data-rule="required" data-source="project/company/index" class="form-control selectpage" name="row[project_company_id]" type="text" value="">
+                            <input id="c-project_company_id" data-rule="required" data-source="company/info/index" class="form-control selectpage" name="row[project_company_id]" type="text" value="">
                         </div>
                         <label class="control-label col-xs-12 col-sm-2">{:__('Name')}:</label>
                         <div class="col-xs-12 col-sm-3">
                             <input id="c-name" data-rule="required" class="form-control" name="row[name]" type="text">
                         </div>
                     </div>
-                    <div class="form-group">
+                    <div class="row form-row-height">
                         <label class="control-label col-xs-12 col-sm-2">{:__('Category_id')}:</label>
-                        <div class="col-xs-12 col-sm-3">
-                            <input id="c-category_id" data-rule="required" data-source="category/selectpage" data-params='{"custom[type]":"contract_info"}' class="form-control selectpage" name="row[category_id]" type="text" value="">
+                        <div class="col-xs-12 col-sm-6">
+                            <!--<input id="c-category_id" data-rule="required" data-source="category/selectpage" data-params='{"custom[type]":"classify","custom[pid]":0}' class="form-control selectpage" name="row[category_id]" type="text" value="">-->
+                            <div class="form-inline" data-toggle="cxselect" data-selects="first,second">
+                                                    <select class="first form-control" name="row[category_id]" data-url="ajax/category?type=classify&pid=0"></select>
+                                                    <select class="second form-control" name="row[label_ids]" data-url="ajax/category" data-query-name="pid"></select>
+                                                </div>
                         </div>
-                        <label class="control-label col-xs-12 col-sm-2">{:__('Label_ids')}:</label>
+                        <!--<label class="control-label col-xs-12 col-sm-2">{:__('Label_ids')}:</label>
                         <div class="col-xs-12 col-sm-3">
                             <input id="c-label_ids" data-rule="required" data-source="label/index" data-multiple="true" class="form-control selectpage" name="row[label_ids]" type="text" value="">
-                        </div>
+                        </div>-->
                     </div>
-                    <div class="form-group">
+                    <div class="row form-row-height">
                         <label class="control-label col-xs-12 col-sm-2">{:__('Price')}:</label>
                         <div class="col-xs-12 col-sm-3">
                             <input id="c-price" class="form-control" step="0.01" name="row[price]" type="number">
@@ -75,7 +79,7 @@
                             <input id="c-number" data-rule="required" class="form-control" name="row[number]" type="text">
                         </div>
                     </div>
-                    <div class="form-group">
+                    <div class="row form-row-height">
                         <label class="control-label col-xs-12 col-sm-2">{:__('Signdate')}:</label>
                         <div class="col-xs-12 col-sm-3">
                             <input id="c-signdate" class="form-control datetimepicker" data-date-format="YYYY-MM-DD" data-use-current="true" name="row[signdate]" type="text" value="{:date('Y-m-d')}">
@@ -85,7 +89,7 @@
                             <input id="c-expirydate" class="form-control datetimepicker" data-date-format="YYYY-MM-DD" data-use-current="true" name="row[expirydate]" type="text" value="{:date('Y-m-d')}">
                         </div>
                     </div>
-                    <div class="form-group">
+                    <div class="row form-row-height">
                         <label class="control-label col-xs-12 col-sm-2">{:__('Contacts')}:</label>
                         <div class="col-xs-12 col-sm-3">
                             <input id="c-operatorname" class="form-control" name="row[operatorname]" type="text">
@@ -95,7 +99,7 @@
                             <input id="c-phone" data-rule="required" class="form-control" name="row[phone]" type="text">
                         </div>
                     </div>
-                    <div class="form-group">
+                    <div class="row form-row-height">
                         <label class="control-label col-xs-12 col-sm-2">{:__('Operatorname')}:</label>
                         <div class="col-xs-12 col-sm-3">
                             <input id="c-operatorname" class="form-control" name="row[operatorname]" type="text">
@@ -106,19 +110,19 @@
                         </div>
                     </div>
                     
-                    <div class="form-group">
+                    <div class="row form-row-height">
                         <label class="control-label col-xs-12 col-sm-2">{:__('Settlement')}:</label>
                         <div class="col-xs-12 col-sm-8">
                             <textarea id="c-settlement" class="form-control " rows="5" name="row[settlement]" cols="50"></textarea>
                         </div>
                     </div>
-                    <div class="form-group">
+                    <!--<div class="row form-row-height">
                         <label class="control-label col-xs-12 col-sm-2">{:__('Content')}:</label>
                         <div class="col-xs-12 col-sm-8">
                             <textarea id="c-content" class="form-control" rows="5" name="row[content]" cols="50"></textarea>
                         </div>
-                    </div>
-                    <div class="form-group">
+                    </div>-->
+                    <div class="row form-row-height">
                         <label class="control-label col-xs-12 col-sm-2">{:__('Uploadimages')}:</label>
                         <div class="col-xs-12 col-sm-8">
                             <div class="input-group">
@@ -132,7 +136,7 @@
                             <ul class="row list-inline plupload-preview" id="p-uploadimages"></ul>
                         </div>
                     </div>
-                    <div class="form-group layer-footer">
+                    <div class="row form-row-height layer-footer">
                         <label class="control-label col-xs-12 col-sm-2"></label>
                         <div class="col-xs-12 col-sm-8">
                             <button type="submit" class="btn btn-success btn-embossed disabled">{:__('OK')}</button>

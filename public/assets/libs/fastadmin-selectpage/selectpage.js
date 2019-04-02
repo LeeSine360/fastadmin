@@ -527,7 +527,7 @@
         if (orgWidth <= 0)
             orgWidth = this.elementRealSize(input, 'outerWidth');
         if (orgWidth < 150)
-            orgWidth = 150;
+            orgWidth = 150;orgWidth="100%";
 
         elem.combo_input = input.attr({'autocomplete': 'off'}).addClass(css.input).wrap('<div>');
         if (p.selectOnly)

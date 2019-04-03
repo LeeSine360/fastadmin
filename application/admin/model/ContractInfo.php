@@ -19,16 +19,7 @@ class ContractInfo extends Model
     // 追加属性
     protected $append = [
 
-    ];
-    
-
-    
-
-
-
-
-
-
+    ];    
 
     public function projectInfo()
     {

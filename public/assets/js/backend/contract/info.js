@@ -26,7 +26,7 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
                         {checkbox: true},
                         {field: 'id', title: __('Id')},
                         {field: 'project_info.short', title: __('Info.short')},
-                        {field: 'project_section.name', title: __('Section.name')},
+                        {field: 'project_section_names', title: __('Section.name')},
                         {field: 'company_info.name', title: __('Info.name')},
                         {field: 'name', title: __('Name')},
                         {field: 'category.name', title: __('Category.name')},
@@ -42,11 +42,15 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
                 ]
             });
 
-            $("#c-project_info_id").on("change",function(e){
-                var value = $("#c-project_info_id").val();
-                var option = {"custom[type]":"classify","custom[pid]":value};
-                $("#c-project_section_ids").attr("data-params",option);
-            })
+            var proId = 0;
+
+            $("#c-project_info_id").change(function(event) {
+                proId = $("#c-project_info_id").val();
+            });
+
+            $("#c-project_section_ids").data("params", function(e){
+                return {custom: {project_info_id: proId}};
+            });        
 
             // 为表格绑定事件
             Table.api.bindevent(table);

@@ -62,12 +62,14 @@ class Info extends Backend
                     ->limit($offset, $limit)
                     ->select();
 
+            $list = addtion($list, 'project_section_ids');            
+
             foreach ($list as $row) {
-                $row->visible(['id','name','phone','signdate','expirydate','price','operatorname','operatorphone','createtime']);
+                $row->visible(['id','name','phone','signdate','expirydate','price','operatorname','operatorphone','createtime','project_section_names']);
                 $row->visible(['project_info']);
 				$row->getRelation('project_info')->visible(['short']);
-				$row->visible(['project_section']);
-				$row->getRelation('project_section')->visible(['name']);
+				//$row->visible(['project_section']);
+				//$row->getRelation('project_section')->visible(['name']);
 				$row->visible(['company_info']);
 				$row->getRelation('company_info')->visible(['name']);
 				$row->visible(['category']);

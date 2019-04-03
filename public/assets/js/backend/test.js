@@ -1,4 +1,4 @@
-define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefined, Backend, Table, Form) {
+define(['jquery', 'bootstrap', 'backend', 'table', 'form', 'editable'], function ($, undefined, Backend, Table, Form) {
 
     var Controller = {
         index: function () {
@@ -39,7 +39,7 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
                         {field: 'keywords', title: __('Keywords')},
                         {field: 'description', title: __('Description')},
                         {field: 'city', title: __('City')},
-                        {field: 'price', title: __('Price'), operate:'BETWEEN'},
+                        {field: 'price', title: __('Price'), operate:'BETWEEN', editable: true},
                         {field: 'views', title: __('Views')},
                         {field: 'startdate', title: __('Startdate'), operate:'RANGE', addclass:'datetimerange'},
                         {field: 'activitytime', title: __('Activitytime'), operate:'RANGE', addclass:'datetimerange'},

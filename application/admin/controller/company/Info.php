@@ -57,7 +57,7 @@ class Info extends Backend {
 				->select();
 
 			foreach ($list as $row) {
-				$row->visible(['name', 'code', 'phone', 'account', 'bankname']);
+				$row->visible(['id','name', 'code', 'phone', 'account', 'bankname']);
 				$row->visible(['admin']);
 				$row->getRelation('admin')->visible(['username']);
 			}

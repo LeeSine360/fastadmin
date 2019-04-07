@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:83:"/Users/work/WEB/fastadmin/public/../application/admin/view/contract/info/index.html";i:1554289167;s:68:"/Users/work/WEB/fastadmin/application/admin/view/layout/default.html";i:1553167192;s:65:"/Users/work/WEB/fastadmin/application/admin/view/common/meta.html";i:1553167192;s:67:"/Users/work/WEB/fastadmin/application/admin/view/common/script.html";i:1553167192;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:83:"/Users/work/WEB/fastadmin/public/../application/admin/view/contract/info/index.html";i:1554630888;s:68:"/Users/work/WEB/fastadmin/application/admin/view/layout/default.html";i:1553167192;s:65:"/Users/work/WEB/fastadmin/application/admin/view/common/meta.html";i:1553167192;s:67:"/Users/work/WEB/fastadmin/application/admin/view/common/script.html";i:1553167192;}*/ ?>
 <!DOCTYPE html>
 <html lang="<?php echo $config['language']; ?>">
     <head>
@@ -112,9 +112,9 @@
                         <div class="col-xs-12 col-sm-6">
                             <!--<input id="c-category_id" data-rule="required" data-source="category/selectpage" data-params='{"custom[type]":"classify","custom[pid]":0}' class="form-control selectpage" name="row[category_id]" type="text" value="">-->
                             <div class="form-inline" data-toggle="cxselect" data-selects="first,second">
-                                                    <select class="first form-control input-left-padding20" name="row[category_id]" data-url="ajax/category?type=classify&pid=0"></select>
-                                                    <select class="second form-control input-left-padding20" name="row[label_ids]" data-url="ajax/category" data-query-name="pid"></select>
-                                                </div>
+                                <select class="first form-control input-left-padding20" name="row[category_id]" data-url="ajax/category?type=classify&pid=0"></select>
+                                <select class="second form-control input-left-padding20" name="row[label_ids]" data-url="ajax/category" data-query-name="pid"></select>
+                            </div>
                         </div>
                         <!--<label class="control-label col-xs-12 col-sm-2"><?php echo __('Label_ids'); ?>:</label>
                         <div class="col-xs-12 col-sm-3">

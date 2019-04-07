@@ -3,11 +3,12 @@
 return [
 	'Id' => 'ID',
 	'Name' => '合同名称',
+	'Number' => '合同编号',
 	'Project_info_id' => '项目名称',
 	'Project_section_ids' => '标段名称',
 	'Project_company_id' => '供应商名称',
 	'Category_id' => '合同类型',
-	'Label_ids' => '类别子目录',
+	'Label_ids' => '合同类型',
 	'Contacts' => '业务经理姓名',
 	'Phone' => '联系电话',
 	'Signdate' => '签订日期',
@@ -25,6 +26,5 @@ return [
 	'Info.short' => '项目简称',
 	'Section.name' => '标段名称',
 	'Info.name' => '供应商名称',
-	'Number' => '合同份数',
-	'Category.name' => '合同类型'
+	'Category.name' => '合同类型',
 ];

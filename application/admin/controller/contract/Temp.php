@@ -9,23 +9,18 @@ use app\common\controller\Backend;
  *
  * @icon fa fa-circle-o
  */
-class Info extends Backend {
+class Temp extends Backend {
 
 	/**
-	 * Info模型对象
-	 * @var \app\admin\model\contract\Info
+	 * Temp模型对象
+	 * @var \app\admin\model\contract\Temp
 	 */
 	protected $model = null;
-	protected $projectModel = null;
-	protected $projectSectionModel = null;
-	protected $companyModel = null;
 
 	public function _initialize() {
 		parent::_initialize();
-		$this->model = new \app\admin\model\ContractInfo;
-		$this->projectModel = model('ProjectInfo');
-		$this->projectSectionModel = model('ProjectSection');
-		$this->companyModel = model('CompanyInfo');
+		$this->model = new \app\admin\model\ContractTemp;
+
 	}
 
 	/**
@@ -35,50 +30,47 @@ class Info extends Backend {
 	 */
 
 	/**
-	 * 查看
+	 * 导入
 	 */
-	public function index() {
-		//当前是否为关联查询
-		$this->relationSearch = true;
-		//设置过滤方法
-		$this->request->filter(['strip_tags']);
-		if ($this->request->isAjax()) {
-			//如果发送的来源是Selectpage，则转发到Selectpage
-			if ($this->request->request('keyField')) {
-				return $this->selectpage();
-			}
-			list($where, $sort, $order, $offset, $limit) = $this->buildparams();
-			$total = $this->model
-				->with(['projectInfo', 'projectSection', 'companyInfo', 'category'])
-				->where($where)
-				->order($sort, $order)
-				->count();
 
-			$list = $this->model
-				->with(['projectInfo', 'projectSection', 'companyInfo', 'category'])
-				->where($where)
-				->order($sort, $order)
-				->limit($offset, $limit)
-				->select();
-
-			$list = addtion($list, 'project_section_ids');
-
-			foreach ($list as $row) {
-				$row->visible(['id', 'name', 'number', 'phone', 'signdate', 'expirydate', 'price', 'operatorname', 'operatorphone', 'createtime', 'project_section_names']);
-				$row->visible(['project_info']);
-				$row->getRelation('project_info')->visible(['short']);
-				//$row->visible(['project_section']);
-				//$row->getRelation('project_section')->visible(['name']);
-				$row->visible(['company_info']);
-				$row->getRelation('company_info')->visible(['name']);
-				$row->visible(['category']);
-				$row->getRelation('category')->visible(['name']);
-			}
-			$list = collection($list)->toArray();
-			$result = array("total" => $total, "rows" => $list);
-
-			return json($result);
+	public function edit($ids = NULL) {
+		$row = $this->model->get($ids);
+		if (!$row) {
+			$this->error(__('No Results were found'));
 		}
+
+		$adminIds = $this->getDataLimitAdminIds();
+		if (is_array($adminIds)) {
+			if (!in_array($row[$this->dataLimitField], $adminIds)) {
+				$this->error(__('You have no permission'));
+			}
+		}
+		if ($this->request->isPost()) {
+			$params = $this->request->post("row/a");
+			if ($params) {
+				try {
+					//是否采用模型验证
+					if ($this->modelValidate) {
+						$name = str_replace("\\model\\", "\\validate\\", get_class($this->model));
+						$validate = is_bool($this->modelValidate) ? ($this->modelSceneValidate ? $name . '.edit' : $name) : $this->modelValidate;
+						$row->validate($validate);
+					}
+					$result = $row->allowField(true)->save($params);
+					if ($result !== false) {
+						$this->success();
+					} else {
+						$this->error($row->getError());
+					}
+				} catch (\think\exception\PDOException $e) {
+					$this->error($e->getMessage());
+				} catch (\think\Exception $e) {
+					$this->error($e->getMessage());
+				}
+			}
+			$this->error(__('Parameter %s can not be empty', ''));
+		}
+		//return $row;
+		$this->view->assign("row", $row);
 		return $this->view->fetch();
 	}
 
@@ -136,7 +128,6 @@ class Info extends Backend {
 				$values[] = is_null($val) ? '' : trim($val);
 			}
 			$row = [];
-
 			$temp = array_combine($fields, $values);
 			foreach ($temp as $k => $v) {
 				if (isset($fieldArr[$k]) && $k !== '') {
@@ -145,33 +136,6 @@ class Info extends Backend {
 			}
 
 			if ($row) {
-				$projectName = $this->projectModel->get(['short' => $row['project_info_id']]);
-				$sectionName = explode("、", $row['project_section_ids']);
-				$companyName = $this->companyModel->get(['name' => $row['project_company_id']]);
-
-				$sectionArr = [];
-
-				foreach ($sectionName as $value) {
-					$sectionObj = $this->projectSectionModel->get(['name' => $value]);
-					if ($sectionObj) {
-						$sectionArr[] = $sectionObj->id;
-					} else {
-						break;
-					}
-				}
-
-				if ($projectName) {
-					$row['project_info_id'] = $projectName->id;
-				}
-				if ($sectionArr) {
-					$row['project_section_ids'] = implode(",", $sectionArr);
-				}
-				if ($companyName) {
-					$row['project_company_id'] = $companyName->id;
-				} else {
-					continue;
-				}
-
 				$insert[] = $row;
 
 			}
@@ -193,12 +157,4 @@ class Info extends Backend {
 
 	}
 
-	public function category() {
-		$categoryModel = model('app\common\model\Category');
-
-		$categorydata = collection($categoryModel->where(['type' => 'classify', 'pid' => 0])->order('weigh desc,id desc')->select())->toArray();
-
-		$this->view->assign("parentList", $categorydata);
-		return $this->view->fetch();
-	}
 }

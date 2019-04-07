@@ -10,6 +10,7 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
                     edit_url: 'contract/info/edit',
                     del_url: 'contract/info/del',
                     multi_url: 'contract/info/multi',
+                    import_url: 'contract/info/import',
                     table: 'contract_info',
                 }
             });
@@ -25,6 +26,7 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
                     [
                         {checkbox: true},
                         {field: 'id', title: __('Id')},
+                        {field: 'number', title: __('Number')},
                         {field: 'project_info.short', title: __('Info.short')},
                         {field: 'project_section_names', title: __('Section.name')},
                         {field: 'company_info.name', title: __('Info.name')},
@@ -42,15 +44,7 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
                 ]
             });
 
-            var proId = 0;
-
-            $("#c-project_info_id").change(function(event) {
-                proId = $("#c-project_info_id").val();
-            });
-
-            $("#c-project_section_ids").data("params", function(e){
-                return {custom: {project_info_id: proId}};
-            });        
+                   
 
             // 为表格绑定事件
             Table.api.bindevent(table);
@@ -64,7 +58,25 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
         },
         api: {
             bindevent: function () {
-                Form.api.bindevent($("form[role=form]"));
+                var proId = 0;
+
+                $("#c-project_info_id").change(function(event) {
+                    proId = $("#c-project_info_id").val();
+                });
+
+                $("#c-project_section_ids").data("params", function(e){
+                    return {custom: {project_info_id: proId}};
+                }); 
+
+                Form.api.bindevent($("form[role=form]"));  
+
+                $(document).on('click', ".btn-classify", function () {
+                    Layer.open({
+                        type: 2,
+                        area: ['50%', '50%'], //宽高
+                        content: "http://127.0.0.1/admin/contract/info/category"
+                    });
+                });
             }
         }
     };

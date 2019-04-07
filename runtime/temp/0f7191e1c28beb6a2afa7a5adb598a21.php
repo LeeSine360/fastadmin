@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:81:"C:\xampp\htdocs\fastadmin\public/../application/admin\view\company\info\edit.html";i:1554285269;s:68:"C:\xampp\htdocs\fastadmin\application\admin\view\layout\default.html";i:1545959258;s:65:"C:\xampp\htdocs\fastadmin\application\admin\view\common\meta.html";i:1547016869;s:67:"C:\xampp\htdocs\fastadmin\application\admin\view\common\script.html";i:1545959258;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:81:"/Users/work/WEB/fastadmin/public/../application/admin/view/contract/info/add.html";i:1553251056;s:68:"/Users/work/WEB/fastadmin/application/admin/view/layout/default.html";i:1553167192;s:65:"/Users/work/WEB/fastadmin/application/admin/view/common/meta.html";i:1553167192;s:67:"/Users/work/WEB/fastadmin/application/admin/view/common/script.html";i:1553167192;}*/ ?>
 <!DOCTYPE html>
 <html lang="<?php echo $config['language']; ?>">
     <head>
@@ -50,74 +50,97 @@
                             <!-- END RIBBON -->
                             <?php endif; ?>
                             <div class="content">
-                                <form id="edit-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="">
+                                <form id="add-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="">
 
     <div class="form-group">
         <label class="control-label col-xs-12 col-sm-2"><?php echo __('Name'); ?>:</label>
         <div class="col-xs-12 col-sm-8">
-            <input id="c-name" data-rule="required" class="form-control" name="row[name]" type="text" value="<?php echo $row['name']; ?>">
+            <input id="c-name" data-rule="required" class="form-control" name="row[name]" type="text">
         </div>
     </div>
     <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Code'); ?>:</label>
+        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Project_info_id'); ?>:</label>
         <div class="col-xs-12 col-sm-8">
-            <input id="c-code" class="form-control" name="row[code]" type="text" value="<?php echo $row['code']; ?>">
+            <input id="c-project_info_id" data-rule="required" data-source="project/info/index" class="form-control selectpage" name="row[project_info_id]" type="text" value="">
         </div>
     </div>
     <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Type'); ?>:</label>
+        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Project_section_ids'); ?>:</label>
         <div class="col-xs-12 col-sm-8">
-            <input id="c-type" class="form-control" name="row[type]" type="text" value="<?php echo $row['type']; ?>">
+            <input id="c-project_section_ids" data-rule="required" data-source="project/section/index" data-multiple="true" class="form-control selectpage" name="row[project_section_ids]" type="text" value="">
         </div>
     </div>
     <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Regcapital'); ?>:</label>
+        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Project_company_id'); ?>:</label>
         <div class="col-xs-12 col-sm-8">
-            <input id="c-regCapital" class="form-control" name="row[regCapital]" type="text" value="<?php echo $row['regCapital']; ?>">
-        </div>
-    </div>
-    
-    <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Address'); ?>:</label>
-        <div class="col-xs-12 col-sm-8">
-            <input id="c-address" class="form-control" name="row[address]" type="text" value="<?php echo $row['address']; ?>">
+            <input id="c-project_company_id" data-rule="required" data-source="project/company/index" class="form-control selectpage" name="row[project_company_id]" type="text" value="">
         </div>
     </div>
     <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Contacts'); ?>:</label>
+        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Category_id'); ?>:</label>
         <div class="col-xs-12 col-sm-8">
-            <input id="c-contacts" class="form-control" name="row[contacts]" type="text" value="<?php echo $row['contacts']; ?>">
+            <input id="c-category_id" data-rule="required" data-source="category/selectpage" data-params='{"custom[type]":"contract_info"}' class="form-control selectpage" name="row[category_id]" type="text" value="">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Label_ids'); ?>:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-label_ids" data-rule="required" data-source="label/index" data-multiple="true" class="form-control selectpage" name="row[label_ids]" type="text" value="">
         </div>
     </div>
     <div class="form-group">
         <label class="control-label col-xs-12 col-sm-2"><?php echo __('Phone'); ?>:</label>
         <div class="col-xs-12 col-sm-8">
-            <input id="c-phone" class="form-control" name="row[phone]" type="text" value="<?php echo $row['phone']; ?>">
+            <input id="c-phone" data-rule="required" class="form-control" name="row[phone]" type="text">
         </div>
     </div>
     <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Scope'); ?>:</label>
+        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Signdate'); ?>:</label>
         <div class="col-xs-12 col-sm-8">
-            <textarea id="c-scope" class="form-control" rows="5" name="row[scope]" cols="50"><?php echo $row['scope']; ?></textarea>
+            <input id="c-signdate" class="form-control datetimepicker" data-date-format="YYYY-MM-DD" data-use-current="true" name="row[signdate]" type="text" value="<?php echo date('Y-m-d'); ?>">
         </div>
     </div>
     <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Account'); ?>:</label>
+        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Expirydate'); ?>:</label>
         <div class="col-xs-12 col-sm-8">
-            <input id="c-account" class="form-control" name="row[account]" type="text" value="<?php echo $row['account']; ?>">
+            <input id="c-expirydate" class="form-control datetimepicker" data-date-format="YYYY-MM-DD" data-use-current="true" name="row[expirydate]" type="text" value="<?php echo date('Y-m-d'); ?>">
         </div>
     </div>
     <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Bankname'); ?>:</label>
+        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Price'); ?>:</label>
         <div class="col-xs-12 col-sm-8">
-            <input id="c-bankname" class="form-control" name="row[bankname]" type="text" value="<?php echo $row['bankname']; ?>">
+            <input id="c-price" class="form-control" step="0.01" name="row[price]" type="number">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Operatorname'); ?>:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-operatorname" class="form-control" name="row[operatorname]" type="text">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Operatorphone'); ?>:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-operatorphone" class="form-control" name="row[operatorphone]" type="text">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Settlement'); ?>:</label>
+        <div class="col-xs-12 col-sm-8">
+            <textarea id="c-settlement" class="form-control " rows="5" name="row[settlement]" cols="50"></textarea>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Content'); ?>:</label>
+        <div class="col-xs-12 col-sm-8">
+            <textarea id="c-content" class="form-control editor" rows="5" name="row[content]" cols="50"></textarea>
         </div>
     </div>
     <div class="form-group">
         <label class="control-label col-xs-12 col-sm-2"><?php echo __('Uploadimages'); ?>:</label>
         <div class="col-xs-12 col-sm-8">
             <div class="input-group">
-                <input id="c-uploadimages" class="form-control" size="50" name="row[uploadimages]" type="text" value="<?php echo $row['uploadimages']; ?>">
+                <input id="c-uploadimages" class="form-control" size="50" name="row[uploadimages]" type="text">
                 <div class="input-group-addon no-border no-padding">
                     <span><button type="button" id="plupload-uploadimages" class="btn btn-danger plupload" data-input-id="c-uploadimages" data-mimetype="image/gif,image/jpeg,image/png,image/jpg,image/bmp" data-multiple="true" data-preview-id="p-uploadimages"><i class="fa fa-upload"></i> <?php echo __('Upload'); ?></button></span>
                     <span><button type="button" id="fachoose-uploadimages" class="btn btn-primary fachoose" data-input-id="c-uploadimages" data-mimetype="image/*" data-multiple="true"><i class="fa fa-list"></i> <?php echo __('Choose'); ?></button></span>
@@ -128,9 +151,9 @@
         </div>
     </div>
     <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Remarkcontent'); ?>:</label>
+        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Remarkcontext'); ?>:</label>
         <div class="col-xs-12 col-sm-8">
-            <textarea id="c-remarkcontent" class="form-control" rows="5" name="row[remarkcontent]" cols="50"><?php echo $row['remarkcontent']; ?></textarea>
+            <textarea id="c-remarkcontext" class="form-control " rows="5" name="row[remarkcontext]" cols="50"></textarea>
         </div>
     </div>
     <div class="form-group layer-footer">

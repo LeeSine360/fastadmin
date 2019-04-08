@@ -25,14 +25,16 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
                     [
                         {checkbox: true},
                         {field: 'id', title: __('Id')},
-                        {field: 'payment', title: __('Payment'), operate:'BETWEEN'},
-                        {field: 'unpayment', title: __('Unpayment'), operate:'BETWEEN'},
-                        {field: 'uploadimages', title: __('Uploadimages'), formatter: Table.api.formatter.images},
-                        {field: 'createtime', title: __('Createtime'), operate:'RANGE', addclass:'datetimerange', formatter: Table.api.formatter.datetime},
                         {field: 'info.short', title: __('Info.short')},
                         {field: 'section.name', title: __('Section.name')},
                         {field: 'info.name', title: __('Info.name')},
-                        {field: 'admin.username', title: __('Admin.username')},
+                        {field: 'payment', title: __('Payment'), operate:'BETWEEN'},
+                        {field: 'unpayment', title: __('Unpayment'), operate:'BETWEEN'},
+                        {field: 'starttime', title:__('Starttime')},
+                        {field: 'endtime', title:__('Endtime')},
+                        {field: 'contacts', title: __('Contacts')},
+                        {field: 'phone', title: __('Phone')},
+                        {field: 'createtime', title: __('Createtime'), operate:'RANGE', addclass:'datetimerange', formatter: Table.api.formatter.datetime},
                         {field: 'operate', title: __('Operate'), table: table, events: Table.api.events.operate, formatter: Table.api.formatter.operate}
                     ]
                 ]
@@ -40,6 +42,7 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
 
             // 为表格绑定事件
             Table.api.bindevent(table);
+            Controller.api.bindevent();
         },
         add: function () {
             Controller.api.bindevent();
@@ -49,6 +52,15 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
         },
         api: {
             bindevent: function () {
+                var proId = 0;
+
+                $("#c-project_info_id").change(function(event) {
+                    proId = $("#c-project_info_id").val();
+                });
+
+                $("#c-project_section_ids").data("params", function(e){
+                    return {custom: {project_info_id: proId}};
+                }); 
                 Form.api.bindevent($("form[role=form]"));
             }
         }

@@ -15,13 +15,9 @@ return array (
   'fixedpage' => 'dashboard',
   'categorytype' => 
   array (
-    'default' => 'Default',
-    'page' => 'Page',
-    'article' => 'Article',
-    'test' => 'Test',
     'classify' => '合同类别',
     'property' => '企业性质',
-    'cost' => '费用类别',
+    'cost' => '报账类别',
   ),
   'configgroup' => 
   array (
@@ -39,5 +35,4 @@ return array (
   'mail_verify_type' => '2',
   'mail_from' => '10000@qq.com',
   'test' => '',
-  '测试栏' => '',
 );

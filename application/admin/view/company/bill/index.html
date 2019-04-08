@@ -1,6 +1,11 @@
 <div class="panel panel-default panel-intro">
     {:build_heading()}
-
+    <div class="panel-heading">
+        <ul class="nav nav-tabs">
+            <li class="active"><a href="#one" data-toggle="tab">对账单列表</a></li>
+            <li><a href="#two" data-toggle="tab">添加</a></li>
+        </ul>
+    </div>
     <div class="panel-body">
         <div id="myTabContent" class="tab-content">
             <div class="tab-pane fade active in" id="one">
@@ -27,7 +32,85 @@
                     </table>
                 </div>
             </div>
+            <div class="tab-pane fade" id="two">
+                <form id="add-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="">
+                    <div class="row form-row-height">
+                        <label class="control-label col-xs-12 col-sm-2">{:__('Project_info_id')}:</label>
+                        <div class="col-xs-12 col-sm-3">
+                            <input id="c-project_info_id" data-rule="required" data-source="project/info/index" class="form-control selectpage input-left-padding45" name="row[project_info_id]" type="text" value="">
+                        </div>
+                        <label class="control-label col-xs-12 col-sm-2">{:__('Project_section_ids')}:</label>
+                        <div class="col-xs-12 col-sm-3">
+                            <input id="c-project_section_ids" data-rule="required" data-source="project/section/index" data-multiple="true" class="form-control selectpage input-left-padding45" name="row[project_section_id]" type="text" value="">
+                        </div>
+                    </div>
+                    <div class="row form-row-height">
+                        <label class="control-label col-xs-12 col-sm-2">{:__('Company_info_id')}:</label>
+                        <div class="col-xs-12 col-sm-3">
+                            <input id="c-company_info_id" data-rule="required" data-source="company/info/index" class="form-control selectpage input-left-padding45" name="row[company_info_id]" type="text" value="">
+                        </div>
+                    </div>
+                    <div class="row form-row-height">
+                        <label class="control-label col-xs-12 col-sm-2">{:__('Payment')}:</label>
+                        <div class="col-xs-12 col-sm-3">
+                            <input id="c-payment" data-rule="required" class="form-control" name="row[payment]" type="number" value="0">
+                        </div>
+                        <label class="control-label col-xs-12 col-sm-2">{:__('Unpayment')}:</label>
+                        <div class="col-xs-12 col-sm-3">
+                            <input id="c-unpayment" data-rule="required" class="form-control" name="row[unpayment]" type="number" value="0">
+                        </div>
+                        
+                    </div>
+                    <div class="row form-row-height">
+                        <label class="control-label col-xs-12 col-sm-2">{:__('Starttime')}:</label>
+                        <div class="col-xs-12 col-sm-3">
+                            <input id="c-starttime" class="form-control datetimepicker" data-date-format="YYYY-MM-DD" data-use-current="true" name="row[starttime]" type="text" value="">
+                        </div>
+                        <label class="control-label col-xs-12 col-sm-2">{:__('Endtime')}:</label>
+                        <div class="col-xs-12 col-sm-3">
+                             <input id="c-endtime" class="form-control datetimepicker" data-date-format="YYYY-MM-DD" data-use-current="true" name="row[endtime]" type="text" value="">
+                        </div>
+                    </div>
+                    <div class="row form-row-height">
+                        <label class="control-label col-xs-12 col-sm-2">{:__('Contacts')}:</label>
+                        <div class="col-xs-12 col-sm-3">
+                            <input id="c-contacts" class="form-control" name="row[contacts]" type="text">
+                        </div>
+                        <label class="control-label col-xs-12 col-sm-2">{:__('Phone')}:</label>
+                        <div class="col-xs-12 col-sm-3">
+                            <input id="c-phone" data-rule="required" class="form-control" name="row[phone]" type="text">
+                        </div>
+                    </div>
 
+                    <div class="row form-row-height">
+                        <label class="control-label col-xs-12 col-sm-2">{:__('Uploadimages')}:</label>
+                        <div class="col-xs-12 col-sm-8">
+                            <div class="input-group">
+                                <input id="c-uploadimages" class="form-control" size="50" name="row[uploadimages]" type="text">
+                                <div class="input-group-addon no-border no-padding">
+                                    <span><button type="button" id="plupload-uploadimages" class="btn btn-danger plupload" data-input-id="c-uploadimages" data-mimetype="image/gif,image/jpeg,image/png,image/jpg,image/bmp" data-multiple="true" data-preview-id="p-uploadimages"><i class="fa fa-upload"></i> {:__('Upload')}</button></span>
+                                    <span><button type="button" id="fachoose-uploadimages" class="btn btn-primary fachoose" data-input-id="c-uploadimages" data-mimetype="image/*" data-multiple="true"><i class="fa fa-list"></i> {:__('Choose')}</button></span>
+                                </div>
+                                <span class="msg-box n-right" for="c-uploadimages"></span>
+                            </div>
+                            <ul class="row list-inline plupload-preview" id="p-uploadimages"></ul>
+                        </div>
+                    </div>
+                    <div class="row form-row-height">
+                        <label class="control-label col-xs-12 col-sm-2">{:__('Remarkcontent')}:</label>
+                        <div class="col-xs-12 col-sm-8">
+                            <textarea id="c-remarkcontent" class="form-control" name="row[remarkcontent]"></textarea>
+                        </div>
+                    </div>
+                    <div class="row form-row-height layer-footer">
+                        <label class="control-label col-xs-12 col-sm-2"></label>
+                        <div class="col-xs-12 col-sm-8">
+                            <button type="submit" class="btn btn-success btn-embossed disabled">{:__('OK')}</button>
+                            <button type="reset" class="btn btn-default btn-embossed">{:__('Reset')}</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
 </div>

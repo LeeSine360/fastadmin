@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:86:"C:\xampp\htdocs\fastadmin\public/../application/admin\view\contract\info\category.html";i:1554686043;s:68:"C:\xampp\htdocs\fastadmin\application\admin\view\layout\default.html";i:1545959258;s:65:"C:\xampp\htdocs\fastadmin\application\admin\view\common\meta.html";i:1547016869;s:67:"C:\xampp\htdocs\fastadmin\application\admin\view\common\script.html";i:1545959258;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:81:"C:\xampp\htdocs\fastadmin\public/../application/admin\view\finance\info\edit.html";i:1553138058;s:68:"C:\xampp\htdocs\fastadmin\application\admin\view\layout\default.html";i:1545959258;s:65:"C:\xampp\htdocs\fastadmin\application\admin\view\common\meta.html";i:1547016869;s:67:"C:\xampp\htdocs\fastadmin\application\admin\view\common\script.html";i:1545959258;}*/ ?>
 <!DOCTYPE html>
 <html lang="<?php echo $config['language']; ?>">
     <head>
@@ -50,23 +50,54 @@
                             <!-- END RIBBON -->
                             <?php endif; ?>
                             <div class="content">
-                                <form id="add-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="admin/category/add">
+                                <form id="edit-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="">
+
     <div class="form-group">
-        <label for="c-pid" class="control-label col-xs-3 col-sm-2"><?php echo __('Pid'); ?>:</label>
-        <div class="col-xs-6 col-sm-3">
-
-            <select id="c-pid" data-rule="required" class="form-control" name="row[pid]">
-                <?php if(is_array($parentList) || $parentList instanceof \think\Collection || $parentList instanceof \think\Paginator): if( count($parentList)==0 ) : echo "" ;else: foreach($parentList as $key=>$vo): ?>
-                <option data-type="<?php echo $vo['type']; ?>" value="<?php echo $key; ?>" <?php if(in_array(($key), explode(',',""))): ?>selected<?php endif; ?>><?php echo $vo['name']; ?></option>
-                <?php endforeach; endif; else: echo "" ;endif; ?>
-            </select>
-
+        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Project_info_id'); ?>:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-project_info_id" data-rule="required" data-source="project/info/index" class="form-control selectpage" name="row[project_info_id]" type="text" value="<?php echo $row['project_info_id']; ?>">
         </div>
     </div>
     <div class="form-group">
-        <label for="c-name" class="control-label col-xs-3 col-sm-2"><?php echo __('Name'); ?>:</label>
-        <div class="col-xs-6 col-sm-3">
-            <input id="c-name" data-rule="required" class="form-control" name="row[name]" type="text" value="">
+        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Project_section_id'); ?>:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-project_section_id" data-rule="required" data-source="project/section/index" class="form-control selectpage" name="row[project_section_id]" type="text" value="<?php echo $row['project_section_id']; ?>">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Company_info_id'); ?>:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-company_info_id" data-rule="required" data-source="company/info/index" class="form-control selectpage" name="row[company_info_id]" type="text" value="<?php echo $row['company_info_id']; ?>">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Label_id'); ?>:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-label_id" data-rule="required" data-source="label/index" class="form-control selectpage" name="row[label_id]" type="text" value="<?php echo $row['label_id']; ?>">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Price'); ?>:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-price" data-rule="required" class="form-control" name="row[price]" type="number" value="<?php echo $row['price']; ?>">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Contacts'); ?>:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-contacts" data-rule="required" class="form-control" name="row[contacts]" type="text" value="<?php echo $row['contacts']; ?>">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Phone'); ?>:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-phone" data-rule="required" class="form-control" name="row[phone]" type="text" value="<?php echo $row['phone']; ?>">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Remarkcontent'); ?>:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-remarkcontent" class="form-control" name="row[remarkcontent]" type="text" value="<?php echo $row['remarkcontent']; ?>">
         </div>
     </div>
     <div class="form-group layer-footer">

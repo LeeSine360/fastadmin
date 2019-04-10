@@ -18,6 +18,7 @@ return array (
     'classify' => '合同类别',
     'property' => '企业性质',
     'cost' => '报账类别',
+    'project' => '项目类型',
   ),
   'configgroup' => 
   array (

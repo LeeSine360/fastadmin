@@ -3,7 +3,7 @@
 return [
     'Id'  =>  'ID',
     'Project_info_id'  =>  '项目名称',
-    'Project_section_ids'  =>  '标段名称',
+    'Project_section_id'  =>  '标段名称',
     'Company_info_id'  =>  '供应商名称',
     'Starttime' => '起始日期',
     'Endtime' => '截止日期',

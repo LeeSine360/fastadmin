@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:82:"C:\xampp\htdocs\fastadmin\public/../application/admin\view\company\bill\index.html";i:1554703205;s:68:"C:\xampp\htdocs\fastadmin\application\admin\view\layout\default.html";i:1545959258;s:65:"C:\xampp\htdocs\fastadmin\application\admin\view\common\meta.html";i:1547016869;s:67:"C:\xampp\htdocs\fastadmin\application\admin\view\common\script.html";i:1545959258;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:82:"C:\xampp\htdocs\fastadmin\public/../application/admin\view\company\bill\index.html";i:1554885153;s:68:"C:\xampp\htdocs\fastadmin\application\admin\view\layout\default.html";i:1545959258;s:65:"C:\xampp\htdocs\fastadmin\application\admin\view\common\meta.html";i:1547016869;s:67:"C:\xampp\htdocs\fastadmin\application\admin\view\common\script.html";i:1545959258;}*/ ?>
 <!DOCTYPE html>
 <html lang="<?php echo $config['language']; ?>">
     <head>
@@ -85,13 +85,13 @@
                 </div>
             </div>
             <div class="tab-pane fade" id="two">
-                <form id="add-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="">
+                <form id="add-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="company/bill/add">
                     <div class="row form-row-height">
                         <label class="control-label col-xs-12 col-sm-2"><?php echo __('Project_info_id'); ?>:</label>
                         <div class="col-xs-12 col-sm-3">
                             <input id="c-project_info_id" data-rule="required" data-source="project/info/index" class="form-control selectpage input-left-padding45" name="row[project_info_id]" type="text" value="">
                         </div>
-                        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Project_section_ids'); ?>:</label>
+                        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Project_section_id'); ?>:</label>
                         <div class="col-xs-12 col-sm-3">
                             <input id="c-project_section_ids" data-rule="required" data-source="project/section/index" data-multiple="true" class="form-control selectpage input-left-padding45" name="row[project_section_id]" type="text" value="">
                         </div>

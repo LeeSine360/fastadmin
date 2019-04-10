@@ -64,12 +64,12 @@ class Bill extends Backend
 
             foreach ($list as $row) {
                 $row->visible(['id','payment','unpayment','starttime','endtime','contacts','phone','uploadimages','remarkcontent','createtime']);
-                $row->visible(['projectInfo']);
-				$row->getRelation('projectInfo')->visible(['short']);
-				$row->visible(['projectSection']);
-				$row->getRelation('projectSection')->visible(['name']);
-				$row->visible(['companyInfo']);
-				$row->getRelation('companyInfo')->visible(['name']);
+                $row->visible(['project_info']);
+				$row->getRelation('project_info')->visible(['short']);
+				$row->visible(['project_section']);
+				$row->getRelation('project_section')->visible(['name']);
+				$row->visible(['company_info']);
+				$row->getRelation('company_info')->visible(['name']);
             }
             $list = collection($list)->toArray();
             $result = array("total" => $total, "rows" => $list);

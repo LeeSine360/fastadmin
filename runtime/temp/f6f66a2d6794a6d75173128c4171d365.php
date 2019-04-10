@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:82:"C:\xampp\htdocs\fastadmin\public/../application/admin\view\project\info\index.html";i:1553047139;s:68:"C:\xampp\htdocs\fastadmin\application\admin\view\layout\default.html";i:1545959258;s:65:"C:\xampp\htdocs\fastadmin\application\admin\view\common\meta.html";i:1547016869;s:67:"C:\xampp\htdocs\fastadmin\application\admin\view\common\script.html";i:1545959258;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:82:"C:\xampp\htdocs\fastadmin\public/../application/admin\view\project\info\index.html";i:1554884262;s:68:"C:\xampp\htdocs\fastadmin\application\admin\view\layout\default.html";i:1545959258;s:65:"C:\xampp\htdocs\fastadmin\application\admin\view\common\meta.html";i:1547016869;s:67:"C:\xampp\htdocs\fastadmin\application\admin\view\common\script.html";i:1545959258;}*/ ?>
 <!DOCTYPE html>
 <html lang="<?php echo $config['language']; ?>">
     <head>
@@ -51,8 +51,12 @@
                             <?php endif; ?>
                             <div class="content">
                                 <div class="panel panel-default panel-intro">
-    <?php echo build_heading(); ?>
-
+    <div class="panel-heading">
+        <ul class="nav nav-tabs">
+            <li class="active"><a href="#one" data-toggle="tab">项目列表</a></li>
+            <li><a href="#two" data-toggle="tab">添加</a></li>
+        </ul>
+    </div>
     <div class="panel-body">
         <div id="myTabContent" class="tab-content">
             <div class="tab-pane fade active in" id="one">
@@ -79,7 +83,99 @@
                     </table>
                 </div>
             </div>
+            
+            <div class="tab-pane fade" id="two">
+                <form id="add-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="project/info/add">
+                    <div class="row form-row-height">
+                        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Name'); ?>:</label>
+                        <div class="col-xs-12 col-sm-3">
+                            <input id="c-name" data-rule="required" class="form-control" name="row[name]" type="text">
+                        </div>
+                        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Short'); ?>:</label>
+                        <div class="col-xs-12 col-sm-3">
+                            <input id="c-short" data-rule="required" class="form-control" name="row[short]" type="text">
+                        </div>
+                    </div>
+                    <div class="row form-row-height">
+                        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Category_id'); ?>:</label>
+                        <div class="col-xs-12 col-sm-3">
+                            <input id="c-category_id" data-rule="required" data-source="category/selectpage" data-params='{"custom[type]":"property"}' class="form-control selectpage" name="row[category_id]" type="text" value="">
+                        </div>
+                        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Price'); ?>:</label>
+                        <div class="col-xs-12 col-sm-3">
+                            <input id="c-price" class="form-control" name="row[price]" type="number">
+                        </div>
+                    </div>
+                    <div class="row form-row-height">
+                        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Starttime'); ?>:</label>
+                        <div class="col-xs-12 col-sm-3">
+                            <input id="c-starttime" class="form-control datetimepicker" data-date-format="YYYY-MM-DD" data-use-current="true" name="row[starttime]" type="text" value="<?php echo date('Y-m-d'); ?>">
+                        </div>
+                        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Days'); ?>:</label>
+                        <div class="col-xs-12 col-sm-3">
+                            <input id="c-days" class="form-control" name="row[days]" type="number">
+                        </div>
+                    </div>
+                    <div class="row form-row-height">
+                        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Address'); ?>:</label>
+                        <div class="col-xs-12 col-sm-8">
+                            <input id="c-address" class="form-control" name="row[address]" type="text">
+                        </div>
+                    </div>
+                    <div class="row form-row-height">
+                        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Surveycontent'); ?>:</label>
+                        <div class="col-xs-12 col-sm-8">
+                            <textarea id="c-surveycontent" class="form-control" name="row[surveycontent]" rows="5"></textarea>
+                        </div>                        
+                    </div>
+                    <div class="row form-row-height">
+                        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Project_construct_id'); ?>:</label>
+                        <div class="col-xs-12 col-sm-3">
+                            <input id="c-project_construct_id" data-source="project/construct/index" class="form-control selectpage" name="row[project_construct_id]" type="text" value="">
+                        </div>
+                    </div>
+                    <div class="row form-row-height">
+                        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Build_contactsname'); ?>:</label>
+                        <div class="col-xs-12 col-sm-3">
+                            <input id="c-build_contactsname" class="form-control" name="row[build_contactsname]" type="text">
+                        </div>
+                        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Build_phone'); ?>:</label>
+                        <div class="col-xs-12 col-sm-3">
+                            <input id="c-build_phone" class="form-control" name="row[build_phone]" type="text">
+                        </div>
+                    </div>
+                    <div class="row form-row-height">
+                        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Project_supervision_id'); ?>:</label>
+                        <div class="col-xs-12 col-sm-3">
+                            <input id="c-project_supervision_id" data-source="project/supervision/index" class="form-control selectpage" name="row[project_supervision_id]" type="text" value="">
+                        </div>
+                    </div>
+                    <div class="row form-row-height">
+                        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Supervision_contactsname'); ?>:</label>
+                        <div class="col-xs-12 col-sm-3">
+                            <input id="c-supervision_contactsname" class="form-control" name="row[supervision_contactsname]" type="text">
+                        </div>
+                        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Supervision_phone'); ?>:</label>
+                        <div class="col-xs-12 col-sm-3">
+                            <input id="c-supervision_phone" class="form-control" name="row[supervision_phone]" type="text">
+                        </div>
+                    </div>
+                    <div class="row form-row-height">
+                        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Remarkcontent'); ?>:</label>
+                        <div class="col-xs-12 col-sm-8">
+                            <textarea id="c-remarkcontent" class="form-control" name="row[remarkcontent]" rows="5"></textarea>
+                        </div>
+                    </div>
+                    <div class="row form-row-height layer-footer">
+                        <label class="control-label col-xs-12 col-sm-2"></label>
+                        <div class="col-xs-12 col-sm-3">
+                            <button type="submit" class="btn btn-success btn-embossed disabled"><?php echo __('OK'); ?></button>
+                            <button type="reset" class="btn btn-default btn-embossed"><?php echo __('Reset'); ?></button>
+                        </div>
+                    </div>
+                </form>
 
+            </div>
         </div>
     </div>
 </div>

@@ -24,15 +24,16 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
                 columns: [
                     [
                         {checkbox: true},
+                        {field: 'id', title: __('Id')},
+                        {field: 'project_info.short', title: __('Project.name')},
+                        {field: 'project_section.name', title: __('Section.name')},
+                        {field: 'category.name', title: __('Category.name')},
+                        {field: 'company_info.name', title: __('Company.name')},
                         {field: 'price', title: __('Price'), operate:'BETWEEN'},
                         {field: 'contacts', title: __('Contacts')},
                         {field: 'phone', title: __('Phone')},
                         {field: 'remarkcontent', title: __('Remarkcontent')},
-                        {field: 'admin.username', title: __('Admin.username')},
-                        {field: 'info.short', title: __('Info.short')},
-                        {field: 'section.name', title: __('Section.name')},
-                        {field: 'info.name', title: __('Info.name')},
-                        {field: 'category.name', title: __('Category.name')},
+                        {field: 'createtime', title: __('Createtime'), operate:'RANGE', addclass:'datetimerange', formatter: Table.api.formatter.datetime},                        
                         {field: 'operate', title: __('Operate'), table: table, events: Table.api.events.operate, formatter: Table.api.formatter.operate}
                     ]
                 ]
@@ -40,6 +41,7 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
 
             // 为表格绑定事件
             Table.api.bindevent(table);
+            Controller.api.bindevent();
         },
         add: function () {
             Controller.api.bindevent();
@@ -49,6 +51,26 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
         },
         api: {
             bindevent: function () {
+                var proId = 0;
+
+                $("#c-project_info_id").change(function(event) {
+                    proId = $("#c-project_info_id").val();
+                });
+
+                $("#c-project_section_ids").data("params", function(e){
+                    return {custom: {project_info_id: proId}};
+                }); 
+
+                $('input:radio').click(function(event) {
+                    var radioValue = $(this).val();
+                    if(radioValue == 47){
+                        $("#c-company_info_id_text").attr("disabled",true);
+                    }else{
+                        $("#c-company_info_id_text").attr("disabled",false);
+                    }
+                });
+
+
                 Form.api.bindevent($("form[role=form]"));
             }
         }

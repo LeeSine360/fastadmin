@@ -1,5 +1,10 @@
 <div class="panel panel-default panel-intro">
-    {:build_heading()}
+    <div class="panel-heading">
+        <ul class="nav nav-tabs">
+            <li class="active"><a href="#one" data-toggle="tab">报账列表</a></li>
+            <li><a href="#two" data-toggle="tab">添加</a></li>
+        </ul>
+    </div>
 
     <div class="panel-body">
         <div id="myTabContent" class="tab-content">
@@ -27,7 +32,67 @@
                     </table>
                 </div>
             </div>
+    
+            <div class="tab-pane fade" id="two">
+                <form id="add-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="finance/info/add">
 
+                    <div class="row form-row-height">
+                        <label class="control-label col-xs-12 col-sm-2">{:__('Project_info_id')}:</label>
+                        <div class="col-xs-12 col-sm-3">
+                            <input id="c-project_info_id" data-rule="required" data-source="project/info/index" class="form-control selectpage input-left-padding45" name="row[project_info_id]" type="text" value="">
+                        </div>
+                        <label class="control-label col-xs-12 col-sm-2">{:__('Project_section_id')}:</label>
+                        <div class="col-xs-12 col-sm-3">
+                            <input id="c-project_section_ids" data-rule="required" data-source="project/section/index" class="form-control selectpage input-left-padding45" name="row[project_section_ids]" type="text" value="">
+                        </div>
+                    </div>
+                    <div class="row form-row-height">
+                        <label class="control-label col-xs-12 col-sm-2">{:__('Category_id')}:</label>
+                        <div class="col-xs-12 col-sm-8">
+                            <div class="radio">
+                            {foreach name="categoryList" item="vo"}
+                                <label for="row[category_id]-{$key}">
+                                    <input id="row[category_id]-{$key}" name="row[category_id]" type="radio" value="{$vo.id}" {in name="key" value="供应商付款"}checked{/in} /> {$vo.name} </label> 
+                            {/foreach}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row form-row-height">
+                        <label class="control-label col-xs-12 col-sm-2">{:__('Company_info_id')}:</label>
+                        <div class="col-xs-12 col-sm-3">
+                            <input id="c-company_info_id" data-source="company/info/index" class="form-control selectpage input-left-padding45" name="row[company_info_id]" type="text" value="">
+                        </div>
+                        <label class="control-label col-xs-12 col-sm-2">{:__('Price')}:</label>
+                        <div class="col-xs-12 col-sm-3">
+                            <input id="c-price" data-rule="required" class="form-control" name="row[price]" type="number">
+                        </div>
+                    </div>
+                    <div class="row form-row-height">
+                        <label class="control-label col-xs-12 col-sm-2">{:__('Contacts')}:</label>
+                        <div class="col-xs-12 col-sm-3">
+                            <input id="c-contacts" data-rule="required" class="form-control" name="row[contacts]" type="text">
+                        </div>
+                        <label class="control-label col-xs-12 col-sm-2">{:__('Phone')}:</label>
+                        <div class="col-xs-12 col-sm-3">
+                            <input id="c-phone" data-rule="required" class="form-control" name="row[phone]" type="text">
+                        </div>
+                    </div>
+                    <div class="row form-row-height">
+                        <label class="control-label col-xs-12 col-sm-2">{:__('Remarkcontent')}:</label>
+                        <div class="col-xs-12 col-sm-8">
+                            <textarea id="c-remarkcontent" class="form-control " rows="5" name="row[remarkcontent]" cols="50"></textarea>
+                        </div>
+                    </div>
+                    <div class="row form-row-height layer-footer">
+                        <label class="control-label col-xs-12 col-sm-2"></label>
+                        <div class="col-xs-12 col-sm-8">
+                            <button type="submit" class="btn btn-success btn-embossed disabled">{:__('OK')}</button>
+                            <button type="reset" class="btn btn-default btn-embossed">{:__('Reset')}</button>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
         </div>
     </div>
 </div>

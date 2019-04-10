@@ -4,8 +4,7 @@ namespace app\admin\model;
 
 use think\Model;
 
-class FinanceInfo extends Model
-{
+class FinanceInfo extends Model{
     // 表名
     protected $name = 'finance_info';
     
@@ -21,15 +20,6 @@ class FinanceInfo extends Model
 
     ];
     
-
-    
-
-
-
-
-
-
-
     public function admin()
     {
         return $this->belongsTo('Admin', 'admin_id', 'id', [], 'LEFT')->setEagerlyType(0);
@@ -56,6 +46,6 @@ class FinanceInfo extends Model
 
     public function category()
     {
-        return $this->belongsTo('Category', 'label_id', 'id', [], 'LEFT')->setEagerlyType(0);
+        return $this->belongsTo('Category', 'category_id', 'id', [], 'LEFT')->where(['type'=>'cost'])->setEagerlyType(0);
     }
 }

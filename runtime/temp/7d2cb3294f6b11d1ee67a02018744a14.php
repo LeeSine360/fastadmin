@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:83:"C:\xampp\htdocs\fastadmin\public/../application/admin\view\contract\info\index.html";i:1554681588;s:68:"C:\xampp\htdocs\fastadmin\application\admin\view\layout\default.html";i:1545959258;s:65:"C:\xampp\htdocs\fastadmin\application\admin\view\common\meta.html";i:1547016869;s:67:"C:\xampp\htdocs\fastadmin\application\admin\view\common\script.html";i:1545959258;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:83:"C:\xampp\htdocs\fastadmin\public/../application/admin\view\contract\info\index.html";i:1554859184;s:68:"C:\xampp\htdocs\fastadmin\application\admin\view\layout\default.html";i:1545959258;s:65:"C:\xampp\htdocs\fastadmin\application\admin\view\common\meta.html";i:1547016869;s:67:"C:\xampp\htdocs\fastadmin\application\admin\view\common\script.html";i:1545959258;}*/ ?>
 <!DOCTYPE html>
 <html lang="<?php echo $config['language']; ?>">
     <head>
@@ -114,6 +114,7 @@
                             <div class="form-inline" data-toggle="cxselect" data-selects="first,second">
                                 <select class="first form-control input-left-padding20" name="row[category_id]" data-url="ajax/category?type=classify&pid=0"></select>
                                 <select class="second form-control input-left-padding20" name="row[label_ids]" data-url="ajax/category" data-query-name="pid"></select>
+                                <a href="http://www.baidu.com">百度</a>
                             </div>
                         </div>
                         <!--<label class="control-label col-xs-12 col-sm-2"><?php echo __('Label_ids'); ?>:</label>
@@ -174,6 +175,12 @@
                             <textarea id="c-content" class="form-control" rows="5" name="row[content]" cols="50"></textarea>
                         </div>
                     </div>-->
+                    <div class="row form-row-height">
+                        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Remarkcontext'); ?>:</label>
+                        <div class="col-xs-12 col-sm-8">
+                            <textarea id="c-remarkcontext" class="form-control " rows="5" name="row[remarkcontext]" cols="50"></textarea>
+                        </div>
+                    </div>
                     <div class="row form-row-height">
                         <label class="control-label col-xs-12 col-sm-2"><?php echo __('Uploadimages'); ?>:</label>
                         <div class="col-xs-12 col-sm-8">

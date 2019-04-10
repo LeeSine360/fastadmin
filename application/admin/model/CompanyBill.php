@@ -38,7 +38,7 @@ class CompanyBill extends Model
 
     public function projectSection()
     {
-        return $this->belongsTo('ProjectSection', 'project_section_ids', 'id', [], 'LEFT')->setEagerlyType(0);
+        return $this->belongsTo('ProjectSection', 'project_section_id', 'id', [], 'LEFT')->setEagerlyType(0);
     }
 
 

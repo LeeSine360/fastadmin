@@ -48,6 +48,7 @@ class Info extends Backend
             {
                 return $this->selectpage();
             }
+
             list($where, $sort, $order, $offset, $limit) = $this->buildparams();
             $total = $this->model
                     ->with(['admin','projectInfo','projectSection','companyInfo','category'])
@@ -62,16 +63,17 @@ class Info extends Backend
                     ->limit($offset, $limit)
                     ->select();
 
+
             foreach ($list as $row) {
-                $row->visible(['price','contacts','phone','remarkcontent']);
+                $row->visible(['id','price','contacts','phone','remarkcontent','createtime']);
                 $row->visible(['admin']);
 				$row->getRelation('admin')->visible(['username']);
-				$row->visible(['projectInfo']);
-				$row->getRelation('projectInfo')->visible(['short']);
-				$row->visible(['projectSection']);
-				$row->getRelation('projectSection')->visible(['name']);
-				$row->visible(['companyInfo']);
-				$row->getRelation('companyInfo')->visible(['name']);
+				$row->visible(['project_info']);
+				$row->getRelation('project_info')->visible(['short']);
+				$row->visible(['project_section']);
+				$row->getRelation('project_section')->visible(['name']);
+				$row->visible(['company_info']);
+				$row->getRelation('company_info')->visible(['name']);
 				$row->visible(['category']);
 				$row->getRelation('category')->visible(['name']);
             }
@@ -80,6 +82,12 @@ class Info extends Backend
 
             return json($result);
         }
+        $list = model('Category')->where(['type' => 'cost'])->select();
+        foreach ($list as $row) {
+            $row->visible(['id','name']);
+        }
+        $list = collection($list)->toArray();
+        $this->view->assign("categoryList", $list);
         return $this->view->fetch();
     }
 }

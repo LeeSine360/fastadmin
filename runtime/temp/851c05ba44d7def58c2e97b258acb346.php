@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:82:"C:\xampp\htdocs\fastadmin\public/../application/admin\view\finance\info\index.html";i:1553138058;s:68:"C:\xampp\htdocs\fastadmin\application\admin\view\layout\default.html";i:1545959258;s:65:"C:\xampp\htdocs\fastadmin\application\admin\view\common\meta.html";i:1547016869;s:67:"C:\xampp\htdocs\fastadmin\application\admin\view\common\script.html";i:1545959258;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:82:"C:\xampp\htdocs\fastadmin\public/../application/admin\view\finance\info\index.html";i:1554864110;s:68:"C:\xampp\htdocs\fastadmin\application\admin\view\layout\default.html";i:1545959258;s:65:"C:\xampp\htdocs\fastadmin\application\admin\view\common\meta.html";i:1547016869;s:67:"C:\xampp\htdocs\fastadmin\application\admin\view\common\script.html";i:1545959258;}*/ ?>
 <!DOCTYPE html>
 <html lang="<?php echo $config['language']; ?>">
     <head>
@@ -51,7 +51,12 @@
                             <?php endif; ?>
                             <div class="content">
                                 <div class="panel panel-default panel-intro">
-    <?php echo build_heading(); ?>
+    <div class="panel-heading">
+        <ul class="nav nav-tabs">
+            <li class="active"><a href="#one" data-toggle="tab">报账列表</a></li>
+            <li><a href="#two" data-toggle="tab">添加</a></li>
+        </ul>
+    </div>
 
     <div class="panel-body">
         <div id="myTabContent" class="tab-content">
@@ -79,7 +84,67 @@
                     </table>
                 </div>
             </div>
+    
+            <div class="tab-pane fade" id="two">
+                <form id="add-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="finance/info/add">
 
+                    <div class="row form-row-height">
+                        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Project_info_id'); ?>:</label>
+                        <div class="col-xs-12 col-sm-3">
+                            <input id="c-project_info_id" data-rule="required" data-source="project/info/index" class="form-control selectpage input-left-padding45" name="row[project_info_id]" type="text" value="">
+                        </div>
+                        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Project_section_id'); ?>:</label>
+                        <div class="col-xs-12 col-sm-3">
+                            <input id="c-project_section_ids" data-rule="required" data-source="project/section/index" class="form-control selectpage input-left-padding45" name="row[project_section_ids]" type="text" value="">
+                        </div>
+                    </div>
+                    <div class="row form-row-height">
+                        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Category_id'); ?>:</label>
+                        <div class="col-xs-12 col-sm-8">
+                            <div class="radio">
+                            <?php if(is_array($categoryList) || $categoryList instanceof \think\Collection || $categoryList instanceof \think\Paginator): if( count($categoryList)==0 ) : echo "" ;else: foreach($categoryList as $key=>$vo): ?>
+                                <label for="row[category_id]-<?php echo $key; ?>">
+                                    <input id="row[category_id]-<?php echo $key; ?>" name="row[category_id]" type="radio" value="<?php echo $vo['id']; ?>" <?php if(in_array(($key), explode(',',"供应商付款"))): ?>checked<?php endif; ?> /> <?php echo $vo['name']; ?> </label> 
+                            <?php endforeach; endif; else: echo "" ;endif; ?>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row form-row-height">
+                        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Company_info_id'); ?>:</label>
+                        <div class="col-xs-12 col-sm-3">
+                            <input id="c-company_info_id" data-source="company/info/index" class="form-control selectpage input-left-padding45" name="row[company_info_id]" type="text" value="">
+                        </div>
+                        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Price'); ?>:</label>
+                        <div class="col-xs-12 col-sm-3">
+                            <input id="c-price" data-rule="required" class="form-control" name="row[price]" type="number">
+                        </div>
+                    </div>
+                    <div class="row form-row-height">
+                        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Contacts'); ?>:</label>
+                        <div class="col-xs-12 col-sm-3">
+                            <input id="c-contacts" data-rule="required" class="form-control" name="row[contacts]" type="text">
+                        </div>
+                        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Phone'); ?>:</label>
+                        <div class="col-xs-12 col-sm-3">
+                            <input id="c-phone" data-rule="required" class="form-control" name="row[phone]" type="text">
+                        </div>
+                    </div>
+                    <div class="row form-row-height">
+                        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Remarkcontent'); ?>:</label>
+                        <div class="col-xs-12 col-sm-8">
+                            <textarea id="c-remarkcontent" class="form-control " rows="5" name="row[remarkcontent]" cols="50"></textarea>
+                        </div>
+                    </div>
+                    <div class="row form-row-height layer-footer">
+                        <label class="control-label col-xs-12 col-sm-2"></label>
+                        <div class="col-xs-12 col-sm-8">
+                            <button type="submit" class="btn btn-success btn-embossed disabled"><?php echo __('OK'); ?></button>
+                            <button type="reset" class="btn btn-default btn-embossed"><?php echo __('Reset'); ?></button>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
         </div>
     </div>
 </div>

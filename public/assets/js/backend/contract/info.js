@@ -74,7 +74,7 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
                     Layer.open({
                         type: 2,
                         area: ['50%', '50%'], //宽高
-                        content: "http://127.0.0.1/admin/contract/info/category"
+                        content: "http://127.0.0.1/admin/contract/info/category?dialog=1"
                     });
                 });
             }

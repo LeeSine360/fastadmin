@@ -25,9 +25,9 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
                     [
                         {checkbox: true},
                         {field: 'id', title: __('Id')},
-                        {field: 'info.short', title: __('Info.short')},
-                        {field: 'section.name', title: __('Section.name')},
-                        {field: 'info.name', title: __('Info.name')},
+                        {field: 'project_info.short', title: __('Info.short')},
+                        {field: 'project_section.name', title: __('Section.name')},
+                        {field: 'company_info.name', title: __('Info.name')},
                         {field: 'payment', title: __('Payment'), operate:'BETWEEN'},
                         {field: 'unpayment', title: __('Unpayment'), operate:'BETWEEN'},
                         {field: 'starttime', title:__('Starttime')},

@@ -1,4 +1,4 @@
-define(['jquery', 'bootstrap', 'moment', 'moment/locale/zh-cn', 'bootstrap-table', 'bootstrap-table-lang', 'bootstrap-table-export', 'bootstrap-table-commonsearch', 'bootstrap-table-template'], function($, undefined, Moment) {
+define(['jquery', 'bootstrap', 'moment', 'accounting', 'moment/locale/zh-cn', 'bootstrap-table', 'bootstrap-table-lang', 'bootstrap-table-export', 'bootstrap-table-commonsearch', 'bootstrap-table-template'], function($, undefined, Moment, accounting) {
     var Table = {
         list: {},
         // Bootstrap-table 基础配置
@@ -507,6 +507,9 @@ define(['jquery', 'bootstrap', 'moment', 'moment/locale/zh-cn', 'bootstrap-table
                 },
                 label: function(value, row, index) {
                     return Table.api.formatter.flag.call(this, value, row, index);
+                },
+                price: function(value, row, index){
+                    return value ? accounting.formatNumber(value,2) : __('None');
                 },
                 datetime: function(value, row, index) {
                     var datetimeFormat = typeof this.datetimeFormat === 'undefined' ? 'YYYY-MM-DD HH:mm:ss' : this.datetimeFormat;

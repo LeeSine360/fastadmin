@@ -47,7 +47,7 @@ class Info extends Backend {
 			if ($this->request->request('keyField')) {
 				return $this->selectpage();
 			}
-			list($where, $sort, $order, $offset, $limit) = $this->buildparams();
+			list($where, $sort, $order, $offset, $limit) = $this->buildparams('number');
 			$total = $this->model
 				->with(['projectInfo', 'projectSection', 'companyInfo', 'category'])
 				->where($where)

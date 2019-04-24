@@ -20,6 +20,10 @@ class ContractInfo extends Model {
 
 	];
 
+	public function getNumberAttr($value,$date){
+		return $value < 10 ? '00'.$value : ($value < 100 ? '0'.$value : $value);
+	}
+
 	public function projectInfo() {
 		return $this->belongsTo('ProjectInfo', 'project_info_id', 'id', [], 'LEFT')->setEagerlyType(0);
 	}

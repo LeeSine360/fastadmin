@@ -29,7 +29,7 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
                         {field: 'project_section.name', title: __('Section.name')},
                         {field: 'category.name', title: __('Category.name')},
                         {field: 'company_info.name', title: __('Company.name')},
-                        {field: 'price', title: __('Price'), operate:'BETWEEN'},
+                        {field: 'price', title: __('Price'), operate:'BETWEEN', formatter: Table.api.formatter.price},
                         {field: 'contacts', title: __('Contacts')},
                         {field: 'phone', title: __('Phone')},
                         {field: 'remarkcontent', title: __('Remarkcontent')},

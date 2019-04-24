@@ -58,13 +58,8 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
         },
         api: {
             bindevent: function () {
-                var proId = 0;
-
-                $("#c-project_info_id").change(function(event) {
-                    proId = $("#c-project_info_id").val();
-                });
-
                 $("#c-project_section_ids").data("params", function(e){
+                    var proId = $("#c-project_info_id").val();
                     return {custom: {project_info_id: proId}};
                 }); 
 

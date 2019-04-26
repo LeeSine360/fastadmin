@@ -4,10 +4,10 @@ namespace app\admin\model;
 
 use think\Model;
 
-class ContractVerify extends Model
+class ContractProject extends Model
 {
     // 表名
-    protected $name = 'contract_verify';
+    protected $name = 'contract_project';
     
     // 自动写入时间戳字段
     protected $autoWriteTimestamp = 'int';
@@ -18,21 +18,21 @@ class ContractVerify extends Model
     
     // 追加属性
     protected $append = [
-        'agreedata_text'
+        'savedata_text'
     ];
     
 
     
-    public function getAgreedataList()
+    public function getSavedataList()
     {
-        return ['wait' => __('Agreedata wait'),'agree' => __('Agreedata agree'),'veto' => __('Agreedata veto')];
+        return ['wait' => __('Savedata wait'),'normal' => __('Savedata normal'),' back' => __('Savedata  back'),' delet' => __('Savedata  delet')];
     }     
 
 
-    public function getAgreedataTextAttr($value, $data)
+    public function getSavedataTextAttr($value, $data)
     {        
-        $value = $value ? $value : (isset($data['agreedata']) ? $data['agreedata'] : '');
-        $list = $this->getAgreedataList();
+        $value = $value ? $value : (isset($data['savedata']) ? $data['savedata'] : '');
+        $list = $this->getSavedataList();
         return isset($list[$value]) ? $list[$value] : '';
     }
 

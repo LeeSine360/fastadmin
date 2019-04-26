@@ -42,7 +42,7 @@ class Info extends Backend {
 			if ($this->request->request('keyField')) {
 				return $this->selectpage();
 			}
-			list($where, $sort, $order, $offset, $limit) = $this->buildparams();
+			list($where, $sort, $order, $offset, $limit) = $this->buildparams(["id","name"]);
 			$total = $this->model
 				->with(['admin'])
 				->where($where)

@@ -5,12 +5,12 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
             // 初始化表格参数配置
             Table.api.init({
                 extend: {
-                    index_url: 'contract/verify/index',
-                    add_url: 'contract/verify/add',
-                    edit_url: 'contract/verify/edit',
-                    del_url: 'contract/verify/del',
-                    multi_url: 'contract/verify/multi',
-                    table: 'contract_verify',
+                    index_url: 'contract/synthetical/index',
+                    add_url: 'contract/synthetical/add',
+                    edit_url: 'contract/synthetical/edit',
+                    del_url: 'contract/synthetical/del',
+                    multi_url: 'contract/synthetical/multi',
+                    table: 'contract_synthetical',
                 }
             });
 
@@ -25,24 +25,19 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
                     [
                         {checkbox: true},
                         {field: 'id', title: __('Id')},
-                        {field: 'contract_info_id', title: __('Contract_info_id')},
-                        {field: 'agreedata', title: __('Agreedata'), searchList: {"wait":__('Agreedata wait'),"agree":__('Agreedata agree'),"veto":__('Agreedata veto')}, formatter: Table.api.formatter.normal},
+                        {field: 'agreedata', title: __('Agreedata'), searchList: {"wait":__('Agreedata wait'),"agree":__('Agreedata agree'),"back":__('Agreedata back'),"veto":__('Agreedata veto')}, formatter: Table.api.formatter.normal},
                         {field: 'opinion', title: __('Opinion')},
+                        {field: 'number', title: __('Number')},
+                        {field: 'contacts', title: __('Contacts')},
+                        {field: 'phone', title: __('Phone')},
                         {field: 'createtime', title: __('Createtime'), operate:'RANGE', addclass:'datetimerange', formatter: Table.api.formatter.datetime},
                         {field: 'info.name', title: __('Info.name')},
                         {field: 'info.number', title: __('Info.number')},
                         {field: 'info.project_info_id', title: __('Info.project_info_id')},
                         {field: 'info.project_section_ids', title: __('Info.project_section_ids')},
                         {field: 'info.project_company_id', title: __('Info.project_company_id')},
-                        {field: 'info.category_id', title: __('Info.category_id')},
-                        {field: 'info.label_ids', title: __('Info.label_ids')},
-                        {field: 'info.contacts', title: __('Info.contacts')},
-                        {field: 'info.phone', title: __('Info.phone')},
-                        {field: 'info.price', title: __('Info.price'), operate:'BETWEEN'},
                         {field: 'info.total', title: __('Info.total')},
                         {field: 'info.save', title: __('Info.save')},
-                        {field: 'info.operatorname', title: __('Info.operatorname')},
-                        {field: 'info.operatorphone', title: __('Info.operatorphone')},
                         {field: 'info.createtime', title: __('Info.createtime'), operate:'RANGE', addclass:'datetimerange', formatter: Table.api.formatter.datetime},
                         {field: 'operate', title: __('Operate'), table: table, events: Table.api.events.operate, formatter: Table.api.formatter.operate}
                     ]

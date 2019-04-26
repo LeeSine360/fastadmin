@@ -1,12 +1,11 @@
 <?php
 
 return [
-    'Id'  =>  'ID',
-    'Contract_info_id'  =>  '合同名称',
-    'Agreedata'  =>  '合同审核',
-    'Agreedata wait'  =>  '待审核',
-    'Agreedata agree'  =>  '同意',
-    'Agreedata veto'  =>  '不同意',
+    'Savedata'  =>  '合同状态',
+    'Savedata wait'  =>  '待存档',
+    'Savedata normal'  =>  '已存档',
+    'Savedata  back'  =>  '待返回',
+    'Savedata  delet'  =>  '作废',
     'Opinion'  =>  '审核意见',
     'Admin_id'  =>  '审核人',
     'Createtime'  =>  '创建日期',
@@ -16,16 +15,9 @@ return [
     'Info.project_info_id'  =>  '项目名称',
     'Info.project_section_ids'  =>  '标段名称',
     'Info.project_company_id'  =>  '供应商名称',
-    'Info.category_id'  =>  '合同类型',
-    'Info.label_ids'  =>  '类别子目录',
-    'Info.contacts'  =>  '业务经理姓名',
-    'Info.phone'  =>  '联系电话',
-    'Info.price'  =>  '合同金额',
     'Info.total'  =>  '合同份数',
     'Info.save'  =>  '留存份数',
     'Info.operatorname'  =>  '经办人姓名',
     'Info.operatorphone'  =>  '经办人联系电话',
-    'Info.settlement'  =>  '结算方式',
-    'Info.content'  =>  '合同内容',
     'Info.createtime'  =>  '创建日期'
 ];

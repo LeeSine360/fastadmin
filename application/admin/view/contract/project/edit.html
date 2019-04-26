@@ -1,18 +1,18 @@
-<form id="add-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="">
+<form id="edit-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="">
 
     <div class="form-group">
         <label class="control-label col-xs-12 col-sm-2">{:__('Contract_info_id')}:</label>
         <div class="col-xs-12 col-sm-8">
-            <input id="c-contract_info_id" data-rule="required" data-source="contract/info/index" class="form-control selectpage" name="row[contract_info_id]" type="text" value="">
+            <input id="c-contract_info_id" data-rule="required" data-source="contract/info/index" class="form-control selectpage" name="row[contract_info_id]" type="text" value="{$row.contract_info_id}">
         </div>
     </div>
     <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2">{:__('Agreedata')}:</label>
+        <label class="control-label col-xs-12 col-sm-2">{:__('Savedata')}:</label>
         <div class="col-xs-12 col-sm-8">
             
             <div class="radio">
-            {foreach name="agreedataList" item="vo"}
-            <label for="row[agreedata]-{$key}"><input id="row[agreedata]-{$key}" name="row[agreedata]" type="radio" value="{$key}" {in name="key" value="wait"}checked{/in} /> {$vo}</label> 
+            {foreach name="savedataList" item="vo"}
+            <label for="row[savedata]-{$key}"><input id="row[savedata]-{$key}" name="row[savedata]" type="radio" value="{$key}" {in name="key" value="$row.savedata"}checked{/in} /> {$vo}</label> 
             {/foreach}
             </div>
 
@@ -21,7 +21,7 @@
     <div class="form-group">
         <label class="control-label col-xs-12 col-sm-2">{:__('Opinion')}:</label>
         <div class="col-xs-12 col-sm-8">
-            <input id="c-opinion" class="form-control" name="row[opinion]" type="text">
+            <input id="c-opinion" class="form-control" name="row[opinion]" type="text" value="{$row.opinion}">
         </div>
     </div>
     <div class="form-group layer-footer">

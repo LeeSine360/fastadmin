@@ -5,23 +5,23 @@ namespace app\admin\controller\contract;
 use app\common\controller\Backend;
 
 /**
- * 合同审核（项目副总）
+ * 合同审核（综合部）
  *
  * @icon fa fa-circle-o
  */
-class Verify extends Backend
+class Synthetical extends Backend
 {
     
     /**
-     * Verify模型对象
-     * @var \app\admin\model\contract\Verify
+     * Synthetical模型对象
+     * @var \app\admin\model\contract\Synthetical
      */
     protected $model = null;
 
     public function _initialize()
     {
         parent::_initialize();
-        $this->model = new \app\admin\model\ContractVerify;
+        $this->model = new \app\admin\model\ContractSynthetical;
         $this->view->assign("agreedataList", $this->model->getAgreedataList());
     }
     
@@ -63,9 +63,9 @@ class Verify extends Backend
                     ->select();
 
             foreach ($list as $row) {
-                $row->visible(['id','contract_info_id','agreedata','opinion','createtime']);
+                $row->visible(['id','agreedata','opinion','number','contacts','phone','createtime']);
                 $row->visible(['info']);
-				$row->getRelation('info')->visible(['name','number','project_info_id','project_section_ids','project_company_id','category_id','label_ids','contacts','phone','price','total','save','operatorname','operatorphone','settlement','content','createtime']);
+				$row->getRelation('info')->visible(['name','number','project_info_id','project_section_ids','project_company_id','total','save','operatorname','operatorphone','createtime']);
             }
             $list = collection($list)->toArray();
             $result = array("total" => $total, "rows" => $list);

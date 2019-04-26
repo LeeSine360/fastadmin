@@ -7,12 +7,12 @@
         </div>
     </div>
     <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2">{:__('Agreedata')}:</label>
+        <label class="control-label col-xs-12 col-sm-2">{:__('Savedata')}:</label>
         <div class="col-xs-12 col-sm-8">
             
             <div class="radio">
-            {foreach name="agreedataList" item="vo"}
-            <label for="row[agreedata]-{$key}"><input id="row[agreedata]-{$key}" name="row[agreedata]" type="radio" value="{$key}" {in name="key" value="wait"}checked{/in} /> {$vo}</label> 
+            {foreach name="savedataList" item="vo"}
+            <label for="row[savedata]-{$key}"><input id="row[savedata]-{$key}" name="row[savedata]" type="radio" value="{$key}" {in name="key" value="wait"}checked{/in} /> {$vo}</label> 
             {/foreach}
             </div>
 

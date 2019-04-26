@@ -4,10 +4,10 @@ namespace app\admin\model;
 
 use think\Model;
 
-class ContractVerify extends Model
+class ContractSynthetical extends Model
 {
     // 表名
-    protected $name = 'contract_verify';
+    protected $name = 'contract_synthetical';
     
     // 自动写入时间戳字段
     protected $autoWriteTimestamp = 'int';
@@ -25,7 +25,7 @@ class ContractVerify extends Model
     
     public function getAgreedataList()
     {
-        return ['wait' => __('Agreedata wait'),'agree' => __('Agreedata agree'),'veto' => __('Agreedata veto')];
+        return ['wait' => __('Agreedata wait'),'agree' => __('Agreedata agree'),'back' => __('Agreedata back'),'veto' => __('Agreedata veto')];
     }     
 
 

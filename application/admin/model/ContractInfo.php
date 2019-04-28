@@ -33,7 +33,7 @@ class ContractInfo extends Model {
 	}
 
 	public function companyInfo() {
-		return $this->belongsTo('CompanyInfo', 'project_company_id', 'id', [], 'LEFT')->setEagerlyType(0);
+		return $this->belongsTo('CompanyInfo', 'company_info_id', 'id', [], 'LEFT')->setEagerlyType(0);
 	}
 
 	public function category() {

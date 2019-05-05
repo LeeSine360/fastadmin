@@ -43,6 +43,7 @@ class Info extends Backend {
 		//设置过滤方法
 		$this->request->filter(['strip_tags']);
 		if ($this->request->isAjax()) {
+
 			//如果发送的来源是Selectpage，则转发到Selectpage
 			if ($this->request->request('keyField')) {
 				return $this->selectpage();
@@ -147,7 +148,7 @@ class Info extends Backend {
 			if ($row) {
 				$projectName = $this->projectModel->get(['short' => $row['project_info_id']]);
 				$sectionName = explode("、", $row['project_section_ids']);
-				$companyName = $this->companyModel->get(['name' => $row['project_company_id']]);
+				$companyName = $this->companyModel->get(['name' => $row['company_info_id']]);
 
 				$sectionArr = [];
 
@@ -167,7 +168,7 @@ class Info extends Backend {
 					$row['project_section_ids'] = implode(",", $sectionArr);
 				}
 				if ($companyName) {
-					$row['project_company_id'] = $companyName->id;
+					$row['company_info_id'] = $companyName->id;
 				} else {
 					continue;
 				}

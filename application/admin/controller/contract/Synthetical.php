@@ -9,69 +9,63 @@ use app\common\controller\Backend;
  *
  * @icon fa fa-circle-o
  */
-class Synthetical extends Backend
-{
-    
-    /**
-     * Synthetical模型对象
-     * @var \app\admin\model\contract\Synthetical
-     */
-    protected $model = null;
+class Synthetical extends Backend {
 
-    public function _initialize()
-    {
-        parent::_initialize();
-        $this->model = new \app\admin\model\ContractSynthetical;
-        $this->view->assign("agreedataList", $this->model->getAgreedataList());
-    }
-    
-    /**
-     * 默认生成的控制器所继承的父类中有index/add/edit/del/multi五个基础方法、destroy/restore/recyclebin三个回收站方法
-     * 因此在当前控制器中可不用编写增删改查的代码,除非需要自己控制这部分逻辑
-     * 需要将application/admin/library/traits/Backend.php中对应的方法复制到当前控制器,然后进行修改
-     */
-    
+	/**
+	 * Synthetical模型对象
+	 * @var \app\admin\model\contract\Synthetical
+	 */
+	protected $model = null;
 
-    /**
-     * 查看
-     */
-    public function index()
-    {
-        //当前是否为关联查询
-        $this->relationSearch = true;
-        //设置过滤方法
-        $this->request->filter(['strip_tags']);
-        if ($this->request->isAjax())
-        {
-            //如果发送的来源是Selectpage，则转发到Selectpage
-            if ($this->request->request('keyField'))
-            {
-                return $this->selectpage();
-            }
-            list($where, $sort, $order, $offset, $limit) = $this->buildparams();
-            $total = $this->model
-                    ->with(['info'])
-                    ->where($where)
-                    ->order($sort, $order)
-                    ->count();
+	public function _initialize() {
+		parent::_initialize();
+		$this->model = new \app\admin\model\ContractSynthetical;
+		$this->view->assign("agreedataList", $this->model->getAgreedataList());
+	}
 
-            $list = $this->model
-                    ->with(['info'])
-                    ->where($where)
-                    ->order($sort, $order)
-                    ->limit($offset, $limit)
-                    ->select();
+	/**
+	 * 默认生成的控制器所继承的父类中有index/add/edit/del/multi五个基础方法、destroy/restore/recyclebin三个回收站方法
+	 * 因此在当前控制器中可不用编写增删改查的代码,除非需要自己控制这部分逻辑
+	 * 需要将application/admin/library/traits/Backend.php中对应的方法复制到当前控制器,然后进行修改
+	 */
 
-            foreach ($list as $row) {
-                $row->visible(['id','agreedata','opinion','number','contacts','phone','createtime']);
-                $row->visible(['info']);
-				$row->getRelation('info')->visible(['name','number','project_info_id','project_section_ids','project_company_id','total','save','operatorname','operatorphone','createtime']);
-            }
-            $list = collection($list)->toArray();
-            $result = array("total" => $total, "rows" => $list);
+	/**
+	 * 查看
+	 */
+	public function index() {
+		//当前是否为关联查询
+		$this->relationSearch = true;
+		//设置过滤方法
+		$this->request->filter(['strip_tags']);
+		if ($this->request->isAjax()) {
+			//如果发送的来源是Selectpage，则转发到Selectpage
+			if ($this->request->request('keyField')) {
+				return $this->selectpage();
+			}
+			list($where, $sort, $order, $offset, $limit) = $this->buildparams();
+			$total = $this->model
+				->with(['info'])
+				->where($where)
+				->order($sort, $order)
+				->count();
 
-            return json($result);
-        }
-        return $this->view->fetch();
-    }
+			$list = $this->model
+				->with(['info'])
+				->where($where)
+				->order($sort, $order)
+				->limit($offset, $limit)
+				->select();
+
+			foreach ($list as $row) {
+				$row->visible(['id', 'agreedata', 'opinion', 'number', 'contacts', 'phone', 'createtime']);
+				$row->visible(['info']);
+				$row->getRelation('info')->visible(['name', 'number', 'project_info_id', 'project_section_ids', 'company_info_id', 'total', 'save', 'operatorname', 'operatorphone', 'createtime']);
+			}
+			$list = collection($list)->toArray();
+			$result = array("total" => $total, "rows" => $list);
+
+			return json($result);
+		}
+		return $this->view->fetch();
+	}
 }

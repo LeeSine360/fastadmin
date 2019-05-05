@@ -494,7 +494,7 @@ CREATE TABLE `fa_contract_info` (
   `category_ids` varchar(145) NOT NULL COMMENT '类别子目录',
   `name` varchar(145) NOT NULL COMMENT '合同名称',
   `project_section_ids` varchar(145) DEFAULT NULL COMMENT '标段名称',
-  `project_company_id` int(11) NOT NULL COMMENT '供应商名称',
+  `company_info_id` int(11) NOT NULL COMMENT '供应商名称',
   `category_id` int(11) NOT NULL COMMENT '合同类型',
   `label_ids` varchar(45) DEFAULT NULL COMMENT '类别子目录',
   `phone` varchar(45) NOT NULL COMMENT '联系电话',

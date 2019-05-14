@@ -13480,3 +13480,171 @@
 [ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.004000s ]
 [ info ] [ BEHAVIOR ] Run \addons\loginvideo\Loginvideo @response_send [ RunTime:0.007000s ]
 [ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-14T16:34:56+08:00 ] 127.0.0.1 GET 127.0.0.1/admin/company/bill?addtabs=1
+[运行时间：0.248014s] [吞吐率：4.03req/s] [内存消耗：3,631.08kb] [文件加载：85]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.010001s ]
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'company.bill',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3676.400 QQBrowser/10.4.3469.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/admin/company/bill?ref=addtabs',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=irpo0un8np1ikfukmvpiao29jf',
+)
+[ info ] [ PARAM ] array (
+  'addtabs' => '1',
+)
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.004001s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/admin/lang/zh-cn/company/bill.php
+[ info ] [ RUN ] app\admin\controller\company\Bill->index[ C:\xampp\htdocs\fastadmin\application\admin\controller\company\Bill.php ]
+[ info ] [ VIEW ] C:\xampp\htdocs\fastadmin\public/../application/admin\view\company\bill\index.html [ array (
+  0 => 'breadcrumb',
+  1 => 'site',
+  2 => 'config',
+  3 => 'auth',
+  4 => 'admin',
+) ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.001000s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginvideo\Loginvideo @response_send [ RunTime:0.000000s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.034002s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.010001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `fa_auth_rule` WHERE  `name` = 'company/bill' LIMIT 1 [ RunTime:0.002000s ]
+---------------------------------------------------------------
+[ 2019-05-14T16:34:56+08:00 ] 127.0.0.1 GET 127.0.0.1/admin/ajax/lang?callback=define&controllername=company.bill&v=1557822896
+[运行时间：0.095005s] [吞吐率：10.53req/s] [内存消耗：2,512.10kb] [文件加载：75]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.009001s ]
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3676.400 QQBrowser/10.4.3469.400',
+  'accept' => '*/*',
+  'referer' => 'http://127.0.0.1/admin/company/bill?addtabs=1',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=irpo0un8np1ikfukmvpiao29jf',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'company.bill',
+  'v' => '1557822896',
+)
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.005000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/admin/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\admin\controller\Ajax->lang[ C:\xampp\htdocs\fastadmin\application\admin\controller\Ajax.php ]
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/admin/lang/zh-cn/company/bill.php
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.001000s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginvideo\Loginvideo @response_send [ RunTime:0.001000s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-14T16:34:57+08:00 ] 127.0.0.1 GET 127.0.0.1/admin/company/bill/index?sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1557822896780
+[运行时间：0.350020s] [吞吐率：2.86req/s] [内存消耗：3,766.00kb] [文件加载：92]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.009000s ]
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'company.bill',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3676.400 QQBrowser/10.4.3469.400',
+  'content-type' => 'application/json',
+  'referer' => 'http://127.0.0.1/admin/company/bill?addtabs=1',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=irpo0un8np1ikfukmvpiao29jf',
+)
+[ info ] [ PARAM ] array (
+  'sort' => 'id',
+  'order' => 'desc',
+  'offset' => '0',
+  'limit' => '10',
+  'filter' => '{}',
+  'op' => '{}',
+  '_' => '1557822896780',
+)
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.006000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/admin/lang/zh-cn/company/bill.php
+[ info ] [ RUN ] app\admin\controller\company\Bill->index[ C:\xampp\htdocs\fastadmin\application\admin\controller\company\Bill.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginvideo\Loginvideo @response_send [ RunTime:0.000000s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002001s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.013000s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.006001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_company_bill` [ RunTime:0.028002s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_project_info` [ RunTime:0.017000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_project_section` [ RunTime:0.014000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_company_info` [ RunTime:0.023002s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin` [ RunTime:0.011000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_company_bill` `company_bill` LEFT JOIN `fa_project_info` `projectInfo` ON `company_bill`.`project_info_id`=`projectInfo`.`id` LEFT JOIN `fa_project_section` `projectSection` ON `company_bill`.`project_section_id`=`projectSection`.`id` LEFT JOIN `fa_company_info` `companyInfo` ON `company_bill`.`company_info_id`=`companyInfo`.`id` LEFT JOIN `fa_admin` `admin` ON `company_bill`.`amdin_id`=`admin`.`id` ORDER BY `company_bill`.`id` DESC LIMIT 1 [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SELECT `company_bill`.`id`,`company_bill`.`project_info_id`,`company_bill`.`project_section_id`,`company_bill`.`company_info_id`,`company_bill`.`starttime`,`company_bill`.`endtime`,`company_bill`.`payment`,`company_bill`.`unpayment`,`company_bill`.`uploadimages`,`company_bill`.`remarkcontent`,`company_bill`.`createtime`,`company_bill`.`updatetime`,`company_bill`.`amdin_id`,`company_bill`.`contacts`,`company_bill`.`phone`,projectInfo.id AS projectInfo__id,projectInfo.name AS projectInfo__name,projectInfo.short AS projectInfo__short,projectInfo.category_id AS projectInfo__category_id,projectInfo.price AS projectInfo__price,projectInfo.starttime AS projectInfo__starttime,projectInfo.days AS projectInfo__days,projectInfo.city AS projectInfo__city,projectInfo.address AS projectInfo__address,projectInfo.surveycontent AS projectInfo__surveycontent,projectInfo.project_construct_id AS projectInfo__project_construct_id,projectInfo.build_contactsname AS projectInfo__build_contactsname,projectInfo.build_phone AS projectInfo__build_phone,projectInfo.project_supervision_id AS projectInfo__project_supervision_id,projectInfo.supervision_contactsname AS projectInfo__supervision_contactsname,projectInfo.supervision_phone AS projectInfo__supervision_phone,projectInfo.remarkcontent AS projectInfo__remarkcontent,projectInfo.createtime AS projectInfo__createtime,projectInfo.updatetime AS projectInfo__updatetime,projectInfo.admin_id AS projectInfo__admin_id,projectSection.id AS projectSection__id,projectSection.project_info_id AS projectSection__project_info_id,projectSection.project_manager_id AS projectSection__project_manager_id,projectSection.name AS projectSection__name,projectSection.price AS projectSection__price,projectSection.surveycontent AS projectSection__surveycontent,projectSection.remarkcontent AS projectSection__remarkcontent,projectSection.createtime AS projectSection__createtime,projectSection.updatetime AS projectSection__updatetime,projectSection.admin_id AS projectSection__admin_id,companyInfo.id AS companyInfo__id,companyInfo.name AS companyInfo__name,companyInfo.code AS companyInfo__code,companyInfo.type AS companyInfo__type,companyInfo.status AS companyInfo__status,companyInfo.regCapital AS companyInfo__regCapital,companyInfo.scope AS companyInfo__scope,companyInfo.address AS companyInfo__address,companyInfo.contacts AS companyInfo__contacts,companyInfo.phone AS companyInfo__phone,companyInfo.payname AS companyInfo__payname,companyInfo.account AS companyInfo__account,companyInfo.bankname AS companyInfo__bankname,companyInfo.uploadimages AS companyInfo__uploadimages,companyInfo.remarkcontent AS companyInfo__remarkcontent,companyInfo.createtime AS companyInfo__createtime,companyInfo.updatetime AS companyInfo__updatetime,companyInfo.admin_id AS companyInfo__admin_id,admin.id AS admin__id,admin.username AS admin__username,admin.nickname AS admin__nickname,admin.password AS admin__password,admin.salt AS admin__salt,admin.avatar AS admin__avatar,admin.email AS admin__email,admin.loginfailure AS admin__loginfailure,admin.logintime AS admin__logintime,admin.createtime AS admin__createtime,admin.updatetime AS admin__updatetime,admin.token AS admin__token,admin.status AS admin__status FROM `fa_company_bill` `company_bill` LEFT JOIN `fa_project_info` `projectInfo` ON `company_bill`.`project_info_id`=`projectInfo`.`id` LEFT JOIN `fa_project_section` `projectSection` ON `company_bill`.`project_section_id`=`projectSection`.`id` LEFT JOIN `fa_company_info` `companyInfo` ON `company_bill`.`company_info_id`=`companyInfo`.`id` LEFT JOIN `fa_admin` `admin` ON `company_bill`.`amdin_id`=`admin`.`id` ORDER BY `company_bill`.`id` DESC LIMIT 0,10 [ RunTime:0.028001s ]

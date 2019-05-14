@@ -1,6 +1,10 @@
 <div class="panel panel-default panel-intro">
-    {:build_heading()}
-
+    <div class="panel-heading">
+        <ul class="nav nav-tabs">
+            <li class="active"><a href="#one" data-toggle="tab">标段列表</a></li>
+            <li><a href="#two" data-toggle="tab">添加</a></li>
+        </ul>
+    </div>
     <div class="panel-body">
         <div id="myTabContent" class="tab-content">
             <div class="tab-pane fade active in" id="one">
@@ -27,7 +31,49 @@
                     </table>
                 </div>
             </div>
-
+            <div class="tab-pane fade" id="two">
+                <form id="add-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="project/section/add">
+                    <div class="row form-row-height">
+                        <label class="control-label col-xs-12 col-sm-2">{:__('Project_info_id')}:</label>
+                        <div class="col-xs-12 col-sm-3">
+                            <input id="c-project_info_id" data-rule="required" data-source="project/info/index" class="form-control selectpage" name="row[project_info_id]" type="text" value="">
+                        </div>
+                        <label class="control-label col-xs-12 col-sm-2">{:__('Project_manager_id')}:</label>
+                        <div class="col-xs-12 col-sm-3">
+                            <input id="c-project_manager_id" data-rule="required" data-source="project/manager/index" class="form-control selectpage" name="row[project_manager_id]" type="text" value="">
+                        </div>
+                    </div>
+                    <div class="row form-row-height">
+                        <label class="control-label col-xs-12 col-sm-2">{:__('Name')}:</label>
+                        <div class="col-xs-12 col-sm-3">
+                            <input id="c-name" data-rule="required" class="form-control" name="row[name]" type="text">
+                        </div>
+                        <label class="control-label col-xs-12 col-sm-2">{:__('Price')}:</label>
+                        <div class="col-xs-12 col-sm-3">
+                            <input id="c-price" class="form-control" step="0.01" name="row[price]" type="number">
+                        </div>
+                    </div>
+                    <div class="row form-row-height">
+                        <label class="control-label col-xs-12 col-sm-2">{:__('Surveycontent')}:</label>
+                        <div class="col-xs-12 col-sm-8">
+                            <textarea id="c-surveycontent" class="form-control" name="row[surveycontent]"></textarea>
+                        </div>
+                    </div>
+                    <div class="row form-row-height">
+                        <label class="control-label col-xs-12 col-sm-2">{:__('Remarkcontent')}:</label>
+                        <div class="col-xs-12 col-sm-8">
+                            <textarea id="c-remarkcontent" class="form-control" name="row[remarkcontent]"></textarea>
+                        </div>
+                    </div>
+                    <div class="row form-row-height layer-footer">
+                        <label class="control-label col-xs-12 col-sm-2"></label>
+                        <div class="col-xs-12 col-sm-8">
+                            <button type="submit" class="btn btn-success btn-embossed disabled">{:__('OK')}</button>
+                            <button type="reset" class="btn btn-default btn-embossed">{:__('Reset')}</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
 </div>

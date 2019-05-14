@@ -63,7 +63,7 @@ class Info extends Backend
                     ->select();
 
             foreach ($list as $row) {
-                $row->visible(['id','price','remarkcontext','createtime']);
+                $row->visible(['id','price','amount','remarkcontext','createtime']);
                 $row->visible(['info']);
 				$row->getRelation('info')->visible(['short']);
 				$row->visible(['section']);

@@ -17,7 +17,7 @@ define(['jquery', 'bootstrap', 'moment', 'accounting', 'moment/locale/zh-cn', 'b
             exportDataType: "all",
             exportTypes: ['json', 'xml', 'csv', 'txt', 'doc', 'excel'],
             pageSize: 10,
-            pageList: [10, 25, 50, 'All'],
+            pageList: [10, 25, 50, 100],//[10, 25, 50, 'All'],
             pagination: true,
             clickToSelect: true, //是否启用点击选中
             dblClickToEdit: true, //是否启用双击编辑

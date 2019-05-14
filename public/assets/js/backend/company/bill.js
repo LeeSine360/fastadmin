@@ -30,7 +30,6 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
                         {field: 'company_info.name', title: __('Info.name')},
                         {field: 'payment', title: __('Payment'), operate:'BETWEEN', formatter: Table.api.formatter.price},
                         {field: 'unpayment', title: __('Unpayment'), operate:'BETWEEN', formatter: Table.api.formatter.price},
-                        {field: 'starttime', title:__('Starttime')},
                         {field: 'endtime', title:__('Endtime')},
                         {field: 'contacts', title: __('Contacts')},
                         {field: 'phone', title: __('Phone')},

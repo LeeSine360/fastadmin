@@ -15,7 +15,7 @@ return [
     'Info.number'  =>  '合同编号',
     'Info.project_info_id'  =>  '项目名称',
     'Info.project_section_ids'  =>  '标段名称',
-    'Info.project_company_id'  =>  '供应商名称',
+    'Info.company_info_id'  =>  '供应商名称',
     'Info.category_id'  =>  '合同类型',
     'Info.label_ids'  =>  '类别子目录',
     'Info.contacts'  =>  '业务经理姓名',

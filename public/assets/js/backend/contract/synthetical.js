@@ -35,7 +35,7 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
                         {field: 'info.number', title: __('Info.number')},
                         {field: 'info.project_info_id', title: __('Info.project_info_id')},
                         {field: 'info.project_section_ids', title: __('Info.project_section_ids')},
-                        {field: 'info.project_company_id', title: __('Info.project_company_id')},
+                        {field: 'info.company_info_id', title: __('Info.company_info_id')},
                         {field: 'info.total', title: __('Info.total')},
                         {field: 'info.save', title: __('Info.save')},
                         {field: 'info.createtime', title: __('Info.createtime'), operate:'RANGE', addclass:'datetimerange', formatter: Table.api.formatter.datetime},

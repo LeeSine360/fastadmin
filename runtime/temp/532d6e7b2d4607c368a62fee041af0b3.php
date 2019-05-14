@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:82:"C:\xampp\htdocs\fastadmin\public/../application/admin\view\contract\info\edit.html";i:1554795749;s:68:"C:\xampp\htdocs\fastadmin\application\admin\view\layout\default.html";i:1545959258;s:65:"C:\xampp\htdocs\fastadmin\application\admin\view\common\meta.html";i:1547016869;s:67:"C:\xampp\htdocs\fastadmin\application\admin\view\common\script.html";i:1545959258;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:82:"C:\xampp\htdocs\fastadmin\public/../application/admin\view\contract\info\edit.html";i:1557450665;s:68:"C:\xampp\htdocs\fastadmin\application\admin\view\layout\default.html";i:1545959258;s:65:"C:\xampp\htdocs\fastadmin\application\admin\view\common\meta.html";i:1547016869;s:67:"C:\xampp\htdocs\fastadmin\application\admin\view\common\script.html";i:1545959258;}*/ ?>
 <!DOCTYPE html>
 <html lang="<?php echo $config['language']; ?>">
     <head>
@@ -68,9 +68,9 @@
         <div class="col-xs-12 col-sm-3">
             <input id="c-name" data-rule="required" class="form-control" name="row[name]" type="text" value="<?php echo $row['name']; ?>">
         </div>
-        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Project_company_id'); ?>:</label>
+        <label class="control-label col-xs-12 col-sm-2"><?php echo __('company_info_id'); ?>:</label>
         <div class="col-xs-12 col-sm-3">
-            <input id="c-project_company_id" data-rule="required" data-source="company/info/index" class="form-control selectpage input-left-padding45" name="row[project_company_id]" type="text" value="<?php echo $row['project_company_id']; ?>">
+            <input id="c-company_info_id" data-rule="required" data-source="company/info/index" class="form-control selectpage input-left-padding45" name="row[company_info_id]" type="text" value="<?php echo $row['company_info_id']; ?>">
         </div>
     </div>
     <div class="row form-row-height">

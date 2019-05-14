@@ -65,7 +65,7 @@ class Synthetical extends Backend
             foreach ($list as $row) {
                 $row->visible(['id','agreedata','opinion','number','contacts','phone','createtime']);
                 $row->visible(['info']);
-				$row->getRelation('info')->visible(['name','number','project_info_id','project_section_ids','project_company_id','total','save','operatorname','operatorphone','createtime']);
+				$row->getRelation('info')->visible(['name','number','project_info_id','project_section_ids','company_info_id','total','save','operatorname','operatorphone','createtime']);
             }
             $list = collection($list)->toArray();
             $result = array("total" => $total, "rows" => $list);

@@ -62,7 +62,7 @@ class Info extends Backend {
 				->select();
 
 			$list = addtion($list, 'project_section_ids');
-
+			
 			foreach ($list as $row) {
 				$row->visible(['id', 'name', 'number', 'phone', 'signdate', 'expirydate', 'price', 'operatorname', 'operatorphone', 'createtime', 'project_section_names']);
 				$row->visible(['project_info']);
@@ -147,7 +147,7 @@ class Info extends Backend {
 			if ($row) {
 				$projectName = $this->projectModel->get(['short' => $row['project_info_id']]);
 				$sectionName = explode("、", $row['project_section_ids']);
-				$companyName = $this->companyModel->get(['name' => $row['project_company_id']]);
+				$companyName = $this->companyModel->get(['name' => $row['company_info_id']]);
 
 				$sectionArr = [];
 
@@ -167,7 +167,7 @@ class Info extends Backend {
 					$row['project_section_ids'] = implode(",", $sectionArr);
 				}
 				if ($companyName) {
-					$row['project_company_id'] = $companyName->id;
+					$row['company_info_id'] = $companyName->id;
 				} else {
 					continue;
 				}

@@ -21,11 +21,11 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
             table.bootstrapTable({
                 url: $.fn.bootstrapTable.defaults.extend.index_url,
                 pk: 'id',
-                sortName: 'id',                
+                sortName: 'number',                
                 columns: [
                     [
                         {checkbox: true},
-                        {field: 'id', title: __('Id')},
+                        {field: 'id', title: __('Id'),visible : false },
                         {field: 'number', title: __('Number')},
                         {field: 'project_info.short', title: __('Info.short')},
                         {field: 'project_section_names', title: __('Section.name')},

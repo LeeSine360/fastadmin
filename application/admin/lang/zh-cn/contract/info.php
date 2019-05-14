@@ -6,7 +6,7 @@ return [
 	'Number' => '合同编号',
 	'Project_info_id' => '项目名称',
 	'Project_section_ids' => '标段名称',
-	'Project_company_id' => '供应商名称',
+	'company_info_id' => '供应商名称',
 	'Category_id' => '合同类型',
 	'Label_ids' => '合同类型',
 	'Contacts' => '业务经理姓名',

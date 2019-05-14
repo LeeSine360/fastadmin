@@ -33,7 +33,7 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
                         {field: 'info.number', title: __('Info.number')},
                         {field: 'info.project_info_id', title: __('Info.project_info_id')},
                         {field: 'info.project_section_ids', title: __('Info.project_section_ids')},
-                        {field: 'info.project_company_id', title: __('Info.project_company_id')},
+                        {field: 'info.company_info_id', title: __('Info.company_info_id')},
                         {field: 'info.category_id', title: __('Info.category_id')},
                         {field: 'info.label_ids', title: __('Info.label_ids')},
                         {field: 'info.contacts', title: __('Info.contacts')},

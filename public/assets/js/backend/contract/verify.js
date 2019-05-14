@@ -25,8 +25,17 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
                     [
                         {checkbox: true},
                         {field: 'id', title: __('Id')},
-                        {field: 'contract_info_id', title: __('Contract_info_id')},
+                        {field: 'number', title: __('ContractNumber')},
+                        {field: 'projectName', title: __('ProjectName')},
+                        {field: 'project_section_names', title: __('Project_section_names')},
+                        {field: 'companyName', title: __('CompanyName')},
+                        {field: 'contractName', title: __('ContractName')},
+                        {field: 'categoryName', title: __('CategoryName')},
+                        {field: 'price', title: __('price'), operate:'BETWEEN'},
+                        {field: 'total', title: __('total')},
+                        {field: 'phone', title: __('ContractPhone')},
                         {field: 'agreedata', title: __('Agreedata'), searchList: {"wait":__('Agreedata wait'),"agree":__('Agreedata agree'),"veto":__('Agreedata veto')}, formatter: Table.api.formatter.normal},
+<<<<<<< HEAD
                         {field: 'opinion', title: __('Opinion')},
                         {field: 'createtime', title: __('Createtime'), operate:'RANGE', addclass:'datetimerange', formatter: Table.api.formatter.datetime},
                         {field: 'info.name', title: __('Info.name')},
@@ -44,6 +53,9 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
                         {field: 'info.operatorname', title: __('Info.operatorname')},
                         {field: 'info.operatorphone', title: __('Info.operatorphone')},
                         {field: 'info.createtime', title: __('Info.createtime'), operate:'RANGE', addclass:'datetimerange', formatter: Table.api.formatter.datetime},
+=======
+                        {field: 'createtime', title: __('Createtime'), operate:'RANGE', addclass:'datetimerange', formatter: Table.api.formatter.datetime},                    
+>>>>>>> 39676902148da64e4614141bdf0430d75b34fdb0
                         {field: 'operate', title: __('Operate'), table: table, events: Table.api.events.operate, formatter: Table.api.formatter.operate}
                     ]
                 ]

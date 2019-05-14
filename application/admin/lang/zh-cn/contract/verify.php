@@ -1,6 +1,7 @@
 <?php
 
 return [
+<<<<<<< HEAD
     'Id'  =>  'ID',
     'Contract_info_id'  =>  '合同名称',
     'Agreedata'  =>  '合同审核',
@@ -28,4 +29,21 @@ return [
     'Info.settlement'  =>  '结算方式',
     'Info.content'  =>  '合同内容',
     'Info.createtime'  =>  '创建日期'
+=======
+	'Id' => 'ID',
+	'ContractName' => '合同名称',
+	'Agreedata' => '合同审核',
+	'Agreedata wait' => '待审核',
+	'Agreedata agree' => '同意',
+	'Agreedata veto' => '不同意',
+	'ContractNumber' => '合同编号',
+	'ProjectName' => '项目名称',
+	'Project_section_names' => '标段名称',
+	'CompanyName' => '供应商名称',
+	'CategoryName' => '合同类型',
+	'ContractPhone' => '联系电话',
+	'price' => '合同金额',
+	'total' => '合同份数',
+	'Createtime' => '创建日期',
+>>>>>>> 39676902148da64e4614141bdf0430d75b34fdb0
 ];

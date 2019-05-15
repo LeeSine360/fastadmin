@@ -1,8 +1,0 @@
-[ 2019-04-08T16:03:16+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
-[ info ] [ LOG ] INIT File
-[ 2019-04-08T16:03:16+08:00 ][ info ] [ CACHE ] INIT File
-[ 2019-04-08T16:03:16+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.011001s ]
-[ 2019-04-08T16:03:17+08:00 ][ info ] [ DB ] INIT mysql
-[ 2019-04-08T16:03:17+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.012000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
-[ 2019-04-08T16:03:17+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'finance_cost' [ RunTime:0.003001s ]
-[ 2019-04-08T16:03:17+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'fa_finance_cost' [ RunTime:0.003000s ]

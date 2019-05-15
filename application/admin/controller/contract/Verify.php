@@ -49,19 +49,20 @@ class Verify extends Backend
                 return $this->selectpage();
             }
             list($where, $sort, $order, $offset, $limit) = $this->buildparams();
-            $total = $this->model
+            /*$total = $this->model
                     ->with(['info'])
                     ->where($where)
                     ->order($sort, $order)
-                    ->count();
+                    ->count();*/
 
             $list = $this->model
-                    ->with(['info'])
+            ->fetchSql(true)
+                    ->with(['info','companyInfo'])
                     ->where($where)
                     ->order($sort, $order)
                     ->limit($offset, $limit)
                     ->select();
-
+return $list;
             foreach ($list as $row) {
                 $row->visible(['id','contract_info_id','agreedata','opinion','createtime']);
                 $row->visible(['info']);

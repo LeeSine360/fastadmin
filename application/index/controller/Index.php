@@ -3,7 +3,6 @@
 namespace app\index\controller;
 
 use app\common\controller\Frontend;
-use app\common\library\Token;
 
 class Index extends Frontend
 {
@@ -12,15 +11,9 @@ class Index extends Frontend
     protected $noNeedRight = '*';
     protected $layout = '';
 
-    public function _initialize()
-    {
-        parent::_initialize();
-    }
-
     public function index()
     {
-        $this->redirect('/admin/index',302);
-        //return $this->view->fetch();
+        return $this->view->fetch();
     }
 
     public function news()

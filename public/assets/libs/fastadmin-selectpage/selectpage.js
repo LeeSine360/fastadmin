@@ -11,7 +11,6 @@
 ;
 (function ($) {
     "use strict";
-
     /**
      * Default options
      */
@@ -527,7 +526,7 @@
         if (orgWidth <= 0)
             orgWidth = this.elementRealSize(input, 'outerWidth');
         if (orgWidth < 150)
-            orgWidth = 150;orgWidth="100%";
+            orgWidth = 150;
 
         elem.combo_input = input.attr({'autocomplete': 'off'}).addClass(css.input).wrap('<div>');
         if (p.selectOnly)
@@ -1105,7 +1104,6 @@
      * @param {Object} e - event object
      */
     SelectPage.prototype.processKey = function (self, e) {
-
         if ($.inArray(e.keyCode, [37, 38, 39, 40, 27, 9, 13]) === -1) {
             if (e.keyCode != 16)
                 self.setCssFocusedInput(self); // except Shift(16)
@@ -1119,10 +1117,6 @@
             } else {
                 self.checkValue(self);
             }
-        }
-
-        if(e.ctrlKey && e.keyCode == 13){
-            console.log("ok");
         }
     }
 

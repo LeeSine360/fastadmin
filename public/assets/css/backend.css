@@ -11,6 +11,7 @@
 @import url("../libs/nice-validator/dist/jquery.validator.css");
 @import url("../libs/bootstrap-select/dist/css/bootstrap-select.min.css");
 @import url("../libs/fastadmin-selectpage/selectpage.css");
+@import url("../libs/bootstrap-slider/slider.css");
 html,
 body {
   height: 100%;
@@ -602,7 +603,6 @@ form.form-horizontal .control-label {
   *display: inline;
   *zoom: 1;
 }
-
 /*修复nice-validator和summernote的编辑框冲突*/
 .nice-validator .note-editor .note-editing-area .note-editable {
   display: inherit;
@@ -651,6 +651,7 @@ form.form-horizontal .control-label {
 .bootstrap-table .form-commonsearch .form-group {
   margin-left: 0;
   margin-right: 0;
+  white-space: nowrap;
 }
 .toolbar {
   margin-top: 10px;
@@ -855,7 +856,7 @@ table.table-nowrap thead > tr > th {
 }
 .layui-layer-fast .layui-layer-setwin .layui-layer-close2,
 .layui-layer-fast .layui-layer-setwin .layui-layer-close2:hover {
-  background: url('../libs/layer/dist/theme/default/icon.png') no-repeat -149px -31px !important;
+  background: url('../libs/fastadmin-layer/dist/theme/default/icon.png') no-repeat -149px -31px !important;
   top: -30px;
   right: -30px;
 }
@@ -996,19 +997,4 @@ table.table-nowrap thead > tr > th {
 .btn-switcher .text-gray {
   color: #d2d6de !important;
 }
-
-/*自定义样式*/
-
-/*表单行间距*/
-.form-row-height {
-  margin-bottom: 10px;
-}
-/*下拉列表框左边箭头调整*/
-.input-left-padding20{
-  padding: 6px 20px 6px 12px;
-}
-.input-left-padding45{
-  padding: 6px 45px 6px 6px;
-}
-
 /*# sourceMappingURL=../css/backend.css.map */

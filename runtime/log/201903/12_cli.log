@@ -1,8 +1,0 @@
-[ 2019-03-12T15:05:29+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
-[ info ] [ LOG ] INIT File
-[ 2019-03-12T15:05:29+08:00 ][ info ] [ CACHE ] INIT File
-[ 2019-03-12T15:05:29+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.009001s ]
-[ 2019-03-12T15:05:29+08:00 ][ info ] [ DB ] INIT mysql
-[ 2019-03-12T15:05:29+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.004001s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
-[ 2019-03-12T15:05:29+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'project_info' [ RunTime:0.003000s ]
-[ 2019-03-12T15:05:29+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'fa_project_info' [ RunTime:0.002000s ]

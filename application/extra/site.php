@@ -15,10 +15,10 @@ return array (
   'fixedpage' => 'dashboard',
   'categorytype' => 
   array (
-    'classify' => '合同类别',
-    'property' => '企业性质',
-    'cost' => '报账类别',
-    'project' => '项目类型',
+    'default' => 'Default',
+    'page' => 'Page',
+    'article' => 'Article',
+    'test' => 'Test',
   ),
   'configgroup' => 
   array (
@@ -35,5 +35,4 @@ return array (
   'mail_smtp_pass' => 'password',
   'mail_verify_type' => '2',
   'mail_from' => '10000@qq.com',
-  'test' => '',
 );

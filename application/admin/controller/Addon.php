@@ -13,12 +13,11 @@ use think\Exception;
 /**
  * 插件管理
  *
- * @icon fa fa-circle-o
+ * @icon   fa fa-cube
  * @remark 可在线安装、卸载、禁用、启用插件，同时支持添加本地插件。FastAdmin已上线插件商店 ，你可以发布你的免费或付费插件：<a href="https://www.fastadmin.net/store.html" target="_blank">https://www.fastadmin.net/store.html</a>
  */
 class Addon extends Backend
 {
-
     protected $model = null;
 
     public function _initialize()
@@ -35,6 +34,7 @@ class Addon extends Backend
         foreach ($addons as $k => &$v) {
             $config = get_addon_config($v['name']);
             $v['config'] = $config ? 1 : 0;
+            $v['url'] = str_replace($this->request->server('SCRIPT_NAME'), '', $v['url']);
         }
         $this->assignconfig(['addons' => $addons]);
         return $this->view->fetch();
@@ -43,7 +43,7 @@ class Addon extends Backend
     /**
      * 配置
      */
-    public function config($ids = NULL)
+    public function config($ids = null)
     {
         $name = $this->request->get("name");
         if (!$name) {
@@ -54,8 +54,9 @@ class Addon extends Backend
         }
         $info = get_addon_info($name);
         $config = get_addon_fullconfig($name);
-        if (!$info)
+        if (!$info) {
             $this->error(__('No Results were found'));
+        }
         if ($this->request->isPost()) {
             $params = $this->request->post("row/a");
             if ($params) {
@@ -290,7 +291,7 @@ class Addon extends Backend
             $onlineaddons = [];
             $result = Http::sendRequest(config('fastadmin.api_url') . '/addon/index');
             if ($result['ret']) {
-                $json = json_decode($result['msg'], TRUE);
+                $json = (array)json_decode($result['msg'], true);
                 $rows = isset($json['rows']) ? $json['rows'] : [];
                 foreach ($rows as $index => $row) {
                     $onlineaddons[$row['name']] = $row;
@@ -302,8 +303,9 @@ class Addon extends Backend
         $addons = get_addon_list();
         $list = [];
         foreach ($addons as $k => $v) {
-            if ($search && stripos($v['name'], $search) === FALSE && stripos($v['intro'], $search) === FALSE)
+            if ($search && stripos($v['name'], $search) === false && stripos($v['intro'], $search) === false) {
                 continue;
+            }
 
             if (isset($onlineaddons[$v['name']])) {
                 $v = array_merge($v, $onlineaddons[$v['name']]);
@@ -314,11 +316,12 @@ class Addon extends Backend
                 $v['image'] = '';
                 $v['donateimage'] = '';
                 $v['demourl'] = '';
-                $v['price'] = '0.00';
+                $v['price'] = __('None');
                 $v['screenshots'] = [];
                 $v['releaselist'] = [];
             }
             $v['url'] = addon_url($v['name']);
+            $v['url'] = str_replace($this->request->server('SCRIPT_NAME'), '', $v['url']);
             $v['createtime'] = filemtime(ADDON_PATH . $v['name']);
             if ($filter && isset($filter['category_id']) && is_numeric($filter['category_id']) && $filter['category_id'] != $v['category_id']) {
                 continue;
@@ -334,5 +337,4 @@ class Addon extends Backend
         $callback = $this->request->get('callback') ? "jsonp" : "json";
         return $callback($result);
     }
-
 }

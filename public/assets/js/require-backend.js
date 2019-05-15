@@ -26,7 +26,6 @@ require.config({
         'jquery': '../libs/jquery/dist/jquery.min',
         'bootstrap': '../libs/bootstrap/dist/js/bootstrap.min',
         'bootstrap-datetimepicker': '../libs/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min',
-        'bootstrap-typeahead':'../libs/bootstrap-typeahead/bootstrap-typeahead.min',
         'bootstrap-daterangepicker': '../libs/bootstrap-daterangepicker/daterangepicker',
         'bootstrap-select': '../libs/bootstrap-select/dist/js/bootstrap-select.min',
         'bootstrap-select-lang': '../libs/bootstrap-select/dist/js/i18n/defaults-zh_CN',
@@ -34,6 +33,7 @@ require.config({
         'bootstrap-table-export': '../libs/bootstrap-table/dist/extensions/export/bootstrap-table-export.min',
         'bootstrap-table-mobile': '../libs/bootstrap-table/dist/extensions/mobile/bootstrap-table-mobile',
         'bootstrap-table-lang': '../libs/bootstrap-table/dist/locale/bootstrap-table-zh-CN',
+        'bootstrap-slider': '../libs/bootstrap-slider/bootstrap-slider',
         'tableexport': '../libs/tableExport.jquery.plugin/tableExport.min',
         'dragsort': '../libs/fastadmin-dragsort/jquery.dragsort',
         'sortable': '../libs/Sortable/Sortable.min',
@@ -51,23 +51,17 @@ require.config({
         'selectpage': '../libs/fastadmin-selectpage/selectpage',
         'citypicker': '../libs/fastadmin-citypicker/dist/js/city-picker.min',
         'citypicker-data': '../libs/fastadmin-citypicker/dist/js/city-picker.data',
-        'accounting': '../libs/accounting.js/accounting.min'
     },
     // shim依赖配置
     shim: {
         'addons': ['backend'],
         'bootstrap': ['jquery'],
-        
         'bootstrap-table': {
             deps: [
                 'bootstrap',
 //                'css!../libs/bootstrap-table/dist/bootstrap-table.min.css'
             ],
             exports: '$.fn.bootstrapTable'
-        },
-        'bootstrap-typeahead': {
-            deps: ['bootstrap-table','bootstrap-typeahead'],
-            exports: '$.fn.bootstrapTypeahead'
         },
         'bootstrap-table-lang': {
             deps: ['bootstrap-table'],

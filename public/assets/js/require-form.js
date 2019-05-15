@@ -1,7 +1,7 @@
 define(['jquery', 'bootstrap', 'upload', 'validator'], function ($, undefined, Upload, Validator) {
     var Form = {
         config: {
-            fieldlisttpl: '<dd class="form-inline"><input type="text" name="<%=name%>[<%=index%>][key]" class="form-control" value="<%=row.key%>" size="10" /> <input type="text" name="<%=name%>[<%=index%>][value]" class="form-control" value="<%=row.value%>" size="30" /> <span class="btn btn-sm btn-danger btn-remove"><i class="fa fa-times"></i></span> <span class="btn btn-sm btn-primary btn-dragsort"><i class="fa fa-arrows"></i></span></dd>'
+            fieldlisttpl: '<dd class="form-inline"><input type="text" name="<%=name%>[<%=index%>][key]" class="form-control" value="<%=row.key%>" size="10" /> <input type="text" name="<%=name%>[<%=index%>][value]" class="form-control" value="<%=row.value%>" /> <span class="btn btn-sm btn-danger btn-remove"><i class="fa fa-times"></i></span> <span class="btn btn-sm btn-primary btn-dragsort"><i class="fa fa-arrows"></i></span></dd>'
         },
         events: {
             validator: function (form, success, error, submit) {
@@ -89,6 +89,11 @@ define(['jquery', 'bootstrap', 'upload', 'validator'], function ($, undefined, U
                 if ($(".selectpicker", form).size() > 0) {
                     require(['bootstrap-select', 'bootstrap-select-lang'], function () {
                         $('.selectpicker', form).selectpicker();
+                        $(form).on("reset", function () {
+                            setTimeout(function () {
+                                $('.selectpicker').selectpicker('refresh').trigger("change");
+                            }, 1);
+                        });
                     });
                 }
             },
@@ -133,6 +138,11 @@ define(['jquery', 'bootstrap', 'upload', 'validator'], function ($, undefined, U
                 //绑定城市远程插件
                 if ($("[data-toggle='city-picker']", form).size() > 0) {
                     require(['citypicker'], function () {
+                        $(form).on("reset", function () {
+                            setTimeout(function () {
+                                $("[data-toggle='city-picker']").citypicker('refresh');
+                            }, 1);
+                        });
                     });
                 }
             },
@@ -242,9 +252,9 @@ define(['jquery', 'bootstrap', 'upload', 'validator'], function ($, undefined, U
                                             return false;
                                         }
                                     }
-                                    inputObj.val(result).trigger("change");
+                                    inputObj.val(result).trigger("change").trigger("validate");
                                 } else {
-                                    $("#" + input_id).val(data.url).trigger("change");
+                                    $("#" + input_id).val(data.url).trigger("change").trigger("validate");
                                 }
                             }
                         });
@@ -368,6 +378,20 @@ define(['jquery', 'bootstrap', 'upload', 'validator'], function ($, undefined, U
             },
             bindevent: function (form) {
 
+            },
+            slider: function (form) {
+                if ($(".slider", form).size() > 0) {
+                    require(['bootstrap-slider'], function () {
+                        $('.slider').removeClass('hidden').css('width', function (index, value) {
+                            return $(this).parents('.form-control').width();
+                        }).slider().on('slide', function (ev) {
+                            var data = $(this).data();
+                            if (typeof data.unit !== 'undefined') {
+                                $(this).parents('.form-control').siblings('.value').text(ev.value + data.unit);
+                            }
+                        });
+                    });
+                }
             }
         },
         api: {
@@ -466,6 +490,8 @@ define(['jquery', 'bootstrap', 'upload', 'validator'], function ($, undefined, U
                 events.faselect(form);
 
                 events.fieldlist(form);
+
+                events.slider(form);
 
                 events.switcher(form);
             },

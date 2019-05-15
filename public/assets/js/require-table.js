@@ -1,4 +1,4 @@
-define(['jquery', 'bootstrap', 'moment', 'accounting', 'moment/locale/zh-cn', 'bootstrap-table', 'bootstrap-table-lang', 'bootstrap-table-export', 'bootstrap-table-commonsearch', 'bootstrap-table-template'], function($, undefined, Moment, accounting) {
+define(['jquery', 'bootstrap', 'moment', 'moment/locale/zh-cn', 'bootstrap-table', 'bootstrap-table-lang', 'bootstrap-table-export', 'bootstrap-table-commonsearch', 'bootstrap-table-template'], function ($, undefined, Moment) {
     var Table = {
         list: {},
         // Bootstrap-table 基础配置
@@ -16,8 +16,12 @@ define(['jquery', 'bootstrap', 'moment', 'accounting', 'moment/locale/zh-cn', 'b
             showExport: true,
             exportDataType: "all",
             exportTypes: ['json', 'xml', 'csv', 'txt', 'doc', 'excel'],
+            exportOptions: {
+                fileName: 'export_' + Moment().format("YYYY-MM-DD"),
+                ignoreColumn: [0, 'operate'] //默认不导出第一列(checkbox)与操作(operate)列
+            },
             pageSize: 10,
-            pageList: [10, 25, 50, 100],//[10, 25, 50, 'All'],
+            pageList: [10, 25, 50, 'All'],
             pagination: true,
             clickToSelect: true, //是否启用点击选中
             dblClickToEdit: true, //是否启用双击编辑
@@ -62,10 +66,14 @@ define(['jquery', 'bootstrap', 'moment', 'accounting', 'moment/locale/zh-cn', 'b
             multibtn: '.btn-multi',
             disabledbtn: '.btn-disabled',
             editonebtn: '.btn-editone',
+            restoreonebtn: '.btn-restoreone',
+            destroyonebtn: '.btn-destroyone',
+            restoreallbtn: '.btn-restoreall',
+            destroyallbtn: '.btn-destroyall',
             dragsortfield: 'weigh',
         },
         api: {
-            init: function(defaults, columnDefaults, locales) {
+            init: function (defaults, columnDefaults, locales) {
                 defaults = defaults ? defaults : {};
                 columnDefaults = columnDefaults ? columnDefaults : {};
                 locales = locales ? locales : {};
@@ -79,25 +87,25 @@ define(['jquery', 'bootstrap', 'moment', 'accounting', 'moment/locale/zh-cn', 'b
                 $.extend($.fn.bootstrapTable.columnDefaults, Table.columnDefaults, columnDefaults);
                 // 写入bootstrap-table locale配置
                 $.extend($.fn.bootstrapTable.locales[Table.defaults.locale], {
-                    formatCommonSearch: function() {
+                    formatCommonSearch: function () {
                         return __('Common search');
                     },
-                    formatCommonSubmitButton: function() {
+                    formatCommonSubmitButton: function () {
                         return __('Submit');
                     },
-                    formatCommonResetButton: function() {
+                    formatCommonResetButton: function () {
                         return __('Reset');
                     },
-                    formatCommonCloseButton: function() {
+                    formatCommonCloseButton: function () {
                         return __('Close');
                     },
-                    formatCommonChoose: function() {
+                    formatCommonChoose: function () {
                         return __('Choose');
                     }
                 }, locales);
             },
             // 绑定事件
-            bindevent: function(table) {
+            bindevent: function (table) {
                 //Bootstrap-table的父元素,包含table,toolbar,pagnation
                 var parenttable = table.closest('.bootstrap-table');
                 //Bootstrap-table配置
@@ -105,46 +113,46 @@ define(['jquery', 'bootstrap', 'moment', 'accounting', 'moment/locale/zh-cn', 'b
                 //Bootstrap操作区
                 var toolbar = $(options.toolbar, parenttable);
                 //当刷新表格时
-                table.on('load-error.bs.table', function(status, res, e) {
+                table.on('load-error.bs.table', function (status, res, e) {
                     if (e.status === 0) {
                         return;
                     }
                     Toastr.error(__('Unknown data format'));
                 });
                 //当刷新表格时
-                table.on('refresh.bs.table', function(e, settings, data) {
+                table.on('refresh.bs.table', function (e, settings, data) {
                     $(Table.config.refreshbtn, toolbar).find(".fa").addClass("fa-spin");
                 });
                 if (options.dblClickToEdit) {
                     //当双击单元格时
-                    table.on('dbl-click-row.bs.table', function(e, row, element, field) {
+                    table.on('dbl-click-row.bs.table', function (e, row, element, field) {
                         $(Table.config.editonebtn, element).trigger("click");
                     });
                 }
                 //当内容渲染完成后
-                table.on('post-body.bs.table', function(e, settings, json, xhr) {
+                table.on('post-body.bs.table', function (e, settings, json, xhr) {
                     $(Table.config.refreshbtn, toolbar).find(".fa").removeClass("fa-spin");
                     $(Table.config.disabledbtn, toolbar).toggleClass('disabled', true);
                     if ($(Table.config.firsttd, table).find("input[type='checkbox'][data-index]").size() > 0) {
                         // 挺拽选择,需要重新绑定事件
-                        require(['drag', 'drop'], function() {
-                            $(Table.config.firsttd, table).drag("start", function(ev, dd) {
+                        require(['drag', 'drop'], function () {
+                            $(Table.config.firsttd, table).drag("start", function (ev, dd) {
                                 return $('<div class="selection" />').css('opacity', .65).appendTo(document.body);
-                            }).drag(function(ev, dd) {
+                            }).drag(function (ev, dd) {
                                 $(dd.proxy).css({
                                     top: Math.min(ev.pageY, dd.startY),
                                     left: Math.min(ev.pageX, dd.startX),
                                     height: Math.abs(ev.pageY - dd.startY),
                                     width: Math.abs(ev.pageX - dd.startX)
                                 });
-                            }).drag("end", function(ev, dd) {
+                            }).drag("end", function (ev, dd) {
                                 $(dd.proxy).remove();
                             });
-                            $(Table.config.firsttd, table).drop("start", function() {
+                            $(Table.config.firsttd, table).drop("start", function () {
                                 Table.api.toggleattr(this);
-                            }).drop(function() {
+                            }).drop(function () {
                                 Table.api.toggleattr(this);
-                            }).drop("end", function() {
+                            }).drop("end", function () {
                                 Table.api.toggleattr(this);
                             });
                             $.drop({
@@ -154,12 +162,12 @@ define(['jquery', 'bootstrap', 'moment', 'accounting', 'moment/locale/zh-cn', 'b
                     }
                 });
                 // 处理选中筛选框后按钮的状态统一变更
-                table.on('check.bs.table uncheck.bs.table check-all.bs.table uncheck-all.bs.table', function() {
+                table.on('check.bs.table uncheck.bs.table check-all.bs.table uncheck-all.bs.table', function () {
                     var ids = Table.api.selectedids(table);
                     $(Table.config.disabledbtn, toolbar).toggleClass('disabled', !ids.length);
                 });
                 // 绑定TAB事件
-                $('.panel-heading ul[data-field] li a[data-toggle="tab"]').on('shown.bs.tab', function(e) {
+                $('.panel-heading ul[data-field] li a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
                     var field = $(this).closest("ul").data("field");
                     var value = $(this).data("value");
                     $("select[name='" + field + "'] option[value='" + value + "']", table.closest(".bootstrap-table").find(".commonsearch-table")).prop("selected", true);
@@ -167,80 +175,96 @@ define(['jquery', 'bootstrap', 'moment', 'accounting', 'moment/locale/zh-cn', 'b
                     return false;
                 });
                 // 刷新按钮事件
-                $(toolbar).on('click', Table.config.refreshbtn, function() {
+                $(toolbar).on('click', Table.config.refreshbtn, function () {
                     table.bootstrapTable('refresh');
                 });
                 // 添加按钮事件
-                $(toolbar).on('click', Table.config.addbtn, function() {
+                $(toolbar).on('click', Table.config.addbtn, function () {
                     var ids = Table.api.selectedids(table);
                     var url = options.extend.add_url;
                     if (url.indexOf("{ids}") !== -1) {
-                        url = Table.api.replaceurl(url, {
-                            ids: ids.length > 0 ? ids.join(",") : 0
-                        }, table);
+                        url = Table.api.replaceurl(url, {ids: ids.length > 0 ? ids.join(",") : 0}, table);
                     }
                     Fast.api.open(url, __('Add'), $(this).data() || {});
                 });
                 // 导入按钮事件
                 if ($(Table.config.importbtn, toolbar).size() > 0) {
-                    require(['upload'], function(Upload) {
-                        Upload.api.plupload($(Table.config.importbtn, toolbar), function(data, ret) {
+                    require(['upload'], function (Upload) {
+                        Upload.api.plupload($(Table.config.importbtn, toolbar), function (data, ret) {
                             Fast.api.ajax({
                                 url: options.extend.import_url,
-                                data: {
-                                    file: data.url
-                                },
-                            }, function(data, ret) {
+                                data: {file: data.url},
+                            }, function (data, ret) {
                                 table.bootstrapTable('refresh');
                             });
                         });
                     });
                 }
                 // 批量编辑按钮事件
-                $(toolbar).on('click', Table.config.editbtn, function() {
+                $(toolbar).on('click', Table.config.editbtn, function () {
                     var that = this;
                     //循环弹出多个编辑框
-                    $.each(table.bootstrapTable('getSelections'), function(index, row) {
+                    $.each(table.bootstrapTable('getSelections'), function (index, row) {
                         var url = options.extend.edit_url;
-                        row = $.extend({}, row ? row : {}, {
-                            ids: row[options.pk]
-                        });
+                        row = $.extend({}, row ? row : {}, {ids: row[options.pk]});
                         var url = Table.api.replaceurl(url, row, table);
                         Fast.api.open(url, __('Edit'), $(that).data() || {});
                     });
                 });
+                //清空回收站
+                $(document).on('click', Table.config.destroyallbtn, function () {
+                    var that = this;
+                    Layer.confirm(__('Are you sure you want to truncate?'), function () {
+                        var url = $(that).data("url") ? $(that).data("url") : $(that).attr("href");
+                        Fast.api.ajax(url, function () {
+                            Layer.closeAll();
+                            table.bootstrapTable('refresh');
+                        }, function () {
+                            Layer.closeAll();
+                        });
+                    });
+                    return false;
+                });
+                //还原或删除
+                $(document).on('click', Table.config.restoreallbtn + ',' + Table.config.restoreonebtn + ',' + Table.config.destroyonebtn, function () {
+                    var that = this;
+                    var url = $(that).data("url") ? $(that).data("url") : $(that).attr("href");
+                    Fast.api.ajax(url, function () {
+                        table.bootstrapTable('refresh');
+                    });
+                    return false;
+                });
                 // 批量操作按钮事件
-                $(toolbar).on('click', Table.config.multibtn, function() {
+                $(toolbar).on('click', Table.config.multibtn, function () {
                     var ids = Table.api.selectedids(table);
                     Table.api.multi($(this).data("action"), ids, table, this);
                 });
                 // 批量删除按钮事件
-                $(toolbar).on('click', Table.config.delbtn, function() {
+                $(toolbar).on('click', Table.config.delbtn, function () {
                     var that = this;
                     var ids = Table.api.selectedids(table);
-                    Layer.confirm(__('Are you sure you want to delete the %s selected item?', ids.length), {
-                        icon: 3,
-                        title: __('Warning'),
-                        offset: 0,
-                        shadeClose: true
-                    }, function(index) {
-                        Table.api.multi("del", ids, table, that);
-                        Layer.close(index);
-                    });
+                    Layer.confirm(
+                        __('Are you sure you want to delete the %s selected item?', ids.length),
+                        {icon: 3, title: __('Warning'), offset: 0, shadeClose: true},
+                        function (index) {
+                            Table.api.multi("del", ids, table, that);
+                            Layer.close(index);
+                        }
+                    );
                 });
                 // 拖拽排序
-                require(['dragsort'], function() {
+                require(['dragsort'], function () {
                     //绑定拖动排序
                     $("tbody", table).dragsort({
                         itemSelector: 'tr:visible',
                         dragSelector: "a.btn-dragsort",
-                        dragEnd: function(a, b) {
+                        dragEnd: function (a, b) {
                             var element = $("a.btn-dragsort", this);
                             var data = table.bootstrapTable('getData');
                             var current = data[parseInt($(this).data("index"))];
                             var options = table.bootstrapTable('getOptions');
                             //改变的值和改变的ID集合
-                            var ids = $.map($("tbody tr:visible", table), function(tr) {
+                            var ids = $.map($("tbody tr:visible", table), function (tr) {
                                 return data[parseInt($(tr).data("index"))][options.pk];
                             });
                             var changeid = current[options.pk];
@@ -256,7 +280,7 @@ define(['jquery', 'bootstrap', 'moment', 'accounting', 'moment/locale/zh-cn', 'b
                                     table: options.extend.table
                                 }
                             };
-                            Fast.api.ajax(params, function(data, ret) {
+                            Fast.api.ajax(params, function (data, ret) {
                                 var success = $(element).data("success") || $.noop;
                                 if (typeof success === 'function') {
                                     if (false === success.call(element, data, ret)) {
@@ -264,7 +288,7 @@ define(['jquery', 'bootstrap', 'moment', 'accounting', 'moment/locale/zh-cn', 'b
                                     }
                                 }
                                 table.bootstrapTable('refresh');
-                            }, function(data, ret) {
+                            }, function (data, ret) {
                                 var error = $(element).data("error") || $.noop;
                                 if (typeof error === 'function') {
                                     if (false === error.call(element, data, ret)) {
@@ -277,16 +301,16 @@ define(['jquery', 'bootstrap', 'moment', 'accounting', 'moment/locale/zh-cn', 'b
                         placeHolderTemplate: ""
                     });
                 });
-                $(table).on("click", "input[data-id][name='checkbox']", function(e) {
+                $(table).on("click", "input[data-id][name='checkbox']", function (e) {
                     var ids = $(this).data("id");
                     var row = Table.api.getrowbyid(table, ids);
                     table.trigger('check.bs.table', [row, this]);
                 });
-                $(table).on("click", "[data-id].btn-change", function(e) {
+                $(table).on("click", "[data-id].btn-change", function (e) {
                     e.preventDefault();
                     Table.api.multi($(this).data("action") ? $(this).data("action") : '', [$(this).data("id")], table, this);
                 });
-                $(table).on("click", "[data-id].btn-edit", function(e) {
+                $(table).on("click", "[data-id].btn-edit", function (e) {
                     e.preventDefault();
                     var ids = $(this).data("id");
                     var row = Table.api.getrowbyid(table, ids);
@@ -294,42 +318,33 @@ define(['jquery', 'bootstrap', 'moment', 'accounting', 'moment/locale/zh-cn', 'b
                     var url = Table.api.replaceurl(options.extend.edit_url, row, table);
                     Fast.api.open(url, __('Edit'), $(this).data() || {});
                 });
-                $(table).on("click", "[data-id].btn-del", function(e) {
+                $(table).on("click", "[data-id].btn-del", function (e) {
                     e.preventDefault();
                     var id = $(this).data("id");
                     var that = this;
-                    Layer.confirm(__('Are you sure you want to delete this item?'), {
-                        icon: 3,
-                        title: __('Warning'),
-                        shadeClose: true
-                    }, function(index) {
-                        Table.api.multi("del", id, table, that);
-                        Layer.close(index);
-                    });
+                    Layer.confirm(
+                        __('Are you sure you want to delete this item?'),
+                        {icon: 3, title: __('Warning'), shadeClose: true},
+                        function (index) {
+                            Table.api.multi("del", id, table, that);
+                            Layer.close(index);
+                        }
+                    );
                 });
                 var id = table.attr("id");
                 Table.list[id] = table;
                 return table;
             },
             // 批量操作请求
-            multi: function(action, ids, table, element) {
+            multi: function (action, ids, table, element) {
                 var options = table.bootstrapTable('getOptions');
                 var data = element ? $(element).data() : {};
                 var ids = ($.isArray(ids) ? ids.join(",") : ids);
                 var url = typeof data.url !== "undefined" ? data.url : (action == "del" ? options.extend.del_url : options.extend.multi_url);
-                url = this.replaceurl(url, {
-                    ids: ids
-                }, table);
+                url = this.replaceurl(url, {ids: ids}, table);
                 var params = typeof data.params !== "undefined" ? (typeof data.params == 'object' ? $.param(data.params) : data.params) : '';
-                var options = {
-                    url: url,
-                    data: {
-                        action: action,
-                        ids: ids,
-                        params: params
-                    }
-                };
-                Fast.api.ajax(options, function(data, ret) {
+                var options = {url: url, data: {action: action, ids: ids, params: params}};
+                Fast.api.ajax(options, function (data, ret) {
                     var success = $(element).data("success") || $.noop;
                     if (typeof success === 'function') {
                         if (false === success.call(element, data, ret)) {
@@ -337,7 +352,7 @@ define(['jquery', 'bootstrap', 'moment', 'accounting', 'moment/locale/zh-cn', 'b
                         }
                     }
                     table.bootstrapTable('refresh');
-                }, function(data, ret) {
+                }, function (data, ret) {
                     var error = $(element).data("error") || $.noop;
                     if (typeof error === 'function') {
                         if (false === error.call(element, data, ret)) {
@@ -349,19 +364,17 @@ define(['jquery', 'bootstrap', 'moment', 'accounting', 'moment/locale/zh-cn', 'b
             // 单元格元素事件
             events: {
                 operate: {
-                    'click .btn-editone': function(e, value, row, index) {
+                    'click .btn-editone': function (e, value, row, index) {
                         e.stopPropagation();
                         e.preventDefault();
                         var table = $(this).closest('table');
                         var options = table.bootstrapTable('getOptions');
                         var ids = row[options.pk];
-                        row = $.extend({}, row ? row : {}, {
-                            ids: ids
-                        });
+                        row = $.extend({}, row ? row : {}, {ids: ids});
                         var url = options.extend.edit_url;
                         Fast.api.open(Table.api.replaceurl(url, row, table), __('Edit'), $(this).data() || {});
                     },
-                    'click .btn-delone': function(e, value, row, index) {
+                    'click .btn-delone': function (e, value, row, index) {
                         e.stopPropagation();
                         e.preventDefault();
                         var that = this;
@@ -373,52 +386,64 @@ define(['jquery', 'bootstrap', 'moment', 'accounting', 'moment/locale/zh-cn', 'b
                         if ($(window).width() < 480) {
                             top = left = undefined;
                         }
-                        Layer.confirm(__('Are you sure you want to delete this item?'), {
-                            icon: 3,
-                            title: __('Warning'),
-                            offset: [top, left],
-                            shadeClose: true
-                        }, function(index) {
-                            var table = $(that).closest('table');
-                            var options = table.bootstrapTable('getOptions');
-                            Table.api.multi("del", row[options.pk], table, that);
-                            Layer.close(index);
-                        });
+                        Layer.confirm(
+                            __('Are you sure you want to delete this item?'),
+                            {icon: 3, title: __('Warning'), offset: [top, left], shadeClose: true},
+                            function (index) {
+                                var table = $(that).closest('table');
+                                var options = table.bootstrapTable('getOptions');
+                                Table.api.multi("del", row[options.pk], table, that);
+                                Layer.close(index);
+                            }
+                        );
                     }
+                },//单元格图片预览
+                image: {
+                    'click .img-center': function (e, value, row, index) {
+                        var data = [];
+                        value = value.split(",");
+                        $.each(value, function (index, value) {
+                            data.push({
+                                src: Fast.api.cdnurl(value),
+                            });
+                        });
+                        Layer.photos({
+                            photos: {
+                                "data": data
+                            },
+                            anim: 5 //0-6的选择，指定弹出图片动画类型，默认随机（请注意，3.0之前的版本用shift参数）
+                        });
+                    },
                 }
             },
             // 单元格数据格式化
             formatter: {
-                icon: function(value, row, index) {
-                    if (!value) return '';
+                icon: function (value, row, index) {
+                    if (!value)
+                        return '';
                     value = value === null ? '' : value.toString();
                     value = value.indexOf(" ") > -1 ? value : "fa fa-" + value;
                     //渲染fontawesome图标
                     return '<i class="' + value + '"></i> ' + value;
                 },
-                image: function(value, row, index) {
+                image: function (value, row, index) {
                     value = value ? value : '/assets/img/blank.gif';
                     var classname = typeof this.classname !== 'undefined' ? this.classname : 'img-sm img-center';
-                    return '<a href="' + Fast.api.cdnurl(value) + '" target="_blank"><img class="' + classname + '" src="' + Fast.api.cdnurl(value) + '" /></a>';
+                    return '<a href="javascript:void(0)" target="_blank"><img class="' + classname + '" src="' + Fast.api.cdnurl(value) + '" /></a>';
                 },
-                images: function(value, row, index) {
+                images: function (value, row, index) {
                     value = value === null ? '' : value.toString();
                     var classname = typeof this.classname !== 'undefined' ? this.classname : 'img-sm img-center';
                     var arr = value.split(',');
                     var html = [];
-                    $.each(arr, function(i, value) {
+                    $.each(arr, function (i, value) {
                         value = value ? value : '/assets/img/blank.gif';
-                        html.push('<a href="' + Fast.api.cdnurl(value) + '" target="_blank"><img class="' + classname + '" src="' + Fast.api.cdnurl(value) + '" /></a>');
+                        html.push('<a href="javascript:void(0)" target="_blank"><img class="' + classname + '" src="' + Fast.api.cdnurl(value) + '" /></a>');
                     });
                     return html.join(' ');
                 },
-                status: function(value, row, index) {
-                    var custom = {
-                        normal: 'success',
-                        hidden: 'gray',
-                        deleted: 'danger',
-                        locked: 'info'
-                    };
+                status: function (value, row, index) {
+                    var custom = {normal: 'success', hidden: 'gray', deleted: 'danger', locked: 'info'};
                     if (typeof this.custom !== 'undefined') {
                         custom = $.extend(custom, this.custom);
                     }
@@ -426,7 +451,7 @@ define(['jquery', 'bootstrap', 'moment', 'accounting', 'moment/locale/zh-cn', 'b
                     this.icon = 'fa fa-circle';
                     return Table.api.formatter.normal.call(this, value, row, index);
                 },
-                normal: function(value, row, index) {
+                normal: function (value, row, index) {
                     var colorArr = ["primary", "success", "danger", "warning", "info", "gray", "red", "yellow", "aqua", "blue", "navy", "teal", "olive", "lime", "fuchsia", "purple", "maroon"];
                     var custom = {};
                     if (typeof this.custom !== 'undefined') {
@@ -450,40 +475,39 @@ define(['jquery', 'bootstrap', 'moment', 'accounting', 'moment/locale/zh-cn', 'b
                     }
                     return html;
                 },
-                toggle: function(value, row, index) {
+                toggle: function (value, row, index) {
                     var color = typeof this.color !== 'undefined' ? this.color : 'success';
                     var yes = typeof this.yes !== 'undefined' ? this.yes : 1;
                     var no = typeof this.no !== 'undefined' ? this.no : 0;
-                    return "<a href='javascript:;' data-toggle='tooltip' title='" + __('Click to toggle') + "' class='btn-change' data-id='" + row.id + "' data-params='" + this.field + "=" + (value == yes ? no : yes) + "'><i class='fa fa-toggle-on " + (value == yes ? 'text-' + color : 'fa-flip-horizontal text-gray') + " fa-2x'></i></a>";
+                    var url = typeof this.url !== 'undefined' ? this.url : '';
+                    return "<a href='javascript:;' data-toggle='tooltip' title='" + __('Click to toggle') + "' class='btn-change' data-id='"
+                        + row.id + "' " + (url ? "data-url='" + url + "'" : "") + " data-params='" + this.field + "=" + (value == yes ? no : yes) + "'><i class='fa fa-toggle-on " + (value == yes ? 'text-' + color : 'fa-flip-horizontal text-gray') + " fa-2x'></i></a>";
                 },
-                url: function(value, row, index) {
+                url: function (value, row, index) {
                     return '<div class="input-group input-group-sm" style="width:250px;margin:0 auto;"><input type="text" class="form-control input-sm" value="' + value + '"><span class="input-group-btn input-group-sm"><a href="' + value + '" target="_blank" class="btn btn-default btn-sm"><i class="fa fa-link"></i></a></span></div>';
                 },
-                input: function(value, row, index) {
-                    return '<input type="text" class="form-control input-sm" style="width:50px;margin:0 auto" value="' + value + '" />';
+                search: function (value, row, index) {
+                    var field = this.field;
+                    if (typeof this.customField !== 'undefined' && typeof row[this.customField] !== 'undefined') {
+                        value = row[this.customField];
+                        field = this.customField;
+                    }
+                    return '<a href="javascript:;" class="searchit" data-toggle="tooltip" title="' + __('Click to search %s', value) + '" data-field="' + field + '" data-value="' + value + '">' + value + '</a>';
                 },
-                search: function(value, row, index) {
-                    return '<a href="javascript:;" class="searchit" data-toggle="tooltip" title="' + __('Click to search %s', value) + '" data-field="' + this.field + '" data-value="' + value + '">' + value + '</a>';
-                },
-                addtabs: function(value, row, index) {
+                addtabs: function (value, row, index) {
                     var url = Table.api.replaceurl(this.url, row, this.table);
                     var title = this.atitle ? this.atitle : __("Search %s", value);
                     return '<a href="' + Fast.api.fixurl(url) + '" class="addtabsit" data-value="' + value + '" title="' + title + '">' + value + '</a>';
                 },
-                dialog: function(value, row, index) {
+                dialog: function (value, row, index) {
                     var url = Table.api.replaceurl(this.url, row, this.table);
                     var title = this.atitle ? this.atitle : __("View %s", value);
                     return '<a href="' + Fast.api.fixurl(url) + '" class="dialogit" data-value="' + value + '" title="' + title + '">' + value + '</a>';
                 },
-                flag: function(value, row, index) {
+                flag: function (value, row, index) {
                     var that = this;
                     value = value === null ? '' : value.toString();
-                    var colorArr = {
-                        index: 'success',
-                        hot: 'warning',
-                        recommend: 'danger',
-                        'new': 'info'
-                    };
+                    var colorArr = {index: 'success', hot: 'warning', recommend: 'danger', 'new': 'info'};
                     //如果字段列有定义custom
                     if (typeof this.custom !== 'undefined') {
                         colorArr = $.extend(colorArr, this.custom);
@@ -493,25 +517,30 @@ define(['jquery', 'bootstrap', 'moment', 'accounting', 'moment/locale/zh-cn', 'b
                         value = row[this.customField];
                         field = this.customField;
                     }
+
                     //渲染Flag
                     var html = [];
                     var arr = value.split(',');
-                    $.each(arr, function(i, value) {
+                    var color, display, label;
+                    $.each(arr, function (i, value) {
                         value = value === null ? '' : value.toString();
-                        if (value == '') return true;
-                        var color = value && typeof colorArr[value] !== 'undefined' ? colorArr[value] : 'primary';
-                        var display = typeof that.searchList !== 'undefined' && typeof that.searchList[value] !== 'undefined' ? that.searchList[value] : __(value.charAt(0).toUpperCase() + value.slice(1));
-                        html.push('<a href="javascript:;" class="searchit" data-toggle="tooltip" title="' + __('Click to search %s', display) + '" data-field="' + field + '" data-value="' + value + '"><span class="label label-' + color + '">' + display + '</span></a>');
+                        if (value == '')
+                            return true;
+                        color = value && typeof colorArr[value] !== 'undefined' ? colorArr[value] : 'primary';
+                        display = typeof that.searchList !== 'undefined' && typeof that.searchList[value] !== 'undefined' ? that.searchList[value] : __(value.charAt(0).toUpperCase() + value.slice(1));
+                        label = '<span class="label label-' + color + '">' + display + '</span>';
+                        if (that.operate) {
+                            html.push('<a href="javascript:;" class="searchit" data-toggle="tooltip" title="' + __('Click to search %s', display) + '" data-field="' + field + '" data-value="' + value + '">' + label + '</a>');
+                        } else {
+                            html.push(label);
+                        }
                     });
                     return html.join(' ');
                 },
-                label: function(value, row, index) {
+                label: function (value, row, index) {
                     return Table.api.formatter.flag.call(this, value, row, index);
                 },
-                price: function(value, row, index){
-                    return value ? accounting.formatNumber(value,2) : __('None');
-                },
-                datetime: function(value, row, index) {
+                datetime: function (value, row, index) {
                     var datetimeFormat = typeof this.datetimeFormat === 'undefined' ? 'YYYY-MM-DD HH:mm:ss' : this.datetimeFormat;
                     if (isNaN(value)) {
                         return value ? Moment(value).format(datetimeFormat) : __('None');
@@ -519,7 +548,7 @@ define(['jquery', 'bootstrap', 'moment', 'accounting', 'moment/locale/zh-cn', 'b
                         return value ? Moment(parseInt(value) * 1000).format(datetimeFormat) : __('None');
                     }
                 },
-                operate: function(value, row, index) {
+                operate: function (value, row, index) {
                     var table = this.table;
                     // 操作配置
                     var options = table ? table.bootstrapTable('getOptions') : {};
@@ -527,7 +556,7 @@ define(['jquery', 'bootstrap', 'moment', 'accounting', 'moment/locale/zh-cn', 'b
                     var buttons = $.extend([], this.buttons || []);
                     // 所有按钮名称
                     var names = [];
-                    buttons.forEach(function(item) {
+                    buttons.forEach(function (item) {
                         names.push(item.name);
                     });
                     if (options.extend.dragsort_url !== '' && names.indexOf('dragsort') === -1) {
@@ -559,22 +588,25 @@ define(['jquery', 'bootstrap', 'moment', 'accounting', 'moment/locale/zh-cn', 'b
                         });
                     }
                     return Table.api.buttonlink(this, buttons, value, row, index, 'operate');
-                },
-                buttons: function(value, row, index) {
+                }
+                ,
+                buttons: function (value, row, index) {
                     // 默认按钮组
                     var buttons = $.extend([], this.buttons || []);
                     return Table.api.buttonlink(this, buttons, value, row, index, 'buttons');
                 }
             },
-            buttonlink: function(column, buttons, value, row, index, type) {
+            buttonlink: function (column, buttons, value, row, index, type) {
                 var table = column.table;
                 type = typeof type === 'undefined' ? 'buttons' : type;
                 var options = table ? table.bootstrapTable('getOptions') : {};
                 var html = [];
-                var hidden, visible, disable, url, classname, icon, text, title, refresh, confirm, extend, click, dropdown, link;
+                var hidden, visible, disable, url, classname, icon, text, title, refresh, confirm, extend,
+                    dropdown, link;
                 var fieldIndex = column.fieldIndex;
                 var dropdowns = {};
-                $.each(buttons, function(i, j) {
+
+                $.each(buttons, function (i, j) {
                     if (type === 'operate') {
                         if (j.name === 'dragsort' && typeof row[Table.config.dragsortfield] === 'undefined') {
                             return true;
@@ -585,11 +617,11 @@ define(['jquery', 'bootstrap', 'moment', 'accounting', 'moment/locale/zh-cn', 'b
                     }
                     var attr = table.data(type + "-" + j.name);
                     if (typeof attr === 'undefined' || attr) {
-                        hidden = typeof j.hidden === 'function' ? j.hidden.call(table, row, j) : (j.hidden ? j.hidden : false);
+                        hidden = typeof j.hidden === 'function' ? j.hidden.call(table, row, j) : (typeof j.hidden !== 'undefined' ? j.hidden : false);
                         if (hidden) {
                             return true;
                         }
-                        visible = typeof j.visible === 'function' ? j.visible.call(table, row, j) : (j.visible ? j.visible : true);
+                        visible = typeof j.visible === 'function' ? j.visible.call(table, row, j) : (typeof j.visible !== 'undefined' ? j.visible : true);
                         if (!visible) {
                             return true;
                         }
@@ -598,12 +630,12 @@ define(['jquery', 'bootstrap', 'moment', 'accounting', 'moment/locale/zh-cn', 'b
                         url = typeof url === 'function' ? url.call(table, row, j) : (url ? Fast.api.fixurl(Table.api.replaceurl(url, row, table)) : 'javascript:;');
                         classname = j.classname ? j.classname : 'btn-primary btn-' + name + 'one';
                         icon = j.icon ? j.icon : '';
-                        text = j.text ? j.text : '';
-                        title = j.title ? j.title : text;
+                        text = typeof j.text === 'function' ? j.text.call(table, row, j) : j.text ? j.text : '';
+                        title = typeof j.title === 'function' ? j.title.call(table, row, j) : j.title ? j.title : text;
                         refresh = j.refresh ? 'data-refresh="' + j.refresh + '"' : '';
                         confirm = j.confirm ? 'data-confirm="' + j.confirm + '"' : '';
                         extend = j.extend ? j.extend : '';
-                        disable = typeof j.disable === 'function' ? j.disable.call(table, row, j) : (j.disable ? j.disable : false);
+                        disable = typeof j.disable === 'function' ? j.disable.call(table, row, j) : (typeof j.disable !== 'undefined' ? j.disable : false);
                         if (disable) {
                             classname = classname + ' disabled';
                         }
@@ -620,7 +652,7 @@ define(['jquery', 'bootstrap', 'moment', 'accounting', 'moment/locale/zh-cn', 'b
                 });
                 if (!$.isEmptyObject(dropdowns)) {
                     var dropdownHtml = [];
-                    $.each(dropdowns, function(i, j) {
+                    $.each(dropdowns, function (i, j) {
                         dropdownHtml.push('<div class="btn-group"><button type="button" class="btn btn-primary dropdown-toggle btn-xs" data-toggle="dropdown">' + i + '</button><button type="button" class="btn btn-primary dropdown-toggle btn-xs" data-toggle="dropdown"><span class="caret"></span></button><ul class="dropdown-menu pull-right"><li>' + j.join('</li><li>') + '</li></ul></div>');
                     });
                     html.unshift(dropdownHtml);
@@ -628,13 +660,13 @@ define(['jquery', 'bootstrap', 'moment', 'accounting', 'moment/locale/zh-cn', 'b
                 return html.join(' ');
             },
             //替换URL中的数据
-            replaceurl: function(url, row, table) {
+            replaceurl: function (url, row, table) {
                 var options = table ? table.bootstrapTable('getOptions') : null;
                 var ids = options ? row[options.pk] : 0;
                 row.ids = ids ? ids : (typeof row.ids !== 'undefined' ? row.ids : 0);
                 //自动添加ids参数
                 url = !url.match(/\{ids\}/i) ? url + (url.match(/(\?|&)+/) ? "&ids=" : "/ids/") + '{ids}' : url;
-                url = url.replace(/\{(.*?)\}/gi, function(matched) {
+                url = url.replace(/\{(.*?)\}/gi, function (matched) {
                     matched = matched.substring(1, matched.length - 1);
                     if (matched.indexOf(".") !== -1) {
                         var temp = row;
@@ -651,37 +683,37 @@ define(['jquery', 'bootstrap', 'moment', 'accounting', 'moment/locale/zh-cn', 'b
                 return url;
             },
             // 获取选中的条目ID集合
-            selectedids: function(table) {
+            selectedids: function (table) {
                 var options = table.bootstrapTable('getOptions');
                 if (options.templateView) {
-                    return $.map($("input[data-id][name='checkbox']:checked"), function(dom) {
+                    return $.map($("input[data-id][name='checkbox']:checked"), function (dom) {
                         return $(dom).data("id");
                     });
                 } else {
-                    return $.map(table.bootstrapTable('getSelections'), function(row) {
+                    return $.map(table.bootstrapTable('getSelections'), function (row) {
                         return row[options.pk];
                     });
                 }
             },
             // 切换复选框状态
-            toggleattr: function(table) {
+            toggleattr: function (table) {
                 $("input[type='checkbox']", table).trigger('click');
             },
             // 根据行索引获取行数据
-            getrowdata: function(table, index) {
+            getrowdata: function (table, index) {
                 index = parseInt(index);
                 var data = table.bootstrapTable('getData');
                 return typeof data[index] !== 'undefined' ? data[index] : null;
             },
             // 根据行索引获取行数据
-            getrowbyindex: function(table, index) {
+            getrowbyindex: function (table, index) {
                 return Table.api.getrowdata(table, index);
             },
             // 根据主键ID获取行数据
-            getrowbyid: function(table, id) {
+            getrowbyid: function (table, id) {
                 var row = {};
                 var options = table.bootstrapTable("getOptions");
-                $.each(table.bootstrapTable('getData'), function(i, j) {
+                $.each(table.bootstrapTable('getData'), function (i, j) {
                     if (j[options.pk] == id) {
                         row = j;
                         return false;

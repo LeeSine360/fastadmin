@@ -36,9 +36,6 @@ class ContractVerify extends Model
         return isset($list[$value]) ? $list[$value] : '';
     }
 
-
-
-
     public function info()
     {
         return $this->belongsTo('ContractInfo', 'contract_info_id', 'id', [], 'LEFT')->setEagerlyType(0);

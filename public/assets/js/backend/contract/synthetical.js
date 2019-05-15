@@ -20,14 +20,14 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
             table.bootstrapTable({
                 url: $.fn.bootstrapTable.defaults.extend.index_url,
                 pk: 'id',
-                sortName: 'id',
+                sortName: 'number',
                 columns: [
                     [
                         {checkbox: true},
-                        {field: 'id', title: __('Id')},
-                        {field: 'agreedata', title: __('Agreedata'), searchList: {"wait":__('Agreedata wait'),"agree":__('Agreedata agree'),"back":__('Agreedata back'),"veto":__('Agreedata veto')}, formatter: Table.api.formatter.normal},
-                        {field: 'opinion', title: __('Opinion')},
+                        {field: 'id', title: __('Id'),visible:false},
                         {field: 'number', title: __('Number')},
+                        {field: 'agreedata', title: __('Agreedata'), searchList: {"wait":__('Agreedata wait'),"agree":__('Agreedata agree'),"back":__('Agreedata back'),"veto":__('Agreedata veto')}, formatter: Table.api.formatter.normal},
+                        {field: 'opinion', title: __('Opinion')},                        
                         {field: 'contacts', title: __('Contacts')},
                         {field: 'phone', title: __('Phone')},
                         {field: 'createtime', title: __('Createtime'), operate:'RANGE', addclass:'datetimerange', formatter: Table.api.formatter.datetime},

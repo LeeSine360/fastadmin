@@ -15,7 +15,6 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
                 }
             });
 
-
             var table = $("#table");
             var tableOptions = {
                 url: $.fn.bootstrapTable.defaults.extend.index_url,
@@ -24,14 +23,15 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
                 sortName: 'weigh',
                 pagination: false,
                 commonSearch: false,
+                search: false,
                 columns: [
                     [
                         {checkbox: true},
                         {field: 'id', title: __('Id')},
-                        {field: 'type', title: __('Type')},
+                        {field: 'type', title: __('Type'), operate: false, searchList: Config.searchList, formatter: Table.api.formatter.normal},
                         {field: 'name', title: __('Name'), align: 'left'},
                         {field: 'nickname', title: __('Nickname')},
-                        {field: 'flag', title: __('Flag'), operate: false, formatter: Table.api.formatter.flag},
+                        {field: 'flag', title: __('Flag'), formatter: Table.api.formatter.flag},
                         {field: 'image', title: __('Image'), operate: false, formatter: Table.api.formatter.image},
                         {field: 'weigh', title: __('Weigh')},
                         {field: 'status', title: __('Status'), operate: false, formatter: Table.api.formatter.status},
@@ -48,7 +48,7 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
             //绑定TAB事件
             $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
                 // var options = table.bootstrapTable(tableOptions);
-                var typeStr = $(this).attr("href").replace('#','');
+                var typeStr = $(this).attr("href").replace('#', '');
                 var options = table.bootstrapTable('getOptions');
                 options.pageNumber = 1;
                 options.queryParams = function (params) {
@@ -68,6 +68,9 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
         },
         add: function () {
             Controller.api.bindevent();
+            setTimeout(function () {
+                $("#c-type").trigger("change");
+            }, 100);
         },
         edit: function () {
             Controller.api.bindevent();
@@ -78,7 +81,7 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
                     $("#c-pid option[data-type='all']").prop("selected", true);
                     $("#c-pid option").removeClass("hide");
                     $("#c-pid option[data-type!='" + $(this).val() + "'][data-type!='all']").addClass("hide");
-                    $("#c-pid").selectpicker("refresh");
+                    $("#c-pid").data("selectpicker") && $("#c-pid").selectpicker("refresh");
                 });
                 Form.api.bindevent($("form[role=form]"));
             }

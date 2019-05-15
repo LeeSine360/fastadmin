@@ -20,8 +20,8 @@ class ContractInfo extends Model {
 
 	];
 
-	public function getNumberAttr($value, $date) {
-		return $value < 10 ? '00' . $value : ($value < 100 ? '0' . $value : $value);
+	public function getNumberAttr($value,$date){
+		return $value < 10 ? '00'.$value : ($value < 100 ? '0'.$value : $value);
 	}
 
 	public function projectInfo() {

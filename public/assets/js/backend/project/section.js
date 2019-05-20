@@ -5,7 +5,7 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
             // 初始化表格参数配置
             Table.api.init({
                 extend: {
-                    index_url: 'project/section/index',
+                    index_url: 'project/section/index' + location.search,
                     add_url: 'project/section/add',
                     edit_url: 'project/section/edit',
                     del_url: 'project/section/del',
@@ -24,12 +24,12 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
                 columns: [
                     [
                         {checkbox: true},
-                        {field: 'id', title: __('Id')},
                         {field: 'name', title: __('Name')},
                         {field: 'price', title: __('Price'), operate:'BETWEEN'},
                         {field: 'createtime', title: __('Createtime'), operate:'RANGE', addclass:'datetimerange', formatter: Table.api.formatter.datetime},
-                        {field: 'info.name', title: __('Info.name')},
-                        {field: 'manager.name', title: __('Manager.name')},
+                        {field: 'admin_id', title: __('Admin_id')},
+                        {field: 'projectinfo.name', title: __('Projectinfo.name')},
+                        {field: 'projectmanager.name', title: __('Projectmanager.name')},
                         {field: 'admin.username', title: __('Admin.username')},
                         {field: 'operate', title: __('Operate'), table: table, events: Table.api.events.operate, formatter: Table.api.formatter.operate}
                     ]
@@ -38,7 +38,6 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
 
             // 为表格绑定事件
             Table.api.bindevent(table);
-            Controller.api.bindevent();
         },
         add: function () {
             Controller.api.bindevent();
@@ -48,12 +47,7 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
         },
         api: {
             bindevent: function () {
-                $("#c-project_section_ids").data("params", function(e){
-                    var proId = $("#c-project_info_id").val();
-                    return {custom: {project_info_id: proId}};
-                }); 
-
-                Form.api.bindevent($("form[role=form]"));  
+                Form.api.bindevent($("form[role=form]"));
             }
         }
     };

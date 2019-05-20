@@ -4,8 +4,14 @@ namespace app\admin\model;
 
 use think\Model;
 
+
 class ContractSynthetical extends Model
 {
+
+    
+
+    //数据库
+    protected $connection = 'database';
     // 表名
     protected $name = 'contract_synthetical';
     
@@ -15,7 +21,8 @@ class ContractSynthetical extends Model
     // 定义时间戳字段名
     protected $createTime = 'createtime';
     protected $updateTime = 'updatetime';
-    
+    protected $deleteTime = false;
+
     // 追加属性
     protected $append = [
         'agreedata_text'
@@ -25,12 +32,12 @@ class ContractSynthetical extends Model
     
     public function getAgreedataList()
     {
-        return ['wait' => __('Agreedata wait'),'agree' => __('Agreedata agree'),'back' => __('Agreedata back'),'veto' => __('Agreedata veto')];
-    }     
+        return ['wait' => __('Agreedata wait'), 'agree' => __('Agreedata agree'), 'veto' => __('Agreedata veto')];
+    }
 
 
     public function getAgreedataTextAttr($value, $data)
-    {        
+    {
         $value = $value ? $value : (isset($data['agreedata']) ? $data['agreedata'] : '');
         $list = $this->getAgreedataList();
         return isset($list[$value]) ? $list[$value] : '';
@@ -39,8 +46,14 @@ class ContractSynthetical extends Model
 
 
 
-    public function info()
+    public function contractinfo()
     {
-        return $this->belongsTo('ContractInfo', 'contract_info_id', 'id', [], 'LEFT')->setEagerlyType(0);
+        return $this->belongsTo('app\admin\model\ContractInfo', 'contract_info_id', 'id', [], 'LEFT')->setEagerlyType(0);
+    }
+
+
+    public function admin()
+    {
+        return $this->belongsTo('app\admin\model\Admin', 'admin_id', 'id', [], 'LEFT')->setEagerlyType(0);
     }
 }

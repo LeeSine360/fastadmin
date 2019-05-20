@@ -38,7 +38,7 @@ class Manager extends Backend
     public function index()
     {
         //当前是否为关联查询
-        $this->relationSearch = false;
+        $this->relationSearch = true;
         //设置过滤方法
         $this->request->filter(['strip_tags']);
         if ($this->request->isAjax())
@@ -50,21 +50,21 @@ class Manager extends Backend
             }
             list($where, $sort, $order, $offset, $limit) = $this->buildparams();
             $total = $this->model
-                    
+                    ->with(['admin'])
                     ->where($where)
                     ->order($sort, $order)
                     ->count();
 
             $list = $this->model
-                    
+                    ->with(['admin'])
                     ->where($where)
                     ->order($sort, $order)
                     ->limit($offset, $limit)
                     ->select();
 
             foreach ($list as $row) {
-                $row->visible(['id','name','phone','idcard','city','uploadimages','createtime']);
-                
+                $row->visible(['name','phone','createtime','admin_id']);
+                $row->visible(['admin']);
             }
             $list = collection($list)->toArray();
             $result = array("total" => $total, "rows" => $list);

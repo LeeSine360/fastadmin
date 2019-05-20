@@ -5,7 +5,7 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
             // 初始化表格参数配置
             Table.api.init({
                 extend: {
-                    index_url: 'company/bill/index',
+                    index_url: 'company/bill/index' + location.search,
                     add_url: 'company/bill/add',
                     edit_url: 'company/bill/edit',
                     del_url: 'company/bill/del',
@@ -25,15 +25,17 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
                     [
                         {checkbox: true},
                         {field: 'id', title: __('Id')},
-                        {field: 'project_info.short', title: __('Info.short')},
-                        {field: 'project_section.name', title: __('Section.name')},
-                        {field: 'company_info.name', title: __('Info.name')},
-                        {field: 'payment', title: __('Payment'), operate:'BETWEEN', formatter: Table.api.formatter.price},
-                        {field: 'unpayment', title: __('Unpayment'), operate:'BETWEEN', formatter: Table.api.formatter.price},
-                        {field: 'endtime', title:__('Endtime')},
+                        {field: 'project_info_id', title: __('Project_info_id')},
+                        {field: 'project_section_id', title: __('Project_section_id')},
+                        {field: 'company_info_id', title: __('Company_info_id')},
+                        {field: 'endtime', title: __('Endtime'), operate:'RANGE', addclass:'datetimerange'},
+                        {field: 'unpayment', title: __('Unpayment'), operate:'BETWEEN'},
+                        {field: 'createtime', title: __('Createtime'), operate:'RANGE', addclass:'datetimerange', formatter: Table.api.formatter.datetime},
                         {field: 'contacts', title: __('Contacts')},
                         {field: 'phone', title: __('Phone')},
-                        {field: 'createtime', title: __('Createtime'), operate:'RANGE', addclass:'datetimerange', formatter: Table.api.formatter.datetime},
+                        {field: 'projectinfo.short', title: __('Projectinfo.short')},
+                        {field: 'projectsection.name', title: __('Projectsection.name')},
+                        {field: 'companyinfo.name', title: __('Companyinfo.name')},
                         {field: 'operate', title: __('Operate'), table: table, events: Table.api.events.operate, formatter: Table.api.formatter.operate}
                     ]
                 ]
@@ -41,7 +43,6 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
 
             // 为表格绑定事件
             Table.api.bindevent(table);
-            Controller.api.bindevent();
         },
         add: function () {
             Controller.api.bindevent();
@@ -51,15 +52,6 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
         },
         api: {
             bindevent: function () {
-                var proId = 0;
-
-                $("#c-project_info_id").change(function(event) {
-                    proId = $("#c-project_info_id").val();
-                });
-
-                $("#c-project_section_ids").data("params", function(e){
-                    return {custom: {project_info_id: proId}};
-                }); 
                 Form.api.bindevent($("form[role=form]"));
             }
         }

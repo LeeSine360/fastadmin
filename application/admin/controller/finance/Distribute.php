@@ -50,24 +50,22 @@ class Distribute extends Backend
             }
             list($where, $sort, $order, $offset, $limit) = $this->buildparams();
             $total = $this->model
-                    ->with(['info','admin'])
+                    ->with(['projectinfo'])
                     ->where($where)
                     ->order($sort, $order)
                     ->count();
 
             $list = $this->model
-                    ->with(['info','admin'])
+                    ->with(['projectinfo'])
                     ->where($where)
                     ->order($sort, $order)
                     ->limit($offset, $limit)
                     ->select();
 
             foreach ($list as $row) {
-                $row->visible(['remarkcontent']);
-                $row->visible(['info']);
-				$row->getRelation('info')->visible(['short']);
-				$row->visible(['admin']);
-				$row->getRelation('admin')->visible(['username']);
+                $row->visible(['id','remark']);
+                $row->visible(['projectinfo']);
+				$row->getRelation('projectinfo')->visible(['name','price','days']);
             }
             $list = collection($list)->toArray();
             $result = array("total" => $total, "rows" => $list);

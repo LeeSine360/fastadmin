@@ -50,26 +50,26 @@ class Bill extends Backend
             }
             list($where, $sort, $order, $offset, $limit) = $this->buildparams();
             $total = $this->model
-                    ->with(['projectInfo','projectSection','companyInfo','admin'])
+                    ->with(['projectinfo','projectsection','companyinfo'])
                     ->where($where)
                     ->order($sort, $order)
                     ->count();
 
             $list = $this->model
-                    ->with(['projectInfo','projectSection','companyInfo','admin'])
+                    ->with(['projectinfo','projectsection','companyinfo'])
                     ->where($where)
                     ->order($sort, $order)
                     ->limit($offset, $limit)
                     ->select();
 
             foreach ($list as $row) {
-                $row->visible(['id','payment','unpayment','starttime','endtime','contacts','phone','uploadimages','remarkcontent','createtime']);
-                $row->visible(['project_info']);
-				$row->getRelation('project_info')->visible(['short']);
-				$row->visible(['project_section']);
-				$row->getRelation('project_section')->visible(['name']);
-				$row->visible(['company_info']);
-				$row->getRelation('company_info')->visible(['name']);
+                $row->visible(['id','project_info_id','project_section_id','company_info_id','endtime','unpayment','remarkcontent','createtime','contacts','phone']);
+                $row->visible(['projectinfo']);
+				$row->getRelation('projectinfo')->visible(['short']);
+				$row->visible(['projectsection']);
+				$row->getRelation('projectsection')->visible(['name']);
+				$row->visible(['companyinfo']);
+				$row->getRelation('companyinfo')->visible(['name']);
             }
             $list = collection($list)->toArray();
             $result = array("total" => $total, "rows" => $list);

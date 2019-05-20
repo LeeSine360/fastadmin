@@ -4,8 +4,14 @@ namespace app\admin\model;
 
 use think\Model;
 
+
 class FinanceVerify extends Model
 {
+
+    
+
+    //数据库
+    protected $connection = 'database';
     // 表名
     protected $name = 'finance_verify';
     
@@ -15,52 +21,39 @@ class FinanceVerify extends Model
     // 定义时间戳字段名
     protected $createTime = 'createtime';
     protected $updateTime = 'updatetime';
-    
+    protected $deleteTime = false;
+
     // 追加属性
     protected $append = [
-        'project_agreedata_text',
-        'finance_agreedata_text'
+        'agreedata_text'
     ];
     
 
     
-    public function getProjectAgreedataList()
+    public function getAgreedataList()
     {
-        return ['wait' => __('Project_agreedata wait'),'agree' => __('Project_agreedata agree'),'veto' => __('Project_agreedata veto')];
-    }     
+        return ['wait' => __('Agreedata wait'), 'agree' => __('Agreedata agree'), 'veto' => __('Agreedata veto')];
+    }
 
-    public function getFinanceAgreedataList()
+
+    public function getAgreedataTextAttr($value, $data)
     {
-        return ['wait' => __('Finance_agreedata wait'),'agree' => __('Finance_agreedata agree'),'veto' => __('Finance_agreedata veto')];
-    }     
-
-
-    public function getProjectAgreedataTextAttr($value, $data)
-    {        
-        $value = $value ? $value : (isset($data['project_agreedata']) ? $data['project_agreedata'] : '');
-        $list = $this->getProjectAgreedataList();
+        $value = $value ? $value : (isset($data['agreedata']) ? $data['agreedata'] : '');
+        $list = $this->getAgreedataList();
         return isset($list[$value]) ? $list[$value] : '';
     }
 
 
-    public function getFinanceAgreedataTextAttr($value, $data)
-    {        
-        $value = $value ? $value : (isset($data['finance_agreedata']) ? $data['finance_agreedata'] : '');
-        $list = $this->getFinanceAgreedataList();
-        return isset($list[$value]) ? $list[$value] : '';
-    }
-
-
-
-
-    public function info()
-    {
-        return $this->belongsTo('FinanceInfo', 'finance_info_id', 'id', [], 'LEFT')->setEagerlyType(0);
-    }
 
 
     public function admin()
     {
-        return $this->belongsTo('Admin', 'admin_id', 'id', [], 'LEFT')->setEagerlyType(0);
+        return $this->belongsTo('app\admin\model\Admin', 'admin_id', 'id', [], 'LEFT')->setEagerlyType(0);
+    }
+
+
+    public function financeinfo()
+    {
+        return $this->belongsTo('app\admin\model\FinanceInfo', 'finance_info_id', 'id', [], 'LEFT')->setEagerlyType(0);
     }
 }

@@ -48,46 +48,38 @@ class Info extends Backend
             {
                 return $this->selectpage();
             }
-
             list($where, $sort, $order, $offset, $limit) = $this->buildparams();
             $total = $this->model
-                    ->with(['admin','projectInfo','projectSection','companyInfo','category'])
+                    ->with(['projectinfo','projectsection','companyinfo','category','admin'])
                     ->where($where)
                     ->order($sort, $order)
                     ->count();
 
             $list = $this->model
-                    ->with(['admin','projectInfo','projectSection','companyInfo','category'])
+                    ->with(['projectinfo','projectsection','companyinfo','category','admin'])
                     ->where($where)
                     ->order($sort, $order)
                     ->limit($offset, $limit)
                     ->select();
 
-
             foreach ($list as $row) {
-                $row->visible(['id','price','contacts','phone','remarkcontent','createtime']);
-                $row->visible(['admin']);
-				$row->getRelation('admin')->visible(['username']);
-				$row->visible(['project_info']);
-				$row->getRelation('project_info')->visible(['short']);
-				$row->visible(['project_section']);
-				$row->getRelation('project_section')->visible(['name']);
-				$row->visible(['company_info']);
-				$row->getRelation('company_info')->visible(['name']);
+                $row->visible(['id','price','contacts','phone','remark','createtime']);
+                $row->visible(['projectinfo']);
+				$row->getRelation('projectinfo')->visible(['name']);
+				$row->visible(['projectsection']);
+				$row->getRelation('projectsection')->visible(['name']);
+				$row->visible(['companyinfo']);
+				$row->getRelation('companyinfo')->visible(['name']);
 				$row->visible(['category']);
 				$row->getRelation('category')->visible(['name']);
+				$row->visible(['admin']);
+				$row->getRelation('admin')->visible(['username']);
             }
             $list = collection($list)->toArray();
             $result = array("total" => $total, "rows" => $list);
 
             return json($result);
         }
-        $list = model('Category')->where(['type' => 'cost'])->select();
-        foreach ($list as $row) {
-            $row->visible(['id','name']);
-        }
-        $list = collection($list)->toArray();
-        $this->view->assign("categoryList", $list);
         return $this->view->fetch();
     }
 }

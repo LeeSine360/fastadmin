@@ -49,24 +49,25 @@ class Verify extends Backend
                 return $this->selectpage();
             }
             list($where, $sort, $order, $offset, $limit) = $this->buildparams();
-            /*$total = $this->model
-                    ->with(['info'])
+            $total = $this->model
+                    ->with(['contractinfo','admin'])
                     ->where($where)
                     ->order($sort, $order)
-                    ->count();*/
+                    ->count();
 
             $list = $this->model
-            ->fetchSql(true)
-                    ->with(['info','companyInfo'])
+                    ->with(['contractinfo','admin'])
                     ->where($where)
                     ->order($sort, $order)
                     ->limit($offset, $limit)
                     ->select();
-return $list;
+
             foreach ($list as $row) {
-                $row->visible(['id','contract_info_id','agreedata','opinion','createtime']);
-                $row->visible(['info']);
-				$row->getRelation('info')->visible(['name','number','project_info_id','project_section_ids','company_info_id','category_id','label_ids','contacts','phone','price','total','save','operatorname','operatorphone','settlement','content','createtime']);
+                $row->visible(['id','agreedata','opinion','createtime']);
+                $row->visible(['contractinfo']);
+				$row->getRelation('contractinfo')->visible(['name']);
+				$row->visible(['admin']);
+				$row->getRelation('admin')->visible(['username']);
             }
             $list = collection($list)->toArray();
             $result = array("total" => $total, "rows" => $list);

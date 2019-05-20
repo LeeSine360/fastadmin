@@ -4,8 +4,14 @@ namespace app\admin\model;
 
 use think\Model;
 
+
 class ProjectInfo extends Model
 {
+
+    
+
+    //数据库
+    protected $connection = 'database';
     // 表名
     protected $name = 'project_info';
     
@@ -15,7 +21,8 @@ class ProjectInfo extends Model
     // 定义时间戳字段名
     protected $createTime = 'createtime';
     protected $updateTime = 'updatetime';
-    
+    protected $deleteTime = false;
+
     // 追加属性
     protected $append = [
         'starttime_text'
@@ -34,30 +41,12 @@ class ProjectInfo extends Model
 
     protected function setStarttimeAttr($value)
     {
-        return $value && !is_numeric($value) ? strtotime($value) : $value;
+        return $value === '' ? null : ($value && !is_numeric($value) ? strtotime($value) : $value);
     }
 
 
     public function admin()
     {
-        return $this->belongsTo('Admin', 'admin_id', 'id', [], 'LEFT')->setEagerlyType(0);
-    }
-
-
-    public function category()
-    {
-        return $this->belongsTo('Category', 'category_id', 'id', [], 'LEFT')->setEagerlyType(0);
-    }
-
-
-    public function construct()
-    {
-        return $this->belongsTo('ContractInfo', 'project_construct_id', 'id', [], 'LEFT')->setEagerlyType(0);
-    }
-
-
-    public function supervision()
-    {
-        return $this->belongsTo('ProjectSupervision', 'project_supervision_id', 'id', [], 'LEFT')->setEagerlyType(0);
+        return $this->belongsTo('app\admin\model\Admin', 'admin_id', 'id', [], 'LEFT')->setEagerlyType(0);
     }
 }

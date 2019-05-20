@@ -7,6 +7,12 @@
         </div>
     </div>
     <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Number')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-number" data-rule="required" class="form-control" name="row[number]" type="number" value="000">
+        </div>
+    </div>
+    <div class="form-group">
         <label class="control-label col-xs-12 col-sm-2">{:__('Project_info_id')}:</label>
         <div class="col-xs-12 col-sm-8">
             <input id="c-project_info_id" data-rule="required" data-source="project/info/index" class="form-control selectpage" name="row[project_info_id]" type="text" value="">
@@ -19,9 +25,9 @@
         </div>
     </div>
     <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2">{:__('company_info_id')}:</label>
+        <label class="control-label col-xs-12 col-sm-2">{:__('Company_info_id')}:</label>
         <div class="col-xs-12 col-sm-8">
-            <input id="c-company_info_id" data-rule="required" data-source="project/company/index" class="form-control selectpage" name="row[company_info_id]" type="text" value="">
+            <input id="c-company_info_id" data-rule="required" data-source="company/info/index" class="form-control selectpage" name="row[company_info_id]" type="text" value="">
         </div>
     </div>
     <div class="form-group">
@@ -31,9 +37,9 @@
         </div>
     </div>
     <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2">{:__('Label_ids')}:</label>
+        <label class="control-label col-xs-12 col-sm-2">{:__('Contacts')}:</label>
         <div class="col-xs-12 col-sm-8">
-            <input id="c-label_ids" data-rule="required" data-source="label/index" data-multiple="true" class="form-control selectpage" name="row[label_ids]" type="text" value="">
+            <input id="c-contacts" class="form-control" name="row[contacts]" type="text">
         </div>
     </div>
     <div class="form-group">
@@ -58,6 +64,18 @@
         <label class="control-label col-xs-12 col-sm-2">{:__('Price')}:</label>
         <div class="col-xs-12 col-sm-8">
             <input id="c-price" class="form-control" step="0.01" name="row[price]" type="number">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Total')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-total" class="form-control" name="row[total]" type="number">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Save')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-save" class="form-control" name="row[save]" type="number" value="1">
         </div>
     </div>
     <div class="form-group">
@@ -99,9 +117,9 @@
         </div>
     </div>
     <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2">{:__('Remarkcontext')}:</label>
+        <label class="control-label col-xs-12 col-sm-2">{:__('Remark')}:</label>
         <div class="col-xs-12 col-sm-8">
-            <textarea id="c-remarkcontext" class="form-control " rows="5" name="row[remarkcontext]" cols="50"></textarea>
+            <textarea id="c-remark" class="form-control " rows="5" name="row[remark]" cols="50"></textarea>
         </div>
     </div>
     <div class="form-group layer-footer">

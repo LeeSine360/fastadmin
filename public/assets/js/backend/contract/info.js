@@ -5,12 +5,11 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
             // 初始化表格参数配置
             Table.api.init({
                 extend: {
-                    index_url: 'contract/info/index',
+                    index_url: 'contract/info/index' + location.search,
                     add_url: 'contract/info/add',
                     edit_url: 'contract/info/edit',
                     del_url: 'contract/info/del',
                     multi_url: 'contract/info/multi',
-                    import_url: 'contract/info/import',
                     table: 'contract_info',
                 }
             });
@@ -21,34 +20,33 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
             table.bootstrapTable({
                 url: $.fn.bootstrapTable.defaults.extend.index_url,
                 pk: 'id',
-                sortName: 'number',                
+                sortName: 'id',
                 columns: [
                     [
                         {checkbox: true},
-                        {field: 'id', title: __('Id'),visible : false },
-                        {field: 'number', title: __('Number')},
-                        {field: 'project_info.short', title: __('Info.short')},
-                        {field: 'project_section_names', title: __('Section.name')},
-                        {field: 'company_info.name', title: __('Info.name')},
+                        {field: 'id', title: __('Id')},
                         {field: 'name', title: __('Name')},
-                        {field: 'category.name', title: __('Category.name')},
-                        {field: 'price', title: __('Price'), operate:'BETWEEN'},
+                        {field: 'number', title: __('Number')},
                         {field: 'phone', title: __('Phone')},
-                        {field: 'signdate', title: __('Signdate'), operate:'RANGE', addclass:'datetimerange'},
-                        {field: 'expirydate', title: __('Expirydate'), operate:'RANGE', addclass:'datetimerange'}, 
+                        {field: 'price', title: __('Price'), operate:'BETWEEN'},
+                        {field: 'total', title: __('Total')},
+                        {field: 'save', title: __('Save')},
                         {field: 'operatorname', title: __('Operatorname')},
                         {field: 'operatorphone', title: __('Operatorphone')},
                         {field: 'createtime', title: __('Createtime'), operate:'RANGE', addclass:'datetimerange', formatter: Table.api.formatter.datetime},
+                        {field: 'admin_id', title: __('Admin_id')},
+                        {field: 'projectinfo.name', title: __('Projectinfo.name')},
+                        {field: 'projectsection.name', title: __('Projectsection.name')},
+                        {field: 'companyinfo.name', title: __('Companyinfo.name')},
+                        {field: 'category.name', title: __('Category.name')},
+                        {field: 'admin.username', title: __('Admin.username')},
                         {field: 'operate', title: __('Operate'), table: table, events: Table.api.events.operate, formatter: Table.api.formatter.operate}
                     ]
                 ]
             });
 
-                   
-
             // 为表格绑定事件
             Table.api.bindevent(table);
-            Controller.api.bindevent();
         },
         add: function () {
             Controller.api.bindevent();
@@ -58,20 +56,7 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
         },
         api: {
             bindevent: function () {
-                $("#c-project_section_ids").data("params", function(e){
-                    var proId = $("#c-project_info_id").val();
-                    return {custom: {project_info_id: proId}};
-                }); 
-
-                Form.api.bindevent($("form[role=form]"));  
-
-                $(document).on('click', ".btn-classify", function () {
-                    Layer.open({
-                        type: 2,
-                        area: ['50%', '50%'], //宽高
-                        content: "http://127.0.0.1/admin/contract/info/category?dialog=1"
-                    });
-                });
+                Form.api.bindevent($("form[role=form]"));
             }
         }
     };

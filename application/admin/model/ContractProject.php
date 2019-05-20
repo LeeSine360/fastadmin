@@ -4,8 +4,14 @@ namespace app\admin\model;
 
 use think\Model;
 
+
 class ContractProject extends Model
 {
+
+    
+
+    //数据库
+    protected $connection = 'database';
     // 表名
     protected $name = 'contract_project';
     
@@ -15,7 +21,8 @@ class ContractProject extends Model
     // 定义时间戳字段名
     protected $createTime = 'createtime';
     protected $updateTime = 'updatetime';
-    
+    protected $deleteTime = false;
+
     // 追加属性
     protected $append = [
         'savedata_text'
@@ -25,12 +32,12 @@ class ContractProject extends Model
     
     public function getSavedataList()
     {
-        return ['wait' => __('Savedata wait'),'normal' => __('Savedata normal'),' back' => __('Savedata  back'),' delet' => __('Savedata  delet')];
-    }     
+        return ['wait' => __('Savedata wait'), 'normal' => __('Savedata normal'), ' back' => __('Savedata  back'), ' delet' => __('Savedata  delet')];
+    }
 
 
     public function getSavedataTextAttr($value, $data)
-    {        
+    {
         $value = $value ? $value : (isset($data['savedata']) ? $data['savedata'] : '');
         $list = $this->getSavedataList();
         return isset($list[$value]) ? $list[$value] : '';
@@ -39,8 +46,14 @@ class ContractProject extends Model
 
 
 
-    public function info()
+    public function contractinfo()
     {
-        return $this->belongsTo('ContractInfo', 'contract_info_id', 'id', [], 'LEFT')->setEagerlyType(0);
+        return $this->belongsTo('app\admin\model\ContractInfo', 'contract_info_id', 'id', [], 'LEFT')->setEagerlyType(0);
+    }
+
+
+    public function admin()
+    {
+        return $this->belongsTo('app\admin\model\Admin', 'id', 'id', [], 'LEFT')->setEagerlyType(0);
     }
 }

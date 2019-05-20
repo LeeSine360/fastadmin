@@ -4,8 +4,14 @@ namespace app\admin\model;
 
 use think\Model;
 
+
 class ProjectManager extends Model
 {
+
+    
+
+    //数据库
+    protected $connection = 'database';
     // 表名
     protected $name = 'project_manager';
     
@@ -15,7 +21,8 @@ class ProjectManager extends Model
     // 定义时间戳字段名
     protected $createTime = 'createtime';
     protected $updateTime = 'updatetime';
-    
+    protected $deleteTime = false;
+
     // 追加属性
     protected $append = [
 
@@ -30,4 +37,8 @@ class ProjectManager extends Model
 
 
 
+    public function admin()
+    {
+        return $this->belongsTo('app\admin\model\Admin', 'admin_id', 'id', [], 'LEFT')->setEagerlyType(0);
+    }
 }

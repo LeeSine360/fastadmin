@@ -50,13 +50,13 @@ class Synthetical extends Backend
             }
             list($where, $sort, $order, $offset, $limit) = $this->buildparams();
             $total = $this->model
-                    ->with(['info'])
+                    ->with(['contractinfo','admin'])
                     ->where($where)
                     ->order($sort, $order)
                     ->count();
 
             $list = $this->model
-                    ->with(['info'])
+                    ->with(['contractinfo','admin'])
                     ->where($where)
                     ->order($sort, $order)
                     ->limit($offset, $limit)
@@ -64,8 +64,10 @@ class Synthetical extends Backend
 
             foreach ($list as $row) {
                 $row->visible(['id','agreedata','opinion','number','contacts','phone','createtime']);
-                $row->visible(['info']);
-				$row->getRelation('info')->visible(['name','number','project_info_id','project_section_ids','company_info_id','total','save','operatorname','operatorphone','createtime']);
+                $row->visible(['contractinfo']);
+				$row->getRelation('contractinfo')->visible(['name']);
+				$row->visible(['admin']);
+				$row->getRelation('admin')->visible(['username']);
             }
             $list = collection($list)->toArray();
             $result = array("total" => $total, "rows" => $list);

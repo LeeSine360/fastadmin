@@ -997,4 +997,7 @@ table.table-nowrap thead > tr > th {
 .btn-switcher .text-gray {
   color: #d2d6de !important;
 }
+.form-row-height{
+  margin-top: 10px;
+}
 /*# sourceMappingURL=../css/backend.css.map */

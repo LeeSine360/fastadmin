@@ -50,22 +50,24 @@ class Project extends Backend
             }
             list($where, $sort, $order, $offset, $limit) = $this->buildparams();
             $total = $this->model
-                    ->with(['info'])
+                    ->with(['contractinfo','admin'])
                     ->where($where)
                     ->order($sort, $order)
                     ->count();
 
             $list = $this->model
-                    ->with(['info'])
+                    ->with(['contractinfo','admin'])
                     ->where($where)
                     ->order($sort, $order)
                     ->limit($offset, $limit)
                     ->select();
 
             foreach ($list as $row) {
-                $row->visible(['id','contract_info_id','savedata','opinion','createtime']);
-                $row->visible(['info']);
-				$row->getRelation('info')->visible(['name','number','project_info_id','project_section_ids','company_info_id','total','save','operatorname','operatorphone','createtime']);
+                $row->visible(['id','savedata','opinion','createtime']);
+                $row->visible(['contractinfo']);
+				$row->getRelation('contractinfo')->visible(['name','number','contacts','price','total']);
+				$row->visible(['admin']);
+				$row->getRelation('admin')->visible(['username']);
             }
             $list = collection($list)->toArray();
             $result = array("total" => $total, "rows" => $list);

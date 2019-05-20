@@ -5,7 +5,7 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
             // 初始化表格参数配置
             Table.api.init({
                 extend: {
-                    index_url: 'project/info/index',
+                    index_url: 'project/info/index' + location.search,
                     add_url: 'project/info/add',
                     edit_url: 'project/info/edit',
                     del_url: 'project/info/del',
@@ -24,17 +24,11 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
                 columns: [
                     [
                         {checkbox: true},
-                        {field: 'id', title: __('Id')},
-                        {field: 'short', title: __('Short')},
+                        {field: 'name', title: __('Name')},
                         {field: 'price', title: __('Price'), operate:'BETWEEN'},
-                        {field: 'starttime', title: __('Starttime'), operate:'RANGE', addclass:'datetimerange', formatter: Table.api.formatter.datetime},
-                        {field: 'days', title: __('Days')},
-                        {field: 'city', title: __('City')},
                         {field: 'createtime', title: __('Createtime'), operate:'RANGE', addclass:'datetimerange', formatter: Table.api.formatter.datetime},
+                        {field: 'admin_id', title: __('Admin_id')},
                         {field: 'admin.username', title: __('Admin.username')},
-                        {field: 'category.name', title: __('Category.name')},
-                        {field: 'construct.name', title: __('Construct.name')},
-                        {field: 'supervision.name', title: __('Supervision.name')},
                         {field: 'operate', title: __('Operate'), table: table, events: Table.api.events.operate, formatter: Table.api.formatter.operate}
                     ]
                 ]
@@ -42,7 +36,6 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
 
             // 为表格绑定事件
             Table.api.bindevent(table);
-            Controller.api.bindevent();
         },
         add: function () {
             Controller.api.bindevent();

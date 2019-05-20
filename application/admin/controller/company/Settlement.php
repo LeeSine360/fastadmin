@@ -50,26 +50,28 @@ class Settlement extends Backend
             }
             list($where, $sort, $order, $offset, $limit) = $this->buildparams();
             $total = $this->model
-                    ->with(['projectInfo','projectSection','companyInfo'])
+                    ->with(['projectinfo','projectsection','companyinfo','admin'])
                     ->where($where)
                     ->order($sort, $order)
                     ->count();
 
             $list = $this->model
-                    ->with(['projectInfo','projectSection','companyInfo'])
+                    ->with(['projectinfo','projectsection','companyinfo','admin'])
                     ->where($where)
                     ->order($sort, $order)
                     ->limit($offset, $limit)
                     ->select();
 
             foreach ($list as $row) {
-                $row->visible(['id','payment','unpayment','enddate','remarkcontent','createtime']);
-                $row->visible(['projectInfo']);
-				$row->getRelation('projectInfo')->visible(['short']);
-				$row->visible(['projectSection']);
-				$row->getRelation('projectSection')->visible(['name']);
-				$row->visible(['companyInfo']);
-				$row->getRelation('companyInfo')->visible(['name']);
+                $row->visible(['id','payment','unpayment','enddate','remark','createtime','admin_id']);
+                $row->visible(['projectinfo']);
+				$row->getRelation('projectinfo')->visible(['name']);
+				$row->visible(['projectsection']);
+				$row->getRelation('projectsection')->visible(['name']);
+				$row->visible(['companyinfo']);
+				$row->getRelation('companyinfo')->visible(['name']);
+				$row->visible(['admin']);
+				$row->getRelation('admin')->visible(['username']);
             }
             $list = collection($list)->toArray();
             $result = array("total" => $total, "rows" => $list);

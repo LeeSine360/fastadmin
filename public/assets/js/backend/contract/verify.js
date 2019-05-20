@@ -5,7 +5,7 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
             // 初始化表格参数配置
             Table.api.init({
                 extend: {
-                    index_url: 'contract/verify/index',
+                    index_url: 'contract/verify/index' + location.search,
                     add_url: 'contract/verify/add',
                     edit_url: 'contract/verify/edit',
                     del_url: 'contract/verify/del',
@@ -20,25 +20,16 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
             table.bootstrapTable({
                 url: $.fn.bootstrapTable.defaults.extend.index_url,
                 pk: 'id',
-                sortName: 'info.number',
+                sortName: 'id',
                 columns: [
                     [
                         {checkbox: true},
-                        {field: 'id', title: __('Id'),visible:false},
-                        {field: 'info.number', title: __('Info.number')},
-                        {field: 'info.project_info_id', title: __('Info.project_info_id')},
-                        {field: 'info.project_section_ids', title: __('Info.project_section_ids')},
-                        {field: 'info.company_info_id', title: __('Info.company_info_id')},                      
-                        {field: 'info.name', title: __('Info.name')}, 
-                        {field: 'info.label_ids', title: __('Info.label_ids')},
-                        {field: 'info.phone', title: __('Info.phone')},
-                        {field: 'info.price', title: __('Info.price'), operate:'BETWEEN'},
-                        {field: 'info.total', title: __('Info.total')},
-                        {field: 'info.save', title: __('Info.save')},
-                        {field: 'info.operatorname', title: __('Info.operatorname')},
-                        {field: 'info.operatorphone', title: __('Info.operatorphone')},
+                        {field: 'id', title: __('Id')},
                         {field: 'agreedata', title: __('Agreedata'), searchList: {"wait":__('Agreedata wait'),"agree":__('Agreedata agree'),"veto":__('Agreedata veto')}, formatter: Table.api.formatter.normal},
-                        {field: 'info.createtime', title: __('Info.createtime'), operate:'RANGE', addclass:'datetimerange', formatter: Table.api.formatter.datetime},
+                        {field: 'opinion', title: __('Opinion')},
+                        {field: 'createtime', title: __('Createtime'), operate:'RANGE', addclass:'datetimerange', formatter: Table.api.formatter.datetime},
+                        {field: 'contractinfo.name', title: __('Contractinfo.name')},
+                        {field: 'admin.username', title: __('Admin.username')},
                         {field: 'operate', title: __('Operate'), table: table, events: Table.api.events.operate, formatter: Table.api.formatter.operate}
                     ]
                 ]

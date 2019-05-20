@@ -5,7 +5,7 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
             // 初始化表格参数配置
             Table.api.init({
                 extend: {
-                    index_url: 'finance/companypay/index',
+                    index_url: 'finance/companypay/index' + location.search,
                     add_url: 'finance/companypay/add',
                     edit_url: 'finance/companypay/edit',
                     del_url: 'finance/companypay/del',
@@ -27,7 +27,9 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
                         {field: 'id', title: __('Id')},
                         {field: 'payprice', title: __('Payprice'), operate:'BETWEEN'},
                         {field: 'createtime', title: __('Createtime'), operate:'RANGE', addclass:'datetimerange', formatter: Table.api.formatter.datetime},
-                        {field: 'info.price', title: __('Info.price'), operate:'BETWEEN'},
+                        {field: 'financeinfo.price', title: __('Financeinfo.price'), operate:'BETWEEN'},
+                        {field: 'financeinfo.contacts', title: __('Financeinfo.contacts')},
+                        {field: 'financeinfo.phone', title: __('Financeinfo.phone')},
                         {field: 'admin.username', title: __('Admin.username')},
                         {field: 'operate', title: __('Operate'), table: table, events: Table.api.events.operate, formatter: Table.api.formatter.operate}
                     ]

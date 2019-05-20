@@ -50,22 +50,22 @@ class Companypay extends Backend
             }
             list($where, $sort, $order, $offset, $limit) = $this->buildparams();
             $total = $this->model
-                    ->with(['info','admin'])
+                    ->with(['financeinfo','admin'])
                     ->where($where)
                     ->order($sort, $order)
                     ->count();
 
             $list = $this->model
-                    ->with(['info','admin'])
+                    ->with(['financeinfo','admin'])
                     ->where($where)
                     ->order($sort, $order)
                     ->limit($offset, $limit)
                     ->select();
 
             foreach ($list as $row) {
-                $row->visible(['id','payprice','remarkcontent','createtime']);
-                $row->visible(['info']);
-				$row->getRelation('info')->visible(['price']);
+                $row->visible(['id','payprice','remark','createtime']);
+                $row->visible(['financeinfo']);
+				$row->getRelation('financeinfo')->visible(['price','contacts','phone','remark']);
 				$row->visible(['admin']);
 				$row->getRelation('admin')->visible(['username']);
             }

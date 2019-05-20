@@ -4,8 +4,14 @@ namespace app\admin\model;
 
 use think\Model;
 
+
 class FinanceDistribute extends Model
 {
+
+    
+
+    //数据库
+    protected $connection = 'database';
     // 表名
     protected $name = 'finance_distribute';
     
@@ -15,7 +21,8 @@ class FinanceDistribute extends Model
     // 定义时间戳字段名
     protected $createTime = false;
     protected $updateTime = false;
-    
+    protected $deleteTime = false;
+
     // 追加属性
     protected $append = [
 
@@ -30,14 +37,8 @@ class FinanceDistribute extends Model
 
 
 
-    public function info()
+    public function projectinfo()
     {
-        return $this->belongsTo('ProjectInfo', 'project_info_id', 'id', [], 'LEFT')->setEagerlyType(0);
-    }
-
-
-    public function admin()
-    {
-        return $this->belongsTo('Admin', 'admin_id', 'id', [], 'LEFT')->setEagerlyType(0);
+        return $this->belongsTo('app\admin\model\ProjectInfo', 'project_info_id', 'id', [], 'LEFT')->setEagerlyType(0);
     }
 }

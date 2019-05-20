@@ -50,24 +50,24 @@ class Section extends Backend
             }
             list($where, $sort, $order, $offset, $limit) = $this->buildparams();
             $total = $this->model
-                    ->with(['info','manager','admin'])
+                    ->with(['projectinfo','projectmanager','admin'])
                     ->where($where)
                     ->order($sort, $order)
                     ->count();
 
             $list = $this->model
-                    ->with(['info','manager','admin'])
+                    ->with(['projectinfo','projectmanager','admin'])
                     ->where($where)
                     ->order($sort, $order)
                     ->limit($offset, $limit)
                     ->select();
 
             foreach ($list as $row) {
-                $row->visible(['id','name','price','createtime']);
-                $row->visible(['info']);
-				$row->getRelation('info')->visible(['name']);
-				$row->visible(['manager']);
-				$row->getRelation('manager')->visible(['name']);
+                $row->visible(['name','price','createtime','admin_id']);
+                $row->visible(['projectinfo']);
+				$row->getRelation('projectinfo')->visible(['name']);
+				$row->visible(['projectmanager']);
+				$row->getRelation('projectmanager')->visible(['name']);
 				$row->visible(['admin']);
 				$row->getRelation('admin')->visible(['username']);
             }

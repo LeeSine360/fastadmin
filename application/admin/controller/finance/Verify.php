@@ -5,7 +5,7 @@ namespace app\admin\controller\finance;
 use app\common\controller\Backend;
 
 /**
- * 报账单审核
+ * 审核(财务副总)
  *
  * @icon fa fa-circle-o
  */
@@ -22,8 +22,7 @@ class Verify extends Backend
     {
         parent::_initialize();
         $this->model = new \app\admin\model\FinanceVerify;
-        $this->view->assign("projectAgreedataList", $this->model->getProjectAgreedataList());
-        $this->view->assign("financeAgreedataList", $this->model->getFinanceAgreedataList());
+        $this->view->assign("agreedataList", $this->model->getAgreedataList());
     }
     
     /**
@@ -51,24 +50,24 @@ class Verify extends Backend
             }
             list($where, $sort, $order, $offset, $limit) = $this->buildparams();
             $total = $this->model
-                    ->with(['info','admin'])
+                    ->with(['admin','financeinfo'])
                     ->where($where)
                     ->order($sort, $order)
                     ->count();
 
             $list = $this->model
-                    ->with(['info','admin'])
+                    ->with(['admin','financeinfo'])
                     ->where($where)
                     ->order($sort, $order)
                     ->limit($offset, $limit)
                     ->select();
 
             foreach ($list as $row) {
-                $row->visible(['project_agreedata','project_content','finance_agreedata','finace_content','createtime']);
-                $row->visible(['info']);
-				$row->getRelation('info')->visible(['price','contacts','phone','remarkcontent']);
-				$row->visible(['admin']);
+                $row->visible(['id','agreedata','opinion','createtime']);
+                $row->visible(['admin']);
 				$row->getRelation('admin')->visible(['username']);
+				$row->visible(['financeinfo']);
+				$row->getRelation('financeinfo')->visible(['price','contacts','phone','remark','createtime']);
             }
             $list = collection($list)->toArray();
             $result = array("total" => $total, "rows" => $list);

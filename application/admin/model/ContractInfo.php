@@ -65,4 +65,5 @@ class ContractInfo extends Model
     {
         return $this->belongsTo('app\admin\model\Admin', 'admin_id', 'id', [], 'LEFT')->setEagerlyType(0);
     }
+
 }

@@ -27,5 +27,6 @@ return [
     'Projectinfo.name'    => '项目名称',
     'Projectsection.name' => '标段名称',
     'Companyinfo.name'    => '供应商名称',
-    'Admin.username'      => '用户名'
+    'Admin.username'      => '用户名',
+    'Category.name'       => '类型'
 ];

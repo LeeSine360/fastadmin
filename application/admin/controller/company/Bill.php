@@ -63,9 +63,9 @@ class Bill extends Backend
                     ->select();
 
             foreach ($list as $row) {
-                $row->visible(['id','project_info_id','project_section_id','company_info_id','endtime','unpayment','remarkcontent','createtime','contacts','phone']);
+                $row->visible(['id','project_info_id','project_section_id','company_info_id','endtime','unpayment','remark','createtime','contacts','phone']);
                 $row->visible(['projectinfo']);
-				$row->getRelation('projectinfo')->visible(['short']);
+				$row->getRelation('projectinfo')->visible(['name']);
 				$row->visible(['projectsection']);
 				$row->getRelation('projectsection')->visible(['name']);
 				$row->visible(['companyinfo']);

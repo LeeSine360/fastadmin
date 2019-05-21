@@ -20,26 +20,24 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
             table.bootstrapTable({
                 url: $.fn.bootstrapTable.defaults.extend.index_url,
                 pk: 'id',
-                sortName: 'id',
+                sortName: 'Number',
                 columns: [
                     [
                         {checkbox: true},
-                        {field: 'id', title: __('Id')},
-                        {field: 'name', title: __('Name')},
+                        {field: 'id', title: __('Id'), visible : false},
                         {field: 'number', title: __('Number')},
-                        {field: 'phone', title: __('Phone')},
-                        {field: 'price', title: __('Price'), operate:'BETWEEN'},
-                        {field: 'total', title: __('Total')},
-                        {field: 'save', title: __('Save')},
-                        {field: 'operatorname', title: __('Operatorname')},
-                        {field: 'operatorphone', title: __('Operatorphone')},
-                        {field: 'createtime', title: __('Createtime'), operate:'RANGE', addclass:'datetimerange', formatter: Table.api.formatter.datetime},
-                        {field: 'admin_id', title: __('Admin_id')},
                         {field: 'projectinfo.name', title: __('Projectinfo.name')},
                         {field: 'projectsection.name', title: __('Projectsection.name')},
                         {field: 'companyinfo.name', title: __('Companyinfo.name')},
+                        {field: 'name', title: __('Name')}, 
                         {field: 'category.name', title: __('Category.name')},
-                        {field: 'admin.username', title: __('Admin.username')},
+                        {field: 'price', title: __('Price'), operate:'BETWEEN'},
+                        {field: 'total', title: __('Total')},
+                        {field: 'save', title: __('Save')},
+                        {field: 'phone', title: __('Phone')},
+                        {field: 'operatorname', title: __('Operatorname')},
+                        {field: 'operatorphone', title: __('Operatorphone')},
+                        {field: 'createtime', title: __('Createtime'), operate:'RANGE', addclass:'datetimerange', formatter: Table.api.formatter.datetime},
                         {field: 'operate', title: __('Operate'), table: table, events: Table.api.events.operate, formatter: Table.api.formatter.operate}
                     ]
                 ]

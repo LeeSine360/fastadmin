@@ -25,17 +25,14 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
                     [
                         {checkbox: true},
                         {field: 'id', title: __('Id')},
-                        {field: 'project_info_id', title: __('Project_info_id')},
-                        {field: 'project_section_id', title: __('Project_section_id')},
-                        {field: 'company_info_id', title: __('Company_info_id')},
-                        {field: 'endtime', title: __('Endtime'), operate:'RANGE', addclass:'datetimerange'},
-                        {field: 'unpayment', title: __('Unpayment'), operate:'BETWEEN'},
-                        {field: 'createtime', title: __('Createtime'), operate:'RANGE', addclass:'datetimerange', formatter: Table.api.formatter.datetime},
-                        {field: 'contacts', title: __('Contacts')},
-                        {field: 'phone', title: __('Phone')},
-                        {field: 'projectinfo.short', title: __('Projectinfo.short')},
+                        {field: 'projectinfo.name', title: __('Projectinfo.name')},
                         {field: 'projectsection.name', title: __('Projectsection.name')},
                         {field: 'companyinfo.name', title: __('Companyinfo.name')},
+                        {field: 'endtime', title: __('Endtime'), operate:'RANGE', addclass:'datetimerange'},
+                        {field: 'unpayment', title: __('Unpayment'), operate:'BETWEEN'},
+                        {field: 'contacts', title: __('Contacts')},
+                        {field: 'phone', title: __('Phone')},
+                        {field: 'createtime', title: __('Createtime'), operate:'RANGE', addclass:'datetimerange', formatter: Table.api.formatter.datetime},
                         {field: 'operate', title: __('Operate'), table: table, events: Table.api.events.operate, formatter: Table.api.formatter.operate}
                     ]
                 ]

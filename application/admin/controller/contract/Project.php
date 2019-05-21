@@ -56,11 +56,15 @@ class Project extends Backend
                     ->count();
 
             $list = $this->model
-                    ->with(['contractinfo','admin'])
+                    ->with(['contractinfo' => function($query){
+                        $query->withField('project_info_id')->with('contractinfo.projectinfo');
+                    }])
                     ->where($where)
                     ->order($sort, $order)
                     ->limit($offset, $limit)
                     ->select();
+
+            return collection($list)->toArray();
 
             foreach ($list as $row) {
                 $row->visible(['id','savedata','opinion','createtime']);

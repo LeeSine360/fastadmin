@@ -16,7 +16,7 @@ return [
     'Amdin_id'            => '操作员',
     'Contacts'            => '联系人',
     'Phone'               => '联系电话',
-    'Projectinfo.short'   => '项目简称',
+    'Projectinfo.name'   => '项目名称',
     'Projectsection.name' => '标段名称',
     'Companyinfo.name'    => '供应商名称'
 ];

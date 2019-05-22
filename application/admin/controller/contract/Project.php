@@ -56,9 +56,7 @@ class Project extends Backend
                     ->count();
 
             $list = $this->model
-                    ->with(['contractinfo' => function($query){
-                        $query->withField('project_info_id')->with('contractinfo.projectinfo');
-                    }])
+                    ->with(['contractinfo'])
                     ->where($where)
                     ->order($sort, $order)
                     ->limit($offset, $limit)

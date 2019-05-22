@@ -32,7 +32,7 @@ class ContractProject extends Model
     
     public function getSavedataList()
     {
-        return ['wait' => __('Savedata wait'), 'normal' => __('Savedata normal'), ' back' => __('Savedata  back'), ' delet' => __('Savedata  delet')];
+        return ['wait' => __('Savedata wait'), 'normal' => __('Savedata normal'), ' back' => __('Savedata  back'), ' delet' => __('Savedata  delet'), ' end' => __('Savedata end')];
     }
 
 

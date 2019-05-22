@@ -3,9 +3,10 @@
 return [
     'Savedata'              => '状态',
     'Savedata wait'         => '待存档',
-    'Savedata normal'       => '已存档',
+    'Savedata normal'       => '正常',
     'Savedata  back'        => '待返回',
     'Savedata  delet'       => '作废',
+    'Savedata end'         => '终止',
     'Opinion'               => '审核意见',
     'Admin_id'              => '审核人',
     'Createtime'            => '创建日期',

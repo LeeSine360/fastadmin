@@ -2,6 +2,7 @@
 
 return [
     'Id'             => 'ID',
+    'Number'         => '项目编号',
     'Name'           => '项目名称',
     'Price'          => '合同金额',
     'Starttime'      => '开工日期',

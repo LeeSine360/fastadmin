@@ -27,15 +27,6 @@ class ContractInfo extends Model
     protected $append = [
 
     ];
-    
-
-    
-
-
-
-
-
-
 
     public function projectinfo()
     {
@@ -66,4 +57,7 @@ class ContractInfo extends Model
         return $this->belongsTo('app\admin\model\Admin', 'admin_id', 'id', [], 'LEFT')->setEagerlyType(0);
     }
 
+    public function contractproject(){
+        return $this->hasOne('app\admin\model\ContractProject');
+    }
 }

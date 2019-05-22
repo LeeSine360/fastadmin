@@ -24,7 +24,9 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
                 columns: [
                     [
                         {checkbox: true},
-                        {field: 'name', title: __('Name')},
+                        {field: 'id', titile: __('id')},
+                        {field: 'number', title: __('Number')},
+                        {field: 'name', title: __('Name')},                        
                         {field: 'price', title: __('Price'), operate:'BETWEEN'},
                         {field: 'createtime', title: __('Createtime'), operate:'RANGE', addclass:'datetimerange', formatter: Table.api.formatter.datetime},
                         {field: 'operate', title: __('Operate'), table: table, events: Table.api.events.operate, formatter: Table.api.formatter.operate}

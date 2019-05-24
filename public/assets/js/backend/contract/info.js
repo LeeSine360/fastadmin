@@ -10,6 +10,7 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
                     edit_url: 'contract/info/edit',
                     del_url: 'contract/info/del',
                     multi_url: 'contract/info/multi',
+                    import_url: 'contract/info/import',
                     table: 'contract_info',
                 }
             });
@@ -45,6 +46,7 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
 
             // 为表格绑定事件
             Table.api.bindevent(table);
+            Controller.api.bindevent();
         },
         add: function () {
             Controller.api.bindevent();
@@ -54,6 +56,10 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
         },
         api: {
             bindevent: function () {
+                $("#c-project_section_ids").data("params", function(e){
+                    var proId = $("#c-project_info_id").val();
+                    return {custom: {project_info_id: proId}};
+                }); 
                 Form.api.bindevent($("form[role=form]"));
             }
         }

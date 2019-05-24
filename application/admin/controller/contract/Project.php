@@ -3,6 +3,7 @@
 namespace app\admin\controller\contract;
 
 use app\common\controller\Backend;
+use think\Db;
 
 /**
  * 合同审核（项目管理部）
@@ -55,14 +56,17 @@ class Project extends Backend
                     ->order($sort, $order)
                     ->count();
 
-            $list = $this->model
-                    ->with(['contractinfo'])
+            $list = Db::table('__CONTRACT_PROJECT__')
+            ->fetchSql(true)
+            ->field('contract_project.name')
+                    ->alias('contract_project')
+                    ->join('__CONTRACT_INFO__ contract_info','contract_project.contract_info_id = contract_info.id')
+                    ->join('__PROJECT_INFO__ project_info','contract_info.project_info_id = project_info.id')
                     ->where($where)
-                    ->order($sort, $order)
-                    ->limit($offset, $limit)
+                    ->order($sort, $order)                    
                     ->select();
 
-            return collection($list)->toArray();
+            return $list;
 
             foreach ($list as $row) {
                 $row->visible(['id','savedata','opinion','createtime']);

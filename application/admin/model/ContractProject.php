@@ -54,6 +54,6 @@ class ContractProject extends Model
 
     public function admin()
     {
-        return $this->belongsTo('app\admin\model\Admin', 'id', 'id', [], 'LEFT')->setEagerlyType(0);
+        return $this->belongsTo('app\admin\model\Admin', 'admin_id', 'id', [], 'LEFT')->setEagerlyType(0);
     }
 }

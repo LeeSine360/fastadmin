@@ -63,7 +63,7 @@ class Section extends Backend
                     ->select();
 
             foreach ($list as $row) {
-                $row->visible(['name','price','createtime','admin_id']);
+                $row->visible(['id','name','price','createtime','admin_id']);
                 $row->visible(['projectinfo']);
 				$row->getRelation('projectinfo')->visible(['name']);
 				$row->visible(['projectmanager']);

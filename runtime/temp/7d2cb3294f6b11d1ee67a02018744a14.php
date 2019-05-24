@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:83:"C:\xampp\htdocs\fastadmin\public/../application/admin\view\contract\info\index.html";i:1558314059;s:68:"C:\xampp\htdocs\fastadmin\application\admin\view\layout\default.html";i:1557482263;s:65:"C:\xampp\htdocs\fastadmin\application\admin\view\common\meta.html";i:1557482263;s:67:"C:\xampp\htdocs\fastadmin\application\admin\view\common\script.html";i:1557482263;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:83:"C:\xampp\htdocs\fastadmin\public/../application/admin\view\contract\info\index.html";i:1558661981;s:68:"C:\xampp\htdocs\fastadmin\application\admin\view\layout\default.html";i:1557482263;s:65:"C:\xampp\htdocs\fastadmin\application\admin\view\common\meta.html";i:1557482263;s:67:"C:\xampp\htdocs\fastadmin\application\admin\view\common\script.html";i:1557482263;}*/ ?>
 <!DOCTYPE html>
 <html lang="<?php echo $config['language']; ?>">
     <head>
@@ -51,8 +51,12 @@
                             <?php endif; ?>
                             <div class="content">
                                 <div class="panel panel-default panel-intro">
-    <?php echo build_heading(); ?>
-
+    <div class="panel-heading">
+        <ul class="nav nav-tabs">
+            <li class="active"><a href="#one" data-toggle="tab">合同列表</a></li>
+            <li><a href="#two" data-toggle="tab">添加</a></li>
+        </ul>
+    </div>
     <div class="panel-body">
         <div id="myTabContent" class="tab-content">
             <div class="tab-pane fade active in" id="one">
@@ -81,7 +85,127 @@
                     </table>
                 </div>
             </div>
+            
+            <div class="tab-pane fade" id="two">
+                <form id="add-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="contract/info/add">
+                    <div class="row form-row-height">
+                        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Project_info_id'); ?>:</label>
+                        <div class="col-xs-12 col-sm-3">
+                            <input id="c-project_info_id" data-rule="required" data-source="project/info/index" showField='short' class="form-control selectpage input-left-padding45" name="row[project_info_id]" type="text" value="">
+                        </div>
+                        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Project_section_ids'); ?>:</label>
+                        <div class="col-xs-12 col-sm-3">
+                            <input id="c-project_section_ids" data-rule="required" data-source="project/section/index" data-multiple="true" class="form-control selectpage input-left-padding45" name="row[project_section_ids]" type="text" value="">
+                        </div>
+                    </div>
+                    <div class="row form-row-height">
+                        <label class="control-label col-xs-12 col-sm-2"><?php echo __('company_info_id'); ?>:</label>
+                        <div class="col-xs-12 col-sm-3">
+                            <input id="c-company_info_id" data-rule="required" data-source="company/info/index" class="form-control selectpage input-left-padding45" name="row[company_info_id]" type="text" value="">
+                        </div>
+                        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Name'); ?>:</label>
+                        <div class="col-xs-12 col-sm-3">
+                            <input id="c-name" data-rule="required" class="form-control" name="row[name]" type="text">
+                        </div>
+                    </div>
+                    <div class="row form-row-height">
+                        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Category_id'); ?>:</label>
+                        <div class="col-xs-12 col-sm-6">
+                            <!--<input id="c-category_id" data-rule="required" data-source="category/selectpage" data-params='{"custom[type]":"classify","custom[pid]":0}' class="form-control selectpage" name="row[category_id]" type="text" value="">-->
+                            <div class="form-inline" data-toggle="cxselect" data-selects="first,second">
+                                <select class="first form-control input-left-padding20" name="row[category_id]" data-url="ajax/category?type=classify&pid=0"></select>
+                                <select class="second form-control input-left-padding20" name="row[label_ids]" data-url="ajax/category" data-query-name="pid"></select>
+                                <a href="http://www.baidu.com">百度</a>
+                            </div>
+                        </div>
+                        <!--<label class="control-label col-xs-12 col-sm-2"><?php echo __('Label_ids'); ?>:</label>
+                        <div class="col-xs-12 col-sm-3">
+                            <input id="c-label_ids" data-rule="required" data-source="label/index" data-multiple="true" class="form-control selectpage" name="row[label_ids]" type="text" value="">
+                        </div>-->
+                    </div>
+                    <div class="row form-row-height">
+                        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Price'); ?>:</label>
+                        <div class="col-xs-12 col-sm-3">
+                            <input id="c-price" class="form-control" step="1000" name="row[price]" type="number">
+                        </div>
+                        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Number'); ?>:</label>
+                        <div class="col-xs-12 col-sm-3">
+                            <input id="c-number" data-rule="required" class="form-control" step="1" name="row[number]" type="number">
+                        </div>
+                    </div>
+                    <div class="row form-row-height">
+                        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Signdate'); ?>:</label>
+                        <div class="col-xs-12 col-sm-3">
+                            <input id="c-signdate" class="form-control datetimepicker" data-date-format="YYYY-MM-DD" data-use-current="true" name="row[signdate]" type="text" value="<?php echo date('Y-m-d'); ?>">
+                        </div>
+                        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Expirydate'); ?>:</label>
+                        <div class="col-xs-12 col-sm-3">
+                            <input id="c-expirydate" class="form-control datetimepicker" data-date-format="YYYY-MM-DD" data-use-current="true" name="row[expirydate]" type="text" value="<?php echo date('Y-m-d'); ?>">
+                        </div>
+                    </div>
+                    <div class="row form-row-height">
+                        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Contacts'); ?>:</label>
+                        <div class="col-xs-12 col-sm-3">
+                            <input id="c-operatorname" class="form-control" name="row[operatorname]" type="text">
+                        </div>
+                        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Phone'); ?>:</label>
+                        <div class="col-xs-12 col-sm-3">
+                            <input id="c-phone" data-rule="required" class="form-control" name="row[phone]" type="text">
+                        </div>
+                    </div>
+                    <div class="row form-row-height">
+                        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Operatorname'); ?>:</label>
+                        <div class="col-xs-12 col-sm-3">
+                            <input id="c-operatorname" class="form-control" name="row[operatorname]" type="text">
+                        </div>
+                        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Operatorphone'); ?>:</label>
+                        <div class="col-xs-12 col-sm-3">
+                            <input id="c-operatorphone" class="form-control" name="row[operatorphone]" type="text">
+                        </div>
+                    </div>
+                    
+                    <div class="row form-row-height">
+                        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Settlement'); ?>:</label>
+                        <div class="col-xs-12 col-sm-8">
+                            <textarea id="c-settlement" class="form-control " rows="5" name="row[settlement]" cols="50"></textarea>
+                        </div>
+                    </div>
+                    <!--<div class="row form-row-height">
+                        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Content'); ?>:</label>
+                        <div class="col-xs-12 col-sm-8">
+                            <textarea id="c-content" class="form-control" rows="5" name="row[content]" cols="50"></textarea>
+                        </div>
+                    </div>-->
+                    <div class="row form-row-height">
+                        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Remark'); ?>:</label>
+                        <div class="col-xs-12 col-sm-8">
+                            <textarea id="c-Remark" class="form-control " rows="5" name="row[Remark]" cols="50"></textarea>
+                        </div>
+                    </div>
+                    <div class="row form-row-height">
+                        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Uploadimages'); ?>:</label>
+                        <div class="col-xs-12 col-sm-8">
+                            <div class="input-group">
+                                <input id="c-uploadimages" class="form-control" size="50" name="row[uploadimages]" type="text">
+                                <div class="input-group-addon no-border no-padding">
+                                    <span><button type="button" id="plupload-uploadimages" class="btn btn-danger plupload" data-input-id="c-uploadimages" data-mimetype="image/gif,image/jpeg,image/png,image/jpg,image/bmp" data-multiple="true" data-preview-id="p-uploadimages"><i class="fa fa-upload"></i> <?php echo __('Upload'); ?></button></span>
+                                    <span><button type="button" id="fachoose-uploadimages" class="btn btn-primary fachoose" data-input-id="c-uploadimages" data-mimetype="image/*" data-multiple="true"><i class="fa fa-list"></i> <?php echo __('Choose'); ?></button></span>
+                                </div>
+                                <span class="msg-box n-right" for="c-uploadimages"></span>
+                            </div>
+                            <ul class="row list-inline plupload-preview" id="p-uploadimages"></ul>
+                        </div>
+                    </div>
+                    <div class="row form-row-height layer-footer">
+                        <label class="control-label col-xs-12 col-sm-2"></label>
+                        <div class="col-xs-12 col-sm-8">
+                            <button type="submit" class="btn btn-success btn-embossed disabled"><?php echo __('OK'); ?></button>
+                            <button type="reset" class="btn btn-default btn-embossed"><?php echo __('Reset'); ?></button>
+                        </div>
+                    </div>
+                </form>
 
+            </div>
         </div>
     </div>
 </div>

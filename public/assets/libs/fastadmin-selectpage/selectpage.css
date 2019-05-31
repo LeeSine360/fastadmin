@@ -576,3 +576,5 @@ div.sp_result_area div.sp_pagination>ul>li.pageInfoBox>a:hover {
 .sp-previous:before { content: "\e65a"; }
 
 .sp-close:before { content: "\e600"; }
+
+.input-padding {padding: 20px 0}

@@ -56,26 +56,31 @@ class Project extends Backend
                     ->order($sort, $order)
                     ->count();
 
-            $list = Db::table('__CONTRACT_PROJECT__')
-            ->fetchSql(true)
-            ->field('contract_project.name')
-                    ->alias('contract_project')
-                    ->join('__CONTRACT_INFO__ contract_info','contract_project.contract_info_id = contract_info.id')
-                    ->join('__PROJECT_INFO__ project_info','contract_info.project_info_id = project_info.id')
+            $list = Db::table([            					
+            					'__PROJECT_SECTION__' => 'project_section',
+            					'__CONTRACT_PROJECT__' => 'contract_project'
+            				])	
+            		->field('
+            			contract_project.id as id,
+            			CONCAT(project_info.number,\'-材\',contract_info.number) as number,
+            			project_info.name as projectName,
+            			GROUP_CONCAT(project_section.name) as sectionName,
+            			company_info.name as companyName,
+            			contract_info.name as contractName,
+            			contract_project.savedata as savedata,
+					    contract_info.save as save,
+					    contract_info.operatorname as operatorname,
+					    contract_info.operatorphone as operatorphone,
+					    contract_info.createtime as createtime
+            			')
+            		->join('__CONTRACT_INFO__ contract_info','contract_project.contract_info_id = contract_info.id')
+            		->join('__PROJECT_INFO__ project_info','project_info.id = contract_info.project_info_id')
+            		->join('__COMPANY_INFO__ company_info','company_info.id = contract_info.company_info_id')
+					->where('FIND_IN_SET(project_section.id,project_section_ids)')
                     ->where($where)
-                    ->order($sort, $order)                    
+                    ->order($sort, $order)            
                     ->select();
 
-            return $list;
-
-            foreach ($list as $row) {
-                $row->visible(['id','savedata','opinion','createtime']);
-                $row->visible(['contractinfo']);
-				$row->getRelation('contractinfo')->visible(['name','number','contacts','price','total']);
-				$row->visible(['admin']);
-				$row->getRelation('admin')->visible(['username']);
-            }
-            $list = collection($list)->toArray();
             $result = array("total" => $total, "rows" => $list);
 
             return json($result);

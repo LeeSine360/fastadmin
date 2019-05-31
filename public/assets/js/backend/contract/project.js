@@ -25,15 +25,16 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
                     [
                         {checkbox: true},
                         {field: 'id', title: __('Id')},
+                        {field: 'number', title: __('Number')},
+                        {field: 'projectName', title: __('ProjectName')},
+                        {field: 'sectionName', title: __('SectionName')},
+                        {field: 'companyName', title: __('CompanyName')},
+                        {field: 'contractName', title: __('ContractName')},
                         {field: 'savedata', title: __('Savedata'), searchList: {"wait":__('Savedata wait'),"normal":__('Savedata normal')," back":__('Savedata  back')," delet":__('Savedata  delet')}, formatter: Table.api.formatter.normal},
-                        {field: 'opinion', title: __('Opinion')},
+                        {field: 'save', title: __('Save')},
+                        {field: 'operatorname', title: __('Operatorname')},
+                        {field: 'operatorphone', title: __('Operatorphone')},
                         {field: 'createtime', title: __('Createtime'), operate:'RANGE', addclass:'datetimerange', formatter: Table.api.formatter.datetime},
-                        {field: 'contractinfo.name', title: __('Contractinfo.name')},
-                        {field: 'contractinfo.number', title: __('Contractinfo.number')},
-                        {field: 'contractinfo.contacts', title: __('Contractinfo.contacts')},
-                        {field: 'contractinfo.price', title: __('Contractinfo.price'), operate:'BETWEEN'},
-                        {field: 'contractinfo.total', title: __('Contractinfo.total')},
-                        {field: 'admin.username', title: __('Admin.username')},
                         {field: 'operate', title: __('Operate'), table: table, events: Table.api.events.operate, formatter: Table.api.formatter.operate}
                     ]
                 ]

@@ -11,7 +11,7 @@ return [
     'Contacts'            => '业务经理姓名',
     'Phone'               => '联系电话',
     'Signdate'            => '签订日期',
-    'Expirydate'          => '截止日期',
+    'Expirydate'          => '截止日期', 
     'Price'               => '合同金额',
     'Total'               => '合同份数',
     'Save'                => '留存份数',

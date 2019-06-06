@@ -79,7 +79,7 @@ class Project extends Backend
 					->where('FIND_IN_SET(project_section.id,project_section_ids)')
                     ->where($where)
                     ->order($sort, $order)            
-                    ->select();
+                    ->select(); 
 
             $result = array("total" => $total, "rows" => $list);
 

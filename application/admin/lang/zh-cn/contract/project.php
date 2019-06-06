@@ -16,5 +16,5 @@ return [
     'Save' => '存档份数',
     'Operatorname' => '经办人姓名',
     'Operatorphone' => '经办人电话',
-    'Createtime'            => '创建日期',
+    'Createtime'            => '创建日期'
 ];

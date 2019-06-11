@@ -13,18 +13,17 @@ use ZipArchive;
 /**
  * 数据库管理
  *
- * @icon fa fa-database
+ * @icon   fa fa-database
  * @remark 可在线进行一些简单的数据库表优化或修复,查看表结构和数据。也可以进行SQL语句的操作
  */
 class Database extends Backend
 {
-
     protected $noNeedRight = ['backuplist'];
 
     /**
      * 查看
      */
-    function index()
+    public function index()
     {
         $tables_data_length = $tables_index_length = $tables_free_length = $tables_data_count = 0;
         $tables = $list = [];
@@ -49,14 +48,15 @@ class Database extends Backend
             xmp,body{margin:0;padding:0;line-height:18px;font-size:12px;font-family:"Helvetica Neue", Helvetica, Microsoft Yahei, Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif;}
             hr{height:1px;margin:5px 1px;background:#e3e3e3;border:none;}
             </style>';
-        if ($do_action == '')
+        if ($do_action == '') {
             exit(__('Invalid parameters'));
+        }
 
         $tablename = $this->request->post("tablename/a");
 
         if (in_array($do_action, array('doquery', 'optimizeall', 'repairall'))) {
             $this->$do_action();
-        } else if (count($tablename) == 0) {
+        } elseif (count($tablename) == 0) {
             exit(__('Invalid parameters'));
         } else {
             foreach ($tablename as $table) {
@@ -98,9 +98,11 @@ class Database extends Backend
         $config = get_addon_config('database');
         $backupDir = ROOT_PATH . 'public' . DS . $config['backupDir'];
         if ($this->request->isPost()) {
-
             $action = $this->request->request('action');
             $file = $this->request->request('file');
+            if (!preg_match("/^backup\-([a-z0-9\-]+)\.zip$/i", $file)) {
+                $this->error(__("Invalid parameters"));
+            }
             $file = $backupDir . $file;
             if ($action == 'restore') {
                 try {
@@ -111,7 +113,7 @@ class Database extends Backend
 
                     if (class_exists('ZipArchive')) {
                         $zip = new ZipArchive;
-                        if ($zip->open($file) !== TRUE) {
+                        if ($zip->open($file) !== true) {
                             throw new Exception(__('Can not open zip file'));
                         }
                         if (!$zip->extractTo($dir)) {
@@ -136,7 +138,6 @@ class Database extends Backend
                         //必须重连一次
                         Db::connect([], true)->query("select 1");
                         Db::getPdo()->exec($sql);
-
                     }
                 } catch (Exception $e) {
                     $this->error($e->getMessage());
@@ -144,8 +145,7 @@ class Database extends Backend
                     $this->error($e->getMessage());
                 }
                 $this->success(__('Restore successful'));
-
-            } else if ($action == 'delete') {
+            } elseif ($action == 'delete') {
                 unlink($file);
                 $this->success(__('Delete successful'));
             }
@@ -235,15 +235,17 @@ class Database extends Backend
     private function doquery($sql = null)
     {
         $sqlquery = $sql ? $sql : $this->request->post('sqlquery');
-        if ($sqlquery == '')
+        if ($sqlquery == '') {
             exit(__('SQL can not be empty'));
+        }
         $sqlquery = str_replace("\r", "", $sqlquery);
         $sqls = preg_split("/;[ \t]{0,}\n/i", $sqlquery);
         $maxreturn = 100;
         $r = '';
         foreach ($sqls as $key => $val) {
-            if (trim($val) == '')
+            if (trim($val) == '') {
                 continue;
+            }
             $val = rtrim($val, ';');
             $r .= "SQL：<span style='color:green;'>{$val}</span> ";
             if (preg_match("/^(select|explain)(.*)/i ", $val)) {
@@ -268,8 +270,9 @@ class Database extends Backend
                 $j = 0;
                 foreach ($resultlist as $m => $n) {
                     $j++;
-                    if (!$limit && $j > $maxreturn)
+                    if (!$limit && $j > $maxreturn) {
                         break;
+                    }
                     $r .= "<hr/>";
                     $r .= "<font color='red'>" . __('Row:%s', $j) . "</font><br />";
                     foreach ($n as $k => $v) {
@@ -286,5 +289,4 @@ class Database extends Backend
         }
         echo $r;
     }
-
 }

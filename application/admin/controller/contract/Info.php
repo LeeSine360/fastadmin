@@ -3,6 +3,7 @@
 namespace app\admin\controller\contract;
 
 use app\common\controller\Backend;
+use think\Db;
 
 /**
  * 
@@ -55,29 +56,40 @@ class Info extends Backend
                     ->order($sort, $order)
                     ->count();
 
-            $list = $this->model
-                    ->with(['projectinfo','projectsection','companyinfo','category','admin'])
+            $list = Db::table([                             
+                                '__PROJECT_SECTION__' => 'project_section',
+                                '__CONTRACT_INFO__' => 'contract_info'
+                            ])  
+                    ->field('
+                        contract_info.id as id,
+                        CONCAT(project_info.number,\'-材\',contract_info.number) as number,
+                        project_info.name as projectName,
+                        GROUP_CONCAT(project_section.name) as sectionName,
+                        company_info.name as companyName,
+                        contract_info.name as contractName,
+                        category.name as categoryName,
+                        contract_info.price as contractPrice,
+                        contract_info.total as contractTotal,
+                        contract_info.save as contractSave,
+                        contract_info.phone as contractPhone,
+                        contract_info.operatorname as contractOperatorName,
+                        contract_info.operatorphone as contractOperatorPhone,
+                        contract_info.createtime as contractCreateTime,
+                        contract_project.savedata as projectSavedata,
+                        contract_synthetical.agreedata as syntheticalAgreedata,
+                        contract_verify.agreedata as verifyAgreedata
+                    ')
+                    ->join('__PROJECT_INFO__ project_info','contract_info.project_info_id = project_info.id')
+                    ->join('__COMPANY_INFO__ company_info','contract_info.company_info_id = company_info.id')
+                    ->join('__CATEGORY__ category','contract_info.category_id = category.id')
+                    ->join('__CONTRACT_PROJECT__ contract_project','contract_info.id = contract_project.contract_info_id','LEFT')
+                    ->join('__CONTRACT_VERIFY__ contract_verify','contract_info.id = contract_verify.contract_info_id','LEFT')
+                    ->join('__CONTRACT_SYNTHETICAL__ contract_synthetical','contract_info.id = contract_synthetical.contract_info_id','LEFT')
+                    ->where('FIND_IN_SET(project_section.id,project_section_ids)')
                     ->where($where)
-                    ->order($sort, $order)
-                    ->limit($offset, $limit)
+                    ->order($sort, $order)     
                     ->select();
             
-            $list = addtion($list, 'project_section_ids');
-
-            foreach ($list as $row) {
-                $row->visible(['id','name','number','phone','price','total','save','operatorname','operatorphone','createtime','admin_id']);
-                $row->visible(['projectinfo']);
-				$row->getRelation('projectinfo')->visible(['name']);
-				$row->visible(['projectsection']);
-				$row->getRelation('projectsection')->visible(['name']);
-				$row->visible(['companyinfo']);
-				$row->getRelation('companyinfo')->visible(['name']);
-				$row->visible(['category']);
-				$row->getRelation('category')->visible(['name']);
-				$row->visible(['admin']);
-				$row->getRelation('admin')->visible(['username']);
-            }
-            $list = collection($list)->toArray();
             $result = array("total" => $total, "rows" => $list);
 
             return json($result);

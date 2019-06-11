@@ -4,6 +4,23 @@ return array (
   'autoload' => false,
   'hooks' => 
   array (
+    'admin_login_init' => 
+    array (
+      0 => 'loginbg',
+    ),
+    'response_send' => 
+    array (
+      0 => 'loginbgindex',
+      1 => 'loginvideo',
+    ),
+    'index_login_init' => 
+    array (
+      0 => 'loginbgindex',
+    ),
+    'upload_after' => 
+    array (
+      0 => 'thumb',
+    ),
   ),
   'route' => 
   array (
@@ -11,5 +28,7 @@ return array (
     '/example/d/[:name]' => 'example/demo/index',
     '/example/d1/[:name]' => 'example/demo/demo1',
     '/example/d2/[:name]' => 'example/demo/demo2',
+    '/qrcode$' => 'qrcode/index/index',
+    '/qrcode/build$' => 'qrcode/index/build',
   ),
 );

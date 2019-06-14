@@ -6,10 +6,6 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
             Table.api.init({
                 extend: {
                     index_url: 'contract/verify/index' + location.search,
-                    add_url: 'contract/verify/add',
-                    edit_url: 'contract/verify/edit',
-                    del_url: 'contract/verify/del',
-                    multi_url: 'contract/verify/multi',
                     table: 'contract_verify',
                 }
             });

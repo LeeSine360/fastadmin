@@ -80,7 +80,7 @@ class Project extends Backend
                     ->where($where)
                     ->order($sort, $order)            
                     ->select(); 
-
+            if($total == 0) $list = array();
             $result = array("total" => $total, "rows" => $list);
 
             return json($result);

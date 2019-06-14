@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:83:"C:\xampp\htdocs\fastadmin\public/../application/admin\view\contract\info\index.html";i:1558661981;s:68:"C:\xampp\htdocs\fastadmin\application\admin\view\layout\default.html";i:1557482263;s:65:"C:\xampp\htdocs\fastadmin\application\admin\view\common\meta.html";i:1557482263;s:67:"C:\xampp\htdocs\fastadmin\application\admin\view\common\script.html";i:1557482263;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:83:"C:\xampp\htdocs\fastadmin\public/../application/admin\view\contract\info\index.html";i:1559813919;s:68:"C:\xampp\htdocs\fastadmin\application\admin\view\layout\default.html";i:1557482263;s:65:"C:\xampp\htdocs\fastadmin\application\admin\view\common\meta.html";i:1557482263;s:67:"C:\xampp\htdocs\fastadmin\application\admin\view\common\script.html";i:1557482263;}*/ ?>
 <!DOCTYPE html>
 <html lang="<?php echo $config['language']; ?>">
     <head>
@@ -91,17 +91,17 @@
                     <div class="row form-row-height">
                         <label class="control-label col-xs-12 col-sm-2"><?php echo __('Project_info_id'); ?>:</label>
                         <div class="col-xs-12 col-sm-3">
-                            <input id="c-project_info_id" data-rule="required" data-source="project/info/index" showField='short' class="form-control selectpage input-left-padding45" name="row[project_info_id]" type="text" value="">
+                            <input id="c-project_info_id" data-rule="required" data-source="project/info/index" showField='short' class="form-control selectpage" name="row[project_info_id]" type="text" value="">
                         </div>
                         <label class="control-label col-xs-12 col-sm-2"><?php echo __('Project_section_ids'); ?>:</label>
                         <div class="col-xs-12 col-sm-3">
-                            <input id="c-project_section_ids" data-rule="required" data-source="project/section/index" data-multiple="true" class="form-control selectpage input-left-padding45" name="row[project_section_ids]" type="text" value="">
+                            <input id="c-project_section_ids" data-rule="required" data-source="project/section/index" data-multiple="true" class="form-control selectpage" name="row[project_section_ids]" type="text" value="">
                         </div>
                     </div>
                     <div class="row form-row-height">
                         <label class="control-label col-xs-12 col-sm-2"><?php echo __('company_info_id'); ?>:</label>
                         <div class="col-xs-12 col-sm-3">
-                            <input id="c-company_info_id" data-rule="required" data-source="company/info/index" class="form-control selectpage input-left-padding45" name="row[company_info_id]" type="text" value="">
+                            <input id="c-company_info_id" data-rule="required" data-source="company/info/index" class="form-control selectpage" name="row[company_info_id]" type="text" value="">
                         </div>
                         <label class="control-label col-xs-12 col-sm-2"><?php echo __('Name'); ?>:</label>
                         <div class="col-xs-12 col-sm-3">
@@ -113,8 +113,8 @@
                         <div class="col-xs-12 col-sm-6">
                             <!--<input id="c-category_id" data-rule="required" data-source="category/selectpage" data-params='{"custom[type]":"classify","custom[pid]":0}' class="form-control selectpage" name="row[category_id]" type="text" value="">-->
                             <div class="form-inline" data-toggle="cxselect" data-selects="first,second">
-                                <select class="first form-control input-left-padding20" name="row[category_id]" data-url="ajax/category?type=classify&pid=0"></select>
-                                <select class="second form-control input-left-padding20" name="row[label_ids]" data-url="ajax/category" data-query-name="pid"></select>
+                                <select class="first form-control" name="row[category_id]" data-url="ajax/category?type=classify&pid=0"></select>
+                                <select class="second form-control" name="row[label_ids]" data-url="ajax/category" data-query-name="pid"></select>
                                 <a href="http://www.baidu.com">百度</a>
                             </div>
                         </div>

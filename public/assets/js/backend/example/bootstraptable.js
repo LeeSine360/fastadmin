@@ -256,13 +256,14 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form', 'template'], function
                     //格式为：方法名+空格+DOM元素
                     'click .btn-ip': function (e, value, row, index) {
                         e.stopPropagation();
-                        console.log();
                         var container = $("#table").data("bootstrap.table").$container;
+                        console.log($("#table").data());
                         var options = $("#table").bootstrapTable('getOptions');
                         //这里我们手动将数据填充到表单然后提交
                         $("form.form-commonsearch [name='ip']", container).val(value);
                         $("form.form-commonsearch", container).trigger('submit');
                         Toastr.info("执行了自定义搜索操作");
+                        
                     }
                 },
                 browser: {

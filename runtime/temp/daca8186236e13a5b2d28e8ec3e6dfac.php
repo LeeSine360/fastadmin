@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:80:"C:\xampp\htdocs\fastadmin\public/../application/admin\view\finance\info\add.html";i:1558317969;s:68:"C:\xampp\htdocs\fastadmin\application\admin\view\layout\default.html";i:1557482263;s:65:"C:\xampp\htdocs\fastadmin\application\admin\view\common\meta.html";i:1557482263;s:67:"C:\xampp\htdocs\fastadmin\application\admin\view\common\script.html";i:1557482263;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:83:"C:\xampp\htdocs\fastadmin\public/../application/admin\view\general\crontab\add.html";i:1560220855;s:68:"C:\xampp\htdocs\fastadmin\application\admin\view\layout\default.html";i:1557482263;s:65:"C:\xampp\htdocs\fastadmin\application\admin\view\common\meta.html";i:1557482263;s:67:"C:\xampp\htdocs\fastadmin\application\admin\view\common\script.html";i:1557482263;}*/ ?>
 <!DOCTYPE html>
 <html lang="<?php echo $config['language']; ?>">
     <head>
@@ -50,63 +50,86 @@
                             <!-- END RIBBON -->
                             <?php endif; ?>
                             <div class="content">
-                                <form id="add-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="">
-
+                                <style type="text/css">
+    #schedulepicker {
+        padding-top:7px;
+    }
+</style>
+<form id="add-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="">
     <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Project_info_id'); ?>:</label>
+        <label for="name" class="control-label col-xs-12 col-sm-2"><?php echo __('Title'); ?>:</label>
         <div class="col-xs-12 col-sm-8">
-            <input id="c-project_info_id" data-rule="required" data-source="project/info/index" class="form-control selectpage" name="row[project_info_id]" type="text" value="">
+            <input type="text" class="form-control" id="title" name="row[title]" value="" data-rule="required" />
         </div>
     </div>
     <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Project_section_id'); ?>:</label>
+        <label for="name" class="control-label col-xs-12 col-sm-2"><?php echo __('Type'); ?>:</label>
         <div class="col-xs-12 col-sm-8">
-            <input id="c-project_section_id" data-rule="required" data-source="project/section/index" class="form-control selectpage" name="row[project_section_id]" type="text" value="">
+            <?php echo build_select('row[type]', $typedata, null, ['class'=>'form-control', 'data-rule'=>'required']); ?>
         </div>
     </div>
     <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Company_info_id'); ?>:</label>
+        <label for="content" class="control-label col-xs-12 col-sm-2"><?php echo __('Content'); ?>:</label>
         <div class="col-xs-12 col-sm-8">
-            <input id="c-company_info_id" data-rule="required" data-source="company/info/index" class="form-control selectpage" name="row[company_info_id]" type="text" value="">
+            <textarea name="row[content]" id="conent" cols="30" rows="5" class="form-control" data-rule="required"></textarea>
         </div>
     </div>
     <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Category_id'); ?>:</label>
+        <label for="schedule" class="control-label col-xs-12 col-sm-2"><?php echo __('Schedule'); ?>:</label>
         <div class="col-xs-12 col-sm-8">
-            <input id="c-category_id" data-rule="required" data-source="category/selectpage" data-params='{"custom[type]":"finance_info"}' class="form-control selectpage" name="row[category_id]" type="text" value="">
+            <input type="text" class="form-control" id="schedule" style="font-size:12px;font-family: Verdana;word-spacing:23px;" name="row[schedule]" value="* * * * *" data-rule="required; remote(general/crontab/check_schedule)" />
+            <div id="schedulepicker">
+                <pre><code>*    *    *    *    *
+-    -    -    -    -
+|    |    |    |    +--- day of week (0 - 7) (Sunday=0 or 7)
+|    |    |    +-------- month (1 - 12)
+|    |    +------------- day of month (1 - 31)
+|    +------------------ hour (0 - 23)
++----------------------- min (0 - 59)</code></pre>
+                <h5><?php echo __('The next %s times the execution time', '<input type="number" id="pickdays" class="form-control text-center" value="7" style="display: inline-block;width:80px;">'); ?></h5>
+                <ol id="scheduleresult" class="list-group">
+                </ol>
+            </div>
         </div>
     </div>
     <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Price'); ?>:</label>
-        <div class="col-xs-12 col-sm-8">
-            <input id="c-price" data-rule="required" class="form-control" name="row[price]" type="number">
+        <label for="maximums" class="control-label col-xs-12 col-sm-2"><?php echo __('Maximums'); ?>:</label>
+        <div class="col-xs-12 col-sm-4">
+            <input type="number" class="form-control" id="maximums" name="row[maximums]" value="0" data-rule="required" size="6" />
         </div>
     </div>
     <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Contacts'); ?>:</label>
-        <div class="col-xs-12 col-sm-8">
-            <input id="c-contacts" data-rule="required" class="form-control" name="row[contacts]" type="text">
+        <label for="begintime" class="control-label col-xs-12 col-sm-2"><?php echo __('Begin time'); ?>:</label>
+        <div class="col-xs-12 col-sm-4">
+            <input type="text" class="form-control datetimepicker" id="begintime" name="row[begintime]" value="" data-rule="<?php echo __('Begin time'); ?>:required" size="6" />
         </div>
     </div>
     <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Phone'); ?>:</label>
-        <div class="col-xs-12 col-sm-8">
-            <input id="c-phone" data-rule="required" class="form-control" name="row[phone]" type="text">
+        <label for="endtime" class="control-label col-xs-12 col-sm-2"><?php echo __('End time'); ?>:</label>
+        <div class="col-xs-12 col-sm-4">
+            <input type="text" class="form-control datetimepicker" id="endtime" name="row[endtime]" value="" data-rule="<?php echo __('End time'); ?>:required;match(gte, row[begintime], datetime)" size="6" />
         </div>
     </div>
     <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Remark'); ?>:</label>
-        <div class="col-xs-12 col-sm-8">
-            <textarea id="c-remark" class="form-control " rows="5" name="row[remark]" cols="50"></textarea>
+        <label for="weigh" class="control-label col-xs-12 col-sm-2"><?php echo __('Weigh'); ?>:</label>
+        <div class="col-xs-12 col-sm-4">
+            <input type="text" class="form-control" id="weigh" name="row[weigh]" value="0" data-rule="required" size="6" />
         </div>
     </div>
-    <div class="form-group layer-footer">
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Status'); ?>:</label>
+        <div class="col-xs-12 col-sm-8">
+            <?php echo build_radios('row[status]', ['normal'=>__('Normal'), 'hidden'=>__('Hidden')]); ?>
+        </div>
+    </div>
+    <div class="form-group hide layer-footer">
         <label class="control-label col-xs-12 col-sm-2"></label>
         <div class="col-xs-12 col-sm-8">
             <button type="submit" class="btn btn-success btn-embossed disabled"><?php echo __('OK'); ?></button>
             <button type="reset" class="btn btn-default btn-embossed"><?php echo __('Reset'); ?></button>
         </div>
     </div>
+
 </form>
 
                             </div>

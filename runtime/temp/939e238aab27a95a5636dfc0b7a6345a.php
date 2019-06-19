@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:88:"C:\xampp\htdocs\fastadmin\public/../application/admin\view\example\colorbadge\index.html";i:1557970796;s:68:"C:\xampp\htdocs\fastadmin\application\admin\view\layout\default.html";i:1557482263;s:65:"C:\xampp\htdocs\fastadmin\application\admin\view\common\meta.html";i:1557482263;s:67:"C:\xampp\htdocs\fastadmin\application\admin\view\common\script.html";i:1557482263;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:87:"C:\xampp\htdocs\fastadmin\public/../application/admin\view\contract\verify\examine.html";i:1560911755;s:68:"C:\xampp\htdocs\fastadmin\application\admin\view\layout\default.html";i:1557482263;s:65:"C:\xampp\htdocs\fastadmin\application\admin\view\common\meta.html";i:1557482263;s:67:"C:\xampp\htdocs\fastadmin\application\admin\view\common\script.html";i:1557482263;}*/ ?>
 <!DOCTYPE html>
 <html lang="<?php echo $config['language']; ?>">
     <head>
@@ -50,25 +50,45 @@
                             <!-- END RIBBON -->
                             <?php endif; ?>
                             <div class="content">
-                                <div class="panel panel-default panel-intro">
-    <?php echo build_heading(); ?>
-
-    <div class="panel-body">
-        <div id="myTabContent" class="tab-content">
-            <div class="tab-pane fade active in" id="one">
-                <div class="widget-body no-padding">
-                    <div id="toolbar" class="toolbar">
-                        <?php echo build_toolbar('refresh,delete'); ?>
-                    </div>
-                    <table id="table" class="table table-striped table-bordered table-hover" width="100%">
-
-                    </table>
-
-
-                </div>
-            </div>
-
+                                <div class="row">
+    <div class="col-xs-12 col-sm-12">
+        <div id="echarts" style="height:200px;width:100%;">
         </div>
+    </div>
+</div>
+<div class="row">
+    <form id="add-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="">
+        
+        <div class="form-group">
+            <label class="control-label col-xs-12 col-sm-2"><?php echo __('Contract_info_id'); ?>:</label>
+            <div class="col-xs-12 col-sm-8">
+                <input id="c-contract_info_id" data-rule="required" data-source="contract/info/index" class="form-control selectpage" name="row[contract_info_id]" type="text" value="">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-xs-12 col-sm-2"><?php echo __('Agreedata'); ?>:</label>
+            <div class="col-xs-12 col-sm-8">
+                
+                <div class="radio">
+                <?php if(is_array($agreedataList) || $agreedataList instanceof \think\Collection || $agreedataList instanceof \think\Paginator): if( count($agreedataList)==0 ) : echo "" ;else: foreach($agreedataList as $key=>$vo): ?>
+                <label for="row[agreedata]-<?php echo $key; ?>"><input id="row[agreedata]-<?php echo $key; ?>" name="row[agreedata]" type="radio" value="<?php echo $key; ?>" <?php if(in_array(($key), explode(',',"wait"))): ?>checked<?php endif; ?> /> <?php echo $vo; ?></label> 
+                <?php endforeach; endif; else: echo "" ;endif; ?>
+                </div>
+
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-xs-12 col-sm-2"><?php echo __('Opinion'); ?>:</label>
+            <div class="col-xs-12 col-sm-8">
+                <input id="c-opinion" class="form-control" name="row[opinion]" type="text">
+            </div>
+        </div>
+    </form>
+</div>
+<div class="hide layer-footer">
+    <label class="control-label col-xs-12 col-sm-2"></label>
+    <div class="col-xs-12 col-sm-8">
+        <button type="reset" class="btn btn-primary btn-embossed btn-close" onclick="Layer.closeAll();"><?php echo __('Close'); ?></button>
     </div>
 </div>
                             </div>

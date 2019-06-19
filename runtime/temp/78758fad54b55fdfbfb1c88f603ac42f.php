@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:80:"C:\xampp\htdocs\fastadmin\public/../application/admin\view\auth\group\index.html";i:1557482263;s:68:"C:\xampp\htdocs\fastadmin\application\admin\view\layout\default.html";i:1557482263;s:65:"C:\xampp\htdocs\fastadmin\application\admin\view\common\meta.html";i:1557482263;s:67:"C:\xampp\htdocs\fastadmin\application\admin\view\common\script.html";i:1557482263;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:93:"C:\xampp\htdocs\fastadmin\public/../application/admin\view\example\bootstraptable\detail.html";i:1557970796;s:68:"C:\xampp\htdocs\fastadmin\application\admin\view\layout\default.html";i:1557482263;s:65:"C:\xampp\htdocs\fastadmin\application\admin\view\common\meta.html";i:1557482263;s:67:"C:\xampp\htdocs\fastadmin\application\admin\view\common\script.html";i:1557482263;}*/ ?>
 <!DOCTYPE html>
 <html lang="<?php echo $config['language']; ?>">
     <head>
@@ -50,28 +50,38 @@
                             <!-- END RIBBON -->
                             <?php endif; ?>
                             <div class="content">
-                                <div class="panel panel-default panel-intro">
-    <?php echo build_heading(); ?>
-
-    <div class="panel-body">
-        <div id="myTabContent" class="tab-content">
-            <div class="tab-pane fade active in" id="one">
-                <div class="widget-body no-padding">
-                    <div id="toolbar" class="toolbar">
-                        <?php echo build_toolbar('refresh,add,delete'); ?>
-                    </div>
-                    <table id="table" class="table table-striped table-bordered table-hover" 
-                           data-operate-edit="<?php echo $auth->check('auth/group/edit'); ?>" 
-                           data-operate-del="<?php echo $auth->check('auth/group/del'); ?>" 
-                           width="100%">
-                    </table>
+                                <table class="table table-striped">
+    <thead>
+        <tr>
+            <th><?php echo __('Title'); ?></th>
+            <th><?php echo __('Content'); ?></th>
+        </tr>
+    </thead>
+    <tbody>
+        <?php if(is_array($row) || $row instanceof \think\Collection || $row instanceof \think\Paginator): $i = 0; $__LIST__ = $row;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
+        <tr>
+            <td><?php echo $key; ?></td>
+            <td><?php echo $vo; ?></td>
+        </tr>
+        <?php endforeach; endif; else: echo "" ;endif; if(\think\Request::instance()->get('dialog')): ?>
+        <tr>
+            <td>回传数据</td>
+            <td>
+                <div class="input-group">
+                    <input name="callback" class="form-control" value="test" />
+                    <span class="input-group-btn"><a href="javascript:;" class="btn btn-success btn-callback" >回传数据</a></span>
                 </div>
-            </div>
-
-        </div>
+            </td>
+        </tr>
+        <?php endif; ?>
+    </tbody>
+</table>
+<div class="hide layer-footer">
+    <label class="control-label col-xs-12 col-sm-2"></label>
+    <div class="col-xs-12 col-sm-8">
+        <button type="reset" class="btn btn-primary btn-embossed btn-close" onclick="Layer.closeAll();"><?php echo __('Close'); ?></button>
     </div>
 </div>
-
                             </div>
                         </div>
                     </div>

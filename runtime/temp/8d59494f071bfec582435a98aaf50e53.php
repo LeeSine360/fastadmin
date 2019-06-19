@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:85:"C:\xampp\htdocs\fastadmin\public/../application/admin\view\contract\verify\index.html";i:1560387827;s:68:"C:\xampp\htdocs\fastadmin\application\admin\view\layout\default.html";i:1557482263;s:65:"C:\xampp\htdocs\fastadmin\application\admin\view\common\meta.html";i:1557482263;s:67:"C:\xampp\htdocs\fastadmin\application\admin\view\common\script.html";i:1557482263;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:85:"C:\xampp\htdocs\fastadmin\public/../application/admin\view\contract\verify\index.html";i:1560391772;s:68:"C:\xampp\htdocs\fastadmin\application\admin\view\layout\default.html";i:1557482263;s:65:"C:\xampp\htdocs\fastadmin\application\admin\view\common\meta.html";i:1557482263;s:67:"C:\xampp\htdocs\fastadmin\application\admin\view\common\script.html";i:1557482263;}*/ ?>
 <!DOCTYPE html>
 <html lang="<?php echo $config['language']; ?>">
     <head>
@@ -60,7 +60,10 @@
                     <div id="toolbar" class="toolbar">
                         <?php echo build_toolbar('refresh'); ?>                        
                     </div>
-                    <table id="table" class="table table-striped table-bordered table-hover table-nowrap" width="100%">
+                    <table id="table" class="table table-striped table-bordered table-hover table-nowrap"
+                           data-operate-edit="<?php echo $auth->check('contract/verify/edit'); ?>" 
+                           data-operate-del="<?php echo $auth->check('contract/verify/del'); ?>" 
+                           width="100%">
                     </table>
                 </div>
             </div>

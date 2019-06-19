@@ -76,7 +76,7 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form', 'echarts'], function(
             var myChart = Echarts.init(dom);
             var option = {
                 title: {
-                    text: '资金拨付情况',
+                    text: '资金拨付占比情况',
                     x: 'center'
                 },
                 series: [{
@@ -113,6 +113,7 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form', 'echarts'], function(
                         {value: 514,name: '设备已付金额'},
                         {value: 4543,name: '分包已付金额'},
                         {value: 1242,name: '人工已付金额'},
+                        {value: 3746,name: '其他已付金额'}
                     ],
                     itemStyle: {
                         emphasis: {

@@ -72,72 +72,7 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form', 'echarts'], function(
             Controller.api.bindevent();
         },
         examine: function() {
-            var dom = document.getElementById("echarts");
-            var myChart = Echarts.init(dom);
-            var option = {
-                title: {
-                    text: '资金拨付占比情况',
-                    x: 'center'
-                },
-                series: [{
-                    name: '资金拨付情况',
-                    type: 'pie',
-                    radius: '60%',
-                    center: ['25%', '60%'],
-                    hoverOffset: 1,
-                    data: [
-                        {value: 125313213,name: '已拨付金额',url: 'www.baidu.com'}, 
-                        {value: 121212445,name: '未拨付金额'}
-                    ],
-                    itemStyle: {
-                        emphasis: {
-                            shadowBlur: 10,
-                            shadowOffsetX: 0,
-                            shadowColor: 'rgba(0, 0, 0, 0.5)'
-                        },
-                    },
-                    label: {
-                        normal: {
-                            show: true,
-                            formatter: "{b}:\n{d}%" //多值的嵌套
-                        }
-                    }
-                },{
-                    name: '拨付情况',
-                    type: 'pie',
-                    radius: '60%',
-                    center: ['70%', '60%'],
-                    hoverOffset: 1,
-                    data: [
-                        {value: 335,name: '材料已付金额',url: 'www.baidu.com'}, 
-                        {value: 514,name: '设备已付金额'},
-                        {value: 4543,name: '分包已付金额'},
-                        {value: 1242,name: '人工已付金额'},
-                        {value: 3746,name: '其他已付金额'}
-                    ],
-                    itemStyle: {
-                        emphasis: {
-                            shadowBlur: 10,
-                            shadowOffsetX: 0,
-                            shadowColor: 'rgba(0, 0, 0, 0.5)'
-                        },
-                    },
-                    label: {
-                        normal: {
-                            show: true,
-                            formatter: "{b}:\n{d}%" //多值的嵌套
-                        }
-                    }
-                }]
-            };
-            myChart.setOption(option, true);
-            myChart.on('click', function(params) {
-                console.log(params.data.url);
-            });           
             
-            $(document).on('click', '.btn-callback', function() {
-                Fast.api.close($("input[name=callback]").val());
-            });
         },
         api: {
             bindevent: function() {

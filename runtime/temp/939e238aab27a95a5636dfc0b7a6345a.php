@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:87:"C:\xampp\htdocs\fastadmin\public/../application/admin\view\contract\verify\examine.html";i:1560911755;s:68:"C:\xampp\htdocs\fastadmin\application\admin\view\layout\default.html";i:1557482263;s:65:"C:\xampp\htdocs\fastadmin\application\admin\view\common\meta.html";i:1557482263;s:67:"C:\xampp\htdocs\fastadmin\application\admin\view\common\script.html";i:1557482263;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:87:"C:\xampp\htdocs\fastadmin\public/../application/admin\view\contract\verify\examine.html";i:1561020107;s:68:"C:\xampp\htdocs\fastadmin\application\admin\view\layout\default.html";i:1557482263;s:65:"C:\xampp\htdocs\fastadmin\application\admin\view\common\meta.html";i:1557482263;s:67:"C:\xampp\htdocs\fastadmin\application\admin\view\common\script.html";i:1557482263;}*/ ?>
 <!DOCTYPE html>
 <html lang="<?php echo $config['language']; ?>">
     <head>
@@ -50,13 +50,58 @@
                             <!-- END RIBBON -->
                             <?php endif; ?>
                             <div class="content">
-                                <div class="row">
+                                <style type="text/css">
+    .ex_height {
+        height: 30px;
+    }
+</style>
+<div class="row ex_height">
+    <label class="col-xs-12 col-sm-2">项目名称:</label>
+    <div class="col-xs-12 col-sm-4">汉寿恒大御府</div>
+</div>
+<div class="row ex_height">
+    <label class="col-xs-12 col-sm-2">标段名称:</label>
+    <div class="col-xs-12 col-sm-4">A区</div>
+    <label class="col-xs-12 col-sm-2">项目经理:</label>
+    <div class="col-xs-12 col-sm-4">李恒孝</div>
+</div>
+
+<div class="row ex_height">
+    <label class="col-xs-12 col-sm-2">供应商名称:</label>
+    <div class="col-xs-12 col-sm-4">湖南鑫盛达钢材贸易有限公司</div>
+    <label class="col-xs-12 col-sm-2">联系电话:</label>
+    <div class="col-xs-12 col-sm-4">1388888888</div>
+</div>
+<div class="row ex_height">
+    <label class="col-xs-12 col-sm-2">合同名称:</label>
+    <div class="col-xs-12 col-sm-4">钢材采购合同</div>
+    <label class="col-xs-12 col-sm-2">合同总价:</label>
+    <div class="col-xs-12 col-sm-4">20000000.00</div>
+</div>
+<div class="row ex_height">
+    <label class="col-xs-12 col-sm-2">合同类型:</label>
+    <div class="col-xs-12 col-sm-4">钢材采购</div>
+    <label class="col-xs-12 col-sm-2">同类型欠款额:</label>
+    <div class="col-xs-12 col-sm-4">2000000.00</div>
+</div>
+<div class="row ex_height">
+    <label class="col-xs-12 col-sm-2">付款方式:</label>
+    <div class="col-xs-12 col-sm-10">撒打发斯蒂芬阿斯顿发送到发生付撒打发斯蒂芬阿斯顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬</div>
+</div>
+<div class="row ex_height">
+    <label class="col-xs-12 col-sm-2">结算方式:</label>
+    <div class="col-xs-12 col-sm-10">撒打发斯蒂芬阿斯顿发送到发生付撒打发斯蒂芬阿斯顿发斯蒂芬</div>
+</div>
+<div class="row ex_height">
     <div class="col-xs-12 col-sm-12">
-        <div id="echarts" style="height:200px;width:100%;">
-        </div>
+        <table id="table" class="table table-striped table-bordered table-hover table-nowrap"
+                           data-operate-edit="<?php echo $auth->check('contract/info/edit'); ?>" 
+                           data-operate-del="<?php echo $auth->check('contract/info/del'); ?>" 
+                           width="100%">
+        </table>
     </div>
 </div>
-<div class="row">
+<div class="row ex_height">
     <form id="add-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="">
         
         <div class="form-group">

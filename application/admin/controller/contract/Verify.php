@@ -93,7 +93,10 @@ class Verify extends Backend
     }
 
     //审核
-    public function examine(){
+    public function examine($ids = null){
+        return $ids;
+        /*$params = $this->request->post("row/a");
+        $this->request->isAjax();
         $list = Db::table([                             
                             '__PROJECT_SECTION__' => 'project_section',
                             '__CONTRACT_VERIFY__' => 'contract_verify'
@@ -114,6 +117,22 @@ class Verify extends Backend
                 ->where($where)
                 ->order($sort, $order)
                 ->select();
-        return $this->view->fetch();
+        $this->view->assign([
+            'totaluser'        => 35200,
+            'totalviews'       => 219390,
+            'totalorder'       => 32143,
+            'totalorderamount' => 174800,
+            'todayuserlogin'   => 321,
+            'todayusersignup'  => 430,
+            'todayorder'       => 2324,
+            'unsettleorder'    => 132,
+            'sevendnu'         => '80%',
+            'sevendau'         => '32%',
+            'paylist'          => $paylist,
+            'createlist'       => $createlist,
+            'addonversion'       => $addonVersion,
+            'uploadmode'       => $uploadmode
+        ]);
+        return $this->view->fetch();*/
     }
 }

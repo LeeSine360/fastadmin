@@ -50,6 +50,7 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form', 'echarts'], function(
                         events: Table.api.events.operate,
                         buttons: [{
                             name: 'examine',
+                            text: __('审核'),
                             title: __('审核'),
                             classname: 'btn btn-xs btn-primary btn-dialog',
                             icon: 'fa fa-key',
@@ -72,7 +73,72 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form', 'echarts'], function(
             Controller.api.bindevent();
         },
         examine: function() {
+            var dom = document.getElementById("echarts");
+            var myChart = Echarts.init(dom);
+            var option = {
+                title: {
+                    text: '资金拨付占比情况',
+                    x: 'center'
+                },
+                series: [{
+                    name: '资金拨付情况',
+                    type: 'pie',
+                    radius: '60%',
+                    center: ['25%', '60%'],
+                    hoverOffset: 1,
+                    data: [
+                        {value: 125313213,name: '已拨付金额',url: 'www.baidu.com'}, 
+                        {value: 121212445,name: '未拨付金额'}
+                    ],
+                    itemStyle: {
+                        emphasis: {
+                            shadowBlur: 10,
+                            shadowOffsetX: 0,
+                            shadowColor: 'rgba(0, 0, 0, 0.5)'
+                        },
+                    },
+                    label: {
+                        normal: {
+                            show: true,
+                            formatter: "{b}:\n{d}%" //多值的嵌套
+                        }
+                    }
+                },{
+                    name: '拨付情况',
+                    type: 'pie',
+                    radius: '60%',
+                    center: ['75%', '60%'],
+                    hoverOffset: 1,
+                    data: [
+                        {value: 20000,name: '未拨付金额',url: 'www.baidu.com'}, 
+                        {value: 10000,name: '钢材欠款金额'},
+                        {value: 10000,name: '混凝土欠款金额'},
+                        {value: 10000,name: '模板欠款金额'},
+                        {value: 10000,name: '砂浆欠款金额'}
+                    ],
+                    itemStyle: {
+                        emphasis: {
+                            shadowBlur: 10,
+                            shadowOffsetX: 0,
+                            shadowColor: 'rgba(0, 0, 0, 0.5)'
+                        },
+                    },
+                    label: {
+                        normal: {
+                            show: true,
+                            formatter: "{b}:\n{d}%" //多值的嵌套
+                        }
+                    }
+                }]
+            };
+            myChart.setOption(option, true);
+            myChart.on('click', function(params) {
+                console.log(params.data.url);
+            });           
             
+            $(document).on('click', '.btn-callback', function() {
+                Fast.api.close($("input[name=callback]").val());
+            });
         },
         api: {
             bindevent: function() {

@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:87:"C:\xampp\htdocs\fastadmin\public/../application/admin\view\contract\verify\examine.html";i:1561020107;s:68:"C:\xampp\htdocs\fastadmin\application\admin\view\layout\default.html";i:1557482263;s:65:"C:\xampp\htdocs\fastadmin\application\admin\view\common\meta.html";i:1557482263;s:67:"C:\xampp\htdocs\fastadmin\application\admin\view\common\script.html";i:1557482263;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:87:"C:\xampp\htdocs\fastadmin\public/../application/admin\view\contract\verify\examine.html";i:1561103914;s:68:"C:\xampp\htdocs\fastadmin\application\admin\view\layout\default.html";i:1557482263;s:65:"C:\xampp\htdocs\fastadmin\application\admin\view\common\meta.html";i:1557482263;s:67:"C:\xampp\htdocs\fastadmin\application\admin\view\common\script.html";i:1557482263;}*/ ?>
 <!DOCTYPE html>
 <html lang="<?php echo $config['language']; ?>">
     <head>
@@ -50,92 +50,91 @@
                             <!-- END RIBBON -->
                             <?php endif; ?>
                             <div class="content">
-                                <style type="text/css">
-    .ex_height {
-        height: 30px;
-    }
-</style>
-<div class="row ex_height">
-    <label class="col-xs-12 col-sm-2">项目名称:</label>
-    <div class="col-xs-12 col-sm-4">汉寿恒大御府</div>
-</div>
-<div class="row ex_height">
-    <label class="col-xs-12 col-sm-2">标段名称:</label>
-    <div class="col-xs-12 col-sm-4">A区</div>
-    <label class="col-xs-12 col-sm-2">项目经理:</label>
-    <div class="col-xs-12 col-sm-4">李恒孝</div>
-</div>
-
-<div class="row ex_height">
-    <label class="col-xs-12 col-sm-2">供应商名称:</label>
-    <div class="col-xs-12 col-sm-4">湖南鑫盛达钢材贸易有限公司</div>
-    <label class="col-xs-12 col-sm-2">联系电话:</label>
-    <div class="col-xs-12 col-sm-4">1388888888</div>
-</div>
-<div class="row ex_height">
-    <label class="col-xs-12 col-sm-2">合同名称:</label>
-    <div class="col-xs-12 col-sm-4">钢材采购合同</div>
-    <label class="col-xs-12 col-sm-2">合同总价:</label>
-    <div class="col-xs-12 col-sm-4">20000000.00</div>
-</div>
-<div class="row ex_height">
-    <label class="col-xs-12 col-sm-2">合同类型:</label>
-    <div class="col-xs-12 col-sm-4">钢材采购</div>
-    <label class="col-xs-12 col-sm-2">同类型欠款额:</label>
-    <div class="col-xs-12 col-sm-4">2000000.00</div>
-</div>
-<div class="row ex_height">
-    <label class="col-xs-12 col-sm-2">付款方式:</label>
-    <div class="col-xs-12 col-sm-10">撒打发斯蒂芬阿斯顿发送到发生付撒打发斯蒂芬阿斯顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬</div>
-</div>
-<div class="row ex_height">
-    <label class="col-xs-12 col-sm-2">结算方式:</label>
-    <div class="col-xs-12 col-sm-10">撒打发斯蒂芬阿斯顿发送到发生付撒打发斯蒂芬阿斯顿发斯蒂芬</div>
-</div>
-<div class="row ex_height">
-    <div class="col-xs-12 col-sm-12">
-        <table id="table" class="table table-striped table-bordered table-hover table-nowrap"
-                           data-operate-edit="<?php echo $auth->check('contract/info/edit'); ?>" 
-                           data-operate-del="<?php echo $auth->check('contract/info/del'); ?>" 
-                           width="100%">
-        </table>
+                                <form id="add-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="">
+    
+    <!--<div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Contract_info_id'); ?>:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-contract_info_id" data-rule="required" data-source="contract/info/index" class="form-control selectpage" name="row[contract_info_id]" type="text" value="">
+        </div>
+    </div>-->
+    <div class="form-group">
+        <div class="col-xs-12 col-sm-12">
+            <div id="echarts" style="height:250px;width:100%;">
+            </div>
+        </div>
     </div>
-</div>
-<div class="row ex_height">
-    <form id="add-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="">
-        
-        <div class="form-group">
-            <label class="control-label col-xs-12 col-sm-2"><?php echo __('Contract_info_id'); ?>:</label>
-            <div class="col-xs-12 col-sm-8">
-                <input id="c-contract_info_id" data-rule="required" data-source="contract/info/index" class="form-control selectpage" name="row[contract_info_id]" type="text" value="">
-            </div>
-        </div>
-        <div class="form-group">
-            <label class="control-label col-xs-12 col-sm-2"><?php echo __('Agreedata'); ?>:</label>
-            <div class="col-xs-12 col-sm-8">
-                
-                <div class="radio">
-                <?php if(is_array($agreedataList) || $agreedataList instanceof \think\Collection || $agreedataList instanceof \think\Paginator): if( count($agreedataList)==0 ) : echo "" ;else: foreach($agreedataList as $key=>$vo): ?>
-                <label for="row[agreedata]-<?php echo $key; ?>"><input id="row[agreedata]-<?php echo $key; ?>" name="row[agreedata]" type="radio" value="<?php echo $key; ?>" <?php if(in_array(($key), explode(',',"wait"))): ?>checked<?php endif; ?> /> <?php echo $vo; ?></label> 
-                <?php endforeach; endif; else: echo "" ;endif; ?>
-                </div>
-
-            </div>
-        </div>
-        <div class="form-group">
-            <label class="control-label col-xs-12 col-sm-2"><?php echo __('Opinion'); ?>:</label>
-            <div class="col-xs-12 col-sm-8">
-                <input id="c-opinion" class="form-control" name="row[opinion]" type="text">
-            </div>
-        </div>
-    </form>
-</div>
-<div class="hide layer-footer">
-    <label class="control-label col-xs-12 col-sm-2"></label>
-    <div class="col-xs-12 col-sm-8">
-        <button type="reset" class="btn btn-primary btn-embossed btn-close" onclick="Layer.closeAll();"><?php echo __('Close'); ?></button>
+    <div class="form-group">
+        <label class="col-xs-12 col-sm-2">项目名称:</label>
+        <div class="col-xs-12 col-sm-4">汉寿恒大御府</div>
     </div>
-</div>
+    <div class="form-group">
+        <label class="col-xs-12 col-sm-2">标段名称:</label>
+        <div class="col-xs-12 col-sm-4">A区</div>
+        <label class="col-xs-12 col-sm-2">项目经理:</label>
+        <div class="col-xs-12 col-sm-4">李恒孝</div>
+    </div>
+
+    <div class="form-group">
+        <label class="col-xs-12 col-sm-2">供应商名称:</label>
+        <div class="col-xs-12 col-sm-4">湖南鑫盛达钢材贸易有限公司</div>
+        <label class="col-xs-12 col-sm-2">联系电话:</label>
+        <div class="col-xs-12 col-sm-4">1388888888</div>
+    </div>
+    <div class="form-group">
+        <label class="col-xs-12 col-sm-2">合同名称:</label>
+        <div class="col-xs-12 col-sm-4">钢材采购合同</div>
+        <label class="col-xs-12 col-sm-2">合同总价:</label>
+        <div class="col-xs-12 col-sm-4">20000000.00</div>
+    </div>
+    <div class="form-group">
+        <label class="col-xs-12 col-sm-2">合同类型:</label>
+        <div class="col-xs-12 col-sm-4">钢材采购</div>
+        <label class="col-xs-12 col-sm-2">同类型欠款额:</label>
+        <div class="col-xs-12 col-sm-4">2000000.00</div>
+    </div>
+    <div class="form-group">
+        <label class="col-xs-12 col-sm-2">付款方式:</label>
+        <div class="col-xs-12 col-sm-10">撒打发斯蒂芬阿斯顿发送到发生付撒打发斯蒂芬阿斯顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬</div>
+    </div>
+    <div class="form-group">
+        <label class="col-xs-12 col-sm-2">结算方式:</label>
+        <div class="col-xs-12 col-sm-10">撒打发斯蒂芬阿斯顿发送到发生付撒打发斯蒂芬阿斯顿发斯蒂芬</div>
+    </div>
+    <div class="form-group">
+        <div class="col-xs-12 col-sm-12">
+            <table id="table" class="table table-striped table-bordered table-hover table-nowrap"
+                               data-operate-edit="<?php echo $auth->check('contract/info/edit'); ?>" 
+                               data-operate-del="<?php echo $auth->check('contract/info/del'); ?>" 
+                               width="100%">
+            </table>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-xs-12 col-sm-2"><?php echo __('Agreedata'); ?>:</label>
+        <div class="col-xs-12 col-sm-10">
+            
+            <div class="radio">
+            <?php if(is_array($agreedataList) || $agreedataList instanceof \think\Collection || $agreedataList instanceof \think\Paginator): if( count($agreedataList)==0 ) : echo "" ;else: foreach($agreedataList as $key=>$vo): ?>
+            <label for="row[agreedata]-<?php echo $key; ?>"><input id="row[agreedata]-<?php echo $key; ?>" name="row[agreedata]" type="radio" value="<?php echo $key; ?>" <?php if(in_array(($key), explode(',',"wait"))): ?>checked<?php endif; ?> /> <?php echo $vo; ?></label> 
+            <?php endforeach; endif; else: echo "" ;endif; ?>
+            </div>
+
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-xs-12 col-sm-2"><?php echo __('Opinion'); ?>:</label>
+        <div class="col-xs-12 col-sm-8">
+            <textarea id="c-opinion" class="form-control" rows="5" name="row[opinion]" type="text"></textarea>
+        </div>
+    </div>
+    <div class="hide layer-footer">
+        <label class="control-label col-xs-12 col-sm-2"></label>
+        <div class="col-xs-12 col-sm-8">
+            <button type="submit" class="btn btn-primary btn-embossed btn-success" onclick="Layer.closeAll();"><?php echo __('保存'); ?></button>
+        </div>
+    </div>
+</form>
                             </div>
                         </div>
                     </div>

@@ -41,6 +41,7 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
 
             // 为表格绑定事件
             Table.api.bindevent(table);
+            Controller.api.bindevent();
         },
         add: function () {
             Controller.api.bindevent();
@@ -50,6 +51,18 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
         },
         api: {
             bindevent: function () {
+                $("#c-project_section_ids").data("params", function(e){
+                    return {custom: {project_info_id: $("#c-project_info_id").val()}};
+                }); 
+
+                $('input:radio').click(function(event) {
+                    var radioValue = $(this).val();
+                    if(radioValue == 47){
+                        $("#c-company_info_id_text").attr("disabled",true);
+                    }else{
+                        $("#c-company_info_id_text").attr("disabled",false);
+                    }
+                });
                 Form.api.bindevent($("form[role=form]"));
             }
         }

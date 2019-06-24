@@ -80,6 +80,12 @@ class Info extends Backend
 
             return json($result);
         }
+        $list = model('Category')->where(['type' => 'cost'])->select();
+        foreach ($list as $row) {
+            $row->visible(['id','name']);
+        }
+        $list = collection($list)->toArray();
+        $this->view->assign("categoryList", $list);
         return $this->view->fetch();
     }
 }

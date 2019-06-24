@@ -94,8 +94,7 @@ class Verify extends Backend
 
     //审核
     public function examine($ids = null){
-        return $ids;
-        /*$params = $this->request->post("row/a");
+        $params = $this->request->post("row/a");
         $this->request->isAjax();
         $list = Db::table([                             
                             '__PROJECT_SECTION__' => 'project_section',
@@ -127,12 +126,8 @@ class Verify extends Backend
             'todayorder'       => 2324,
             'unsettleorder'    => 132,
             'sevendnu'         => '80%',
-            'sevendau'         => '32%',
-            'paylist'          => $paylist,
-            'createlist'       => $createlist,
-            'addonversion'       => $addonVersion,
-            'uploadmode'       => $uploadmode
+            'sevendau'         => '32%'
         ]);
-        return $this->view->fetch();*/
+        return $this->view->fetch();
     }
 }

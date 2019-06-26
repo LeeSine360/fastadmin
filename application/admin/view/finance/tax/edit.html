@@ -1,0 +1,100 @@
+<form id="edit-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="">
+
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Project_info_id')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-project_info_id" data-rule="required" data-source="project/info/index" class="form-control selectpage" name="row[project_info_id]" type="text" value="{$row.project_info_id|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Project_section_id')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-project_section_id" data-rule="required" data-source="project/section/index" class="form-control selectpage" name="row[project_section_id]" type="text" value="{$row.project_section_id|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Zzs')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-zzs" class="form-control" step="0.00001" name="row[zzs]" type="number" value="{$row.zzs|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Cjs')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-cjs" class="form-control" step="0.00001" name="row[cjs]" type="number" value="{$row.cjs|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Jyfj')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-jyfj" class="form-control" step="0.00001" name="row[jyfj]" type="number" value="{$row.jyfj|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Dfjyfj')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-dfjyfj" class="form-control" step="0.00001" name="row[dfjyfj]" type="number" value="{$row.dfjyfj|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Yhs')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-yhs" class="form-control" step="0.00001" name="row[yhs]" type="number" value="{$row.yhs|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Grsds_c')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-grsds_c" class="form-control" step="0.00001" name="row[grsds_c]" type="number" value="{$row.grsds_c|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Grsds_g')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-grsds_g" class="form-control" step="0.00001" name="row[grsds_g]" type="number" value="{$row.grsds_g|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Qtsr_g')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-qtsr_g" class="form-control" step="0.00001" name="row[qtsr_g]" type="number" value="{$row.qtsr_g|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Sljs')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-sljs" class="form-control" step="0.00001" name="row[sljs]" type="number" value="{$row.sljs|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Qysds')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-qysds" class="form-control" step="0.00001" name="row[qysds]" type="number" value="{$row.qysds|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Ghjf')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-ghjf" class="form-control" step="0.00001" name="row[ghjf]" type="number" value="{$row.ghjf|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Starttime')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-starttime" class="form-control datetimepicker" data-date-format="YYYY-MM-DD HH:mm:ss" data-use-current="true" name="row[starttime]" type="text" value="{:$row.starttime?datetime($row.starttime):''}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Creattime')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-creattime" class="form-control datetimepicker" data-date-format="YYYY-MM-DD HH:mm:ss" data-use-current="true" name="row[creattime]" type="text" value="{:$row.creattime?datetime($row.creattime):''}">
+        </div>
+    </div>
+    <div class="form-group layer-footer">
+        <label class="control-label col-xs-12 col-sm-2"></label>
+        <div class="col-xs-12 col-sm-8">
+            <button type="submit" class="btn btn-success btn-embossed disabled">{:__('OK')}</button>
+            <button type="reset" class="btn btn-default btn-embossed">{:__('Reset')}</button>
+        </div>
+    </div>
+</form>

@@ -8,6 +8,8 @@ return [
     'City'               => '城市',
     'Address'            => '地址',
     'Uploadimages'       => '证件上传',
+    'Bankname'           => '开户行名称',
+    'Account'            => '付款账号',
     'Remark'             => '备注',
     'Createtime'         => '创建日期',
     'Updatetime'         => '更新日期',
@@ -24,5 +26,5 @@ return [
     'Admin.createtime'   => '创建时间',
     'Admin.updatetime'   => '更新时间',
     'Admin.token'        => 'Session标识',
-    'Admin.status'       => '状态'
+    'Admin.status'       => '状态',
 ];

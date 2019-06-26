@@ -57,7 +57,7 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
 
                 $('input:radio').click(function(event) {
                     var radioValue = $(this).val();
-                    if(radioValue == 47){
+                    if(radioValue == 47 ){
                         $("#c-company_info_id_text").attr("disabled",true);
                     }else{
                         $("#c-company_info_id_text").attr("disabled",false);

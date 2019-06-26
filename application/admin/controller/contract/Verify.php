@@ -73,7 +73,7 @@ class Verify extends Backend
                     ->join('__PROJECT_INFO__ project_info','contract_info.project_info_id = project_info.id')
                     ->join('__COMPANY_INFO__ company_info','contract_info.company_info_id = company_info.id')
                     ->where('FIND_IN_SET(project_section.id,contract_info.project_section_ids)')
-                    ->where($where)
+                    //->where($where)
                     ->order($sort, $order)
                     ->select();
 
@@ -94,8 +94,9 @@ class Verify extends Backend
 
     //审核
     public function examine($ids = null){
-        $params = $this->request->post("row/a");
-        $this->request->isAjax();
+        /*$params = $this->request->post("row/a");
+        $this->request->isAjax();*/
+        list($where, $sort, $order, $offset, $limit) = $this->buildparams();
         $list = Db::table([                             
                             '__PROJECT_SECTION__' => 'project_section',
                             '__CONTRACT_VERIFY__' => 'contract_verify'
@@ -113,7 +114,7 @@ class Verify extends Backend
                 ->join('__PROJECT_INFO__ project_info','contract_info.project_info_id = project_info.id')
                 ->join('__COMPANY_INFO__ company_info','contract_info.company_info_id = company_info.id')
                 ->where('FIND_IN_SET(project_section.id,contract_info.project_section_ids)')
-                ->where($where)
+                //->where($where)
                 ->order($sort, $order)
                 ->select();
         $this->view->assign([

@@ -1,0 +1,178 @@
+<form id="edit-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="">
+
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Project_info_id')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-project_info_id" data-rule="required" data-source="project/info/index" class="form-control selectpage" name="row[project_info_id]" type="text" value="{$row.project_info_id|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Project_section_id')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-project_section_id" data-rule="required" data-source="project/section/index" class="form-control selectpage" name="row[project_section_id]" type="text" value="{$row.project_section_id|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Fplx')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-fplx" data-rule="required" class="form-control" name="row[fplx]" type="number" value="{$row.fplx|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Fpdm')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-fpdm" class="form-control" name="row[fpdm]" type="number" value="{$row.fpdm|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Fphm')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-fphm" class="form-control" name="row[fphm]" type="number" value="{$row.fphm|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Kprq')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-kprq" class="form-control" name="row[kprq]" type="number" value="{$row.kprq|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Xfmc')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-xfMc" class="form-control" name="row[xfMc]" type="text" value="{$row.xfMc|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Fplxname')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-fplxName" class="form-control" name="row[fplxName]" type="text" value="{$row.fplxName|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Sfmc')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-sfMc" class="form-control" name="row[sfMc]" type="text" value="{$row.sfMc|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Sfcode')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-sfCode" class="form-control" name="row[sfCode]" type="number" value="{$row.sfCode|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Xfnsrsbh')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-xfNsrsbh" class="form-control" name="row[xfNsrsbh]" type="number" value="{$row.xfNsrsbh|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Xfcontact')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-xfContact" class="form-control" name="row[xfContact]" type="text" value="{$row.xfContact|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Xfbank')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-xfBank" class="form-control" name="row[xfBank]" type="text" value="{$row.xfBank|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Gfmc')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-gfMc" class="form-control" name="row[gfMc]" type="text" value="{$row.gfMc|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Gfnsrsbh')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-gfNsrsbh" class="form-control" name="row[gfNsrsbh]" type="number" value="{$row.gfNsrsbh|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Gfcontact')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-gfContact" class="form-control" name="row[gfContact]" type="text" value="{$row.gfContact|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Gfbank')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-gfBank" class="form-control" name="row[gfBank]" type="text" value="{$row.gfBank|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Code')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-code" class="form-control" name="row[code]" type="number" value="{$row.code|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Num')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-num" class="form-control" name="row[num]" type="number" value="{$row.num|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Del')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-del" class="form-control" name="row[del]" type="text" value="{$row.del|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Taxamount')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-taxamount" class="form-control" step="0.01" name="row[taxamount]" type="number" value="{$row.taxamount|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Goodsamount')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-goodsamount" class="form-control" step="0.01" name="row[goodsamount]" type="number" value="{$row.goodsamount|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Sumamount')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-sumamount" class="form-control" step="0.01" name="row[sumamount]" type="number" value="{$row.sumamount|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Quantityamount')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-quantityAmount" class="form-control" name="row[quantityAmount]" type="number" value="{$row.quantityAmount|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Remark')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-remark" class="form-control" name="row[remark]" type="text" value="{$row.remark|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Isgoodslist')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-isGoodsList" class="form-control" name="row[isGoodsList]" type="text" value="{$row.isGoodsList|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Querycount')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-queryCount" class="form-control" name="row[queryCount]" type="number" value="{$row.queryCount|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Updatetime')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-updateTime" class="form-control datetimepicker" data-date-format="YYYY-MM-DD HH:mm:ss" data-use-current="true" name="row[updateTime]" type="text" value="{:$row.updateTime?datetime($row.updateTime):''}">
+        </div>
+    </div>
+    <div class="form-group layer-footer">
+        <label class="control-label col-xs-12 col-sm-2"></label>
+        <div class="col-xs-12 col-sm-8">
+            <button type="submit" class="btn btn-success btn-embossed disabled">{:__('OK')}</button>
+            <button type="reset" class="btn btn-default btn-embossed">{:__('Reset')}</button>
+        </div>
+    </div>
+</form>

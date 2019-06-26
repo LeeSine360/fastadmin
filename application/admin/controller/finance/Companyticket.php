@@ -1,27 +1,27 @@
 <?php
 
-namespace app\admin\controller\project;
+namespace app\admin\controller\finance;
 
 use app\common\controller\Backend;
 
 /**
- * 项目经理
+ * 供应商发票管理
  *
  * @icon fa fa-circle-o
  */
-class Manager extends Backend
+class Companyticket extends Backend
 {
     
     /**
-     * Manager模型对象
-     * @var \app\admin\model\project\Manager
+     * Companyticket模型对象
+     * @var \app\admin\model\finance\Companyticket
      */
     protected $model = null;
 
     public function _initialize()
     {
         parent::_initialize();
-        $this->model = new \app\admin\model\ProjectManager;
+        $this->model = new \app\admin\model\FinanceCompanyticket;
 
     }
     
@@ -50,21 +50,24 @@ class Manager extends Backend
             }
             list($where, $sort, $order, $offset, $limit) = $this->buildparams();
             $total = $this->model
-                    ->with(['admin'])
+                    ->with(['projectinfo','projectsection'])
                     ->where($where)
                     ->order($sort, $order)
                     ->count();
 
             $list = $this->model
-                    ->with(['admin'])
+                    ->with(['projectinfo','projectsection'])
                     ->where($where)
                     ->order($sort, $order)
                     ->limit($offset, $limit)
                     ->select();
 
             foreach ($list as $row) {
-                $row->visible(['name','phone','bankname','account','createtime','admin_id']);
-                $row->visible(['admin']);
+                $row->visible(['id','fpdm','fphm','xfMc','fplxName','sfMc','gfMc','del','taxamount','goodsamount','sumamount','quantityAmount','remark','admin_id']);
+                $row->visible(['projectinfo']);
+				$row->getRelation('projectinfo')->visible(['name']);
+				$row->visible(['projectsection']);
+				$row->getRelation('projectsection')->visible(['name']);
             }
             $list = collection($list)->toArray();
             $result = array("total" => $total, "rows" => $list);

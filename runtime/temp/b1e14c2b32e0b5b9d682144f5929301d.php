@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:80:"C:\xampp\htdocs\fastadmin\public/../application/admin\view\finance\info\add.html";i:1558317969;s:68:"C:\xampp\htdocs\fastadmin\application\admin\view\layout\default.html";i:1557482263;s:65:"C:\xampp\htdocs\fastadmin\application\admin\view\common\meta.html";i:1557482263;s:67:"C:\xampp\htdocs\fastadmin\application\admin\view\common\script.html";i:1557482263;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:79:"C:\xampp\htdocs\fastadmin\public/../application/admin\view\budget\info\add.html";i:1561604392;s:68:"C:\xampp\htdocs\fastadmin\application\admin\view\layout\default.html";i:1557482263;s:65:"C:\xampp\htdocs\fastadmin\application\admin\view\common\meta.html";i:1557482263;s:67:"C:\xampp\htdocs\fastadmin\application\admin\view\common\script.html";i:1557482263;}*/ ?>
 <!DOCTYPE html>
 <html lang="<?php echo $config['language']; ?>">
     <head>
@@ -65,39 +65,27 @@
         </div>
     </div>
     <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Company_info_id'); ?>:</label>
+        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Category_id'); ?>:</label>
         <div class="col-xs-12 col-sm-8">
-            <input id="c-company_info_id" data-rule="required" data-source="company/info/index" class="form-control selectpage" name="row[company_info_id]" type="text" value="">
+            <input id="c-category_id" data-rule="required" data-source="category/selectpage" data-params='{"custom[type]":"budget_info"}' class="form-control selectpage" name="row[category_id]" type="text" value="">
         </div>
     </div>
     <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Category_id'); ?>:</label>
+        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Amount'); ?>:</label>
         <div class="col-xs-12 col-sm-8">
-            <input id="c-category_id" data-rule="required" data-source="category/selectpage" data-params='{"custom[type]":"finance_info"}' class="form-control selectpage" name="row[category_id]" type="text" value="">
+            <input id="c-amount" class="form-control" step="0.01" name="row[amount]" type="number">
         </div>
     </div>
     <div class="form-group">
         <label class="control-label col-xs-12 col-sm-2"><?php echo __('Price'); ?>:</label>
         <div class="col-xs-12 col-sm-8">
-            <input id="c-price" data-rule="required" class="form-control" name="row[price]" type="number">
+            <input id="c-price" data-rule="required" class="form-control" step="0.01" name="row[price]" type="number">
         </div>
     </div>
     <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Contacts'); ?>:</label>
+        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Remarkcontext'); ?>:</label>
         <div class="col-xs-12 col-sm-8">
-            <input id="c-contacts" data-rule="required" class="form-control" name="row[contacts]" type="text">
-        </div>
-    </div>
-    <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Phone'); ?>:</label>
-        <div class="col-xs-12 col-sm-8">
-            <input id="c-phone" data-rule="required" class="form-control" name="row[phone]" type="text">
-        </div>
-    </div>
-    <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Remark'); ?>:</label>
-        <div class="col-xs-12 col-sm-8">
-            <textarea id="c-remark" class="form-control " rows="5" name="row[remark]" cols="50"></textarea>
+            <textarea id="c-remarkcontext" class="form-control " rows="5" name="row[remarkcontext]" cols="50"></textarea>
         </div>
     </div>
     <div class="form-group layer-footer">

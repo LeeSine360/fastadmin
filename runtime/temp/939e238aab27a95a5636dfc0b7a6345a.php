@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:87:"C:\xampp\htdocs\fastadmin\public/../application/admin\view\contract\verify\examine.html";i:1561103914;s:68:"C:\xampp\htdocs\fastadmin\application\admin\view\layout\default.html";i:1557482263;s:65:"C:\xampp\htdocs\fastadmin\application\admin\view\common\meta.html";i:1557482263;s:67:"C:\xampp\htdocs\fastadmin\application\admin\view\common\script.html";i:1557482263;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:87:"C:\xampp\htdocs\fastadmin\public/../application/admin\view\contract\verify\examine.html";i:1561602567;s:68:"C:\xampp\htdocs\fastadmin\application\admin\view\layout\default.html";i:1557482263;s:65:"C:\xampp\htdocs\fastadmin\application\admin\view\common\meta.html";i:1557482263;s:67:"C:\xampp\htdocs\fastadmin\application\admin\view\common\script.html";i:1557482263;}*/ ?>
 <!DOCTYPE html>
 <html lang="<?php echo $config['language']; ?>">
     <head>
@@ -92,6 +92,12 @@
         <div class="col-xs-12 col-sm-4">钢材采购</div>
         <label class="col-xs-12 col-sm-2">同类型欠款额:</label>
         <div class="col-xs-12 col-sm-4">2000000.00</div>
+    </div>
+    <div class="form-group">
+        <label class="col-xs-12 col-sm-2">预算金额:</label>
+        <div class="col-xs-12 col-sm-4">226000.00</div>
+        <label class="col-xs-12 col-sm-2">合计签订金额:</label>
+        <div class="col-xs-12 col-sm-4">63180000.00</div>
     </div>
     <div class="form-group">
         <label class="col-xs-12 col-sm-2">付款方式:</label>

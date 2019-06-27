@@ -13,6 +13,7 @@ return [
     'Admin_id'          => '操作人',
     'Createtime'        => '创建日期',
     'Updatetime'        => '更新日期',
-    'Contractinfo.name' => '合同名称',
+    'ContractinfoName' => '合同名称',
+    'ContractinfoNumber' => '合同编号',
     'Admin.username'    => '用户名'
 ];

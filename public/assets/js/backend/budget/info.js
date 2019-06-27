@@ -5,12 +5,12 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
             // 初始化表格参数配置
             Table.api.init({
                 extend: {
-                    index_url: 'contract/synthetical/index' + location.search,
-                    add_url: 'contract/synthetical/add',
-                    edit_url: 'contract/synthetical/edit',
-                    del_url: 'contract/synthetical/del',
-                    multi_url: 'contract/synthetical/multi',
-                    table: 'contract_synthetical',
+                    index_url: 'budget/info/index' + location.search,
+                    add_url: 'budget/info/add',
+                    edit_url: 'budget/info/edit',
+                    del_url: 'budget/info/del',
+                    multi_url: 'budget/info/multi',
+                    table: 'budget_info',
                 }
             });
 
@@ -23,16 +23,15 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
                 sortName: 'id',
                 columns: [
                     [
-                        {checkbox: true, visible : false},
-                        {field: 'id', title: __('Id'), visible : false},
-                        {field: 'contractInfoNumber', title: __('ContractinfoNumber')},
-                        {field: 'contractInfoName', title: __('ContractinfoName')},
-                        {field: 'agreedata', title: __('Agreedata'), searchList: {"wait":__('Agreedata wait'),"agree":__('Agreedata agree'),"veto":__('Agreedata veto')}, formatter: Table.api.formatter.normal},
-                        {field: 'opinion', title: __('Opinion')},
-                        {field: 'number', title: __('Number')},
-                        {field: 'contacts', title: __('Contacts')},
-                        {field: 'phone', title: __('Phone')},
+                        {checkbox: true},
+                        {field: 'id', title: __('Id')},
+                        {field: 'amount', title: __('Amount'), operate:'BETWEEN'},
+                        {field: 'price', title: __('Price'), operate:'BETWEEN'},
                         {field: 'createtime', title: __('Createtime'), operate:'RANGE', addclass:'datetimerange', formatter: Table.api.formatter.datetime},
+                        {field: 'projectinfo.name', title: __('Projectinfo.name')},
+                        {field: 'projectsection.name', title: __('Projectsection.name')},
+                        {field: 'category.name', title: __('Category.name')},
+                        {field: 'admin.username', title: __('Admin.username')},
                         {field: 'operate', title: __('Operate'), table: table, events: Table.api.events.operate, formatter: Table.api.formatter.operate}
                     ]
                 ]
@@ -40,6 +39,7 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
 
             // 为表格绑定事件
             Table.api.bindevent(table);
+            Controller.api.bindevent();
         },
         add: function () {
             Controller.api.bindevent();
@@ -49,6 +49,10 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
         },
         api: {
             bindevent: function () {
+                 $("#c-project_section_ids").data("params", function(e){
+                    var proId = $("#c-project_info_id").val();
+                    return {custom: {project_info_id: proId}};
+                }); 
                 Form.api.bindevent($("form[role=form]"));
             }
         }

@@ -1,29 +1,28 @@
 <?php
 
-namespace app\admin\controller\contract;
+namespace app\admin\controller\budget;
 
 use app\common\controller\Backend;
-use think\Db;
 
 /**
- * 合同审核（综合部）
+ * 标段预算
  *
  * @icon fa fa-circle-o
  */
-class Synthetical extends Backend
+class Info extends Backend
 {
     
     /**
-     * Synthetical模型对象
-     * @var \app\admin\model\contract\Synthetical
+     * Info模型对象
+     * @var \app\admin\model\budget\Info
      */
     protected $model = null;
 
     public function _initialize()
     {
         parent::_initialize();
-        $this->model = new \app\admin\model\ContractSynthetical;
-        $this->view->assign("agreedataList", $this->model->getAgreedataList());
+        $this->model = new \app\admin\model\BudgetInfo;
+
     }
     
     /**
@@ -51,31 +50,30 @@ class Synthetical extends Backend
             }
             list($where, $sort, $order, $offset, $limit) = $this->buildparams();
             $total = $this->model
-                    ->with(['contractinfo','admin'])
+                    ->with(['projectinfo','projectsection','category','admin'])
                     ->where($where)
                     ->order($sort, $order)
                     ->count();
 
-            $list = Db::table([     
-                                '__CONTRACT_SYNTHETICAL__' => 'contract_synthetical'
-                            ])  
-                    ->field('
-                        contract_synthetical.id as id,
-                        CONCAT(project_info.number,\'-材\',contract_info.number) as contractInfoNumber,
-                        contract_info.name as contractInfoName,
-                        contract_synthetical.agreedata as agreedata,
-                        contract_synthetical.opinion,
-                        contract_synthetical.number,
-                        contract_synthetical.contacts,
-                        contract_synthetical.phone,
-                        contract_synthetical.createtime
-                    ')
-                    ->join('__CONTRACT_INFO__ contract_info','contract_info.id = contract_synthetical.contract_info_id')
-                    ->join('__PROJECT_INFO__ project_info','contract_info.project_info_id = project_info.id')       
+            $list = $this->model
+                    ->with(['projectinfo','projectsection','category','admin'])
                     ->where($where)
-                    ->order($sort, $order)     
+                    ->order($sort, $order)
+                    ->limit($offset, $limit)
                     ->select();
 
+            foreach ($list as $row) {
+                $row->visible(['id','amount','price','remarkcontext','createtime']);
+                $row->visible(['projectinfo']);
+				$row->getRelation('projectinfo')->visible(['name']);
+				$row->visible(['projectsection']);
+				$row->getRelation('projectsection')->visible(['name']);
+				$row->visible(['category']);
+				$row->getRelation('category')->visible(['name']);
+				$row->visible(['admin']);
+				$row->getRelation('admin')->visible(['username']);
+            }
+            $list = collection($list)->toArray();
             $result = array("total" => $total, "rows" => $list);
 
             return json($result);

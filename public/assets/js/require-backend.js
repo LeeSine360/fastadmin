@@ -51,6 +51,7 @@ require.config({
         'selectpage': '../libs/fastadmin-selectpage/selectpage',
         'citypicker': '../libs/fastadmin-citypicker/dist/js/city-picker.min',
         'citypicker-data': '../libs/fastadmin-citypicker/dist/js/city-picker.data',
+        'viewer': '../libs/viewerjs/dist/viewer.min',
     },
     // shim依赖配置
     shim: {
@@ -107,6 +108,7 @@ require.config({
         'bootstrap-select-lang': ['bootstrap-select'],
 //        'toastr': ['css!../libs/toastr/toastr.min.css'],
         'jstree': ['css!../libs/jstree/dist/themes/default/style.css',],
+        'viewer': ['css!../libs/viewerjs/dist/viewer.min.css'],
         'plupload': {
             deps: ['../libs/plupload/js/moxie.min'],
             exports: "plupload"

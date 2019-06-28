@@ -16,6 +16,6 @@ return [
     'Creattime'           => '创建日期',
     'Updatetime'          => '更新日期',
     'Admin_id'            => '操作人',
-    'Projectinfo.name'    => '项目名称',
-    'Projectsection.name' => '标段名称'
+    'Project_info_id'    => '项目名称',
+    'Project_section_id' => '标段名称'
 ];

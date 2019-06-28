@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:86:"C:\xampp\htdocs\fastadmin\public/../application/admin\view\contract\project\index.html";i:1561684421;s:68:"C:\xampp\htdocs\fastadmin\application\admin\view\layout\default.html";i:1557482263;s:65:"C:\xampp\htdocs\fastadmin\application\admin\view\common\meta.html";i:1557482263;s:67:"C:\xampp\htdocs\fastadmin\application\admin\view\common\script.html";i:1557482263;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:88:"C:\xampp\htdocs\fastadmin\public/../application/admin\view\example\multitable\index.html";i:1557970796;s:68:"C:\xampp\htdocs\fastadmin\application\admin\view\layout\default.html";i:1557482263;s:65:"C:\xampp\htdocs\fastadmin\application\admin\view\common\meta.html";i:1557482263;s:67:"C:\xampp\htdocs\fastadmin\application\admin\view\common\script.html";i:1557482263;}*/ ?>
 <!DOCTYPE html>
 <html lang="<?php echo $config['language']; ?>">
     <head>
@@ -51,27 +51,32 @@
                             <?php endif; ?>
                             <div class="content">
                                 <div class="panel panel-default panel-intro">
-    <?php echo build_heading(); ?>
-
+    <div class="panel-heading">
+        <div class="panel-lead"><em>多表格（Multitable）</em>用于展示在一个页面展示多个表格数据,并且每次切换时刷新</div>
+        <ul class="nav nav-tabs">
+            <li class="active"><a href="#first" data-toggle="tab">表格1</a></li>
+            <li><a href="#second" data-toggle="tab">表格2</a></li>
+        </ul>
+    </div>
     <div class="panel-body">
         <div id="myTabContent" class="tab-content">
-            <div class="tab-pane fade active in" id="one">
-                <div class="widget-body no-padding">
-                    <div id="toolbar" class="toolbar">
-                        <?php echo build_toolbar('refresh'); ?>
-                    </div>
-                    <table id="table" class="table table-striped table-bordered table-hover table-nowrap"
-                           data-operate-edit="<?php echo $auth->check('contract/project/edit'); ?>" 
-                           data-operate-del="<?php echo $auth->check('contract/project/del'); ?>" 
-                           width="100%">
-                    </table>
+            <div class="tab-pane fade active in" id="first">
+                <div id="toolbar1" class="toolbar">
+                    <?php echo build_toolbar('refresh'); ?>
                 </div>
+                <table id="table1" class="table table-striped table-bordered table-hover" width="100%">
+                </table>
             </div>
-
+            <div class="tab-pane fade" id="second">
+                <div id="toolbar2" class="toolbar">
+                    <?php echo build_toolbar('refresh'); ?>
+                </div>
+                <table id="table2" class="table table-striped table-bordered table-hover" width="100%">
+                </table>
+            </div>
         </div>
     </div>
 </div>
-
                             </div>
                         </div>
                     </div>

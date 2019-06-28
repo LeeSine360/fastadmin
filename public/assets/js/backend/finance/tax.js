@@ -24,7 +24,10 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
                 columns: [
                     [
                         {checkbox: true},
-                        {field: 'id', title: __('Id')},
+                        {field: 'id', title: __('ID')},
+                        {field: 'projectinfo.name', title: __('Projectinfo.name')},
+                        {field: 'projectsection.name', title: __('Projectsection.name')},
+                        {field: 'starttime', title: __('Starttime'), operate:'RANGE', addclass:'datetimerange', formatter: Table.api.formatter.datetime},
                         {field: 'zzs', title: __('Zzs'), operate:'BETWEEN'},
                         {field: 'cjs', title: __('Cjs'), operate:'BETWEEN'},
                         {field: 'jyfj', title: __('Jyfj'), operate:'BETWEEN'},
@@ -35,11 +38,8 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
                         {field: 'qtsr_g', title: __('Qtsr_g'), operate:'BETWEEN'},
                         {field: 'sljs', title: __('Sljs'), operate:'BETWEEN'},
                         {field: 'qysds', title: __('Qysds'), operate:'BETWEEN'},
-                        {field: 'ghjf', title: __('Ghjf'), operate:'BETWEEN'},
-                        {field: 'starttime', title: __('Starttime'), operate:'RANGE', addclass:'datetimerange', formatter: Table.api.formatter.datetime},
-                        {field: 'creattime', title: __('Creattime'), operate:'RANGE', addclass:'datetimerange', formatter: Table.api.formatter.datetime},
-                        {field: 'projectinfo.name', title: __('Projectinfo.name')},
-                        {field: 'projectsection.name', title: __('Projectsection.name')},
+                        {field: 'ghjf', title: __('Ghjf'), operate:'BETWEEN'},                        
+                        {field: 'creattime', title: __('Creattime'), operate:'RANGE', addclass:'datetimerange', formatter: Table.api.formatter.datetime},                        
                         {field: 'operate', title: __('Operate'), table: table, events: Table.api.events.operate, formatter: Table.api.formatter.operate}
                     ]
                 ]

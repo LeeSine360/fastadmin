@@ -24,7 +24,9 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
                 columns: [
                     [
                         {checkbox: true},
-                        {field: 'id', title: __('Id')},
+                        {field: 'id', title: __('ID')},
+                        {field: 'projectinfo.name', title: __('Projectinfo.name')},
+                        {field: 'projectsection.name', title: __('Projectsection.name')},
                         {field: 'fpdm', title: __('Fpdm')},
                         {field: 'fphm', title: __('Fphm')},
                         {field: 'xfMc', title: __('Xfmc')},
@@ -37,9 +39,7 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
                         {field: 'sumamount', title: __('Sumamount'), operate:'BETWEEN'},
                         {field: 'quantityAmount', title: __('Quantityamount')},
                         {field: 'remark', title: __('Remark')},
-                        {field: 'admin_id', title: __('Admin_id')},
-                        {field: 'projectinfo.name', title: __('Projectinfo.name')},
-                        {field: 'projectsection.name', title: __('Projectsection.name')},
+                        {field: 'admin_id', title: __('Admin_id')},                        
                         {field: 'operate', title: __('Operate'), table: table, events: Table.api.events.operate, formatter: Table.api.formatter.operate}
                     ]
                 ]

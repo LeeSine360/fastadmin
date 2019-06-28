@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:83:"C:\xampp\htdocs\fastadmin\public/../application/admin\view\contract\info\index.html";i:1561689588;s:68:"C:\xampp\htdocs\fastadmin\application\admin\view\layout\default.html";i:1557482263;s:65:"C:\xampp\htdocs\fastadmin\application\admin\view\common\meta.html";i:1557482263;s:67:"C:\xampp\htdocs\fastadmin\application\admin\view\common\script.html";i:1557482263;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:82:"C:\xampp\htdocs\fastadmin\public/../application/admin\view\company\info\index.html";i:1557972988;s:68:"C:\xampp\htdocs\fastadmin\application\admin\view\layout\default.html";i:1557482263;s:65:"C:\xampp\htdocs\fastadmin\application\admin\view\common\meta.html";i:1557482263;s:67:"C:\xampp\htdocs\fastadmin\application\admin\view\common\script.html";i:1557482263;}*/ ?>
 <!DOCTYPE html>
 <html lang="<?php echo $config['language']; ?>">
     <head>
@@ -53,7 +53,7 @@
                                 <div class="panel panel-default panel-intro">
     <div class="panel-heading">
         <ul class="nav nav-tabs">
-            <li class="active"><a href="#one" data-toggle="tab">合同列表</a></li>
+            <li class="active"><a href="#one" data-toggle="tab">供应商列表</a></li>
             <li><a href="#two" data-toggle="tab">添加</a></li>
         </ul>
     </div>
@@ -63,126 +63,90 @@
                 <div class="widget-body no-padding">
                     <div id="toolbar" class="toolbar">
                         <a href="javascript:;" class="btn btn-primary btn-refresh" title="<?php echo __('Refresh'); ?>" ><i class="fa fa-refresh"></i> </a>
-                        <a href="javascript:;" class="btn btn-success btn-add <?php echo $auth->check('contract/info/add')?'':'hide'; ?>" title="<?php echo __('Add'); ?>" ><i class="fa fa-plus"></i> <?php echo __('Add'); ?></a>
-                        <a href="javascript:;" class="btn btn-success btn-edit btn-disabled disabled <?php echo $auth->check('contract/info/edit')?'':'hide'; ?>" title="<?php echo __('Edit'); ?>" ><i class="fa fa-pencil"></i> <?php echo __('Edit'); ?></a>
-                        <a href="javascript:;" class="btn btn-danger btn-del btn-disabled disabled <?php echo $auth->check('contract/info/del')?'':'hide'; ?>" title="<?php echo __('Delete'); ?>" ><i class="fa fa-trash"></i> <?php echo __('Delete'); ?></a>
-                        <a href="javascript:;" class="btn btn-danger btn-import <?php echo $auth->check('contract/info/import')?'':'hide'; ?>" title="<?php echo __('Import'); ?>" id="btn-import-file" data-url="ajax/upload" data-mimetype="csv,xls,xlsx" data-multiple="false"><i class="fa fa-upload"></i> <?php echo __('Import'); ?></a>
+                        <a href="javascript:;" class="btn btn-success btn-add <?php echo $auth->check('company/info/add')?'':'hide'; ?>" title="<?php echo __('Add'); ?>" ><i class="fa fa-plus"></i> <?php echo __('Add'); ?></a>
+                        <a href="javascript:;" class="btn btn-success btn-edit btn-disabled disabled <?php echo $auth->check('company/info/edit')?'':'hide'; ?>" title="<?php echo __('Edit'); ?>" ><i class="fa fa-pencil"></i> <?php echo __('Edit'); ?></a>
+                        <a href="javascript:;" class="btn btn-danger btn-del btn-disabled disabled <?php echo $auth->check('company/info/del')?'':'hide'; ?>" title="<?php echo __('Delete'); ?>" ><i class="fa fa-trash"></i> <?php echo __('Delete'); ?></a>
+                        <a href="javascript:;" class="btn btn-danger btn-import <?php echo $auth->check('company/info/import')?'':'hide'; ?>" title="<?php echo __('Import'); ?>" id="btn-import-file" data-url="ajax/upload" data-mimetype="csv,xls,xlsx" data-multiple="false"><i class="fa fa-upload"></i> <?php echo __('Import'); ?></a>
 
-                        <div class="dropdown btn-group <?php echo $auth->check('contract/info/multi')?'':'hide'; ?>">
+                        <div class="dropdown btn-group <?php echo $auth->check('company/info/multi')?'':'hide'; ?>">
                             <a class="btn btn-primary btn-more dropdown-toggle btn-disabled disabled" data-toggle="dropdown"><i class="fa fa-cog"></i> <?php echo __('More'); ?></a>
                             <ul class="dropdown-menu text-left" role="menu">
                                 <li><a class="btn btn-link btn-multi btn-disabled disabled" href="javascript:;" data-params="status=normal"><i class="fa fa-eye"></i> <?php echo __('Set to normal'); ?></a></li>
                                 <li><a class="btn btn-link btn-multi btn-disabled disabled" href="javascript:;" data-params="status=hidden"><i class="fa fa-eye-slash"></i> <?php echo __('Set to hidden'); ?></a></li>
                             </ul>
                         </div>
-
-                        
                     </div>
                     <table id="table" class="table table-striped table-bordered table-hover table-nowrap"
-                           data-operate-edit="<?php echo $auth->check('contract/info/edit'); ?>" 
-                           data-operate-del="<?php echo $auth->check('contract/info/del'); ?>" 
+                           data-operate-edit="<?php echo $auth->check('company/info/edit'); ?>" 
+                           data-operate-del="<?php echo $auth->check('company/info/del'); ?>" 
                            width="100%">
                     </table>
                 </div>
             </div>
-            
+
             <div class="tab-pane fade" id="two">
-                <form id="add-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="contract/info/add">
+                <div class="bs-bars pull-right">
+                    <a href="javascript:;" class="btn btn-primary com-btn-refresh" title="刷新"><i class="fa fa-refresh"></i> 获取信息</a>
+                </div><br/>
+                <form id="add-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="company/info/add">
+
                     <div class="row form-row-height">
-                        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Project_info_id'); ?>:</label>
-                        <div class="col-xs-12 col-sm-3">
-                            <input id="c-project_info_id" data-rule="required" data-source="project/info/index" showField='short' class="form-control selectpage" name="row[project_info_id]" type="text" value="">
-                        </div>
-                        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Project_section_id'); ?>:</label>
-                        <div class="col-xs-12 col-sm-3">
-                            <input id="c-project_section_ids" data-rule="required" data-source="project/section/index" data-multiple="true" class="form-control selectpage" name="row[project_section_ids]" type="text" value="">
-                        </div>
-                    </div>
-                    <div class="row form-row-height">
-                        <label class="control-label col-xs-12 col-sm-2"><?php echo __('company_info_id'); ?>:</label>
-                        <div class="col-xs-12 col-sm-3">
-                            <input id="c-company_info_id" data-rule="required" data-source="company/info/index" class="form-control selectpage" name="row[company_info_id]" type="text" value="">
-                        </div>
                         <label class="control-label col-xs-12 col-sm-2"><?php echo __('Name'); ?>:</label>
                         <div class="col-xs-12 col-sm-3">
                             <input id="c-name" data-rule="required" class="form-control" name="row[name]" type="text">
                         </div>
-                    </div>
-                    <div class="row form-row-height">
-                        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Category_id'); ?>:</label>
-                        <div class="col-xs-12 col-sm-6">
-                            <!--<input id="c-category_id" data-rule="required" data-source="category/selectpage" data-params='{"custom[type]":"classify","custom[pid]":0}' class="form-control selectpage" name="row[category_id]" type="text" value="">-->
-                            <div class="form-inline" data-toggle="cxselect" data-selects="first,second">
-                                <select class="first form-control" name="row[category_id]" data-url="ajax/category?type=classify&pid=0"></select>
-                                <select class="second form-control" name="row[label_ids]" data-url="ajax/category" data-query-name="pid"></select>
-                                <a href="http://www.baidu.com">百度</a>
-                            </div>
-                        </div>
-                        <!--<label class="control-label col-xs-12 col-sm-2"><?php echo __('Label_ids'); ?>:</label>
+                        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Code'); ?>:</label>
                         <div class="col-xs-12 col-sm-3">
-                            <input id="c-label_ids" data-rule="required" data-source="label/index" data-multiple="true" class="form-control selectpage" name="row[label_ids]" type="text" value="">
-                        </div>-->
-                    </div>
-                    <div class="row form-row-height">
-                        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Price'); ?>:</label>
-                        <div class="col-xs-12 col-sm-3">
-                            <div class="input-group">
-                                <input id="c-price" class="form-control" step="1000" name="row[price]" type="number">
-                                <span class="input-group-addon">元</span>
-                            </div>  
-                        </div>
-                        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Number'); ?>:</label>
-                        <div class="col-xs-12 col-sm-3">
-                            <input id="c-number" data-rule="required" class="form-control" step="1" name="row[number]" type="number">
+                            <input id="c-code" class="form-control" name="row[code]" type="text">
                         </div>
                     </div>
                     <div class="row form-row-height">
-                        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Signdate'); ?>:</label>
+                        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Type'); ?>:</label>
                         <div class="col-xs-12 col-sm-3">
-                            <input id="c-signdate" class="form-control datetimepicker" data-date-format="YYYY-MM-DD" data-use-current="true" name="row[signdate]" type="text" value="<?php echo date('Y-m-d'); ?>">
+                            <input id="c-type" class="form-control" name="row[type]" type="text">
                         </div>
-                        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Expirydate'); ?>:</label>
+                        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Regcapital'); ?>:</label>
                         <div class="col-xs-12 col-sm-3">
-                            <input id="c-expirydate" class="form-control datetimepicker" data-date-format="YYYY-MM-DD" data-use-current="true" name="row[expirydate]" type="text" value="<?php echo date('Y-m-d'); ?>">
+                            <input id="c-regCapital" class="form-control" name="row[regCapital]" type="text">
                         </div>
                     </div>
+
                     <div class="row form-row-height">
                         <label class="control-label col-xs-12 col-sm-2"><?php echo __('Contacts'); ?>:</label>
                         <div class="col-xs-12 col-sm-3">
-                            <input id="c-operatorname" class="form-control" name="row[operatorname]" type="text">
+                            <input id="c-contacts" class="form-control" name="row[contacts]" type="text">
                         </div>
                         <label class="control-label col-xs-12 col-sm-2"><?php echo __('Phone'); ?>:</label>
                         <div class="col-xs-12 col-sm-3">
-                            <input id="c-phone" data-rule="required" class="form-control" name="row[phone]" type="text">
+                            <input id="c-phone" class="form-control" name="row[phone]" type="text">
                         </div>
                     </div>
                     <div class="row form-row-height">
-                        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Operatorname'); ?>:</label>
+                        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Scope'); ?>:</label>
+                        <div class="col-xs-12 col-sm-8">
+                            <textarea id="c-scope" class="form-control" rows="5" name="row[scope]" cols="50"></textarea>
+                        </div>
+                    </div>
+                    <div class="row form-row-height">
+                        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Address'); ?>:</label>
+                        <div class="col-xs-12 col-sm-8">
+                            <input id="c-address" class="form-control" name="row[address]" type="text">
+                        </div>
+                    </div>
+                    <div class="row form-row-height">
+                        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Payname'); ?>:</label>
                         <div class="col-xs-12 col-sm-3">
-                            <input id="c-operatorname" class="form-control" name="row[operatorname]" type="text">
+                            <input id="c-address" class="form-control" name="row[address]" type="text">
                         </div>
-                        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Operatorphone'); ?>:</label>
+                    </div>
+                    <div class="row form-row-height">
+                        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Account'); ?>:</label>
                         <div class="col-xs-12 col-sm-3">
-                            <input id="c-operatorphone" class="form-control" name="row[operatorphone]" type="text">
+                            <input id="c-account" class="form-control" name="row[account]" type="text">
                         </div>
-                    </div>
-                    
-                    <div class="row form-row-height">
-                        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Settlement'); ?>:</label>
-                        <div class="col-xs-12 col-sm-8">
-                            <textarea id="c-settlement" class="form-control " rows="5" name="row[settlement]" cols="50"></textarea>
-                        </div>
-                    </div>
-                    <!--<div class="row form-row-height">
-                        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Content'); ?>:</label>
-                        <div class="col-xs-12 col-sm-8">
-                            <textarea id="c-content" class="form-control" rows="5" name="row[content]" cols="50"></textarea>
-                        </div>
-                    </div>-->
-                    <div class="row form-row-height">
-                        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Remark'); ?>:</label>
-                        <div class="col-xs-12 col-sm-8">
-                            <textarea id="c-Remark" class="form-control " rows="5" name="row[Remark]" cols="50"></textarea>
+                        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Bankname'); ?>:</label>
+                        <div class="col-xs-12 col-sm-3">
+                            <input id="c-bankname" class="form-control" name="row[bankname]" type="text">
                         </div>
                     </div>
                     <div class="row form-row-height">
@@ -209,6 +173,7 @@
                 </form>
 
             </div>
+
         </div>
     </div>
 </div>

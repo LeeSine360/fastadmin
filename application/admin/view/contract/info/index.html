@@ -41,7 +41,7 @@
                         <div class="col-xs-12 col-sm-3">
                             <input id="c-project_info_id" data-rule="required" data-source="project/info/index" showField='short' class="form-control selectpage" name="row[project_info_id]" type="text" value="">
                         </div>
-                        <label class="control-label col-xs-12 col-sm-2">{:__('Project_section_ids')}:</label>
+                        <label class="control-label col-xs-12 col-sm-2">{:__('Project_section_id')}:</label>
                         <div class="col-xs-12 col-sm-3">
                             <input id="c-project_section_ids" data-rule="required" data-source="project/section/index" data-multiple="true" class="form-control selectpage" name="row[project_section_ids]" type="text" value="">
                         </div>
@@ -74,7 +74,10 @@
                     <div class="row form-row-height">
                         <label class="control-label col-xs-12 col-sm-2">{:__('Price')}:</label>
                         <div class="col-xs-12 col-sm-3">
-                            <input id="c-price" class="form-control" step="1000" name="row[price]" type="number">
+                            <div class="input-group">
+                                <input id="c-price" class="form-control" step="1000" name="row[price]" type="number">
+                                <span class="input-group-addon">元</span>
+                            </div>  
                         </div>
                         <label class="control-label col-xs-12 col-sm-2">{:__('Number')}:</label>
                         <div class="col-xs-12 col-sm-3">

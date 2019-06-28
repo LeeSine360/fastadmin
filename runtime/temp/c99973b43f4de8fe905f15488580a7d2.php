@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:86:"C:\xampp\htdocs\fastadmin\public/../application/admin\view\contract\project\index.html";i:1561684421;s:68:"C:\xampp\htdocs\fastadmin\application\admin\view\layout\default.html";i:1557482263;s:65:"C:\xampp\htdocs\fastadmin\application\admin\view\common\meta.html";i:1557482263;s:67:"C:\xampp\htdocs\fastadmin\application\admin\view\common\script.html";i:1557482263;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:92:"C:\xampp\htdocs\fastadmin\public/../application/admin\view\example\bootstraptable\index.html";i:1557970796;s:68:"C:\xampp\htdocs\fastadmin\application\admin\view\layout\default.html";i:1557482263;s:65:"C:\xampp\htdocs\fastadmin\application\admin\view\common\meta.html";i:1557482263;s:67:"C:\xampp\htdocs\fastadmin\application\admin\view\common\script.html";i:1557482263;}*/ ?>
 <!DOCTYPE html>
 <html lang="<?php echo $config['language']; ?>">
     <head>
@@ -58,20 +58,47 @@
             <div class="tab-pane fade active in" id="one">
                 <div class="widget-body no-padding">
                     <div id="toolbar" class="toolbar">
-                        <?php echo build_toolbar('refresh'); ?>
+                        <?php echo build_toolbar('refresh,delete'); ?>
+                        <a class="btn btn-info btn-disabled disabled btn-selected" href="javascript:;"><i class="fa fa-leaf"></i> 获取选中项</a>
+                        <div class="dropdown btn-group">
+                            <a class="btn btn-primary btn-more dropdown-toggle btn-disabled disabled" data-toggle="dropdown"><i class="fa fa-cog"></i> <?= __('More') ?></a>
+                            <ul class="dropdown-menu text-left" role="menu">
+                                <li><a class="btn btn-link btn-multi btn-disabled disabled" href="javascript:;" data-params="status=normal"><i class="fa fa-eye"></i> <?php echo __('Set to normal'); ?></a></li>
+                                <li><a class="btn btn-link btn-multi btn-disabled disabled" href="javascript:;" data-params="status=hidden"><i class="fa fa-eye-slash"></i> <?php echo __('Set to hidden'); ?></a></li>
+                            </ul>
+                        </div>
+                        <a class="btn btn-success btn-singlesearch" href="javascript:;"><i class="fa fa-user"></i> 自定义搜索</a>
+                        <a class="btn btn-success btn-change btn-start" data-params="action=start" data-url="example/bootstraptable/start" href="javascript:;"><i class="fa fa-play"></i> 启动</a>
+                        <a class="btn btn-danger btn-change btn-pause" data-params="action=pause" data-url="example/bootstraptable/pause" href="javascript:;"><i class="fa fa-pause"></i> 暂停</a>
+                        <a href="javascript:;" class="btn btn-default" style="font-size:14px;color:dodgerblue;">
+                            <i class="fa fa-dollar"></i>
+                            <span class="extend">
+                                金额：<span id="money">0</span>
+                                单价：<span id="price">0</span>
+                            </span>
+                        </a>
                     </div>
-                    <table id="table" class="table table-striped table-bordered table-hover table-nowrap"
-                           data-operate-edit="<?php echo $auth->check('contract/project/edit'); ?>" 
-                           data-operate-del="<?php echo $auth->check('contract/project/del'); ?>" 
-                           width="100%">
+                    <table id="table" class="table table-striped table-bordered table-hover" width="100%">
+
                     </table>
+
                 </div>
             </div>
 
         </div>
     </div>
 </div>
-
+<script id="categorytpl" type="text/html">
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="form-inline" data-toggle="cxselect" data-selects="group,admin">
+                <select class="group form-control" name="group" data-url="example/bootstraptable/cxselect?type=group"></select>
+                <select class="admin form-control" name="admin_id" data-url="example/bootstraptable/cxselect?type=admin" data-query-name="group_id"></select>
+                <input type="hidden" class="operate" data-name="admin_id" value="=" />
+            </div>
+        </div>
+    </div>
+</script>
                             </div>
                         </div>
                     </div>

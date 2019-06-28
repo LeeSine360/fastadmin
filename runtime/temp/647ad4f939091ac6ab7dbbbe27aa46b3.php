@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:86:"C:\xampp\htdocs\fastadmin\public/../application/admin\view\contract\project\index.html";i:1561684421;s:68:"C:\xampp\htdocs\fastadmin\application\admin\view\layout\default.html";i:1557482263;s:65:"C:\xampp\htdocs\fastadmin\application\admin\view\common\meta.html";i:1557482263;s:67:"C:\xampp\htdocs\fastadmin\application\admin\view\common\script.html";i:1557482263;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:90:"C:\xampp\htdocs\fastadmin\public/../application/admin\view\contract\synthetical\index.html";i:1561684379;s:68:"C:\xampp\htdocs\fastadmin\application\admin\view\layout\default.html";i:1557482263;s:65:"C:\xampp\htdocs\fastadmin\application\admin\view\common\meta.html";i:1557482263;s:67:"C:\xampp\htdocs\fastadmin\application\admin\view\common\script.html";i:1557482263;}*/ ?>
 <!DOCTYPE html>
 <html lang="<?php echo $config['language']; ?>">
     <head>
@@ -61,8 +61,8 @@
                         <?php echo build_toolbar('refresh'); ?>
                     </div>
                     <table id="table" class="table table-striped table-bordered table-hover table-nowrap"
-                           data-operate-edit="<?php echo $auth->check('contract/project/edit'); ?>" 
-                           data-operate-del="<?php echo $auth->check('contract/project/del'); ?>" 
+                           data-operate-edit="<?php echo $auth->check('contract/synthetical/edit'); ?>" 
+                           data-operate-del="<?php echo $auth->check('contract/synthetical/del'); ?>" 
                            width="100%">
                     </table>
                 </div>

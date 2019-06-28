@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:86:"C:\xampp\htdocs\fastadmin\public/../application/admin\view\contract\project\index.html";i:1561684421;s:68:"C:\xampp\htdocs\fastadmin\application\admin\view\layout\default.html";i:1557482263;s:65:"C:\xampp\htdocs\fastadmin\application\admin\view\common\meta.html";i:1557482263;s:67:"C:\xampp\htdocs\fastadmin\application\admin\view\common\script.html";i:1557482263;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:88:"C:\xampp\htdocs\fastadmin\public/../application/admin\view\example\colorbadge\index.html";i:1557970796;s:68:"C:\xampp\htdocs\fastadmin\application\admin\view\layout\default.html";i:1557482263;s:65:"C:\xampp\htdocs\fastadmin\application\admin\view\common\meta.html";i:1557482263;s:67:"C:\xampp\htdocs\fastadmin\application\admin\view\common\script.html";i:1557482263;}*/ ?>
 <!DOCTYPE html>
 <html lang="<?php echo $config['language']; ?>">
     <head>
@@ -58,20 +58,19 @@
             <div class="tab-pane fade active in" id="one">
                 <div class="widget-body no-padding">
                     <div id="toolbar" class="toolbar">
-                        <?php echo build_toolbar('refresh'); ?>
+                        <?php echo build_toolbar('refresh,delete'); ?>
                     </div>
-                    <table id="table" class="table table-striped table-bordered table-hover table-nowrap"
-                           data-operate-edit="<?php echo $auth->check('contract/project/edit'); ?>" 
-                           data-operate-del="<?php echo $auth->check('contract/project/del'); ?>" 
-                           width="100%">
+                    <table id="table" class="table table-striped table-bordered table-hover" width="100%">
+
                     </table>
+
+
                 </div>
             </div>
 
         </div>
     </div>
 </div>
-
                             </div>
                         </div>
                     </div>

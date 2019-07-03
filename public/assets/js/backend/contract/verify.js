@@ -110,11 +110,10 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form', 'echarts'], function(
                     center: ['75%', '60%'],
                     hoverOffset: 1,
                     data: [
-                        {value: 20000,name: '未拨付金额',url: 'www.baidu.com'}, 
-                        {value: 10000,name: '钢材欠款金额'},
-                        {value: 10000,name: '混凝土欠款金额'},
-                        {value: 10000,name: '模板欠款金额'},
-                        {value: 10000,name: '砂浆欠款金额'}
+                        {value: 154000,name: '钢材欠款金额'},
+                        {value: 124000,name: '混凝土欠款金额'},
+                        {value: 542400,name: '模板欠款金额'},
+                        {value: 24000,name: '砂浆欠款金额'}
                     ],
                     itemStyle: {
                         emphasis: {

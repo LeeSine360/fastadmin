@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:87:"C:\xampp\htdocs\fastadmin\public/../application/admin\view\contract\verify\examine.html";i:1561602567;s:68:"C:\xampp\htdocs\fastadmin\application\admin\view\layout\default.html";i:1557482263;s:65:"C:\xampp\htdocs\fastadmin\application\admin\view\common\meta.html";i:1557482263;s:67:"C:\xampp\htdocs\fastadmin\application\admin\view\common\script.html";i:1557482263;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:87:"C:\xampp\htdocs\fastadmin\public/../application/admin\view\contract\verify\examine.html";i:1562122725;s:68:"C:\xampp\htdocs\fastadmin\application\admin\view\layout\default.html";i:1557482263;s:65:"C:\xampp\htdocs\fastadmin\application\admin\view\common\meta.html";i:1557482263;s:67:"C:\xampp\htdocs\fastadmin\application\admin\view\common\script.html";i:1557482263;}*/ ?>
 <!DOCTYPE html>
 <html lang="<?php echo $config['language']; ?>">
     <head>
@@ -65,59 +65,50 @@
         </div>
     </div>
     <div class="form-group">
-        <label class="col-xs-12 col-sm-2">项目名称:</label>
+        <label class="col-xs-12 col-sm-2 text-right">项目名称:</label>
         <div class="col-xs-12 col-sm-4">汉寿恒大御府</div>
     </div>
     <div class="form-group">
-        <label class="col-xs-12 col-sm-2">标段名称:</label>
+        <label class="col-xs-12 col-sm-2 text-right">标段名称:</label>
         <div class="col-xs-12 col-sm-4">A区</div>
-        <label class="col-xs-12 col-sm-2">项目经理:</label>
+        <label class="col-xs-12 col-sm-2 text-right">项目经理:</label>
         <div class="col-xs-12 col-sm-4">李恒孝</div>
     </div>
 
     <div class="form-group">
-        <label class="col-xs-12 col-sm-2">供应商名称:</label>
+        <label class="col-xs-12 col-sm-2 text-right">供应商名称:</label>
         <div class="col-xs-12 col-sm-4">湖南鑫盛达钢材贸易有限公司</div>
-        <label class="col-xs-12 col-sm-2">联系电话:</label>
+        <label class="col-xs-12 col-sm-2 text-right">联系电话:</label>
         <div class="col-xs-12 col-sm-4">1388888888</div>
     </div>
     <div class="form-group">
-        <label class="col-xs-12 col-sm-2">合同名称:</label>
+        <label class="col-xs-12 col-sm-2 text-right">合同名称:</label>
         <div class="col-xs-12 col-sm-4">钢材采购合同</div>
-        <label class="col-xs-12 col-sm-2">合同总价:</label>
+        <label class="col-xs-12 col-sm-2 text-right">合同总价:</label>
         <div class="col-xs-12 col-sm-4">20000000.00</div>
     </div>
     <div class="form-group">
-        <label class="col-xs-12 col-sm-2">合同类型:</label>
+        <label class="col-xs-12 col-sm-2 text-right">合同类型:</label>
         <div class="col-xs-12 col-sm-4">钢材采购</div>
-        <label class="col-xs-12 col-sm-2">同类型欠款额:</label>
+        <label class="col-xs-12 col-sm-2 text-right">同类型欠款额:</label>
         <div class="col-xs-12 col-sm-4">2000000.00</div>
     </div>
     <div class="form-group">
-        <label class="col-xs-12 col-sm-2">预算金额:</label>
+        <label class="col-xs-12 col-sm-2 text-right">预算金额:</label>
         <div class="col-xs-12 col-sm-4">226000.00</div>
-        <label class="col-xs-12 col-sm-2">合计签订金额:</label>
+        <label class="col-xs-12 col-sm-2 text-right">合计签订金额:</label>
         <div class="col-xs-12 col-sm-4">63180000.00</div>
     </div>
     <div class="form-group">
-        <label class="col-xs-12 col-sm-2">付款方式:</label>
+        <label class="col-xs-12 col-sm-2 text-right">付款方式:</label>
         <div class="col-xs-12 col-sm-10">撒打发斯蒂芬阿斯顿发送到发生付撒打发斯蒂芬阿斯顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬</div>
     </div>
     <div class="form-group">
-        <label class="col-xs-12 col-sm-2">结算方式:</label>
+        <label class="col-xs-12 col-sm-2 text-right">结算方式:</label>
         <div class="col-xs-12 col-sm-10">撒打发斯蒂芬阿斯顿发送到发生付撒打发斯蒂芬阿斯顿发斯蒂芬</div>
     </div>
     <div class="form-group">
-        <div class="col-xs-12 col-sm-12">
-            <table id="table" class="table table-striped table-bordered table-hover table-nowrap"
-                               data-operate-edit="<?php echo $auth->check('contract/info/edit'); ?>" 
-                               data-operate-del="<?php echo $auth->check('contract/info/del'); ?>" 
-                               width="100%">
-            </table>
-        </div>
-    </div>
-    <div class="form-group">
-        <label class="col-xs-12 col-sm-2"><?php echo __('Agreedata'); ?>:</label>
+        <label class="col-xs-12 col-sm-2 text-right"><?php echo __('Agreedata'); ?>:</label>
         <div class="col-xs-12 col-sm-10">
             
             <div class="radio">
@@ -129,7 +120,7 @@
         </div>
     </div>
     <div class="form-group">
-        <label class="col-xs-12 col-sm-2"><?php echo __('Opinion'); ?>:</label>
+        <label class="col-xs-12 col-sm-2 text-right"><?php echo __('Opinion'); ?>:</label>
         <div class="col-xs-12 col-sm-8">
             <textarea id="c-opinion" class="form-control" rows="5" name="row[opinion]" type="text"></textarea>
         </div>
@@ -141,6 +132,7 @@
         </div>
     </div>
 </form>
+
                             </div>
                         </div>
                     </div>

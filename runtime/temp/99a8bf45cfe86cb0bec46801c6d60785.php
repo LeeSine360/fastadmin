@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:79:"C:\xampp\htdocs\fastadmin\public/../application/admin\view\finance\tax\add.html";i:1561687633;s:68:"C:\xampp\htdocs\fastadmin\application\admin\view\layout\default.html";i:1557482263;s:65:"C:\xampp\htdocs\fastadmin\application\admin\view\common\meta.html";i:1557482263;s:67:"C:\xampp\htdocs\fastadmin\application\admin\view\common\script.html";i:1557482263;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:79:"C:\xampp\htdocs\fastadmin\public/../application/admin\view\finance\tax\add.html";i:1561710714;s:68:"C:\xampp\htdocs\fastadmin\application\admin\view\layout\default.html";i:1557482263;s:65:"C:\xampp\htdocs\fastadmin\application\admin\view\common\meta.html";i:1557482263;s:67:"C:\xampp\htdocs\fastadmin\application\admin\view\common\script.html";i:1557482263;}*/ ?>
 <!DOCTYPE html>
 <html lang="<?php echo $config['language']; ?>">
     <head>
@@ -150,12 +150,11 @@
                 <span class="input-group-addon">%</span>
             </div>
         </div>
+    </div>
+    <div class="form-group">
         <label class="control-label col-xs-12 col-sm-2"><?php echo __('Starttime'); ?>:</label>
         <div class="col-xs-12 col-sm-3">
-            <div class="input-group">
-                <input id="c-starttime" class="form-control datetimepicker" data-date-format="YYYY-MM-DD" data-use-current="true" name="row[starttime]" value="<?php echo date('Y-m-d'); ?>">
-                <span class="input-group-addon">%</span>
-            </div>
+            <input id="c-starttime" class="form-control datetimepicker" data-date-format="YYYY-MM-DD" data-use-current="true" name="row[starttime]" value="<?php echo date('Y-m-d'); ?>">
         </div>
     </div>    
     <div class="form-group layer-footer">

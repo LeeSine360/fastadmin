@@ -19,16 +19,16 @@
         log('ECharts is not Loaded');
         return;
     }
-    echarts.registerTheme('wonderland', {
+    echarts.registerTheme('walden', {
         "color": [
-            "#4ea397",
-            "#22c3aa",
-            "#7bd9a5",
-            "#d0648a",
-            "#f58db2",
-            "#f2b3c9"
+            "#3fb1e3",
+            "#6be6c1",
+            "#626c91",
+            "#a0a7e6",
+            "#c4ebad",
+            "#96dee8"
         ],
-        "backgroundColor": "rgba(255,255,255,0)",
+        "backgroundColor": "rgba(252,252,252,0)",
         "textStyle": {},
         "title": {
             "textStyle": {
@@ -167,11 +167,11 @@
         "candlestick": {
             "itemStyle": {
                 "normal": {
-                    "color": "#d0648a",
+                    "color": "#e6a0d2",
                     "color0": "transparent",
-                    "borderColor": "#d0648a",
-                    "borderColor0": "#22c3aa",
-                    "borderWidth": "1"
+                    "borderColor": "#e6a0d2",
+                    "borderColor0": "#3fb1e3",
+                    "borderWidth": "2"
                 }
             }
         },
@@ -192,12 +192,12 @@
             "symbol": "emptyCircle",
             "smooth": false,
             "color": [
-                "#4ea397",
-                "#22c3aa",
-                "#7bd9a5",
-                "#d0648a",
-                "#f58db2",
-                "#f2b3c9"
+                "#3fb1e3",
+                "#6be6c1",
+                "#626c91",
+                "#a0a7e6",
+                "#c4ebad",
+                "#96dee8"
             ],
             "label": {
                 "normal": {
@@ -211,24 +211,24 @@
             "itemStyle": {
                 "normal": {
                     "areaColor": "#eeeeee",
-                    "borderColor": "#999999",
+                    "borderColor": "#aaaaaa",
                     "borderWidth": 0.5
                 },
                 "emphasis": {
-                    "areaColor": "rgba(34,195,170,0.25)",
-                    "borderColor": "#22c3aa",
+                    "areaColor": "rgba(63,177,227,0.25)",
+                    "borderColor": "#3fb1e3",
                     "borderWidth": 1
                 }
             },
             "label": {
                 "normal": {
                     "textStyle": {
-                        "color": "#28544e"
+                        "color": "#ffffff"
                     }
                 },
                 "emphasis": {
                     "textStyle": {
-                        "color": "rgb(52,158,142)"
+                        "color": "rgb(63,177,227)"
                     }
                 }
             }
@@ -237,24 +237,24 @@
             "itemStyle": {
                 "normal": {
                     "areaColor": "#eeeeee",
-                    "borderColor": "#999999",
+                    "borderColor": "#aaaaaa",
                     "borderWidth": 0.5
                 },
                 "emphasis": {
-                    "areaColor": "rgba(34,195,170,0.25)",
-                    "borderColor": "#22c3aa",
+                    "areaColor": "rgba(63,177,227,0.25)",
+                    "borderColor": "#3fb1e3",
                     "borderWidth": 1
                 }
             },
             "label": {
                 "normal": {
                     "textStyle": {
-                        "color": "#28544e"
+                        "color": "#ffffff"
                     }
                 },
                 "emphasis": {
                     "textStyle": {
-                        "color": "rgb(52,158,142)"
+                        "color": "rgb(63,177,227)"
                     }
                 }
             }
@@ -436,52 +436,51 @@
         },
         "timeline": {
             "lineStyle": {
-                "color": "#4ea397",
+                "color": "#626c91",
                 "width": 1
             },
             "itemStyle": {
                 "normal": {
-                    "color": "#4ea397",
+                    "color": "#626c91",
                     "borderWidth": 1
                 },
                 "emphasis": {
-                    "color": "#4ea397"
+                    "color": "#626c91"
                 }
             },
             "controlStyle": {
                 "normal": {
-                    "color": "#4ea397",
-                    "borderColor": "#4ea397",
+                    "color": "#626c91",
+                    "borderColor": "#626c91",
                     "borderWidth": 0.5
                 },
                 "emphasis": {
-                    "color": "#4ea397",
-                    "borderColor": "#4ea397",
+                    "color": "#626c91",
+                    "borderColor": "#626c91",
                     "borderWidth": 0.5
                 }
             },
             "checkpointStyle": {
-                "color": "#4ea397",
-                "borderColor": "rgba(60,235,210,0.3)"
+                "color": "#3fb1e3",
+                "borderColor": "rgba(63,177,227,0.15)"
             },
             "label": {
                 "normal": {
                     "textStyle": {
-                        "color": "#4ea397"
+                        "color": "#626c91"
                     }
                 },
                 "emphasis": {
                     "textStyle": {
-                        "color": "#4ea397"
+                        "color": "#626c91"
                     }
                 }
             }
         },
         "visualMap": {
             "color": [
-                "#d0648a",
-                "#22c3aa",
-                "#adfff1"
+                "#2a99c9",
+                "#afe8ff"
             ]
         },
         "dataZoom": {

@@ -3,6 +3,7 @@
 namespace app\admin\controller\company;
 
 use app\common\controller\Backend;
+use app\admin\library\Api;
 
 /**
  * 供应商信息
@@ -114,6 +115,20 @@ class Info extends Backend {
             }
         }
         return array('code' => 0, 'msg' => '查询失败!');
+        /*$test = new Api();
+        //企业信息查询示例
+        $param = array(
+            'com' => '湖南浩宇建设有限公司'
+        );
+        //发票查询示例
+        $param = array(
+            'fpdm' => '4300183130',
+            'fphm' => '05390761',
+            'kprq' => '2019-06-04',
+            'checkCode' => '',
+            'noTaxAmount' => '18902.65',
+        );
+        return array($test->queryTax($param));*/
     }
 
     /**

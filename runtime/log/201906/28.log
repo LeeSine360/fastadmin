@@ -16902,3 +16902,1348 @@
 [ info ] [ BEHAVIOR ] Run \addons\loginbgindex\Loginbgindex @response_send [ RunTime:0.006001s ]
 [ info ] [ BEHAVIOR ] Run \addons\loginvideo\Loginvideo @response_send [ RunTime:0.000000s ]
 [ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-06-28T16:30:02+08:00 ] 127.0.0.1 GET 127.0.0.1/admin/finance/tax?addtabs=1
+[运行时间：0.630037s] [吞吐率：1.59req/s] [内存消耗：3,677.15kb] [文件加载：142]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.010000s ]
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'finance.tax',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3704.400 QQBrowser/10.4.3587.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/admin/finance/tax?ref=addtabs',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1561592897,1561682578; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1561682578; PHPSESSID=3njvfholh0v4p2fau37uc3n8h3',
+)
+[ info ] [ PARAM ] array (
+  'addtabs' => '1',
+)
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.035002s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/admin/lang/zh-cn/finance/tax.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\finance\Tax->index[ C:\xampp\htdocs\fastadmin\application\admin\controller\finance\Tax.php ]
+[ info ] [ VIEW ] C:\xampp\htdocs\fastadmin\public/../application/admin\view\finance\tax\index.html [ array (
+  0 => 'breadcrumb',
+  1 => 'site',
+  2 => 'config',
+  3 => 'auth',
+  4 => 'admin',
+) ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.008000s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginbgindex\Loginbgindex @response_send [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginvideo\Loginvideo @response_send [ RunTime:0.001000s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.066004s ] mysql:host=127.0.0.1;port=3306;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `fa_auth_rule` WHERE  `name` = 'finance/tax' LIMIT 1 [ RunTime:0.035002s ]
+---------------------------------------------------------------
+[ 2019-06-28T16:30:04+08:00 ] 127.0.0.1 GET 127.0.0.1/admin/ajax/lang?callback=define&controllername=finance.tax&v=1561710602
+[运行时间：0.227013s] [吞吐率：4.41req/s] [内存消耗：2,838.25kb] [文件加载：134]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.011000s ]
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3704.400 QQBrowser/10.4.3587.400',
+  'accept' => '*/*',
+  'referer' => 'http://127.0.0.1/admin/finance/tax?addtabs=1',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1561592897,1561682578; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1561682578; PHPSESSID=3njvfholh0v4p2fau37uc3n8h3',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'finance.tax',
+  'v' => '1561710602',
+)
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.007000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/admin/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\admin\controller\Ajax->lang[ C:\xampp\htdocs\fastadmin\application\admin\controller\Ajax.php ]
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/admin/lang/zh-cn/finance/tax.php
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.001000s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginbgindex\Loginbgindex @response_send [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginvideo\Loginvideo @response_send [ RunTime:0.001000s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-06-28T16:30:05+08:00 ] 127.0.0.1 GET 127.0.0.1/admin/finance/tax/index?addtabs=1&sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1561710603922
+[运行时间：0.573032s] [吞吐率：1.75req/s] [内存消耗：3,933.06kb] [文件加载：148]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.010000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.008001s ]
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'finance.tax',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3704.400 QQBrowser/10.4.3587.400',
+  'content-type' => 'application/json',
+  'referer' => 'http://127.0.0.1/admin/finance/tax?addtabs=1',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1561592897,1561682578; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1561682578; PHPSESSID=3njvfholh0v4p2fau37uc3n8h3',
+)
+[ info ] [ PARAM ] array (
+  'addtabs' => '1',
+  'sort' => 'id',
+  'order' => 'desc',
+  'offset' => '0',
+  'limit' => '10',
+  'filter' => '{}',
+  'op' => '{}',
+  '_' => '1561710603922',
+)
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.020001s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/admin/lang/zh-cn/finance/tax.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\finance\Tax->index[ C:\xampp\htdocs\fastadmin\application\admin\controller\finance\Tax.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.001000s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginbgindex\Loginbgindex @response_send [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginvideo\Loginvideo @response_send [ RunTime:0.000000s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:host=127.0.0.1;port=3306;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.011001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.004000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=127.0.0.1;port=3306;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_finance_tax` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_project_info` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_project_section` [ RunTime:0.009001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_finance_tax` `finance_tax` LEFT JOIN `fa_project_info` `projectinfo` ON `finance_tax`.`project_info_id`=`projectinfo`.`id` LEFT JOIN `fa_project_section` `projectsection` ON `finance_tax`.`project_section_id`=`projectsection`.`id` ORDER BY `finance_tax`.`id` DESC LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `finance_tax`.`id`,`finance_tax`.`project_info_id`,`finance_tax`.`project_section_id`,`finance_tax`.`zzs`,`finance_tax`.`cjs`,`finance_tax`.`jyfj`,`finance_tax`.`dfjyfj`,`finance_tax`.`yhs`,`finance_tax`.`grsds_c`,`finance_tax`.`grsds_g`,`finance_tax`.`qtsr_g`,`finance_tax`.`sljs`,`finance_tax`.`qysds`,`finance_tax`.`ghjf`,`finance_tax`.`starttime`,`finance_tax`.`creattime`,`finance_tax`.`updatetime`,`finance_tax`.`admin_id`,projectinfo.id AS projectinfo__id,projectinfo.number AS projectinfo__number,projectinfo.name AS projectinfo__name,projectinfo.price AS projectinfo__price,projectinfo.starttime AS projectinfo__starttime,projectinfo.days AS projectinfo__days,projectinfo.city AS projectinfo__city,projectinfo.address AS projectinfo__address,projectinfo.surveycontent AS projectinfo__surveycontent,projectinfo.remark AS projectinfo__remark,projectinfo.createtime AS projectinfo__createtime,projectinfo.updatetime AS projectinfo__updatetime,projectinfo.admin_id AS projectinfo__admin_id,projectsection.id AS projectsection__id,projectsection.project_info_id AS projectsection__project_info_id,projectsection.project_manager_id AS projectsection__project_manager_id,projectsection.name AS projectsection__name,projectsection.price AS projectsection__price,projectsection.surveycontent AS projectsection__surveycontent,projectsection.remark AS projectsection__remark,projectsection.createtime AS projectsection__createtime,projectsection.updatetime AS projectsection__updatetime,projectsection.admin_id AS projectsection__admin_id FROM `fa_finance_tax` `finance_tax` LEFT JOIN `fa_project_info` `projectinfo` ON `finance_tax`.`project_info_id`=`projectinfo`.`id` LEFT JOIN `fa_project_section` `projectsection` ON `finance_tax`.`project_section_id`=`projectsection`.`id` ORDER BY `finance_tax`.`id` DESC LIMIT 0,10 [ RunTime:0.002000s ]
+---------------------------------------------------------------
+[ 2019-06-28T16:30:07+08:00 ] 127.0.0.1 GET 127.0.0.1/admin/finance/tax/add?dialog=1
+[运行时间：0.597034s] [吞吐率：1.67req/s] [内存消耗：3,719.77kb] [文件加载：142]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.012001s ]
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'finance.tax',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3704.400 QQBrowser/10.4.3587.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/admin/finance/tax?addtabs=1',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1561592897,1561682578; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1561682578; PHPSESSID=3njvfholh0v4p2fau37uc3n8h3',
+)
+[ info ] [ PARAM ] array (
+  'dialog' => '1',
+)
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.006001s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/admin/lang/zh-cn/finance/tax.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\common\controller\Backend->add[ C:\xampp\htdocs\fastadmin\application\admin\library\traits\Backend.php ]
+[ info ] [ VIEW ] C:\xampp\htdocs\fastadmin\public/../application/admin\view\finance\tax\add.html [ array (
+  0 => 'breadcrumb',
+  1 => 'site',
+  2 => 'config',
+  3 => 'auth',
+  4 => 'admin',
+) ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.001000s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginbgindex\Loginbgindex @response_send [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginvideo\Loginvideo @response_send [ RunTime:0.000000s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;port=3306;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.066003s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.004001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.016001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.115007s ]
+---------------------------------------------------------------
+[ 2019-06-28T16:30:08+08:00 ] 127.0.0.1 GET 127.0.0.1/admin/ajax/lang?callback=define&controllername=finance.tax&v=1561710607
+[运行时间：0.111006s] [吞吐率：9.01req/s] [内存消耗：2,838.25kb] [文件加载：134]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.011000s ]
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3704.400 QQBrowser/10.4.3587.400',
+  'accept' => '*/*',
+  'referer' => 'http://127.0.0.1/admin/finance/tax/add?dialog=1',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1561592897,1561682578; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1561682578; PHPSESSID=3njvfholh0v4p2fau37uc3n8h3',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'finance.tax',
+  'v' => '1561710607',
+)
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.004000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/admin/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\admin\controller\Ajax->lang[ C:\xampp\htdocs\fastadmin\application\admin\controller\Ajax.php ]
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/admin/lang/zh-cn/finance/tax.php
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.001000s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginbgindex\Loginbgindex @response_send [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginvideo\Loginvideo @response_send [ RunTime:0.000000s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-06-28T16:31:21+08:00 ] 127.0.0.1 GET 127.0.0.1/admin/finance/tax?ref=addtabs
+[运行时间：0.479027s] [吞吐率：2.09req/s] [内存消耗：3,414.74kb] [文件加载：138]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.013001s ]
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'finance.tax',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3704.400 QQBrowser/10.4.3587.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/admin/index/login.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1561592897,1561682578; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1561682578; PHPSESSID=3njvfholh0v4p2fau37uc3n8h3',
+)
+[ info ] [ PARAM ] array (
+  'ref' => 'addtabs',
+)
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.006000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginbgindex\Loginbgindex @response_send [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginvideo\Loginvideo @response_send [ RunTime:0.000000s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;port=3306;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.016001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.036002s ]
+---------------------------------------------------------------
+[ 2019-06-28T16:31:22+08:00 ] 127.0.0.1 GET 127.0.0.1/admin/index/index
+[运行时间：0.608035s] [吞吐率：1.64req/s] [内存消耗：3,940.09kb] [文件加载：153]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.007000s ]
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3704.400 QQBrowser/10.4.3587.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/admin/index/login.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1561592897,1561682578; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1561682578; PHPSESSID=3njvfholh0v4p2fau37uc3n8h3',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.003000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/admin/lang/zh-cn/index.php
+[ info ] [ RUN ] app\admin\controller\Index->index[ C:\xampp\htdocs\fastadmin\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\fastadmin\public/../application/admin\view\index\index.html [ array (
+  0 => 'breadcrumb',
+  1 => 'site',
+  2 => 'config',
+  3 => 'auth',
+  4 => 'admin',
+  5 => 'menulist',
+  6 => 'navlist',
+  7 => 'fixedmenu',
+  8 => 'referermenu',
+  9 => 'title',
+) ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginbgindex\Loginbgindex @response_send [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginvideo\Loginvideo @response_send [ RunTime:0.000000s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:host=127.0.0.1;port=3306;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.011001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.005001s ]
+---------------------------------------------------------------
+[ 2019-06-28T16:31:23+08:00 ] 127.0.0.1 GET 127.0.0.1/admin/finance/tax?addtabs=1
+[运行时间：0.225013s] [吞吐率：4.44req/s] [内存消耗：3,677.13kb] [文件加载：142]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.009000s ]
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'finance.tax',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3704.400 QQBrowser/10.4.3587.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/admin/index/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1561592897,1561682578; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1561682578; PHPSESSID=3njvfholh0v4p2fau37uc3n8h3',
+)
+[ info ] [ PARAM ] array (
+  'addtabs' => '1',
+)
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.004001s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/admin/lang/zh-cn/finance/tax.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\finance\Tax->index[ C:\xampp\htdocs\fastadmin\application\admin\controller\finance\Tax.php ]
+[ info ] [ VIEW ] C:\xampp\htdocs\fastadmin\public/../application/admin\view\finance\tax\index.html [ array (
+  0 => 'breadcrumb',
+  1 => 'site',
+  2 => 'config',
+  3 => 'auth',
+  4 => 'admin',
+) ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginbgindex\Loginbgindex @response_send [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginvideo\Loginvideo @response_send [ RunTime:0.001000s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=127.0.0.1;port=3306;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.029001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `fa_auth_rule` WHERE  `name` = 'finance/tax' LIMIT 1 [ RunTime:0.002001s ]
+---------------------------------------------------------------
+[ 2019-06-28T16:31:24+08:00 ] 127.0.0.1 GET 127.0.0.1/admin/dashboard?addtabs=1
+[运行时间：0.534031s] [吞吐率：1.87req/s] [内存消耗：3,742.55kb] [文件加载：143]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.011000s ]
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'dashboard',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3704.400 QQBrowser/10.4.3587.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/admin/index/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1561592897,1561682578; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1561682578; PHPSESSID=3njvfholh0v4p2fau37uc3n8h3',
+)
+[ info ] [ PARAM ] array (
+  'addtabs' => '1',
+)
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.005000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/admin/lang/zh-cn/dashboard.php
+[ info ] [ RUN ] app\admin\controller\Dashboard->index[ C:\xampp\htdocs\fastadmin\application\admin\controller\Dashboard.php ]
+[ info ] [ VIEW ] C:\xampp\htdocs\fastadmin\public/../application/admin\view\dashboard\index.html [ array (
+  0 => 'breadcrumb',
+  1 => 'site',
+  2 => 'config',
+  3 => 'auth',
+  4 => 'admin',
+  5 => 'totaluser',
+  6 => 'totalviews',
+  7 => 'totalorder',
+  8 => 'totalorderamount',
+  9 => 'todayuserlogin',
+  10 => 'todayusersignup',
+  11 => 'todayorder',
+  12 => 'unsettleorder',
+  13 => 'sevendnu',
+  14 => 'sevendau',
+  15 => 'paylist',
+  16 => 'createlist',
+  17 => 'addonversion',
+  18 => 'uploadmode',
+) ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginbgindex\Loginbgindex @response_send [ RunTime:0.001000s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginvideo\Loginvideo @response_send [ RunTime:0.000000s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.022001s ] mysql:host=127.0.0.1;port=3306;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.053004s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `fa_auth_rule` WHERE  `name` = 'dashboard' LIMIT 1 [ RunTime:0.003001s ]
+---------------------------------------------------------------
+[ 2019-06-28T16:31:26+08:00 ] 127.0.0.1 GET 127.0.0.1/admin/ajax/lang?callback=define&controllername=index&v=1561710681
+[运行时间：0.138008s] [吞吐率：7.25req/s] [内存消耗：2,841.31kb] [文件加载：134]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.007000s ]
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3704.400 QQBrowser/10.4.3587.400',
+  'accept' => '*/*',
+  'referer' => 'http://127.0.0.1/admin/index/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1561592897,1561682578; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1561682578; PHPSESSID=3njvfholh0v4p2fau37uc3n8h3',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'index',
+  'v' => '1561710681',
+)
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.007000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/admin/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\admin\controller\Ajax->lang[ C:\xampp\htdocs\fastadmin\application\admin\controller\Ajax.php ]
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/admin/lang/zh-cn/index.php
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginbgindex\Loginbgindex @response_send [ RunTime:0.001000s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginvideo\Loginvideo @response_send [ RunTime:0.000000s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-06-28T16:31:27+08:00 ] 127.0.0.1 GET 127.0.0.1/admin/ajax/lang?callback=define&controllername=dashboard&v=1561710683
+[运行时间：0.390022s] [吞吐率：2.56req/s] [内存消耗：2,840.20kb] [文件加载：134]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.029002s ]
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3704.400 QQBrowser/10.4.3587.400',
+  'accept' => '*/*',
+  'referer' => 'http://127.0.0.1/admin/dashboard?addtabs=1',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1561592897,1561682578; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1561682578; PHPSESSID=3njvfholh0v4p2fau37uc3n8h3',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'dashboard',
+  'v' => '1561710683',
+)
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.129007s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/admin/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\admin\controller\Ajax->lang[ C:\xampp\htdocs\fastadmin\application\admin\controller\Ajax.php ]
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/admin/lang/zh-cn/dashboard.php
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.001000s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginbgindex\Loginbgindex @response_send [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginvideo\Loginvideo @response_send [ RunTime:0.000000s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-06-28T16:31:27+08:00 ] 127.0.0.1 GET 127.0.0.1/admin/ajax/lang?callback=define&controllername=finance.tax&v=1561710683
+[运行时间：0.546031s] [吞吐率：1.83req/s] [内存消耗：2,838.25kb] [文件加载：134]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.101006s ]
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3704.400 QQBrowser/10.4.3587.400',
+  'accept' => '*/*',
+  'referer' => 'http://127.0.0.1/admin/finance/tax?addtabs=1',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1561592897,1561682578; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1561682578; PHPSESSID=3njvfholh0v4p2fau37uc3n8h3',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'finance.tax',
+  'v' => '1561710683',
+)
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.021001s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/admin/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\admin\controller\Ajax->lang[ C:\xampp\htdocs\fastadmin\application\admin\controller\Ajax.php ]
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/admin/lang/zh-cn/finance/tax.php
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.001000s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginbgindex\Loginbgindex @response_send [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginvideo\Loginvideo @response_send [ RunTime:0.000000s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-06-28T16:31:29+08:00 ] 127.0.0.1 GET 127.0.0.1/admin/finance/tax/index?addtabs=1&sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1561710686459
+[运行时间：0.457026s] [吞吐率：2.19req/s] [内存消耗：3,933.06kb] [文件加载：148]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.009001s ]
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'finance.tax',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3704.400 QQBrowser/10.4.3587.400',
+  'content-type' => 'application/json',
+  'referer' => 'http://127.0.0.1/admin/finance/tax?addtabs=1',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1561592897,1561682578; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1561682578; PHPSESSID=3njvfholh0v4p2fau37uc3n8h3',
+)
+[ info ] [ PARAM ] array (
+  'addtabs' => '1',
+  'sort' => 'id',
+  'order' => 'desc',
+  'offset' => '0',
+  'limit' => '10',
+  'filter' => '{}',
+  'op' => '{}',
+  '_' => '1561710686459',
+)
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.003001s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/admin/lang/zh-cn/finance/tax.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\finance\Tax->index[ C:\xampp\htdocs\fastadmin\application\admin\controller\finance\Tax.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.001000s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginbgindex\Loginbgindex @response_send [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginvideo\Loginvideo @response_send [ RunTime:0.000000s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005000s ] mysql:host=127.0.0.1;port=3306;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.094005s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.012000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.003001s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004001s ] mysql:host=127.0.0.1;port=3306;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_finance_tax` [ RunTime:0.014000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_project_info` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_project_section` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_finance_tax` `finance_tax` LEFT JOIN `fa_project_info` `projectinfo` ON `finance_tax`.`project_info_id`=`projectinfo`.`id` LEFT JOIN `fa_project_section` `projectsection` ON `finance_tax`.`project_section_id`=`projectsection`.`id` ORDER BY `finance_tax`.`id` DESC LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `finance_tax`.`id`,`finance_tax`.`project_info_id`,`finance_tax`.`project_section_id`,`finance_tax`.`zzs`,`finance_tax`.`cjs`,`finance_tax`.`jyfj`,`finance_tax`.`dfjyfj`,`finance_tax`.`yhs`,`finance_tax`.`grsds_c`,`finance_tax`.`grsds_g`,`finance_tax`.`qtsr_g`,`finance_tax`.`sljs`,`finance_tax`.`qysds`,`finance_tax`.`ghjf`,`finance_tax`.`starttime`,`finance_tax`.`creattime`,`finance_tax`.`updatetime`,`finance_tax`.`admin_id`,projectinfo.id AS projectinfo__id,projectinfo.number AS projectinfo__number,projectinfo.name AS projectinfo__name,projectinfo.price AS projectinfo__price,projectinfo.starttime AS projectinfo__starttime,projectinfo.days AS projectinfo__days,projectinfo.city AS projectinfo__city,projectinfo.address AS projectinfo__address,projectinfo.surveycontent AS projectinfo__surveycontent,projectinfo.remark AS projectinfo__remark,projectinfo.createtime AS projectinfo__createtime,projectinfo.updatetime AS projectinfo__updatetime,projectinfo.admin_id AS projectinfo__admin_id,projectsection.id AS projectsection__id,projectsection.project_info_id AS projectsection__project_info_id,projectsection.project_manager_id AS projectsection__project_manager_id,projectsection.name AS projectsection__name,projectsection.price AS projectsection__price,projectsection.surveycontent AS projectsection__surveycontent,projectsection.remark AS projectsection__remark,projectsection.createtime AS projectsection__createtime,projectsection.updatetime AS projectsection__updatetime,projectsection.admin_id AS projectsection__admin_id FROM `fa_finance_tax` `finance_tax` LEFT JOIN `fa_project_info` `projectinfo` ON `finance_tax`.`project_info_id`=`projectinfo`.`id` LEFT JOIN `fa_project_section` `projectsection` ON `finance_tax`.`project_section_id`=`projectsection`.`id` ORDER BY `finance_tax`.`id` DESC LIMIT 0,10 [ RunTime:0.003000s ]
+---------------------------------------------------------------
+[ 2019-06-28T16:31:30+08:00 ] 127.0.0.1 GET 127.0.0.1/admin/finance/tax/add?dialog=1
+[运行时间：0.400023s] [吞吐率：2.50req/s] [内存消耗：3,851.38kb] [文件加载：144]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.010001s ]
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'finance.tax',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3704.400 QQBrowser/10.4.3587.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/admin/finance/tax?addtabs=1',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1561592897,1561682578; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1561682578; PHPSESSID=3njvfholh0v4p2fau37uc3n8h3',
+)
+[ info ] [ PARAM ] array (
+  'dialog' => '1',
+)
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.010001s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/admin/lang/zh-cn/finance/tax.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\common\controller\Backend->add[ C:\xampp\htdocs\fastadmin\application\admin\library\traits\Backend.php ]
+[ info ] [ VIEW ] C:\xampp\htdocs\fastadmin\public/../application/admin\view\finance\tax\add.html [ array (
+  0 => 'breadcrumb',
+  1 => 'site',
+  2 => 'config',
+  3 => 'auth',
+  4 => 'admin',
+) ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginbgindex\Loginbgindex @response_send [ RunTime:0.001000s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginvideo\Loginvideo @response_send [ RunTime:0.000000s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;port=3306;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.037002s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.047002s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.004001s ]
+---------------------------------------------------------------
+[ 2019-06-28T16:31:31+08:00 ] 127.0.0.1 GET 127.0.0.1/admin/ajax/lang?callback=define&controllername=finance.tax&v=1561710690
+[运行时间：0.115007s] [吞吐率：8.70req/s] [内存消耗：2,838.25kb] [文件加载：134]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.011001s ]
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3704.400 QQBrowser/10.4.3587.400',
+  'accept' => '*/*',
+  'referer' => 'http://127.0.0.1/admin/finance/tax/add?dialog=1',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1561592897,1561682578; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1561682578; PHPSESSID=3njvfholh0v4p2fau37uc3n8h3',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'finance.tax',
+  'v' => '1561710690',
+)
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.004000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/admin/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\admin\controller\Ajax->lang[ C:\xampp\htdocs\fastadmin\application\admin\controller\Ajax.php ]
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/admin/lang/zh-cn/finance/tax.php
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.001000s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginbgindex\Loginbgindex @response_send [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginvideo\Loginvideo @response_send [ RunTime:0.001000s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-06-28T16:31:57+08:00 ] 127.0.0.1 GET 127.0.0.1/admin/finance/tax/add?dialog=1
+[运行时间：0.561032s] [吞吐率：1.78req/s] [内存消耗：3,847.23kb] [文件加载：144]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.117007s ]
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'finance.tax',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3704.400 QQBrowser/10.4.3587.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/admin/finance/tax?addtabs=1',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1561592897,1561682578; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1561682578; PHPSESSID=3njvfholh0v4p2fau37uc3n8h3',
+)
+[ info ] [ PARAM ] array (
+  'dialog' => '1',
+)
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.021001s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/admin/lang/zh-cn/finance/tax.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\common\controller\Backend->add[ C:\xampp\htdocs\fastadmin\application\admin\library\traits\Backend.php ]
+[ info ] [ VIEW ] C:\xampp\htdocs\fastadmin\public/../application/admin\view\finance\tax\add.html [ array (
+  0 => 'breadcrumb',
+  1 => 'site',
+  2 => 'config',
+  3 => 'auth',
+  4 => 'admin',
+) ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginbgindex\Loginbgindex @response_send [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginvideo\Loginvideo @response_send [ RunTime:0.001000s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.029001s ] mysql:host=127.0.0.1;port=3306;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.010001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.003000s ]
+---------------------------------------------------------------
+[ 2019-06-28T16:31:58+08:00 ] 127.0.0.1 GET 127.0.0.1/admin/ajax/lang?callback=define&controllername=finance.tax&v=1561710717
+[运行时间：0.093005s] [吞吐率：10.75req/s] [内存消耗：2,838.25kb] [文件加载：134]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.007000s ]
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3704.400 QQBrowser/10.4.3587.400',
+  'accept' => '*/*',
+  'referer' => 'http://127.0.0.1/admin/finance/tax/add?dialog=1',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1561592897,1561682578; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1561682578; PHPSESSID=3njvfholh0v4p2fau37uc3n8h3',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'finance.tax',
+  'v' => '1561710717',
+)
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.004000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/admin/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\admin\controller\Ajax->lang[ C:\xampp\htdocs\fastadmin\application\admin\controller\Ajax.php ]
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/admin/lang/zh-cn/finance/tax.php
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.001000s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginbgindex\Loginbgindex @response_send [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginvideo\Loginvideo @response_send [ RunTime:0.000000s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-06-28T16:38:09+08:00 ] 127.0.0.1 GET 127.0.0.1/admin/finance/tax?ref=addtabs
+[运行时间：0.249014s] [吞吐率：4.02req/s] [内存消耗：3,414.74kb] [文件加载：138]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.020001s ]
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'finance.tax',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3704.400 QQBrowser/10.4.3587.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/admin/index/login.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1561592897,1561682578; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1561682578; PHPSESSID=3njvfholh0v4p2fau37uc3n8h3',
+)
+[ info ] [ PARAM ] array (
+  'ref' => 'addtabs',
+)
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.005000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.002000s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginbgindex\Loginbgindex @response_send [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginvideo\Loginvideo @response_send [ RunTime:0.000000s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;port=3306;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.018001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.006000s ]
+---------------------------------------------------------------
+[ 2019-06-28T16:38:09+08:00 ] 127.0.0.1 GET 127.0.0.1/admin/index/index
+[运行时间：0.471027s] [吞吐率：2.12req/s] [内存消耗：3,940.09kb] [文件加载：153]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.008001s ]
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3704.400 QQBrowser/10.4.3587.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/admin/index/login.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1561592897,1561682578; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1561682578; PHPSESSID=3njvfholh0v4p2fau37uc3n8h3',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.004000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/admin/lang/zh-cn/index.php
+[ info ] [ RUN ] app\admin\controller\Index->index[ C:\xampp\htdocs\fastadmin\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\fastadmin\public/../application/admin\view\index\index.html [ array (
+  0 => 'breadcrumb',
+  1 => 'site',
+  2 => 'config',
+  3 => 'auth',
+  4 => 'admin',
+  5 => 'menulist',
+  6 => 'navlist',
+  7 => 'fixedmenu',
+  8 => 'referermenu',
+  9 => 'title',
+) ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginbgindex\Loginbgindex @response_send [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginvideo\Loginvideo @response_send [ RunTime:0.001000s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.007000s ] mysql:host=127.0.0.1;port=3306;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.026002s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.011001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.003000s ]
+---------------------------------------------------------------
+[ 2019-06-28T16:38:10+08:00 ] 127.0.0.1 GET 127.0.0.1/admin/dashboard?addtabs=1
+[运行时间：0.230013s] [吞吐率：4.35req/s] [内存消耗：3,742.55kb] [文件加载：143]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.011001s ]
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'dashboard',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3704.400 QQBrowser/10.4.3587.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/admin/index/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1561592897,1561682578; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1561682578; PHPSESSID=3njvfholh0v4p2fau37uc3n8h3',
+)
+[ info ] [ PARAM ] array (
+  'addtabs' => '1',
+)
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.003000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/admin/lang/zh-cn/dashboard.php
+[ info ] [ RUN ] app\admin\controller\Dashboard->index[ C:\xampp\htdocs\fastadmin\application\admin\controller\Dashboard.php ]
+[ info ] [ VIEW ] C:\xampp\htdocs\fastadmin\public/../application/admin\view\dashboard\index.html [ array (
+  0 => 'breadcrumb',
+  1 => 'site',
+  2 => 'config',
+  3 => 'auth',
+  4 => 'admin',
+  5 => 'totaluser',
+  6 => 'totalviews',
+  7 => 'totalorder',
+  8 => 'totalorderamount',
+  9 => 'todayuserlogin',
+  10 => 'todayusersignup',
+  11 => 'todayorder',
+  12 => 'unsettleorder',
+  13 => 'sevendnu',
+  14 => 'sevendau',
+  15 => 'paylist',
+  16 => 'createlist',
+  17 => 'addonversion',
+  18 => 'uploadmode',
+) ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.001000s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginbgindex\Loginbgindex @response_send [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginvideo\Loginvideo @response_send [ RunTime:0.001000s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005000s ] mysql:host=127.0.0.1;port=3306;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.011001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.011001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `fa_auth_rule` WHERE  `name` = 'dashboard' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2019-06-28T16:38:10+08:00 ] 127.0.0.1 GET 127.0.0.1/admin/finance/tax?addtabs=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.041003s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.011001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `fa_auth_rule` WHERE  `name` = 'finance/tax' LIMIT 1 [ RunTime:0.002000s ]
+---------------------------------------------------------------
+[ 2019-06-28T16:38:11+08:00 ] 127.0.0.1 GET 127.0.0.1/admin/ajax/lang?callback=define&controllername=index&v=1561711089
+[运行时间：0.101006s] [吞吐率：9.90req/s] [内存消耗：2,841.31kb] [文件加载：134]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.010000s ]
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3704.400 QQBrowser/10.4.3587.400',
+  'accept' => '*/*',
+  'referer' => 'http://127.0.0.1/admin/index/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1561592897,1561682578; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1561682578; PHPSESSID=3njvfholh0v4p2fau37uc3n8h3',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'index',
+  'v' => '1561711089',
+)
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.003000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/admin/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\admin\controller\Ajax->lang[ C:\xampp\htdocs\fastadmin\application\admin\controller\Ajax.php ]
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/admin/lang/zh-cn/index.php
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginbgindex\Loginbgindex @response_send [ RunTime:0.001000s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginvideo\Loginvideo @response_send [ RunTime:0.000000s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-06-28T16:38:11+08:00 ] 127.0.0.1 GET 127.0.0.1/admin/ajax/lang?callback=define&controllername=dashboard&v=1561711090
+[运行时间：0.165009s] [吞吐率：6.06req/s] [内存消耗：2,840.20kb] [文件加载：134]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.050003s ]
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3704.400 QQBrowser/10.4.3587.400',
+  'accept' => '*/*',
+  'referer' => 'http://127.0.0.1/admin/dashboard?addtabs=1',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1561592897,1561682578; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1561682578; PHPSESSID=3njvfholh0v4p2fau37uc3n8h3',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'dashboard',
+  'v' => '1561711090',
+)
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.003000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/admin/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\admin\controller\Ajax->lang[ C:\xampp\htdocs\fastadmin\application\admin\controller\Ajax.php ]
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/admin/lang/zh-cn/dashboard.php
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginbgindex\Loginbgindex @response_send [ RunTime:0.001000s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginvideo\Loginvideo @response_send [ RunTime:0.000000s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-06-28T16:38:12+08:00 ] 127.0.0.1 GET 127.0.0.1/admin/ajax/lang?callback=define&controllername=finance.tax&v=1.0.1
+[运行时间：0.301017s] [吞吐率：3.32req/s] [内存消耗：2,838.22kb] [文件加载：134]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.010001s ]
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3704.400 QQBrowser/10.4.3587.400',
+  'accept' => '*/*',
+  'referer' => 'http://127.0.0.1/admin/finance/tax?addtabs=1',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1561592897,1561682578; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1561682578; PHPSESSID=3njvfholh0v4p2fau37uc3n8h3',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'finance.tax',
+  'v' => '1.0.1',
+)
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.004001s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/admin/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\admin\controller\Ajax->lang[ C:\xampp\htdocs\fastadmin\application\admin\controller\Ajax.php ]
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/admin/lang/zh-cn/finance/tax.php
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.001000s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginbgindex\Loginbgindex @response_send [ RunTime:0.001000s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginvideo\Loginvideo @response_send [ RunTime:0.000000s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-06-28T16:38:13+08:00 ] 127.0.0.1 GET 127.0.0.1/admin/finance/tax/index?addtabs=1&sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1561711092056
+[运行时间：0.298017s] [吞吐率：3.36req/s] [内存消耗：3,933.06kb] [文件加载：148]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.018001s ]
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'finance.tax',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3704.400 QQBrowser/10.4.3587.400',
+  'content-type' => 'application/json',
+  'referer' => 'http://127.0.0.1/admin/finance/tax?addtabs=1',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1561592897,1561682578; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1561682578; PHPSESSID=3njvfholh0v4p2fau37uc3n8h3',
+)
+[ info ] [ PARAM ] array (
+  'addtabs' => '1',
+  'sort' => 'id',
+  'order' => 'desc',
+  'offset' => '0',
+  'limit' => '10',
+  'filter' => '{}',
+  'op' => '{}',
+  '_' => '1561711092056',
+)
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.003000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/admin/lang/zh-cn/finance/tax.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\finance\Tax->index[ C:\xampp\htdocs\fastadmin\application\admin\controller\finance\Tax.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginbgindex\Loginbgindex @response_send [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginvideo\Loginvideo @response_send [ RunTime:0.001000s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.022001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.008001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.014000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.004001s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_finance_tax` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_project_info` [ RunTime:0.021001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_project_section` [ RunTime:0.029002s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_finance_tax` `finance_tax` LEFT JOIN `fa_project_info` `projectinfo` ON `finance_tax`.`project_info_id`=`projectinfo`.`id` LEFT JOIN `fa_project_section` `projectsection` ON `finance_tax`.`project_section_id`=`projectsection`.`id` ORDER BY `finance_tax`.`id` DESC LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `finance_tax`.`id`,`finance_tax`.`project_info_id`,`finance_tax`.`project_section_id`,`finance_tax`.`zzs`,`finance_tax`.`cjs`,`finance_tax`.`jyfj`,`finance_tax`.`dfjyfj`,`finance_tax`.`yhs`,`finance_tax`.`grsds_c`,`finance_tax`.`grsds_g`,`finance_tax`.`qtsr_g`,`finance_tax`.`sljs`,`finance_tax`.`qysds`,`finance_tax`.`ghjf`,`finance_tax`.`starttime`,`finance_tax`.`creattime`,`finance_tax`.`updatetime`,`finance_tax`.`admin_id`,projectinfo.id AS projectinfo__id,projectinfo.number AS projectinfo__number,projectinfo.name AS projectinfo__name,projectinfo.price AS projectinfo__price,projectinfo.starttime AS projectinfo__starttime,projectinfo.days AS projectinfo__days,projectinfo.city AS projectinfo__city,projectinfo.address AS projectinfo__address,projectinfo.surveycontent AS projectinfo__surveycontent,projectinfo.remark AS projectinfo__remark,projectinfo.createtime AS projectinfo__createtime,projectinfo.updatetime AS projectinfo__updatetime,projectinfo.admin_id AS projectinfo__admin_id,projectsection.id AS projectsection__id,projectsection.project_info_id AS projectsection__project_info_id,projectsection.project_manager_id AS projectsection__project_manager_id,projectsection.name AS projectsection__name,projectsection.price AS projectsection__price,projectsection.surveycontent AS projectsection__surveycontent,projectsection.remark AS projectsection__remark,projectsection.createtime AS projectsection__createtime,projectsection.updatetime AS projectsection__updatetime,projectsection.admin_id AS projectsection__admin_id FROM `fa_finance_tax` `finance_tax` LEFT JOIN `fa_project_info` `projectinfo` ON `finance_tax`.`project_info_id`=`projectinfo`.`id` LEFT JOIN `fa_project_section` `projectsection` ON `finance_tax`.`project_section_id`=`projectsection`.`id` ORDER BY `finance_tax`.`id` DESC LIMIT 0,10 [ RunTime:0.010001s ]

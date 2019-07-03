@@ -1,0 +1,70 @@
+---------------------------------------------------------------
+[ 2019-06-29T09:26:37+08:00 ] 127.0.0.1 GET 127.0.0.1/
+[运行时间：0.465512s] [吞吐率：2.15req/s] [内存消耗：2,491.40kb] [文件加载：128]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.015500s ]
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3704.400 QQBrowser/10.4.3587.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.007001s ]
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->index[ C:\xampp\htdocs\fastadmin\application\index\controller\Index.php ]
+[ info ] [ VIEW ] C:\xampp\htdocs\fastadmin\public/../application/index\view\index\index.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+) ]
+[ info ] [ BEHAVIOR ] Run \addons\loginbgindex\Loginbgindex @response_send [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginvideo\Loginvideo @response_send [ RunTime:0.000000s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-06-29T09:26:41+08:00 ] 127.0.0.1 GET 127.0.0.1/favicon.ico
+[运行时间：0.127007s] [吞吐率：7.87req/s] [内存消耗：1,960.71kb] [文件加载：117]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.020001s ]
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'favicon.ico',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3704.400 QQBrowser/10.4.3587.400',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1561771600; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1561771600',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run \addons\loginbgindex\Loginbgindex @response_send [ RunTime:0.013001s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginvideo\Loginvideo @response_send [ RunTime:0.001000s ]
+[ info ] [ LOG ] INIT File

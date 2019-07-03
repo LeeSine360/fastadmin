@@ -25,8 +25,8 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
                     [
                         {checkbox: true},
                         {field: 'id', title: __('ID')},
-                        {field: 'projectinfo.name', title: __('Projectinfo.name')},
-                        {field: 'projectsection.name', title: __('Projectsection.name')},
+                        {field: 'projectinfo.name', title: __('Project_info_id')},
+                        {field: 'projectsection.name', title: __('Project_section_id')},
                         {field: 'starttime', title: __('Starttime'), operate:'RANGE', addclass:'datetimerange', formatter: Table.api.formatter.datetime},
                         {field: 'zzs', title: __('Zzs'), operate:'BETWEEN'},
                         {field: 'cjs', title: __('Cjs'), operate:'BETWEEN'},

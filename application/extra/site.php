@@ -26,7 +26,7 @@ return array (
     'email' => 'Email',
     'dictionary' => 'Dictionary',
     'user' => 'User',
-    'example' => 'Example',
+    'api' => 'Api',
   ),
   'mail_type' => '1',
   'mail_smtp_host' => 'smtp.qq.com',
@@ -35,5 +35,13 @@ return array (
   'mail_smtp_pass' => 'password',
   'mail_verify_type' => '2',
   'mail_from' => '10000@qq.com',
-  'test' => '',
+  'company' => 
+  array (
+    'AppCode' => '4adbc1924d894b79999bbed54e2c57eb',
+  ),
+  'tax' => 
+  array (
+    'AppKey' => '63635FF0189349509D9E7EBF4D797559',
+    'AppSecrect' => '7116edeab6384ceeb50fbc4d54dfb775',
+  ),
 );

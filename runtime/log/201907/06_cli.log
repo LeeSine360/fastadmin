@@ -1,0 +1,23 @@
+[ 2019-07-06T13:48:38+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ LOG ] INIT File
+[ 2019-07-06T13:48:38+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-07-06T13:48:38+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.010000s ]
+[ 2019-07-06T13:48:38+08:00 ][ info ] [ DB ] INIT mysql
+[ 2019-07-06T13:48:38+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.004000s ] mysql:host=127.0.0.1;port=3306;dbname=fastadmin;charset=utf8
+[ 2019-07-06T13:48:38+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'finance_payconfirm' [ RunTime:0.004000s ]
+[ 2019-07-06T13:48:38+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'fa_finance_payconfirm' [ RunTime:0.003001s ]
+[ 2019-07-06T13:49:45+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ LOG ] INIT File
+[ 2019-07-06T13:49:45+08:00 ][ info ] [ CACHE ] INIT File
+[ 2019-07-06T13:49:45+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.012001s ]
+[ 2019-07-06T13:49:45+08:00 ][ info ] [ DB ] INIT mysql
+[ 2019-07-06T13:49:45+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:host=127.0.0.1;port=3306;dbname=fastadmin;charset=utf8
+[ 2019-07-06T13:49:45+08:00 ][ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.010001s ]
+[ 2019-07-06T13:49:45+08:00 ][ sql ] [ SQL ] SELECT * FROM `fa_auth_rule` WHERE  (  `name` LIKE 'finance/payconfirm%' ) [ RunTime:0.002000s ]
+[ 2019-07-06T13:49:47+08:00 ][ sql ] [ SQL ] SELECT * FROM `fa_auth_rule` WHERE  `id` IN (252,254,256,255,253,257) [ RunTime:0.001000s ]
+[ 2019-07-06T13:49:47+08:00 ][ sql ] [ SQL ] DELETE FROM `fa_auth_rule`    WHERE  `id` = 252 [ RunTime:0.082005s ]
+[ 2019-07-06T13:49:47+08:00 ][ sql ] [ SQL ] DELETE FROM `fa_auth_rule`    WHERE  `id` = 253 [ RunTime:0.026001s ]
+[ 2019-07-06T13:49:47+08:00 ][ sql ] [ SQL ] DELETE FROM `fa_auth_rule`    WHERE  `id` = 254 [ RunTime:0.037002s ]
+[ 2019-07-06T13:49:47+08:00 ][ sql ] [ SQL ] DELETE FROM `fa_auth_rule`    WHERE  `id` = 255 [ RunTime:0.036002s ]
+[ 2019-07-06T13:49:47+08:00 ][ sql ] [ SQL ] DELETE FROM `fa_auth_rule`    WHERE  `id` = 256 [ RunTime:0.022001s ]
+[ 2019-07-06T13:49:47+08:00 ][ sql ] [ SQL ] DELETE FROM `fa_auth_rule`    WHERE  `id` = 257 [ RunTime:0.025002s ]

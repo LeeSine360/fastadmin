@@ -3,6 +3,7 @@
 namespace app\admin\controller\project;
 
 use app\common\controller\Backend;
+use think\Db;
 
 /**
  * 标段信息
@@ -49,20 +50,32 @@ class Section extends Backend
                 return $this->selectpage();
             }
             list($where, $sort, $order, $offset, $limit) = $this->buildparams();
-            $total = $this->model
-                    ->with(['projectinfo','projectmanager','admin'])
+            $total = Db::table([                             
+                                '__PROJECT_SECTION__' => 'project_section'
+                            ])
+                    ->join('__PROJECT_INFO__ project_info','project_section.project_info_id = project_info.id')
                     ->where($where)
-                    ->order($sort, $order)
+                    ->order($sort, $order) 
                     ->count();
 
-            $list = $this->model
-                    ->with(['projectinfo','projectmanager','admin'])
+            $list = Db::table([                             
+                                '__PROJECT_SECTION__' => 'project_section'
+                            ])  
+                    ->field('
+                        project_section.id as id,
+                        project_info.name as projectName,
+                        project_section.name as sectionName,
+                        project_section.price as price,
+                        project_manager.name as managerName
+                    ')
+                    ->join('__PROJECT_INFO__ project_info','project_section.project_info_id = project_info.id')
+                    ->join('__PROJECT_MANAGER__ project_manager','project_section.project_manager_id = project_manager.id')
                     ->where($where)
-                    ->order($sort, $order)
-                    ->limit($offset, $limit)
+                    ->order($sort, $order) 
                     ->select();
 
-            foreach ($list as $row) {
+
+            /*foreach ($list as $row) {
                 $row->visible(['id','name','price','createtime','admin_id']);
                 $row->visible(['projectinfo']);
 				$row->getRelation('projectinfo')->visible(['name']);
@@ -70,8 +83,8 @@ class Section extends Backend
 				$row->getRelation('projectmanager')->visible(['name']);
 				$row->visible(['admin']);
 				$row->getRelation('admin')->visible(['username']);
-            }
-            $list = collection($list)->toArray();
+            }*/
+            //$list = collection($list)->toArray();
             $result = array("total" => $total, "rows" => $list);
 
             return json($result);

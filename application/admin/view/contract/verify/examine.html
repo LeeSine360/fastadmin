@@ -14,46 +14,43 @@
     </div>
     <div class="form-group">
         <label class="col-xs-12 col-sm-2 text-right">项目名称:</label>
-        <div class="col-xs-12 col-sm-4">汉寿恒大御府</div>
+        <div class="col-xs-12 col-sm-4">{$list.projectName|htmlentities}</div>
     </div>
     <div class="form-group">
         <label class="col-xs-12 col-sm-2 text-right">标段名称:</label>
-        <div class="col-xs-12 col-sm-4">A区</div>
+        <div class="col-xs-12 col-sm-4">{$list.sectionName|htmlentities}</div>
         <label class="col-xs-12 col-sm-2 text-right">项目经理:</label>
-        <div class="col-xs-12 col-sm-4">李恒孝</div>
+        <div class="col-xs-12 col-sm-4">{$list.managerName|htmlentities}</div>
     </div>
 
     <div class="form-group">
         <label class="col-xs-12 col-sm-2 text-right">供应商名称:</label>
-        <div class="col-xs-12 col-sm-4">湖南鑫盛达钢材贸易有限公司</div>
+        <div class="col-xs-12 col-sm-4">{$list.companyName|htmlentities}</div>
         <label class="col-xs-12 col-sm-2 text-right">联系电话:</label>
-        <div class="col-xs-12 col-sm-4">1388888888</div>
+        <div class="col-xs-12 col-sm-4">{$list.companyPhone|htmlentities}</div>
     </div>
     <div class="form-group">
         <label class="col-xs-12 col-sm-2 text-right">合同名称:</label>
-        <div class="col-xs-12 col-sm-4">钢材采购合同</div>
+        <div class="col-xs-12 col-sm-4">{$list.contractName|htmlentities}</div>
         <label class="col-xs-12 col-sm-2 text-right">合同总价:</label>
-        <div class="col-xs-12 col-sm-4">20000000.00</div>
+        <div class="col-xs-12 col-sm-4">{$list.contractPrice|htmlentities}</div>
     </div>
     <div class="form-group">
         <label class="col-xs-12 col-sm-2 text-right">合同类型:</label>
-        <div class="col-xs-12 col-sm-4">钢材采购</div>
-        <label class="col-xs-12 col-sm-2 text-right">同类型欠款额:</label>
-        <div class="col-xs-12 col-sm-4">2000000.00</div>
-    </div>
-    <div class="form-group">
-        <label class="col-xs-12 col-sm-2 text-right">预算金额:</label>
-        <div class="col-xs-12 col-sm-4">226000.00</div>
-        <label class="col-xs-12 col-sm-2 text-right">合计签订金额:</label>
-        <div class="col-xs-12 col-sm-4">63180000.00</div>
-    </div>
-    <div class="form-group">
-        <label class="col-xs-12 col-sm-2 text-right">付款方式:</label>
-        <div class="col-xs-12 col-sm-10">撒打发斯蒂芬阿斯顿发送到发生付撒打发斯蒂芬阿斯顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬顿发斯蒂芬</div>
+        <div class="col-xs-12 col-sm-4">{$list.categoryName|htmlentities}</div>
+        <label class="col-xs-12 col-sm-2"></label>
+        <div class="col-xs-12 col-sm-4">
+            <a href="javascript:;" data-url="/admin/contract/verify/payinfo/id/{$list.categoryId}" class="btn btn-default" style="font-size:12px;color:dodgerblue;">
+                <i class="fa fa-chain"></i>
+                <span class="extend">
+                    查看同类型合同
+                </span>
+            </a>
+        </div>
     </div>
     <div class="form-group">
         <label class="col-xs-12 col-sm-2 text-right">结算方式:</label>
-        <div class="col-xs-12 col-sm-10">撒打发斯蒂芬阿斯顿发送到发生付撒打发斯蒂芬阿斯顿发斯蒂芬</div>
+        <div class="col-xs-12 col-sm-10">{$list.contractSettlement|htmlentities}</div>
     </div>
     <div class="form-group">
         <label class="col-xs-12 col-sm-2 text-right">{:__('Agreedata')}:</label>

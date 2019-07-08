@@ -5,12 +5,12 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
             // 初始化表格参数配置
             Table.api.init({
                 extend: {
-                    index_url: 'finance/verify/index' + location.search,
-                    add_url: 'finance/verify/add',
-                    edit_url: 'finance/verify/edit',
-                    del_url: 'finance/verify/del',
-                    multi_url: 'finance/verify/multi',
-                    table: 'finance_verify',
+                    index_url: 'finance_payconfirm/index' + location.search,
+                    add_url: 'finance_payconfirm/add',
+                    edit_url: 'finance_payconfirm/edit',
+                    del_url: 'finance_payconfirm/del',
+                    multi_url: 'finance_payconfirm/multi',
+                    table: 'finance_payconfirm',
                 }
             });
 
@@ -24,14 +24,11 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
                 columns: [
                     [
                         {checkbox: true},
-                        {field: 'id', title: __('Id')},
-                        {field: 'agreedata', title: __('Agreedata'), searchList: {"wait":__('Agreedata wait'),"agree":__('Agreedata agree'),"veto":__('Agreedata veto')}, formatter: Table.api.formatter.normal},
+                        {field: 'payprice', title: __('Payprice'), operate:'BETWEEN'},
+                        {field: 'state', title: __('State'), searchList: {"wait":__('State wait'),"agree":__('State agree'),"veto":__('State veto')}, formatter: Table.api.formatter.normal},
                         {field: 'createtime', title: __('Createtime'), operate:'RANGE', addclass:'datetimerange', formatter: Table.api.formatter.datetime},
-                        {field: 'admin.username', title: __('Admin.username')},
                         {field: 'financeinfo.price', title: __('Financeinfo.price'), operate:'BETWEEN'},
-                        {field: 'financeinfo.contacts', title: __('Financeinfo.contacts')},
-                        {field: 'financeinfo.phone', title: __('Financeinfo.phone')},
-                        {field: 'financeinfo.createtime', title: __('Financeinfo.createtime'), operate:'RANGE', addclass:'datetimerange', formatter: Table.api.formatter.datetime},
+                        {field: 'admin.username', title: __('Admin.username')},
                         {field: 'operate', title: __('Operate'), table: table, events: Table.api.events.operate, formatter: Table.api.formatter.operate}
                     ]
                 ]

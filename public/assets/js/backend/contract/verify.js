@@ -14,36 +14,20 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form', 'echarts'], function(
                 url: $.fn.bootstrapTable.defaults.extend.index_url,
                 pk: 'id',
                 sortName: 'id',
+                search: false, //是否启用快速搜索
+                commonSearch: false, //是否启用通用搜索
+                showExport: false,
+                showToggle: false,
+                showColumns: false,
                 columns: [
-                    [{
-                        field: 'id',
-                        title: __('Id'),
-                        visible: false
-                    }, {
-                        field: 'number',
-                        title: __('Number')
-                    }, {
-                        field: 'projectName',
-                        title: __('ProjectName'),
-                        operate: 'LIKE'
-                    }, {
-                        field: 'sectionName',
-                        title: __('SectionName'),
-                        operate: 'FINDIN'
-                    }, {
-                        field: 'companyName',
-                        title: __('CompanyName'),
-                        operate: 'LIKE'
-                    }, {
-                        field: 'contractName',
-                        title: __('ContractName')
-                    }, {
-                        field: 'contractCreateTime',
-                        title: __('Createtime'),
-                        operate: 'RANGE',
-                        addclass: 'datetimerange',
-                        formatter: Table.api.formatter.datetime
-                    }, {
+                    [{field: 'id',title: __('Id'),visible: false}, 
+                    {field: 'number',title: __('Number')}, 
+                    {field: 'projectName',title: __('ProjectName'),operate: 'LIKE'}, 
+                    {field: 'sectionName',title: __('SectionName'),operate: 'FINDIN'}, 
+                    {field: 'companyName',title: __('CompanyName'),operate: 'LIKE'}, 
+                    {field: 'contractName',title: __('ContractName')},
+                    {field: 'contractCreateTime',title: __('Createtime'),operate: 'RANGE',addclass: 'datetimerange',formatter: Table.api.formatter.datetime}, 
+                    {
                         field: 'operate',
                         title: __('Operate'),
                         table: table,
@@ -72,6 +56,68 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form', 'echarts'], function(
         edit: function() {
             Controller.api.bindevent();
         },
+        payinfo: function(){
+            // 初始化表格参数配置
+            Table.api.init({
+                extend: {
+                    index_url: 'contract/verify/payinfo' + location.search,
+                }
+            });
+            var table = $("#payinfo_table");
+            // 初始化表格
+            table.bootstrapTable({
+                url: $.fn.bootstrapTable.defaults.extend.index_url,
+                pk: 'id',
+                sortName: 'id',
+                search: false, //是否启用快速搜索
+                commonSearch: false, //是否启用通用搜索
+                showExport: false,
+                showToggle: false,
+                showColumns: false,
+                columns: [
+                    [{field: 'id',title: __('Id'),visible: true}, 
+                    {field: 'companyName',title: __('供应商名称')}, 
+                    {field: 'number',title: __('类型')}, 
+                    {field: 'projectName',title: __('预算金额')}, 
+                    {field: 'sectionName',title: __('已付合计')},
+                    {field: 'sectionName',title: __('欠款金额')}
+                    ]
+                ]
+            });
+            // 为表格绑定事件
+            Table.api.bindevent(table);
+        },
+        contract: function(){
+            // 初始化表格参数配置
+            Table.api.init({
+                extend: {
+                    index_url: 'contract/verify/contract' + location.search,
+                }
+            });
+            var table = $("#contract_table");
+            // 初始化表格
+            table.bootstrapTable({
+                url: $.fn.bootstrapTable.defaults.extend.index_url,
+                pk: 'id',
+                sortName: 'id',
+                search: false, //是否启用快速搜索
+                commonSearch: false, //是否启用通用搜索
+                showExport: false,
+                showToggle: false,
+                showColumns: false,
+                columns: [
+                    [{field: 'id',title: __('Id'),visible: true}, 
+                    {field: 'companyName',title: __('供应商名称')}, 
+                    {field: 'number',title: __('类型')}, 
+                    {field: 'projectName',title: __('预算金额')}, 
+                    {field: 'sectionName',title: __('已付合计')},
+                    {field: 'sectionName',title: __('欠款金额')}
+                    ]
+                ]
+            });
+            // 为表格绑定事件
+            Table.api.bindevent(table);
+        },
         examine: function() {
             var dom = document.getElementById("echarts");
             var myChart = Echarts.init(dom);
@@ -81,13 +127,13 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form', 'echarts'], function(
                     x: 'center'
                 },
                 series: [{
-                    name: '资金拨付情况',
+                    name: 'pay',
                     type: 'pie',
                     radius: '60%',
                     center: ['25%', '60%'],
                     hoverOffset: 1,
                     data: [
-                        {value: 125313213,name: '已拨付金额',url: 'www.baidu.com'}, 
+                        {value: 125313213,name: '已拨付金额'}, 
                         {value: 121212445,name: '未拨付金额'}
                     ],
                     itemStyle: {
@@ -104,16 +150,16 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form', 'echarts'], function(
                         }
                     }
                 },{
-                    name: '拨付情况',
+                    name: 'payinfo',
                     type: 'pie',
                     radius: '60%',
                     center: ['75%', '60%'],
                     hoverOffset: 1,
                     data: [
-                        {value: 154000,name: '钢材欠款金额'},
-                        {value: 124000,name: '混凝土欠款金额'},
-                        {value: 542400,name: '模板欠款金额'},
-                        {value: 24000,name: '砂浆欠款金额'}
+                        {value: 154000,name: '钢材付款金额',categoryId: 'steel'},
+                        {value: 124000,name: '混凝土付款金额'},
+                        {value: 542400,name: '模板付款金额'},
+                        {value: 24000,name: '砂浆付款金额'}
                     ],
                     itemStyle: {
                         emphasis: {
@@ -130,13 +176,36 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form', 'echarts'], function(
                     }
                 }]
             };
+            var options = {
+                series: [{
+                    name: ['pay'],
+                    data: [
+                            {value: 154000,name: '钢材付款金额',categoryId: 'steel'},
+                            {value: 124000,name: '混凝土付款金额'}
+                        ]
+                },{
+                     // 根据名字对应到相应的系列
+                    name: ['payinfo'],
+                    data: [
+                            {value: 154000,name: '钢材付款金额',categoryId: 'steel'},
+                            {value: 124000,name: '混凝土付款金额'}
+                        ]
+                }]
+             };
             myChart.setOption(option, true);
+            myChart.setOption(options);
             myChart.on('click', function(params) {
-                console.log(params.data.url);
+                //typeof(exp) == undefined
+                Fast.api.open('/admin/contract/verify/payinfo')
+                //console.log(params.data.type);
             });           
             
             $(document).on('click', '.btn-callback', function() {
                 Fast.api.close($("input[name=callback]").val());
+            });
+
+            $(document).on("click", ".btn-default", function () {
+                Fast.api.open($(this).data('url'));
             });
         },
         api: {

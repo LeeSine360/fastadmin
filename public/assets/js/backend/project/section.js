@@ -21,14 +21,16 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
                 url: $.fn.bootstrapTable.defaults.extend.index_url,
                 pk: 'id',
                 sortName: 'id',
+                searchFormTemplate: 'form-commonsearch',
                 columns: [
                     [
                         {checkbox: true},
                         {field: 'id', title: __('Id')},
-                        {field: 'projectinfo.name', title: __('Projectinfo.name')},
-                        {field: 'name', title: __('Name')},                        
+                        {field: 'projectName', title: __('Projectinfo.name')},
+                        {field: 'sectionName', title: __('Name')},                        
                         {field: 'price', title: __('Price'), operate:'BETWEEN'},
-                        {field: 'projectmanager.name', title: __('Projectmanager.name')},
+                        {field: 'managerName', title: __('Projectmanager.name')},
+                        {field: 'payPrice', title: __('已付金额')},
                         {field: 'createtime', title: __('Createtime'), operate:'RANGE', addclass:'datetimerange', formatter: Table.api.formatter.datetime},
                         {field: 'operate', title: __('Operate'), table: table, events: Table.api.events.operate, formatter: Table.api.formatter.operate}
                     ]

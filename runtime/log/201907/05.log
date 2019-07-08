@@ -1,0 +1,2609 @@
+---------------------------------------------------------------
+[ 2019-07-05T15:52:59+08:00 ] 127.0.0.1 GET 127.0.0.1/admin/ajax/lang?callback=define&controllername=finance.info&v=1562313177
+[运行时间：0.131008s] [吞吐率：7.63req/s] [内存消耗：2,838.89kb] [文件加载：134]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.009001s ]
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3704.400 QQBrowser/10.4.3587.400',
+  'accept' => '*/*',
+  'referer' => 'http://127.0.0.1/admin/finance/info/edit/ids/7?dialog=1',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1562198997,1562286426; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1562286426; PHPSESSID=qjb2d0ped45vmts87cte0n3dv6',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'finance.info',
+  'v' => '1562313177',
+)
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.004001s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/admin/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\admin\controller\Ajax->lang[ C:\xampp\htdocs\fastadmin\application\admin\controller\Ajax.php ]
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/admin/lang/zh-cn/finance/info.php
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginbgindex\Loginbgindex @response_send [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginvideo\Loginvideo @response_send [ RunTime:0.001000s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-07-05T15:53:00+08:00 ] 127.0.0.1 POST 127.0.0.1/admin/project/info/index
+[运行时间：0.473027s] [吞吐率：2.11req/s] [内存消耗：3,730.40kb] [文件加载：143]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.012000s ]
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'project.info',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'content-length' => '154',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://127.0.0.1',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3704.400 QQBrowser/10.4.3587.400',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://127.0.0.1/admin/finance/info/edit/ids/7?dialog=1',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1562198997,1562286426; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1562286426; PHPSESSID=qjb2d0ped45vmts87cte0n3dv6',
+)
+[ info ] [ PARAM ] array (
+  'searchTable' => 'tbl',
+  'searchKey' => 'id',
+  'searchValue' => '2',
+  'orderBy' => 
+  array (
+    0 => 
+    array (
+      0 => 'name',
+      1 => 'ASC',
+    ),
+  ),
+  'showField' => 'name',
+  'keyField' => 'id',
+  'keyValue' => '2',
+  'searchField' => 
+  array (
+    0 => 'name',
+  ),
+)
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.005000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/admin/lang/zh-cn/project/info.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\project\Info->index[ C:\xampp\htdocs\fastadmin\application\admin\controller\project\Info.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.166009s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginbgindex\Loginbgindex @response_send [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginvideo\Loginvideo @response_send [ RunTime:0.000000s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.039003s ] mysql:host=127.0.0.1;port=3306;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.016001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.019001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.051003s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.006000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;port=3306;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_project_info` [ RunTime:0.021001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_project_info` WHERE  `id` IN (2) LIMIT 1 [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_project_info` WHERE  `id` IN (2) ORDER BY `name` ASC LIMIT 0,20 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin_log` [ RunTime:0.018001s ]
+[ sql ] [ SQL ] INSERT INTO `fa_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('项目管理 项目信息 查看' , '{\"searchTable\":\"tbl\",\"searchKey\":\"id\",\"searchValue\":\"2\",\"orderBy\":[[\"name\",\"ASC\"]],\"showField\":\"name\",\"keyField\":\"id\",\"keyValue\":\"2\",\"searchField\":[\"name\"]}' , '/admin/project/info/index' , 1 , 'admin' , 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3704.400 QQBrowser/10.4.3587.400' , '127.0.0.1' , 1562313180) [ RunTime:0.145008s ]
+---------------------------------------------------------------
+[ 2019-07-05T15:53:00+08:00 ] 127.0.0.1 POST 127.0.0.1/admin/company/info/index
+[运行时间：0.638037s] [吞吐率：1.57req/s] [内存消耗：3,754.70kb] [文件加载：143]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.016001s ]
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'company.info',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'content-length' => '158',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://127.0.0.1',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3704.400 QQBrowser/10.4.3587.400',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://127.0.0.1/admin/finance/info/edit/ids/7?dialog=1',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1562198997,1562286426; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1562286426; PHPSESSID=qjb2d0ped45vmts87cte0n3dv6',
+)
+[ info ] [ PARAM ] array (
+  'searchTable' => 'tbl',
+  'searchKey' => 'id',
+  'searchValue' => '731',
+  'orderBy' => 
+  array (
+    0 => 
+    array (
+      0 => 'name',
+      1 => 'ASC',
+    ),
+  ),
+  'showField' => 'name',
+  'keyField' => 'id',
+  'keyValue' => '731',
+  'searchField' => 
+  array (
+    0 => 'name',
+  ),
+)
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.005000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/admin/lang/zh-cn/company/info.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\company\Info->index[ C:\xampp\htdocs\fastadmin\application\admin\controller\company\Info.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.059004s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginbgindex\Loginbgindex @response_send [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginvideo\Loginvideo @response_send [ RunTime:0.000000s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.024002s ] mysql:host=127.0.0.1;port=3306;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.021001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.011001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.003000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:host=127.0.0.1;port=3306;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_company_info` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_company_info` WHERE  `id` IN (731) LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_company_info` WHERE  `id` IN (731) ORDER BY `name` ASC LIMIT 0,20 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin_log` [ RunTime:0.017001s ]
+[ sql ] [ SQL ] INSERT INTO `fa_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('供应商管理 供应商信息 查看' , '{\"searchTable\":\"tbl\",\"searchKey\":\"id\",\"searchValue\":\"731\",\"orderBy\":[[\"name\",\"ASC\"]],\"showField\":\"name\",\"keyField\":\"id\",\"keyValue\":\"731\",\"searchField\":[\"name\"]}' , '/admin/company/info/index' , 1 , 'admin' , 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3704.400 QQBrowser/10.4.3587.400' , '127.0.0.1' , 1562313180) [ RunTime:0.039003s ]
+---------------------------------------------------------------
+[ 2019-07-05T15:53:00+08:00 ] 127.0.0.1 POST 127.0.0.1/admin/project/section/index
+[运行时间：0.811046s] [吞吐率：1.23req/s] [内存消耗：3,728.14kb] [文件加载：143]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.012001s ]
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'project.section',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'content-length' => '154',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://127.0.0.1',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3704.400 QQBrowser/10.4.3587.400',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://127.0.0.1/admin/finance/info/edit/ids/7?dialog=1',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1562198997,1562286426; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1562286426; PHPSESSID=qjb2d0ped45vmts87cte0n3dv6',
+)
+[ info ] [ PARAM ] array (
+  'searchTable' => 'tbl',
+  'searchKey' => 'id',
+  'searchValue' => '3',
+  'orderBy' => 
+  array (
+    0 => 
+    array (
+      0 => 'name',
+      1 => 'ASC',
+    ),
+  ),
+  'showField' => 'name',
+  'keyField' => 'id',
+  'keyValue' => '3',
+  'searchField' => 
+  array (
+    0 => 'name',
+  ),
+)
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.004000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/admin/lang/zh-cn/project/section.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\project\Section->index[ C:\xampp\htdocs\fastadmin\application\admin\controller\project\Section.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.044002s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginbgindex\Loginbgindex @response_send [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginvideo\Loginvideo @response_send [ RunTime:0.001000s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.014001s ] mysql:host=127.0.0.1;port=3306;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.007000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.017001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.004000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=127.0.0.1;port=3306;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_project_section` [ RunTime:0.011000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_project_section` WHERE  `id` IN (3) LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_project_section` WHERE  `id` IN (3) ORDER BY `name` ASC LIMIT 0,20 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin_log` [ RunTime:0.012000s ]
+[ sql ] [ SQL ] INSERT INTO `fa_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('项目管理 标段信息 查看' , '{\"searchTable\":\"tbl\",\"searchKey\":\"id\",\"searchValue\":\"3\",\"orderBy\":[[\"name\",\"ASC\"]],\"showField\":\"name\",\"keyField\":\"id\",\"keyValue\":\"3\",\"searchField\":[\"name\"]}' , '/admin/project/section/index' , 1 , 'admin' , 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3704.400 QQBrowser/10.4.3587.400' , '127.0.0.1' , 1562313180) [ RunTime:0.031002s ]
+---------------------------------------------------------------
+[ 2019-07-05T15:53:01+08:00 ] 127.0.0.1 POST 127.0.0.1/admin/category/selectpage
+[运行时间：1.128065s] [吞吐率：0.89req/s] [内存消耗：3,661.28kb] [文件加载：145]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.209012s ]
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'category',
+    2 => 'selectpage',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'content-length' => '156',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://127.0.0.1',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3704.400 QQBrowser/10.4.3587.400',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://127.0.0.1/admin/finance/info/edit/ids/7?dialog=1',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1562198997,1562286426; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1562286426; PHPSESSID=qjb2d0ped45vmts87cte0n3dv6',
+)
+[ info ] [ PARAM ] array (
+  'searchTable' => 'tbl',
+  'searchKey' => 'id',
+  'searchValue' => '48',
+  'orderBy' => 
+  array (
+    0 => 
+    array (
+      0 => 'name',
+      1 => 'ASC',
+    ),
+  ),
+  'showField' => 'name',
+  'keyField' => 'id',
+  'keyValue' => '48',
+  'searchField' => 
+  array (
+    0 => 'name',
+  ),
+)
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.004000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/admin/lang/zh-cn/category.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Category->selectpage[ C:\xampp\htdocs\fastadmin\application\admin\controller\Category.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.266016s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginbgindex\Loginbgindex @response_send [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginvideo\Loginvideo @response_send [ RunTime:0.001000s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;port=3306;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_category` [ RunTime:0.012000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_category` ORDER BY `weigh` DESC,`id` DESC [ RunTime:0.002001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_category` WHERE  `id` IN (48) LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_category` WHERE  `id` IN (48) ORDER BY `name` ASC LIMIT 0,20 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin_log` [ RunTime:0.208012s ]
+[ sql ] [ SQL ] INSERT INTO `fa_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('' , '{\"searchTable\":\"tbl\",\"searchKey\":\"id\",\"searchValue\":\"48\",\"orderBy\":[[\"name\",\"ASC\"]],\"showField\":\"name\",\"keyField\":\"id\",\"keyValue\":\"48\",\"searchField\":[\"name\"]}' , '/admin/category/selectpage' , 1 , 'admin' , 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3704.400 QQBrowser/10.4.3587.400' , '127.0.0.1' , 1562313181) [ RunTime:0.053003s ]
+---------------------------------------------------------------
+[ 2019-07-05T15:53:01+08:00 ] 127.0.0.1 POST 127.0.0.1/admin/finance/info/edit/ids/7?dialog=1
+[运行时间：0.416024s] [吞吐率：2.40req/s] [内存消耗：3,706.09kb] [文件加载：144]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.010001s ]
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'finance.info',
+    2 => 'edit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'content-length' => '465',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://127.0.0.1',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3704.400 QQBrowser/10.4.3587.400',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://127.0.0.1/admin/finance/info/edit/ids/7?dialog=1',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1562198997,1562286426; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1562286426; PHPSESSID=qjb2d0ped45vmts87cte0n3dv6',
+)
+[ info ] [ PARAM ] array (
+  'dialog' => '1',
+  'row' => 
+  array (
+    'project_info_id' => '2',
+    'project_section_id' => '3',
+    'company_info_id' => '731',
+    'category_id' => '48',
+    'price' => '3625000',
+    'contacts' => '张三',
+    'phone' => '1388888888',
+    'remark' => '',
+  ),
+  'ids' => '7',
+)
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.003000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/admin/lang/zh-cn/finance/info.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\common\controller\Backend->edit[ C:\xampp\htdocs\fastadmin\application\admin\library\traits\Backend.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.042003s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginbgindex\Loginbgindex @response_send [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginvideo\Loginvideo @response_send [ RunTime:0.000000s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:host=127.0.0.1;port=3306;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.006000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_finance_info` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_finance_info` WHERE  `id` = 7 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] UPDATE `fa_finance_info`  SET `price`=3625000,`updatetime`=1562313181  WHERE  `id` = 7 [ RunTime:0.055003s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin_log` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] INSERT INTO `fa_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('财务管理 报账单 编辑' , '{\"dialog\":\"1\",\"row\":{\"project_info_id\":\"2\",\"project_section_id\":\"3\",\"company_info_id\":\"731\",\"category_id\":\"48\",\"price\":\"3625000\",\"contacts\":\"\\u5f20\\u4e09\",\"phone\":\"1388888888\",\"remark\":\"\"},\"ids\":\"7\"}' , '/admin/finance/info/edit/ids/7?dialog=1' , 1 , 'admin' , 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3704.400 QQBrowser/10.4.3587.400' , '127.0.0.1' , 1562313181) [ RunTime:0.029002s ]
+---------------------------------------------------------------
+[ 2019-07-05T15:53:02+08:00 ] 127.0.0.1 GET 127.0.0.1/admin/finance/info/index?addtabs=1&sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1562312790951
+[运行时间：0.567032s] [吞吐率：1.76req/s] [内存消耗：4,069.67kb] [文件加载：152]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.007000s ]
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'finance.info',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3704.400 QQBrowser/10.4.3587.400',
+  'content-type' => 'application/json',
+  'referer' => 'http://127.0.0.1/admin/finance/info?addtabs=1',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1562198997,1562286426; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1562286426; PHPSESSID=qjb2d0ped45vmts87cte0n3dv6',
+)
+[ info ] [ PARAM ] array (
+  'addtabs' => '1',
+  'sort' => 'id',
+  'order' => 'desc',
+  'offset' => '0',
+  'limit' => '10',
+  'filter' => '{}',
+  'op' => '{}',
+  '_' => '1562312790951',
+)
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.006000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/admin/lang/zh-cn/finance/info.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\finance\Info->index[ C:\xampp\htdocs\fastadmin\application\admin\controller\finance\Info.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.001000s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginbgindex\Loginbgindex @response_send [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginvideo\Loginvideo @response_send [ RunTime:0.000000s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;port=3306;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.010001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.060003s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.004000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=127.0.0.1;port=3306;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_finance_info` [ RunTime:0.025001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_project_info` [ RunTime:0.048003s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_project_section` [ RunTime:0.018001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_company_info` [ RunTime:0.115007s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_category` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin` [ RunTime:0.061003s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_finance_info` `finance_info` LEFT JOIN `fa_project_info` `projectinfo` ON `finance_info`.`project_info_id`=`projectinfo`.`id` LEFT JOIN `fa_project_section` `projectsection` ON `finance_info`.`project_section_id`=`projectsection`.`id` LEFT JOIN `fa_company_info` `companyinfo` ON `finance_info`.`company_info_id`=`companyinfo`.`id` LEFT JOIN `fa_category` `category` ON `finance_info`.`category_id`=`category`.`id` LEFT JOIN `fa_admin` `admin` ON `finance_info`.`admin_id`=`admin`.`id` ORDER BY `finance_info`.`id` DESC LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `finance_info`.`id`,`finance_info`.`project_info_id`,`finance_info`.`project_section_id`,`finance_info`.`company_info_id`,`finance_info`.`category_id`,`finance_info`.`price`,`finance_info`.`contacts`,`finance_info`.`phone`,`finance_info`.`remark`,`finance_info`.`createtime`,`finance_info`.`updatetime`,`finance_info`.`admin_id`,projectinfo.id AS projectinfo__id,projectinfo.number AS projectinfo__number,projectinfo.name AS projectinfo__name,projectinfo.price AS projectinfo__price,projectinfo.starttime AS projectinfo__starttime,projectinfo.days AS projectinfo__days,projectinfo.city AS projectinfo__city,projectinfo.address AS projectinfo__address,projectinfo.surveycontent AS projectinfo__surveycontent,projectinfo.remark AS projectinfo__remark,projectinfo.createtime AS projectinfo__createtime,projectinfo.updatetime AS projectinfo__updatetime,projectinfo.admin_id AS projectinfo__admin_id,projectsection.id AS projectsection__id,projectsection.project_info_id AS projectsection__project_info_id,projectsection.project_manager_id AS projectsection__project_manager_id,projectsection.name AS projectsection__name,projectsection.price AS projectsection__price,projectsection.surveycontent AS projectsection__surveycontent,projectsection.remark AS projectsection__remark,projectsection.createtime AS projectsection__createtime,projectsection.updatetime AS projectsection__updatetime,projectsection.admin_id AS projectsection__admin_id,companyinfo.id AS companyinfo__id,companyinfo.name AS companyinfo__name,companyinfo.code AS companyinfo__code,companyinfo.type AS companyinfo__type,companyinfo.status AS companyinfo__status,companyinfo.regCapital AS companyinfo__regCapital,companyinfo.scope AS companyinfo__scope,companyinfo.address AS companyinfo__address,companyinfo.contacts AS companyinfo__contacts,companyinfo.phone AS companyinfo__phone,companyinfo.payname AS companyinfo__payname,companyinfo.account AS companyinfo__account,companyinfo.bankname AS companyinfo__bankname,companyinfo.uploadimages AS companyinfo__uploadimages,companyinfo.remark AS companyinfo__remark,companyinfo.createtime AS companyinfo__createtime,companyinfo.updatetime AS companyinfo__updatetime,companyinfo.weigh AS companyinfo__weigh,companyinfo.admin_id AS companyinfo__admin_id,category.id AS category__id,category.pid AS category__pid,category.type AS category__type,category.name AS category__name,category.nickname AS category__nickname,category.flag AS category__flag,category.image AS category__image,category.keywords AS category__keywords,category.description AS category__description,category.diyname AS category__diyname,category.createtime AS category__createtime,category.updatetime AS category__updatetime,category.weigh AS category__weigh,category.status AS category__status,admin.id AS admin__id,admin.username AS admin__username,admin.nickname AS admin__nickname,admin.password AS admin__password,admin.salt AS admin__salt,admin.avatar AS admin__avatar,admin.email AS admin__email,admin.loginfailure AS admin__loginfailure,admin.logintime AS admin__logintime,admin.createtime AS admin__createtime,admin.updatetime AS admin__updatetime,admin.token AS admin__token,admin.status AS admin__status FROM `fa_finance_info` `finance_info` LEFT JOIN `fa_project_info` `projectinfo` ON `finance_info`.`project_info_id`=`projectinfo`.`id` LEFT JOIN `fa_project_section` `projectsection` ON `finance_info`.`project_section_id`=`projectsection`.`id` LEFT JOIN `fa_company_info` `companyinfo` ON `finance_info`.`company_info_id`=`companyinfo`.`id` LEFT JOIN `fa_category` `category` ON `finance_info`.`category_id`=`category`.`id` LEFT JOIN `fa_admin` `admin` ON `finance_info`.`admin_id`=`admin`.`id` ORDER BY `finance_info`.`id` DESC LIMIT 0,10 [ RunTime:0.022001s ]
+---------------------------------------------------------------
+[ 2019-07-05T15:53:03+08:00 ] 127.0.0.1 GET 127.0.0.1/admin/project/section/index?addtabs=1&search=&sort=id&order=desc&offset=0&limit=10&filter=%7B%22project_info.name%22%3A%22%E5%96%84%E5%BB%BA%E4%BA%BA%E5%AE%B6%22%2C%22project_section.name%22%3A%221%23%22%7D&op=%7B%22project_info.name%22%3A%22LIKE%22%2C%22project_section.name%22%3A%22LIKE%22%7D&_=1562312733459
+[运行时间：0.421024s] [吞吐率：2.38req/s] [内存消耗：3,692.78kb] [文件加载：142]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.013001s ]
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'project.section',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3704.400 QQBrowser/10.4.3587.400',
+  'content-type' => 'application/json',
+  'referer' => 'http://127.0.0.1/admin/project/section?addtabs=1',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1562198997,1562286426; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1562286426; PHPSESSID=qjb2d0ped45vmts87cte0n3dv6',
+)
+[ info ] [ PARAM ] array (
+  'addtabs' => '1',
+  'search' => '',
+  'sort' => 'id',
+  'order' => 'desc',
+  'offset' => '0',
+  'limit' => '10',
+  'filter' => '{"project_info.name":"善建人家","project_section.name":"1#"}',
+  'op' => '{"project_info.name":"LIKE","project_section.name":"LIKE"}',
+  '_' => '1562312733459',
+)
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.057003s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/admin/lang/zh-cn/project/section.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\project\Section->index[ C:\xampp\htdocs\fastadmin\application\admin\controller\project\Section.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginbgindex\Loginbgindex @response_send [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginvideo\Loginvideo @response_send [ RunTime:0.000000s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.014000s ] mysql:host=127.0.0.1;port=3306;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.024002s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.018001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_project_section` [ RunTime:0.017001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_project_section` `project_section` INNER JOIN `fa_project_info` `project_info` ON `project_section`.`project_info_id`=`project_info`.`id` WHERE  (  `project_info`.`name` LIKE '%善建人家%'  AND `project_section`.`name` LIKE '%1#%' ) ORDER BY `project_section`.`id` DESC LIMIT 1 [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT 
+                        project_section.id as id,
+                        project_info.name as projectName,
+                        project_section.name as sectionName,
+                        project_section.price as price,
+                        project_manager.name as managerName,
+                        ROUND(SUM(finance_info.price)/project_section.price,2)*100 as payPrice
+                     FROM `fa_project_section` `project_section` INNER JOIN `fa_project_info` `project_info` ON `project_section`.`project_info_id`=`project_info`.`id` INNER JOIN `fa_project_manager` `project_manager` ON `project_section`.`project_manager_id`=`project_manager`.`id` LEFT JOIN `fa_finance_info` `finance_info` ON `finance_info`.`project_section_id`=`project_section`.`id` WHERE  (  `project_info`.`name` LIKE '%善建人家%'  AND `project_section`.`name` LIKE '%1#%' ) GROUP BY `project_section`.`id` ORDER BY `project_section`.`id` DESC [ RunTime:0.012001s ]
+---------------------------------------------------------------
+[ 2019-07-05T15:54:32+08:00 ] 127.0.0.1 GET 127.0.0.1/admin/project/section?ref=addtabs
+[运行时间：0.146009s] [吞吐率：6.85req/s] [内存消耗：3,414.69kb] [文件加载：138]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.006000s ]
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'project.section',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3704.400 QQBrowser/10.4.3587.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/admin/dashboard?ref=addtabs',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1562198997,1562286426; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1562286426; PHPSESSID=qjb2d0ped45vmts87cte0n3dv6',
+)
+[ info ] [ PARAM ] array (
+  'ref' => 'addtabs',
+)
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.004000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginbgindex\Loginbgindex @response_send [ RunTime:0.001000s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginvideo\Loginvideo @response_send [ RunTime:0.000000s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;port=3306;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.005000s ]
+---------------------------------------------------------------
+[ 2019-07-05T15:54:33+08:00 ] 127.0.0.1 GET 127.0.0.1/admin/index/index
+[运行时间：0.609035s] [吞吐率：1.64req/s] [内存消耗：3,941.32kb] [文件加载：153]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.008000s ]
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3704.400 QQBrowser/10.4.3587.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/admin/dashboard?ref=addtabs',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1562198997,1562286426; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1562286426; PHPSESSID=qjb2d0ped45vmts87cte0n3dv6',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.003000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/admin/lang/zh-cn/index.php
+[ info ] [ RUN ] app\admin\controller\Index->index[ C:\xampp\htdocs\fastadmin\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\fastadmin\public/../application/admin\view\index\index.html [ array (
+  0 => 'breadcrumb',
+  1 => 'site',
+  2 => 'config',
+  3 => 'auth',
+  4 => 'admin',
+  5 => 'menulist',
+  6 => 'navlist',
+  7 => 'fixedmenu',
+  8 => 'referermenu',
+  9 => 'title',
+) ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.001000s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginbgindex\Loginbgindex @response_send [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginvideo\Loginvideo @response_send [ RunTime:0.001001s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=127.0.0.1;port=3306;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.010001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.005000s ]
+---------------------------------------------------------------
+[ 2019-07-05T15:54:34+08:00 ] 127.0.0.1 GET 127.0.0.1/admin/dashboard?addtabs=1
+[运行时间：0.296017s] [吞吐率：3.38req/s] [内存消耗：3,744.46kb] [文件加载：143]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.009000s ]
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'dashboard',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3704.400 QQBrowser/10.4.3587.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/admin/index/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1562198997,1562286426; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1562286426; PHPSESSID=qjb2d0ped45vmts87cte0n3dv6',
+)
+[ info ] [ PARAM ] array (
+  'addtabs' => '1',
+)
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.004000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/admin/lang/zh-cn/dashboard.php
+[ info ] [ RUN ] app\admin\controller\Dashboard->index[ C:\xampp\htdocs\fastadmin\application\admin\controller\Dashboard.php ]
+[ info ] [ VIEW ] C:\xampp\htdocs\fastadmin\public/../application/admin\view\dashboard\index.html [ array (
+  0 => 'breadcrumb',
+  1 => 'site',
+  2 => 'config',
+  3 => 'auth',
+  4 => 'admin',
+  5 => 'totaluser',
+  6 => 'totalviews',
+  7 => 'totalorder',
+  8 => 'totalorderamount',
+  9 => 'todayuserlogin',
+  10 => 'todayusersignup',
+  11 => 'todayorder',
+  12 => 'unsettleorder',
+  13 => 'sevendnu',
+  14 => 'sevendau',
+  15 => 'paylist',
+  16 => 'createlist',
+  17 => 'addonversion',
+  18 => 'uploadmode',
+) ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.001000s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginbgindex\Loginbgindex @response_send [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginvideo\Loginvideo @response_send [ RunTime:0.000000s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;port=3306;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.010001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.011000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.006001s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `fa_auth_rule` WHERE  `name` = 'dashboard' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2019-07-05T15:54:34+08:00 ] 127.0.0.1 GET 127.0.0.1/admin/project/section?addtabs=1
+[运行时间：0.407023s] [吞吐率：2.46req/s] [内存消耗：3,680.66kb] [文件加载：142]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.008001s ]
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'project.section',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3704.400 QQBrowser/10.4.3587.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/admin/index/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1562198997,1562286426; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1562286426; PHPSESSID=qjb2d0ped45vmts87cte0n3dv6',
+)
+[ info ] [ PARAM ] array (
+  'addtabs' => '1',
+)
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.003000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/admin/lang/zh-cn/project/section.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\project\Section->index[ C:\xampp\htdocs\fastadmin\application\admin\controller\project\Section.php ]
+[ info ] [ VIEW ] C:\xampp\htdocs\fastadmin\public/../application/admin\view\project\section\index.html [ array (
+  0 => 'breadcrumb',
+  1 => 'site',
+  2 => 'config',
+  3 => 'auth',
+  4 => 'admin',
+) ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.001000s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginbgindex\Loginbgindex @response_send [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginvideo\Loginvideo @response_send [ RunTime:0.001000s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=127.0.0.1;port=3306;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.002001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.013000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.005001s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `fa_auth_rule` WHERE  `name` = 'project/section' LIMIT 1 [ RunTime:0.002000s ]
+---------------------------------------------------------------
+[ 2019-07-05T15:54:35+08:00 ] 127.0.0.1 GET 127.0.0.1/admin/ajax/lang?callback=define&controllername=index&v=1562313272
+[运行时间：0.161010s] [吞吐率：6.21req/s] [内存消耗：2,843.44kb] [文件加载：134]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.009000s ]
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3704.400 QQBrowser/10.4.3587.400',
+  'accept' => '*/*',
+  'referer' => 'http://127.0.0.1/admin/index/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1562198997,1562286426; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1562286426; PHPSESSID=qjb2d0ped45vmts87cte0n3dv6',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'index',
+  'v' => '1562313272',
+)
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.012001s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/admin/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\admin\controller\Ajax->lang[ C:\xampp\htdocs\fastadmin\application\admin\controller\Ajax.php ]
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/admin/lang/zh-cn/index.php
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.001000s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginbgindex\Loginbgindex @response_send [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginvideo\Loginvideo @response_send [ RunTime:0.001000s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-07-05T15:54:36+08:00 ] 127.0.0.1 GET 127.0.0.1/admin/ajax/lang?callback=define&controllername=project.section&v=1562313273
+[运行时间：0.366021s] [吞吐率：2.73req/s] [内存消耗：2,838.76kb] [文件加载：134]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.010000s ]
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3704.400 QQBrowser/10.4.3587.400',
+  'accept' => '*/*',
+  'referer' => 'http://127.0.0.1/admin/project/section?addtabs=1',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1562198997,1562286426; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1562286426; PHPSESSID=qjb2d0ped45vmts87cte0n3dv6',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'project.section',
+  'v' => '1562313273',
+)
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.007000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/admin/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\admin\controller\Ajax->lang[ C:\xampp\htdocs\fastadmin\application\admin\controller\Ajax.php ]
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/admin/lang/zh-cn/project/section.php
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.001000s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginbgindex\Loginbgindex @response_send [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginvideo\Loginvideo @response_send [ RunTime:0.000000s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-07-05T15:54:36+08:00 ] 127.0.0.1 GET 127.0.0.1/admin/ajax/lang?callback=define&controllername=dashboard&v=1562313273
+[运行时间：0.348019s] [吞吐率：2.87req/s] [内存消耗：2,840.98kb] [文件加载：134]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.011000s ]
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3704.400 QQBrowser/10.4.3587.400',
+  'accept' => '*/*',
+  'referer' => 'http://127.0.0.1/admin/dashboard?addtabs=1',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1562198997,1562286426; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1562286426; PHPSESSID=qjb2d0ped45vmts87cte0n3dv6',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'dashboard',
+  'v' => '1562313273',
+)
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.156009s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/admin/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\admin\controller\Ajax->lang[ C:\xampp\htdocs\fastadmin\application\admin\controller\Ajax.php ]
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/admin/lang/zh-cn/dashboard.php
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginbgindex\Loginbgindex @response_send [ RunTime:0.001000s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginvideo\Loginvideo @response_send [ RunTime:0.000000s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-07-05T15:54:38+08:00 ] 127.0.0.1 GET 127.0.0.1/admin/project/section/index?addtabs=1&sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1562313275981
+[运行时间：0.301017s] [吞吐率：3.32req/s] [内存消耗：3,700.30kb] [文件加载：142]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.018001s ]
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'project.section',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3704.400 QQBrowser/10.4.3587.400',
+  'content-type' => 'application/json',
+  'referer' => 'http://127.0.0.1/admin/project/section?addtabs=1',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1562198997,1562286426; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1562286426; PHPSESSID=qjb2d0ped45vmts87cte0n3dv6',
+)
+[ info ] [ PARAM ] array (
+  'addtabs' => '1',
+  'sort' => 'id',
+  'order' => 'desc',
+  'offset' => '0',
+  'limit' => '10',
+  'filter' => '{}',
+  'op' => '{}',
+  '_' => '1562313275981',
+)
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.021001s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/admin/lang/zh-cn/project/section.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\project\Section->index[ C:\xampp\htdocs\fastadmin\application\admin\controller\project\Section.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginbgindex\Loginbgindex @response_send [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginvideo\Loginvideo @response_send [ RunTime:0.002000s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;port=3306;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_project_section` [ RunTime:0.036002s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_project_section` `project_section` INNER JOIN `fa_project_info` `project_info` ON `project_section`.`project_info_id`=`project_info`.`id` ORDER BY `project_section`.`id` DESC LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT 
+                        project_section.id as id,
+                        project_info.name as projectName,
+                        project_section.name as sectionName,
+                        project_section.price as price,
+                        project_manager.name as managerName,
+                        ROUND(SUM(finance_info.price)/project_section.price,2)*100 as payPrice
+                     FROM `fa_project_section` `project_section` INNER JOIN `fa_project_info` `project_info` ON `project_section`.`project_info_id`=`project_info`.`id` INNER JOIN `fa_project_manager` `project_manager` ON `project_section`.`project_manager_id`=`project_manager`.`id` LEFT JOIN `fa_finance_info` `finance_info` ON `finance_info`.`project_section_id`=`project_section`.`id` GROUP BY `project_section`.`id` ORDER BY `project_section`.`id` DESC [ RunTime:0.002000s ]
+---------------------------------------------------------------
+[ 2019-07-05T15:54:45+08:00 ] 127.0.0.1 GET 127.0.0.1/admin/project/section/index?addtabs=1&sort=id&order=desc&offset=0&limit=10&filter=%7B%22project_info.name%22%3A%22%E5%96%84%E5%BB%BA%E4%BA%BA%E5%AE%B6%22%2C%22project_section.name%22%3A%221%23%22%7D&op=%7B%22project_info.name%22%3A%22LIKE%22%2C%22project_section.name%22%3A%22LIKE%22%7D&_=1562313275982
+[运行时间：0.268016s] [吞吐率：3.73req/s] [内存消耗：3,691.94kb] [文件加载：142]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.042003s ]
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'project.section',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3704.400 QQBrowser/10.4.3587.400',
+  'content-type' => 'application/json',
+  'referer' => 'http://127.0.0.1/admin/project/section?addtabs=1',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1562198997,1562286426; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1562286426; PHPSESSID=qjb2d0ped45vmts87cte0n3dv6',
+)
+[ info ] [ PARAM ] array (
+  'addtabs' => '1',
+  'sort' => 'id',
+  'order' => 'desc',
+  'offset' => '0',
+  'limit' => '10',
+  'filter' => '{"project_info.name":"善建人家","project_section.name":"1#"}',
+  'op' => '{"project_info.name":"LIKE","project_section.name":"LIKE"}',
+  '_' => '1562313275982',
+)
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.007001s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/admin/lang/zh-cn/project/section.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\project\Section->index[ C:\xampp\htdocs\fastadmin\application\admin\controller\project\Section.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginbgindex\Loginbgindex @response_send [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginvideo\Loginvideo @response_send [ RunTime:0.001001s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:host=127.0.0.1;port=3306;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.015000s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_project_section` [ RunTime:0.017001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_project_section` `project_section` INNER JOIN `fa_project_info` `project_info` ON `project_section`.`project_info_id`=`project_info`.`id` WHERE  (  `project_info`.`name` LIKE '%善建人家%'  AND `project_section`.`name` LIKE '%1#%' ) ORDER BY `project_section`.`id` DESC LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT 
+                        project_section.id as id,
+                        project_info.name as projectName,
+                        project_section.name as sectionName,
+                        project_section.price as price,
+                        project_manager.name as managerName,
+                        ROUND(SUM(finance_info.price)/project_section.price,2)*100 as payPrice
+                     FROM `fa_project_section` `project_section` INNER JOIN `fa_project_info` `project_info` ON `project_section`.`project_info_id`=`project_info`.`id` INNER JOIN `fa_project_manager` `project_manager` ON `project_section`.`project_manager_id`=`project_manager`.`id` LEFT JOIN `fa_finance_info` `finance_info` ON `finance_info`.`project_section_id`=`project_section`.`id` WHERE  (  `project_info`.`name` LIKE '%善建人家%'  AND `project_section`.`name` LIKE '%1#%' ) GROUP BY `project_section`.`id` ORDER BY `project_section`.`id` DESC [ RunTime:0.002000s ]
+---------------------------------------------------------------
+[ 2019-07-05T16:12:06+08:00 ] 127.0.0.1 GET 127.0.0.1/
+[运行时间：0.410020s] [吞吐率：2.44req/s] [内存消耗：2,492.18kb] [文件加载：128]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.009001s ]
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3704.400 QQBrowser/10.4.3587.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.004000s ]
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->index[ C:\xampp\htdocs\fastadmin\application\index\controller\Index.php ]
+[ info ] [ VIEW ] C:\xampp\htdocs\fastadmin\public/../application/index\view\index\index.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+) ]
+[ info ] [ BEHAVIOR ] Run \addons\loginbgindex\Loginbgindex @response_send [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginvideo\Loginvideo @response_send [ RunTime:0.000000s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-07-05T16:12:09+08:00 ] 127.0.0.1 GET 127.0.0.1/favicon.ico
+[运行时间：0.277011s] [吞吐率：3.61req/s] [内存消耗：1,961.48kb] [文件加载：117]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.119503s ]
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'favicon.ico',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3704.400 QQBrowser/10.4.3587.400',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1562314328; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1562314328',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run \addons\loginbgindex\Loginbgindex @response_send [ RunTime:0.008000s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginvideo\Loginvideo @response_send [ RunTime:0.000000s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-07-05T16:40:03+08:00 ] 127.0.0.1 GET 127.0.0.1/admin/index/login.html
+[运行时间：0.231013s] [吞吐率：4.33req/s] [内存消耗：2,838.05kb] [文件加载：136]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.012001s ]
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3704.400 QQBrowser/10.4.3587.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1562314328; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1562314328',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.005000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/admin/lang/zh-cn/index.php
+[ info ] [ RUN ] app\admin\controller\Index->login[ C:\xampp\htdocs\fastadmin\application\admin\controller\Index.php ]
+[ info ] [ BEHAVIOR ] Run \addons\loginbg\Loginbg @admin_login_init [ RunTime:0.001000s ]
+[ info ] [ VIEW ] C:\xampp\htdocs\fastadmin\public/../application/admin\view\index\login.html [ array (
+  0 => 'breadcrumb',
+  1 => 'site',
+  2 => 'config',
+  3 => 'auth',
+  4 => 'admin',
+  5 => 'background',
+  6 => 'title',
+) ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginbgindex\Loginbgindex @response_send [ RunTime:0.000000s ]
+[ info ] [ VIEW ] C:\xampp\htdocs\fastadmin\addons\loginvideo\view\background.html [ array (
+  0 => 'config',
+) ]
+[ info ] [ BEHAVIOR ] Run \addons\loginvideo\Loginvideo @response_send [ RunTime:0.032002s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-07-05T16:40:04+08:00 ] 127.0.0.1 GET 127.0.0.1/admin/ajax/lang?callback=define&controllername=index&v=1562316003
+[运行时间：0.124006s] [吞吐率：8.06req/s] [内存消耗：2,840.45kb] [文件加载：134]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.010000s ]
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3704.400 QQBrowser/10.4.3587.400',
+  'accept' => '*/*',
+  'referer' => 'http://127.0.0.1/admin/index/login.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1562314328; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1562314328; PHPSESSID=bmpa8c92m7a202k0lnema5grum',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'index',
+  'v' => '1562316003',
+)
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.004000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/admin/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\admin\controller\Ajax->lang[ C:\xampp\htdocs\fastadmin\application\admin\controller\Ajax.php ]
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/admin/lang/zh-cn/index.php
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.002500s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginbgindex\Loginbgindex @response_send [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginvideo\Loginvideo @response_send [ RunTime:0.000000s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-07-05T16:40:05+08:00 ] 127.0.0.1 POST 127.0.0.1/admin/index/login.html
+[运行时间：0.324019s] [吞吐率：3.09req/s] [内存消耗：3,498.48kb] [文件加载：143]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.011001s ]
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'content-length' => '73',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://127.0.0.1',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3704.400 QQBrowser/10.4.3587.400',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://127.0.0.1/admin/index/login.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1562314328; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1562314328; PHPSESSID=bmpa8c92m7a202k0lnema5grum',
+)
+[ info ] [ PARAM ] array (
+  '__token__' => '1e3822aec81f62c6cb655c15b5b6f4af',
+  'username' => 'admin',
+  'password' => '123456',
+)
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.005001s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/admin/lang/zh-cn/index.php
+[ info ] [ RUN ] app\admin\controller\Index->login[ C:\xampp\htdocs\fastadmin\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.049003s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginbgindex\Loginbgindex @response_send [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginvideo\Loginvideo @response_send [ RunTime:0.001000s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:host=127.0.0.1;port=3306;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin` [ RunTime:0.011000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_admin` WHERE  `username` = 'admin' LIMIT 1 [ RunTime:0.018001s ]
+[ sql ] [ SQL ] UPDATE `fa_admin`  SET `logintime`=1562316005,`token`='ac0c4138-0963-4418-9cf5-78ba3a943197',`updatetime`=1562316005  WHERE  `id` = 1 [ RunTime:0.046003s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin_log` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] INSERT INTO `fa_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('登录' , '{\"__token__\":\"1e3822aec81f62c6cb655c15b5b6f4af\",\"username\":\"admin\"}' , '/admin/index/login.html' , 1 , 'admin' , 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3704.400 QQBrowser/10.4.3587.400' , '127.0.0.1' , 1562316005) [ RunTime:0.040003s ]
+---------------------------------------------------------------
+[ 2019-07-05T16:40:06+08:00 ] 127.0.0.1 GET 127.0.0.1/admin/index/index
+[运行时间：0.358020s] [吞吐率：2.79req/s] [内存消耗：3,939.13kb] [文件加载：153]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.008000s ]
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3704.400 QQBrowser/10.4.3587.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/admin/index/login.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1562314328; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1562314328; PHPSESSID=bmpa8c92m7a202k0lnema5grum',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.003000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/admin/lang/zh-cn/index.php
+[ info ] [ RUN ] app\admin\controller\Index->index[ C:\xampp\htdocs\fastadmin\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\fastadmin\public/../application/admin\view\index\index.html [ array (
+  0 => 'breadcrumb',
+  1 => 'site',
+  2 => 'config',
+  3 => 'auth',
+  4 => 'admin',
+  5 => 'menulist',
+  6 => 'navlist',
+  7 => 'fixedmenu',
+  8 => 'referermenu',
+  9 => 'title',
+) ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginbgindex\Loginbgindex @response_send [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginvideo\Loginvideo @response_send [ RunTime:0.000000s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.012000s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.011001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.005000s ]
+---------------------------------------------------------------
+[ 2019-07-05T16:40:06+08:00 ] 127.0.0.1 GET 127.0.0.1/admin/dashboard?addtabs=1
+[运行时间：0.190011s] [吞吐率：5.26req/s] [内存消耗：3,743.16kb] [文件加载：143]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.009001s ]
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'dashboard',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3704.400 QQBrowser/10.4.3587.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/admin/index/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1562314328; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1562314328; PHPSESSID=bmpa8c92m7a202k0lnema5grum',
+)
+[ info ] [ PARAM ] array (
+  'addtabs' => '1',
+)
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.003000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/admin/lang/zh-cn/dashboard.php
+[ info ] [ RUN ] app\admin\controller\Dashboard->index[ C:\xampp\htdocs\fastadmin\application\admin\controller\Dashboard.php ]
+[ info ] [ VIEW ] C:\xampp\htdocs\fastadmin\public/../application/admin\view\dashboard\index.html [ array (
+  0 => 'breadcrumb',
+  1 => 'site',
+  2 => 'config',
+  3 => 'auth',
+  4 => 'admin',
+  5 => 'totaluser',
+  6 => 'totalviews',
+  7 => 'totalorder',
+  8 => 'totalorderamount',
+  9 => 'todayuserlogin',
+  10 => 'todayusersignup',
+  11 => 'todayorder',
+  12 => 'unsettleorder',
+  13 => 'sevendnu',
+  14 => 'sevendau',
+  15 => 'paylist',
+  16 => 'createlist',
+  17 => 'addonversion',
+  18 => 'uploadmode',
+) ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.001000s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginbgindex\Loginbgindex @response_send [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginvideo\Loginvideo @response_send [ RunTime:0.001001s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.011001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `fa_auth_rule` WHERE  `name` = 'dashboard' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2019-07-05T16:40:07+08:00 ] 127.0.0.1 GET 127.0.0.1/admin/ajax/lang?callback=define&controllername=dashboard&v=1562316006
+[运行时间：0.120007s] [吞吐率：8.33req/s] [内存消耗：2,840.80kb] [文件加载：134]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.020001s ]
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3704.400 QQBrowser/10.4.3587.400',
+  'accept' => '*/*',
+  'referer' => 'http://127.0.0.1/admin/dashboard?addtabs=1',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1562314328; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1562314328; PHPSESSID=bmpa8c92m7a202k0lnema5grum',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'dashboard',
+  'v' => '1562316006',
+)
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.005000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/admin/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\admin\controller\Ajax->lang[ C:\xampp\htdocs\fastadmin\application\admin\controller\Ajax.php ]
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/admin/lang/zh-cn/dashboard.php
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginbgindex\Loginbgindex @response_send [ RunTime:0.001000s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginvideo\Loginvideo @response_send [ RunTime:0.000000s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-07-05T16:40:07+08:00 ] 127.0.0.1 GET 127.0.0.1/admin/ajax/lang?callback=define&controllername=index&v=1562316006
+[运行时间：0.134507s] [吞吐率：7.43req/s] [内存消耗：2,841.91kb] [文件加载：134]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.011000s ]
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3704.400 QQBrowser/10.4.3587.400',
+  'accept' => '*/*',
+  'referer' => 'http://127.0.0.1/admin/index/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1562314328; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1562314328; PHPSESSID=bmpa8c92m7a202k0lnema5grum',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'index',
+  'v' => '1562316006',
+)
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.004000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/admin/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\admin\controller\Ajax->lang[ C:\xampp\htdocs\fastadmin\application\admin\controller\Ajax.php ]
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/admin/lang/zh-cn/index.php
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginbgindex\Loginbgindex @response_send [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginvideo\Loginvideo @response_send [ RunTime:0.000000s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-07-05T16:40:11+08:00 ] 127.0.0.1 GET 127.0.0.1/admin/budget/info?addtabs=1
+[运行时间：0.312017s] [吞吐率：3.20req/s] [内存消耗：3,719.45kb] [文件加载：142]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.012001s ]
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'budget.info',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3704.400 QQBrowser/10.4.3587.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/admin/budget/info?ref=addtabs',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1562314328; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1562314328; PHPSESSID=bmpa8c92m7a202k0lnema5grum',
+)
+[ info ] [ PARAM ] array (
+  'addtabs' => '1',
+)
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.004001s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/admin/lang/zh-cn/budget/info.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\budget\Info->index[ C:\xampp\htdocs\fastadmin\application\admin\controller\budget\Info.php ]
+[ info ] [ VIEW ] C:\xampp\htdocs\fastadmin\public/../application/admin\view\budget\info\index.html [ array (
+  0 => 'breadcrumb',
+  1 => 'site',
+  2 => 'config',
+  3 => 'auth',
+  4 => 'admin',
+) ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.001000s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginbgindex\Loginbgindex @response_send [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginvideo\Loginvideo @response_send [ RunTime:0.000000s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=127.0.0.1;port=3306;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.036002s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.011001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.003000s ]
+---------------------------------------------------------------
+[ 2019-07-05T16:40:12+08:00 ] 127.0.0.1 GET 127.0.0.1/admin/ajax/lang?callback=define&controllername=budget.info&v=1562316010
+[运行时间：0.170010s] [吞吐率：5.88req/s] [内存消耗：2,838.52kb] [文件加载：134]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.010000s ]
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3704.400 QQBrowser/10.4.3587.400',
+  'accept' => '*/*',
+  'referer' => 'http://127.0.0.1/admin/budget/info?addtabs=1',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1562314328; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1562314328; PHPSESSID=bmpa8c92m7a202k0lnema5grum',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'budget.info',
+  'v' => '1562316010',
+)
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.010001s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/admin/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\admin\controller\Ajax->lang[ C:\xampp\htdocs\fastadmin\application\admin\controller\Ajax.php ]
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/admin/lang/zh-cn/budget/info.php
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.001000s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginbgindex\Loginbgindex @response_send [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginvideo\Loginvideo @response_send [ RunTime:0.000000s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-07-05T16:40:12+08:00 ] 127.0.0.1 GET 127.0.0.1/admin/budget/info/index?addtabs=1&sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1562316011661
+[运行时间：0.349020s] [吞吐率：2.87req/s] [内存消耗：3,990.94kb] [文件加载：150]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.009001s ]
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'budget.info',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3704.400 QQBrowser/10.4.3587.400',
+  'content-type' => 'application/json',
+  'referer' => 'http://127.0.0.1/admin/budget/info?addtabs=1',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1562314328; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1562314328; PHPSESSID=bmpa8c92m7a202k0lnema5grum',
+)
+[ info ] [ PARAM ] array (
+  'addtabs' => '1',
+  'sort' => 'id',
+  'order' => 'desc',
+  'offset' => '0',
+  'limit' => '10',
+  'filter' => '{}',
+  'op' => '{}',
+  '_' => '1562316011661',
+)
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.004000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/admin/lang/zh-cn/budget/info.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\budget\Info->index[ C:\xampp\htdocs\fastadmin\application\admin\controller\budget\Info.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginbgindex\Loginbgindex @response_send [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginvideo\Loginvideo @response_send [ RunTime:0.001000s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.016001s ] mysql:host=127.0.0.1;port=3306;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.036002s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.003000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_budget_info` [ RunTime:0.036002s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_project_info` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_project_section` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_category` [ RunTime:0.027001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_budget_info` `budget_info` LEFT JOIN `fa_project_info` `projectinfo` ON `budget_info`.`project_info_id`=`projectinfo`.`id` LEFT JOIN `fa_project_section` `projectsection` ON `budget_info`.`project_section_id`=`projectsection`.`id` LEFT JOIN `fa_category` `category` ON `budget_info`.`category_id`=`category`.`id` LEFT JOIN `fa_admin` `admin` ON `budget_info`.`admin_id`=`admin`.`id` ORDER BY `budget_info`.`id` DESC LIMIT 1 [ RunTime:0.024002s ]
+[ sql ] [ SQL ] SELECT `budget_info`.`id`,`budget_info`.`project_info_id`,`budget_info`.`project_section_id`,`budget_info`.`category_id`,`budget_info`.`amount`,`budget_info`.`price`,`budget_info`.`remark`,`budget_info`.`createtime`,`budget_info`.`updatetime`,`budget_info`.`admin_id`,projectinfo.id AS projectinfo__id,projectinfo.number AS projectinfo__number,projectinfo.name AS projectinfo__name,projectinfo.price AS projectinfo__price,projectinfo.starttime AS projectinfo__starttime,projectinfo.days AS projectinfo__days,projectinfo.city AS projectinfo__city,projectinfo.address AS projectinfo__address,projectinfo.surveycontent AS projectinfo__surveycontent,projectinfo.remark AS projectinfo__remark,projectinfo.createtime AS projectinfo__createtime,projectinfo.updatetime AS projectinfo__updatetime,projectinfo.admin_id AS projectinfo__admin_id,projectsection.id AS projectsection__id,projectsection.project_info_id AS projectsection__project_info_id,projectsection.project_manager_id AS projectsection__project_manager_id,projectsection.name AS projectsection__name,projectsection.price AS projectsection__price,projectsection.surveycontent AS projectsection__surveycontent,projectsection.remark AS projectsection__remark,projectsection.createtime AS projectsection__createtime,projectsection.updatetime AS projectsection__updatetime,projectsection.admin_id AS projectsection__admin_id,category.id AS category__id,category.pid AS category__pid,category.type AS category__type,category.name AS category__name,category.nickname AS category__nickname,category.flag AS category__flag,category.image AS category__image,category.keywords AS category__keywords,category.description AS category__description,category.diyname AS category__diyname,category.createtime AS category__createtime,category.updatetime AS category__updatetime,category.weigh AS category__weigh,category.status AS category__status,admin.id AS admin__id,admin.username AS admin__username,admin.nickname AS admin__nickname,admin.password AS admin__password,admin.salt AS admin__salt,admin.avatar AS admin__avatar,admin.email AS admin__email,admin.loginfailure AS admin__loginfailure,admin.logintime AS admin__logintime,admin.createtime AS admin__createtime,admin.updatetime AS admin__updatetime,admin.token AS admin__token,admin.status AS admin__status FROM `fa_budget_info` `budget_info` LEFT JOIN `fa_project_info` `projectinfo` ON `budget_info`.`project_info_id`=`projectinfo`.`id` LEFT JOIN `fa_project_section` `projectsection` ON `budget_info`.`project_section_id`=`projectsection`.`id` LEFT JOIN `fa_category` `category` ON `budget_info`.`category_id`=`category`.`id` LEFT JOIN `fa_admin` `admin` ON `budget_info`.`admin_id`=`admin`.`id` ORDER BY `budget_info`.`id` DESC LIMIT 0,10 [ RunTime:0.002000s ]
+---------------------------------------------------------------
+[ 2019-07-05T16:40:13+08:00 ] 127.0.0.1 GET 127.0.0.1/admin/ajax/category?type=classify&pid=15
+[运行时间：0.272015s] [吞吐率：3.68req/s] [内存消耗：3,503.06kb] [文件加载：140]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.007000s ]
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'category',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3704.400 QQBrowser/10.4.3587.400',
+  'referer' => 'http://127.0.0.1/admin/budget/info?addtabs=1',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1562314328; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1562314328; PHPSESSID=bmpa8c92m7a202k0lnema5grum',
+)
+[ info ] [ PARAM ] array (
+  'type' => 'classify',
+  'pid' => '15',
+)
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.004001s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/admin/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\admin\controller\Ajax->category[ C:\xampp\htdocs\fastadmin\application\admin\controller\Ajax.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.001000s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginbgindex\Loginbgindex @response_send [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginvideo\Loginvideo @response_send [ RunTime:0.001000s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=127.0.0.1;port=3306;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_category` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT id as value,`name` FROM `fa_category` WHERE  `status` = 'normal'  AND `type` = 'classify'  AND `pid` = 15 ORDER BY `weigh` DESC,`id` DESC [ RunTime:0.019001s ]
+---------------------------------------------------------------
+[ 2019-07-05T16:40:17+08:00 ] 127.0.0.1 POST 127.0.0.1/admin/project/info/index
+[运行时间：0.442025s] [吞吐率：2.26req/s] [内存消耗：3,742.64kb] [文件加载：143]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.009000s ]
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'project.info',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'content-length' => '171',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://127.0.0.1',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3704.400 QQBrowser/10.4.3587.400',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://127.0.0.1/admin/budget/info?addtabs=1',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1562314328; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1562314328; PHPSESSID=bmpa8c92m7a202k0lnema5grum',
+)
+[ info ] [ PARAM ] array (
+  'q_word' => 
+  array (
+    0 => '',
+  ),
+  'pageNumber' => '1',
+  'pageSize' => '10',
+  'andOr' => 'AND',
+  'orderBy' => 
+  array (
+    0 => 
+    array (
+      0 => 'name',
+      1 => 'ASC',
+    ),
+  ),
+  'searchTable' => 'tbl',
+  'showField' => 'name',
+  'keyField' => 'id',
+  'searchField' => 
+  array (
+    0 => 'name',
+  ),
+  'name' => '',
+)
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.018002s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/admin/lang/zh-cn/project/info.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\project\Info->index[ C:\xampp\htdocs\fastadmin\application\admin\controller\project\Info.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.111007s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginbgindex\Loginbgindex @response_send [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginvideo\Loginvideo @response_send [ RunTime:0.001000s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.059003s ] mysql:host=127.0.0.1;port=3306;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.011001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.037002s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.004000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=127.0.0.1;port=3306;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_project_info` [ RunTime:0.011000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_project_info` WHERE  (  `name` LIKE '%%' ) LIMIT 1 [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_project_info` WHERE  (  `name` LIKE '%%' ) ORDER BY `name` ASC LIMIT 0,10 [ RunTime:0.013000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin_log` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] INSERT INTO `fa_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('项目管理 项目信息 查看' , '{\"q_word\":[\"\"],\"pageNumber\":\"1\",\"pageSize\":\"10\",\"andOr\":\"AND\",\"orderBy\":[[\"name\",\"ASC\"]],\"searchTable\":\"tbl\",\"showField\":\"name\",\"keyField\":\"id\",\"searchField\":[\"name\"],\"name\":\"\"}' , '/admin/project/info/index' , 1 , 'admin' , 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3704.400 QQBrowser/10.4.3587.400' , '127.0.0.1' , 1562316017) [ RunTime:0.097006s ]
+---------------------------------------------------------------
+[ 2019-07-05T16:40:18+08:00 ] 127.0.0.1 POST 127.0.0.1/admin/project/info/index
+[运行时间：0.217012s] [吞吐率：4.61req/s] [内存消耗：3,742.64kb] [文件加载：143]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005000s ]
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'project.info',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'content-length' => '171',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://127.0.0.1',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3704.400 QQBrowser/10.4.3587.400',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://127.0.0.1/admin/budget/info?addtabs=1',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1562314328; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1562314328; PHPSESSID=bmpa8c92m7a202k0lnema5grum',
+)
+[ info ] [ PARAM ] array (
+  'q_word' => 
+  array (
+    0 => '',
+  ),
+  'pageNumber' => '1',
+  'pageSize' => '10',
+  'andOr' => 'AND',
+  'orderBy' => 
+  array (
+    0 => 
+    array (
+      0 => 'name',
+      1 => 'ASC',
+    ),
+  ),
+  'searchTable' => 'tbl',
+  'showField' => 'name',
+  'keyField' => 'id',
+  'searchField' => 
+  array (
+    0 => 'name',
+  ),
+  'name' => '',
+)
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.003000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/admin/lang/zh-cn/project/info.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\project\Info->index[ C:\xampp\htdocs\fastadmin\application\admin\controller\project\Info.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.054003s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginbgindex\Loginbgindex @response_send [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginvideo\Loginvideo @response_send [ RunTime:0.000000s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.011001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.010001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.003000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;port=3306;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_project_info` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_project_info` WHERE  (  `name` LIKE '%%' ) LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_project_info` WHERE  (  `name` LIKE '%%' ) ORDER BY `name` ASC LIMIT 0,10 [ RunTime:0.010001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin_log` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] INSERT INTO `fa_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('项目管理 项目信息 查看' , '{\"q_word\":[\"\"],\"pageNumber\":\"1\",\"pageSize\":\"10\",\"andOr\":\"AND\",\"orderBy\":[[\"name\",\"ASC\"]],\"searchTable\":\"tbl\",\"showField\":\"name\",\"keyField\":\"id\",\"searchField\":[\"name\"],\"name\":\"\"}' , '/admin/project/info/index' , 1 , 'admin' , 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3704.400 QQBrowser/10.4.3587.400' , '127.0.0.1' , 1562316018) [ RunTime:0.038002s ]
+---------------------------------------------------------------
+[ 2019-07-05T16:40:20+08:00 ] 127.0.0.1 POST 127.0.0.1/admin/project/info/index
+[运行时间：0.204012s] [吞吐率：4.90req/s] [内存消耗：3,740.95kb] [文件加载：143]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.006000s ]
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'project.info',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'content-length' => '171',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://127.0.0.1',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3704.400 QQBrowser/10.4.3587.400',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://127.0.0.1/admin/budget/info?addtabs=1',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1562314328; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1562314328; PHPSESSID=bmpa8c92m7a202k0lnema5grum',
+)
+[ info ] [ PARAM ] array (
+  'q_word' => 
+  array (
+    0 => '',
+  ),
+  'pageNumber' => '2',
+  'pageSize' => '10',
+  'andOr' => 'AND',
+  'orderBy' => 
+  array (
+    0 => 
+    array (
+      0 => 'name',
+      1 => 'ASC',
+    ),
+  ),
+  'searchTable' => 'tbl',
+  'showField' => 'name',
+  'keyField' => 'id',
+  'searchField' => 
+  array (
+    0 => 'name',
+  ),
+  'name' => '',
+)
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.003000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/admin/lang/zh-cn/project/info.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\project\Info->index[ C:\xampp\htdocs\fastadmin\application\admin\controller\project\Info.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.060004s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginbgindex\Loginbgindex @response_send [ RunTime:0.001000s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginvideo\Loginvideo @response_send [ RunTime:0.000000s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.009001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.003000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:host=127.0.0.1;port=3306;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_project_info` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_project_info` WHERE  (  `name` LIKE '%%' ) LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_project_info` WHERE  (  `name` LIKE '%%' ) ORDER BY `name` ASC LIMIT 10,10 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin_log` [ RunTime:0.009001s ]
+[ sql ] [ SQL ] INSERT INTO `fa_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('项目管理 项目信息 查看' , '{\"q_word\":[\"\"],\"pageNumber\":\"2\",\"pageSize\":\"10\",\"andOr\":\"AND\",\"orderBy\":[[\"name\",\"ASC\"]],\"searchTable\":\"tbl\",\"showField\":\"name\",\"keyField\":\"id\",\"searchField\":[\"name\"],\"name\":\"\"}' , '/admin/project/info/index' , 1 , 'admin' , 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3704.400 QQBrowser/10.4.3587.400' , '127.0.0.1' , 1562316020) [ RunTime:0.049003s ]
+---------------------------------------------------------------
+[ 2019-07-05T16:40:22+08:00 ] 127.0.0.1 POST 127.0.0.1/admin/project/info/index
+[运行时间：0.227013s] [吞吐率：4.41req/s] [内存消耗：3,742.64kb] [文件加载：143]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.008000s ]
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'project.info',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'content-length' => '171',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://127.0.0.1',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3704.400 QQBrowser/10.4.3587.400',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://127.0.0.1/admin/budget/info?addtabs=1',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1562314328; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1562314328; PHPSESSID=bmpa8c92m7a202k0lnema5grum',
+)
+[ info ] [ PARAM ] array (
+  'q_word' => 
+  array (
+    0 => '',
+  ),
+  'pageNumber' => '1',
+  'pageSize' => '10',
+  'andOr' => 'AND',
+  'orderBy' => 
+  array (
+    0 => 
+    array (
+      0 => 'name',
+      1 => 'ASC',
+    ),
+  ),
+  'searchTable' => 'tbl',
+  'showField' => 'name',
+  'keyField' => 'id',
+  'searchField' => 
+  array (
+    0 => 'name',
+  ),
+  'name' => '',
+)
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.004000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/admin/lang/zh-cn/project/info.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\project\Info->index[ C:\xampp\htdocs\fastadmin\application\admin\controller\project\Info.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.064004s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginbgindex\Loginbgindex @response_send [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginvideo\Loginvideo @response_send [ RunTime:0.001000s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.020001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.009001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.002000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001001s ] mysql:host=127.0.0.1;port=3306;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_project_info` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_project_info` WHERE  (  `name` LIKE '%%' ) LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_project_info` WHERE  (  `name` LIKE '%%' ) ORDER BY `name` ASC LIMIT 0,10 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin_log` [ RunTime:0.010001s ]
+[ sql ] [ SQL ] INSERT INTO `fa_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('项目管理 项目信息 查看' , '{\"q_word\":[\"\"],\"pageNumber\":\"1\",\"pageSize\":\"10\",\"andOr\":\"AND\",\"orderBy\":[[\"name\",\"ASC\"]],\"searchTable\":\"tbl\",\"showField\":\"name\",\"keyField\":\"id\",\"searchField\":[\"name\"],\"name\":\"\"}' , '/admin/project/info/index' , 1 , 'admin' , 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3704.400 QQBrowser/10.4.3587.400' , '127.0.0.1' , 1562316022) [ RunTime:0.052003s ]
+---------------------------------------------------------------
+[ 2019-07-05T16:40:25+08:00 ] 127.0.0.1 POST 127.0.0.1/admin/project/section/index
+[运行时间：0.254014s] [吞吐率：3.94req/s] [内存消耗：3,741.82kb] [文件加载：143]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.007000s ]
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'project.section',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'content-length' => '201',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://127.0.0.1',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3704.400 QQBrowser/10.4.3587.400',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://127.0.0.1/admin/budget/info?addtabs=1',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1562314328; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1562314328; PHPSESSID=bmpa8c92m7a202k0lnema5grum',
+)
+[ info ] [ PARAM ] array (
+  'q_word' => 
+  array (
+    0 => '',
+  ),
+  'pageNumber' => '1',
+  'pageSize' => '10',
+  'andOr' => 'AND',
+  'orderBy' => 
+  array (
+    0 => 
+    array (
+      0 => 'name',
+      1 => 'ASC',
+    ),
+  ),
+  'searchTable' => 'tbl',
+  'showField' => 'name',
+  'keyField' => 'id',
+  'searchField' => 
+  array (
+    0 => 'name',
+  ),
+  'name' => '',
+  'custom' => 
+  array (
+    'project_info_id' => '2',
+  ),
+)
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.003000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/admin/lang/zh-cn/project/section.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\project\Section->index[ C:\xampp\htdocs\fastadmin\application\admin\controller\project\Section.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.073004s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginbgindex\Loginbgindex @response_send [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginvideo\Loginvideo @response_send [ RunTime:0.000000s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:host=127.0.0.1;port=3306;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.009001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.003001s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:host=127.0.0.1;port=3306;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_project_section` [ RunTime:0.010001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_project_section` WHERE  (  `name` LIKE '%%'  AND `project_info_id` = 2 ) LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_project_section` WHERE  (  `name` LIKE '%%'  AND `project_info_id` = 2 ) ORDER BY `name` ASC LIMIT 0,10 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin_log` [ RunTime:0.010001s ]
+[ sql ] [ SQL ] INSERT INTO `fa_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('项目管理 标段信息 查看' , '{\"q_word\":[\"\"],\"pageNumber\":\"1\",\"pageSize\":\"10\",\"andOr\":\"AND\",\"orderBy\":[[\"name\",\"ASC\"]],\"searchTable\":\"tbl\",\"showField\":\"name\",\"keyField\":\"id\",\"searchField\":[\"name\"],\"name\":\"\",\"custom\":{\"project_info_id\":\"2\"}}' , '/admin/project/section/index' , 1 , 'admin' , 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3704.400 QQBrowser/10.4.3587.400' , '127.0.0.1' , 1562316025) [ RunTime:0.059003s ]
+---------------------------------------------------------------
+[ 2019-07-05T16:40:27+08:00 ] 127.0.0.1 POST 127.0.0.1/admin/project/section/index
+[运行时间：0.337019s] [吞吐率：2.97req/s] [内存消耗：3,741.82kb] [文件加载：143]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.007000s ]
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'project.section',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'content-length' => '201',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://127.0.0.1',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3704.400 QQBrowser/10.4.3587.400',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://127.0.0.1/admin/budget/info?addtabs=1',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1562314328; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1562314328; PHPSESSID=bmpa8c92m7a202k0lnema5grum',
+)
+[ info ] [ PARAM ] array (
+  'q_word' => 
+  array (
+    0 => '',
+  ),
+  'pageNumber' => '1',
+  'pageSize' => '10',
+  'andOr' => 'AND',
+  'orderBy' => 
+  array (
+    0 => 
+    array (
+      0 => 'name',
+      1 => 'ASC',
+    ),
+  ),
+  'searchTable' => 'tbl',
+  'showField' => 'name',
+  'keyField' => 'id',
+  'searchField' => 
+  array (
+    0 => 'name',
+  ),
+  'name' => '',
+  'custom' => 
+  array (
+    'project_info_id' => '2',
+  ),
+)
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.003000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/admin/lang/zh-cn/project/section.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\project\Section->index[ C:\xampp\htdocs\fastadmin\application\admin\controller\project\Section.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.172010s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginbgindex\Loginbgindex @response_send [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginvideo\Loginvideo @response_send [ RunTime:0.001000s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:host=127.0.0.1;port=3306;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.002001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.011000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.007001s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_project_section` [ RunTime:0.020002s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_project_section` WHERE  (  `name` LIKE '%%'  AND `project_info_id` = 2 ) LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_project_section` WHERE  (  `name` LIKE '%%'  AND `project_info_id` = 2 ) ORDER BY `name` ASC LIMIT 0,10 [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin_log` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] INSERT INTO `fa_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('项目管理 标段信息 查看' , '{\"q_word\":[\"\"],\"pageNumber\":\"1\",\"pageSize\":\"10\",\"andOr\":\"AND\",\"orderBy\":[[\"name\",\"ASC\"]],\"searchTable\":\"tbl\",\"showField\":\"name\",\"keyField\":\"id\",\"searchField\":[\"name\"],\"name\":\"\",\"custom\":{\"project_info_id\":\"2\"}}' , '/admin/project/section/index' , 1 , 'admin' , 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3704.400 QQBrowser/10.4.3587.400' , '127.0.0.1' , 1562316027) [ RunTime:0.154009s ]
+---------------------------------------------------------------
+[ 2019-07-05T17:22:04+08:00 ] 127.0.0.1 GET 127.0.0.1/admin/project/section?addtabs=1
+[运行时间：0.232013s] [吞吐率：4.31req/s] [内存消耗：3,679.93kb] [文件加载：142]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.010001s ]
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'project.section',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3704.400 QQBrowser/10.4.3587.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/admin/project/section?ref=addtabs',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1562314328; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1562314328; PHPSESSID=bmpa8c92m7a202k0lnema5grum',
+)
+[ info ] [ PARAM ] array (
+  'addtabs' => '1',
+)
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.006001s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/admin/lang/zh-cn/project/section.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\project\Section->index[ C:\xampp\htdocs\fastadmin\application\admin\controller\project\Section.php ]
+[ info ] [ VIEW ] C:\xampp\htdocs\fastadmin\public/../application/admin\view\project\section\index.html [ array (
+  0 => 'breadcrumb',
+  1 => 'site',
+  2 => 'config',
+  3 => 'auth',
+  4 => 'admin',
+) ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.001000s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginbgindex\Loginbgindex @response_send [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginvideo\Loginvideo @response_send [ RunTime:0.001000s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;port=3306;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.011001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `fa_auth_rule` WHERE  `name` = 'project/section' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2019-07-05T17:22:04+08:00 ] 127.0.0.1 GET 127.0.0.1/admin/ajax/lang?callback=define&controllername=project.section&v=1562318523
+[运行时间：0.108006s] [吞吐率：9.26req/s] [内存消耗：2,838.59kb] [文件加载：134]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.009001s ]
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3704.400 QQBrowser/10.4.3587.400',
+  'accept' => '*/*',
+  'referer' => 'http://127.0.0.1/admin/project/section?addtabs=1',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1562314328; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1562314328; PHPSESSID=bmpa8c92m7a202k0lnema5grum',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'project.section',
+  'v' => '1562318523',
+)
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.004000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/admin/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\admin\controller\Ajax->lang[ C:\xampp\htdocs\fastadmin\application\admin\controller\Ajax.php ]
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/admin/lang/zh-cn/project/section.php
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.001000s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginbgindex\Loginbgindex @response_send [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginvideo\Loginvideo @response_send [ RunTime:0.001000s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-07-05T17:22:05+08:00 ] 127.0.0.1 GET 127.0.0.1/admin/project/section/index?addtabs=1&sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1562318524543
+[运行时间：0.240013s] [吞吐率：4.17req/s] [内存消耗：3,700.13kb] [文件加载：142]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.046002s ]
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'project.section',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3704.400 QQBrowser/10.4.3587.400',
+  'content-type' => 'application/json',
+  'referer' => 'http://127.0.0.1/admin/project/section?addtabs=1',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1562314328; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1562314328; PHPSESSID=bmpa8c92m7a202k0lnema5grum',
+)
+[ info ] [ PARAM ] array (
+  'addtabs' => '1',
+  'sort' => 'id',
+  'order' => 'desc',
+  'offset' => '0',
+  'limit' => '10',
+  'filter' => '{}',
+  'op' => '{}',
+  '_' => '1562318524543',
+)
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.005000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/admin/lang/zh-cn/project/section.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\project\Section->index[ C:\xampp\htdocs\fastadmin\application\admin\controller\project\Section.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.001000s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginbgindex\Loginbgindex @response_send [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginvideo\Loginvideo @response_send [ RunTime:0.000000s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005000s ] mysql:host=127.0.0.1;port=3306;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.011001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.012000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.003001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_project_section` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_project_section` `project_section` INNER JOIN `fa_project_info` `project_info` ON `project_section`.`project_info_id`=`project_info`.`id` ORDER BY `project_section`.`id` DESC LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT 
+                        project_section.id as id,
+                        project_info.name as projectName,
+                        project_section.name as sectionName,
+                        project_section.price as price,
+                        project_manager.name as managerName,
+                        ROUND(SUM(finance_info.price)/project_section.price,2)*100 as payPrice
+                     FROM `fa_project_section` `project_section` INNER JOIN `fa_project_info` `project_info` ON `project_section`.`project_info_id`=`project_info`.`id` INNER JOIN `fa_project_manager` `project_manager` ON `project_section`.`project_manager_id`=`project_manager`.`id` LEFT JOIN `fa_finance_info` `finance_info` ON `finance_info`.`project_section_id`=`project_section`.`id` GROUP BY `project_section`.`id` ORDER BY `project_section`.`id` DESC [ RunTime:0.003000s ]
+---------------------------------------------------------------
+[ 2019-07-05T17:22:24+08:00 ] 127.0.0.1 GET 127.0.0.1/admin/project/section/index?addtabs=1&sort=id&order=desc&offset=0&limit=10&filter=%7B%22project_info.name%22%3A%22%E5%96%84%E5%BB%BA%E4%BA%BA%E5%AE%B6%22%2C%22project_section.name%22%3A%221%23%22%7D&op=%7B%22project_info.name%22%3A%22LIKE%22%2C%22project_section.name%22%3A%22LIKE%22%7D&_=1562318524544
+[运行时间：0.270016s] [吞吐率：3.70req/s] [内存消耗：3,691.77kb] [文件加载：142]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.015001s ]
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'project.section',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3704.400 QQBrowser/10.4.3587.400',
+  'content-type' => 'application/json',
+  'referer' => 'http://127.0.0.1/admin/project/section?addtabs=1',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1562314328; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1562314328; PHPSESSID=bmpa8c92m7a202k0lnema5grum',
+)
+[ info ] [ PARAM ] array (
+  'addtabs' => '1',
+  'sort' => 'id',
+  'order' => 'desc',
+  'offset' => '0',
+  'limit' => '10',
+  'filter' => '{"project_info.name":"善建人家","project_section.name":"1#"}',
+  'op' => '{"project_info.name":"LIKE","project_section.name":"LIKE"}',
+  '_' => '1562318524544',
+)
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.005000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/admin/lang/zh-cn/project/section.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\project\Section->index[ C:\xampp\htdocs\fastadmin\application\admin\controller\project\Section.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.001000s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginbgindex\Loginbgindex @response_send [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginvideo\Loginvideo @response_send [ RunTime:0.000000s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=127.0.0.1;port=3306;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_project_section` [ RunTime:0.011001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_project_section` `project_section` INNER JOIN `fa_project_info` `project_info` ON `project_section`.`project_info_id`=`project_info`.`id` WHERE  (  `project_info`.`name` LIKE '%善建人家%'  AND `project_section`.`name` LIKE '%1#%' ) ORDER BY `project_section`.`id` DESC LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT 
+                        project_section.id as id,
+                        project_info.name as projectName,
+                        project_section.name as sectionName,
+                        project_section.price as price,
+                        project_manager.name as managerName,
+                        ROUND(SUM(finance_info.price)/project_section.price,2)*100 as payPrice
+                     FROM `fa_project_section` `project_section` INNER JOIN `fa_project_info` `project_info` ON `project_section`.`project_info_id`=`project_info`.`id` INNER JOIN `fa_project_manager` `project_manager` ON `project_section`.`project_manager_id`=`project_manager`.`id` LEFT JOIN `fa_finance_info` `finance_info` ON `finance_info`.`project_section_id`=`project_section`.`id` WHERE  (  `project_info`.`name` LIKE '%善建人家%'  AND `project_section`.`name` LIKE '%1#%' ) GROUP BY `project_section`.`id` ORDER BY `project_section`.`id` DESC [ RunTime:0.002000s ]
+---------------------------------------------------------------
+[ 2019-07-05T17:23:17+08:00 ] 127.0.0.1 GET 127.0.0.1/admin/project/section/index?addtabs=1&sort=id&order=desc&offset=0&limit=10&filter=%7B%22project_info.name%22%3A%22%E5%96%84%E5%BB%BA%E4%BA%BA%E5%AE%B6%22%2C%22project_section.name%22%3A%221%23%22%7D&op=%7B%22project_info.name%22%3A%22LIKE%22%2C%22project_section.name%22%3A%22LIKE%22%7D&_=1562318524545
+[运行时间：0.337019s] [吞吐率：2.97req/s] [内存消耗：3,691.70kb] [文件加载：142]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.018001s ]
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'project.section',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3704.400 QQBrowser/10.4.3587.400',
+  'content-type' => 'application/json',
+  'referer' => 'http://127.0.0.1/admin/project/section?addtabs=1',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1562314328; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1562314328; PHPSESSID=bmpa8c92m7a202k0lnema5grum',
+)
+[ info ] [ PARAM ] array (
+  'addtabs' => '1',
+  'sort' => 'id',
+  'order' => 'desc',
+  'offset' => '0',
+  'limit' => '10',
+  'filter' => '{"project_info.name":"善建人家","project_section.name":"1#"}',
+  'op' => '{"project_info.name":"LIKE","project_section.name":"LIKE"}',
+  '_' => '1562318524545',
+)
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/admin\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.004000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] C:\xampp\htdocs\fastadmin\public/../application/admin/lang/zh-cn/project/section.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\project\Section->index[ C:\xampp\htdocs\fastadmin\application\admin\controller\project\Section.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginbgindex\Loginbgindex @response_send [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run \addons\loginvideo\Loginvideo @response_send [ RunTime:0.001000s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;port=3306;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.008001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_project_section` [ RunTime:0.025001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_project_section` `project_section` INNER JOIN `fa_project_info` `project_info` ON `project_section`.`project_info_id`=`project_info`.`id` WHERE  (  `project_info`.`name` LIKE '%善建人家%'  AND `project_section`.`name` LIKE '%1#%' ) ORDER BY `project_section`.`id` DESC LIMIT 1 [ RunTime:0.011001s ]
+[ sql ] [ SQL ] SELECT 
+                        project_section.id as id,
+                        project_info.name as projectName,
+                        project_section.name as sectionName,
+                        project_section.price as price,
+                        project_manager.name as managerName,
+                        SUM(finance_info.price) as payPrice
+                     FROM `fa_project_section` `project_section` INNER JOIN `fa_project_info` `project_info` ON `project_section`.`project_info_id`=`project_info`.`id` INNER JOIN `fa_project_manager` `project_manager` ON `project_section`.`project_manager_id`=`project_manager`.`id` LEFT JOIN `fa_finance_info` `finance_info` ON `finance_info`.`project_section_id`=`project_section`.`id` WHERE  (  `project_info`.`name` LIKE '%善建人家%'  AND `project_section`.`name` LIKE '%1#%' ) GROUP BY `project_section`.`id` ORDER BY `project_section`.`id` DESC [ RunTime:0.003000s ]

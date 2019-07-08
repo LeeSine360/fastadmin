@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:82:"C:\xampp\htdocs\fastadmin\public/../application/admin\view\finance\info\index.html";i:1562126147;s:68:"C:\xampp\htdocs\fastadmin\application\admin\view\layout\default.html";i:1557482263;s:65:"C:\xampp\htdocs\fastadmin\application\admin\view\common\meta.html";i:1557482263;s:67:"C:\xampp\htdocs\fastadmin\application\admin\view\common\script.html";i:1557482263;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:82:"C:\xampp\htdocs\fastadmin\public/../application/admin\view\finance\info\index.html";i:1562401471;s:68:"C:\xampp\htdocs\fastadmin\application\admin\view\layout\default.html";i:1557482263;s:65:"C:\xampp\htdocs\fastadmin\application\admin\view\common\meta.html";i:1557482263;s:67:"C:\xampp\htdocs\fastadmin\application\admin\view\common\script.html";i:1557482263;}*/ ?>
 <!DOCTYPE html>
 <html lang="<?php echo $config['language']; ?>">
     <head>
@@ -89,7 +89,6 @@
 
             <div class="tab-pane fade" id="two">
                 <form id="add-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="finance/info/add">
-
                     <div class="row form-row-height">
                         <label class="control-label col-xs-12 col-sm-2"><?php echo __('Project_info_id'); ?>:</label>
                         <div class="col-xs-12 col-sm-3">
@@ -97,7 +96,7 @@
                         </div>
                         <label class="control-label col-xs-12 col-sm-2"><?php echo __('Project_section_id'); ?>:</label>
                         <div class="col-xs-12 col-sm-3">
-                            <input id="c-project_section_ids" data-rule="required" data-source="project/section/index" class="form-control selectpage input-left-padding45" name="row[project_section_ids]" type="text" value="">
+                            <input id="c-project_section_id" data-rule="required" data-source="project/section/index" class="form-control selectpage input-left-padding45" name="row[project_section_id]" type="text" value="">
                         </div>
                     </div>
                     <div class="row form-row-height">

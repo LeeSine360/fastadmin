@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:85:"C:\xampp\htdocs\fastadmin\public/../application/admin\view\contract\verify\index.html";i:1562379436;s:68:"C:\xampp\htdocs\fastadmin\application\admin\view\layout\default.html";i:1557482263;s:65:"C:\xampp\htdocs\fastadmin\application\admin\view\common\meta.html";i:1557482263;s:67:"C:\xampp\htdocs\fastadmin\application\admin\view\common\script.html";i:1557482263;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:87:"C:\xampp\htdocs\fastadmin\public/../application/admin\view\contract\verify\payinfo.html";i:1562382027;s:68:"C:\xampp\htdocs\fastadmin\application\admin\view\layout\default.html";i:1557482263;s:65:"C:\xampp\htdocs\fastadmin\application\admin\view\common\meta.html";i:1557482263;s:67:"C:\xampp\htdocs\fastadmin\application\admin\view\common\script.html";i:1557482263;}*/ ?>
 <!DOCTYPE html>
 <html lang="<?php echo $config['language']; ?>">
     <head>
@@ -51,19 +51,25 @@
                             <?php endif; ?>
                             <div class="content">
                                 <div class="panel panel-default panel-intro">
-    <?php echo build_heading(); ?>
-
     <div class="panel-body">
         <div id="myTabContent" class="tab-content">
             <div class="tab-pane fade active in" id="one">
                 <div class="widget-body no-padding">
-                    <div id="toolbar" class="toolbar">
-                        <?php echo build_toolbar('refresh'); ?>                        
+                    <div id="toolbar" class="toolbar">                        
+                        <a href="javascript:;" class="btn btn-default" style="font-size:14px;color:dodgerblue;">
+                            <i class="fa fa-dollar"></i>
+                            <span class="extend">
+                                预算值：<span id="money">0</span>
+                            </span>
+                        </a>
+                        <a href="javascript:;" class="btn btn-default" style="font-size:14px;color:dodgerblue;">
+                            <i class="fa fa-dollar"></i>
+                            <span class="extend">
+                                已付合计：<span id="money">0</span>
+                            </span>
+                        </a>
                     </div>
-                    <table id="table" class="table table-striped table-bordered table-hover table-nowrap"
-                           data-operate-edit="<?php echo $auth->check('contract/verify/edit'); ?>" 
-                           data-operate-del="<?php echo $auth->check('contract/verify/del'); ?>" 
-                           width="100%">
+                    <table id="payinfo_table" class="table table-striped table-bordered table-hover table-nowrap" width="100%">
                     </table>
                 </div>
             </div>
@@ -71,7 +77,12 @@
         </div>
     </div>
 </div>
-
+<div class="hide layer-footer">
+        <label class="control-label col-xs-12 col-sm-2"></label>
+        <div class="col-xs-12 col-sm-8">
+            <button class="btn btn-primary btn-embossed btn-success" onclick="Layer.closeAll();"><?php echo __('关闭'); ?></button>
+        </div>
+</div>
                             </div>
                         </div>
                     </div>

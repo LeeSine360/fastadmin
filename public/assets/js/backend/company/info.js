@@ -80,6 +80,12 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
         },
         api: {
             bindevent: function () {
+                $("#c-area").on("cp:updated", function() {
+                  var citypicker = $(this).data("citypicker");
+                  var code = citypicker.getCode("district") || citypicker.getCode("city") || citypicker.getCode("province");
+                  $("#code").val(code);
+                  console.log(citypicker.getVal(code));
+                });
                 Form.api.bindevent($("form[role=form]"));
             }
         }

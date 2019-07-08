@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:83:"C:\xampp\htdocs\fastadmin\public/../application/admin\view\contract\info\index.html";i:1561689588;s:68:"C:\xampp\htdocs\fastadmin\application\admin\view\layout\default.html";i:1557482263;s:65:"C:\xampp\htdocs\fastadmin\application\admin\view\common\meta.html";i:1557482263;s:67:"C:\xampp\htdocs\fastadmin\application\admin\view\common\script.html";i:1557482263;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:83:"C:\xampp\htdocs\fastadmin\public/../application/admin\view\contract\info\index.html";i:1562405781;s:68:"C:\xampp\htdocs\fastadmin\application\admin\view\layout\default.html";i:1557482263;s:65:"C:\xampp\htdocs\fastadmin\application\admin\view\common\meta.html";i:1557482263;s:67:"C:\xampp\htdocs\fastadmin\application\admin\view\common\script.html";i:1557482263;}*/ ?>
 <!DOCTYPE html>
 <html lang="<?php echo $config['language']; ?>">
     <head>
@@ -87,7 +87,7 @@
             </div>
             
             <div class="tab-pane fade" id="two">
-                <form id="add-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="contract/info/add">
+                <form id="add-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="contract/info/add">                    
                     <div class="row form-row-height">
                         <label class="control-label col-xs-12 col-sm-2"><?php echo __('Project_info_id'); ?>:</label>
                         <div class="col-xs-12 col-sm-3">
@@ -113,8 +113,8 @@
                         <div class="col-xs-12 col-sm-6">
                             <!--<input id="c-category_id" data-rule="required" data-source="category/selectpage" data-params='{"custom[type]":"classify","custom[pid]":0}' class="form-control selectpage" name="row[category_id]" type="text" value="">-->
                             <div class="form-inline" data-toggle="cxselect" data-selects="first,second">
-                                <select class="first form-control" name="row[category_id]" data-url="ajax/category?type=classify&pid=0"></select>
-                                <select class="second form-control" name="row[label_ids]" data-url="ajax/category" data-query-name="pid"></select>
+                                <select class="first form-control" data-url="ajax/category?type=classify&pid=0"></select>
+                                <select class="second form-control" name="row[category_id]" data-url="ajax/category" data-query-name="pid"></select>
                                 <a href="http://www.baidu.com">百度</a>
                             </div>
                         </div>
@@ -143,7 +143,7 @@
                         </div>
                         <label class="control-label col-xs-12 col-sm-2"><?php echo __('Expirydate'); ?>:</label>
                         <div class="col-xs-12 col-sm-3">
-                            <input id="c-expirydate" class="form-control datetimepicker" data-date-format="YYYY-MM-DD" data-use-current="true" name="row[expirydate]" type="text" value="<?php echo date('Y-m-d'); ?>">
+                            <input id="c-expirydate" class="form-control datetimepicker" data-date-format="YYYY-MM-DD" data-use-current="true" name="row[expirydate]" type="text" value="">
                         </div>
                     </div>
                     <div class="row form-row-height">

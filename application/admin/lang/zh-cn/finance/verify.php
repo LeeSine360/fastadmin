@@ -3,7 +3,7 @@
 return [
     'Finance_info_id'        => '报账单编号',
     'Admin_id'               => '操作人',
-    'Agreedata'              => '审核',
+    'Agreedata'              => '审核状态',
     'Agreedata wait'         => '待审核',
     'Agreedata agree'        => '同意',
     'Agreedata veto'         => '不同意',

@@ -51,8 +51,9 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
         },
         api: {
             bindevent: function () {
-                $("#c-project_section_ids").data("params", function(e){
-                    return {custom: {project_info_id: $("#c-project_info_id").val()}};
+                $("#c-project_section_id").data("params", function(e){
+                    var proId = $("#c-project_info_id").val();
+                    return {custom: {project_info_id: proId}};
                 }); 
 
                 $('input:radio').click(function(event) {

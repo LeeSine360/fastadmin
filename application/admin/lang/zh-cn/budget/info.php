@@ -6,6 +6,8 @@ return [
     'Category_id'         => '类别',
     'Amount'              => '数量',
     'Price'               => '预算金额',
+    'Unitprice'               => '单价',
+    'Unit'               => '单位',
     'Remark'       => '备注',
     'Createtime'          => '创建日期',
     'Updatetime'          => '更新日期',

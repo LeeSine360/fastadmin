@@ -6,6 +6,7 @@ return [
     'Company_info_id'     => '公司名称',
     'Category_id'         => '标签名称',
     'Price'               => '报销金额',
+    'Category.name'       => '报账类型',
     'Contacts'            => '联系人',
     'Phone'               => '联系电话',
     'Remark'              => '备注',

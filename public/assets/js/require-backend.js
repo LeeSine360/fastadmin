@@ -51,7 +51,7 @@ require.config({
         'selectpage': '../libs/fastadmin-selectpage/selectpage',
         'citypicker': '../libs/fastadmin-citypicker/dist/js/city-picker.min',
         'citypicker-data': '../libs/fastadmin-citypicker/dist/js/city-picker.data',
-        'viewer': '../libs/viewerjs/dist/viewer.min',
+        'accounting': '../libs/accounting/accounting.min'
     },
     // shim依赖配置
     shim: {
@@ -108,7 +108,6 @@ require.config({
         'bootstrap-select-lang': ['bootstrap-select'],
 //        'toastr': ['css!../libs/toastr/toastr.min.css'],
         'jstree': ['css!../libs/jstree/dist/themes/default/style.css',],
-        'viewer': ['css!../libs/viewerjs/dist/viewer.min.css'],
         'plupload': {
             deps: ['../libs/plupload/js/moxie.min'],
             exports: "plupload"
@@ -148,7 +147,13 @@ require(['jquery', 'bootstrap'], function ($, undefined) {
                 //加载相应模块
                 if (Config.jsname) {
                     require([Config.jsname], function (Controller) {
-                        Controller[Config.actionname] != undefined && Controller[Config.actionname]();
+                        if (Controller.hasOwnProperty(Config.actionname)) {
+                            Controller[Config.actionname]();
+                        } else {
+                            if (Controller.hasOwnProperty("_empty")) {
+                                Controller._empty();
+                            }
+                        }
                     }, function (e) {
                         console.error(e);
                         // 这里可捕获模块加载的错误

@@ -1,20 +1,21 @@
 <?php
 
 return [
-    'Finance_info_id'        => '报账单编号',
+    'FinanceId'        => '报账单编号',
     'Admin_id'               => '操作人',
     'Agreedata'              => '审核状态',
     'Agreedata wait'         => '待审核',
     'Agreedata agree'        => '同意',
     'Agreedata veto'         => '不同意',
     'Opinion'                => '审核意见',
-    'Createtime'             => '创建日期',
-    'Updatetime'             => '更新日期',
-    'Remark'                 => '备注',
-    'Admin.username'         => '用户名',
-    'Financeinfo.price'      => '报销金额',
-    'Financeinfo.contacts'   => '联系人',
-    'Financeinfo.phone'      => '联系电话',
-    'Financeinfo.remark'     => '备注',
-    'Financeinfo.createtime' => '创建时间'
+    
+    'ProjectName'   => '项目名称',
+    'SectionName'   => '标段名称',
+    'CompanyName'   => '供应商名称',
+    'CategoryName'  => '报账类型',
+    'FinancePrice'  => '申请报账金额',
+    'FinanceContacts' => '报账人',
+    'FinancePhone' => '联系电话',
+    'FinanceRemark'     => '备注',
+    'Createtime'             => '创建时间'
 ];

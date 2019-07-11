@@ -3,6 +3,7 @@
 namespace app\admin\controller\finance;
 
 use app\common\controller\Backend;
+use think\Db;
 
 /**
  * 审核(项目副总)
@@ -55,21 +56,31 @@ class Project extends Backend
                     ->order($sort, $order)
                     ->count();
 
-            $list = $this->model
-                    ->with(['admin','financeinfo'])
+            $list = Db::table([                             
+                                '__FINANCE_PROJECT__' => 'finance_project'
+                            ])  
+                    ->field('
+                        finance_project.id as id,
+                        finance_info.id as financeId,
+                        project_info.name as projectName,
+                        project_section.name as sectionName,
+                        company_info.name as companyName,
+                        category.name as categoryName,
+                        finance_info.price as financePrice,
+                        finance_info.contacts as financeContacts,
+                        finance_info.phone as financePhone,
+                        finance_info.remark as financeRemark,
+                        finance_project.agreedata as agreeData,
+                        finance_project.createtime as createTime
+                    ')
+                    ->join('__FINANCE_INFO__ finance_info','finance_info.id = finance_project.finance_info_id')
+                    ->join('__PROJECT_INFO__ project_info','finance_info.project_info_id = project_info.id')
+                    ->join('__PROJECT_SECTION__ project_section','finance_info.project_section_id = project_section.id')
+                    ->join('__COMPANY_INFO__ company_info','finance_info.company_info_id = company_info.id')
+                    ->join('__CATEGORY__ category','finance_info.category_id = category.id')
                     ->where($where)
-                    ->order($sort, $order)
-                    ->limit($offset, $limit)
+                    ->order($sort, $order)   
                     ->select();
-
-            foreach ($list as $row) {
-                $row->visible(['id','agreedata','opinion','createtime']);
-                $row->visible(['admin']);
-				$row->getRelation('admin')->visible(['username']);
-				$row->visible(['financeinfo']);
-				$row->getRelation('financeinfo')->visible(['price','contacts','phone','remark','createtime']);
-            }
-            $list = collection($list)->toArray();
             $result = array("total" => $total, "rows" => $list);
 
             return json($result);

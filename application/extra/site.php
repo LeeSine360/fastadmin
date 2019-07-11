@@ -15,10 +15,10 @@ return array (
   'fixedpage' => 'dashboard',
   'categorytype' => 
   array (
-    'classify' => '合同类别',
-    'property' => '企业性质',
-    'cost' => '报账类别',
-    'project' => '项目类型',
+    'default' => 'Default',
+    'page' => 'Page',
+    'article' => 'Article',
+    'test' => 'Test',
   ),
   'configgroup' => 
   array (
@@ -26,7 +26,7 @@ return array (
     'email' => 'Email',
     'dictionary' => 'Dictionary',
     'user' => 'User',
-    'api' => 'Api',
+    'example' => 'Example',
   ),
   'mail_type' => '1',
   'mail_smtp_host' => 'smtp.qq.com',
@@ -35,13 +35,4 @@ return array (
   'mail_smtp_pass' => 'password',
   'mail_verify_type' => '2',
   'mail_from' => '10000@qq.com',
-  'company' => 
-  array (
-    'AppCode' => '4adbc1924d894b79999bbed54e2c57eb',
-  ),
-  'tax' => 
-  array (
-    'AppKey' => '63635FF0189349509D9E7EBF4D797559',
-    'AppSecrect' => '7116edeab6384ceeb50fbc4d54dfb775',
-  ),
 );

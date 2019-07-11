@@ -17,31 +17,40 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
                 url: $.fn.bootstrapTable.defaults.extend.index_url,
                 pk: 'id',
                 sortName: 'id',
+                search: false, //是否启用快速搜索
+                commonSearch: false, //是否启用通用搜索
+                showExport: false,
+                showToggle: false,
+                showColumns: false,
                 columns: [
                     [
-                        {checkbox: true},
-                        {field: 'id', title: __('Id')},
-                        {field: 'agreedata', title: __('Agreedata'), searchList: {"wait":__('Agreedata wait'),"agree":__('Agreedata agree'),"veto":__('Agreedata veto')}, formatter: Table.api.formatter.normal},
-                        {field: 'admin.username', title: __('Admin.username')},
-                        {field: 'financeinfo.price', title: __('Financeinfo.price'), operate:'BETWEEN'},
-                        {field: 'financeinfo.contacts', title: __('Financeinfo.contacts')},
-                        {field: 'financeinfo.phone', title: __('Financeinfo.phone')},
-                        {field: 'financeinfo.createtime', title: __('Financeinfo.createtime'), operate:'RANGE', addclass:'datetimerange', formatter: Table.api.formatter.datetime},
+                        {field: 'id', title: __('ID')},
+                        {field: 'financeId', title: __('FinanceId')},
+                        {field: 'projectName', title: __('ProjectName')},
+                        {field: 'sectionName', title: __('SectionName')},
+                        {field: 'companyName', title: __('CompanyName')},
+                        {field: 'categoryName', title: __('CategoryName')}, 
+                        {field: 'financePrice', title: __('FinancePrice')},
+                        {field: 'financeContacts', title: __('FinanceContacts')},
+                        {field: 'financePhone', title: __('FinancePhone')},
+                        {field: 'financeRemark', title: __('FinanceRemark')},
+                        {field: 'agreeData', title: __('Agreedata'), searchList: {"wait":__('Agreedata wait'),"agree":__('Agreedata agree'),"veto":__('Agreedata veto')}, formatter: Table.api.formatter.normal},
+                        {field: 'createTime', title: __('Createtime'), operate:'RANGE', addclass:'datetimerange', formatter: Table.api.formatter.datetime},
                         {
-                        field: 'operate',
-                        title: __('Operate'),
-                        table: table,
-                        events: Table.api.events.operate,
-                        buttons: [{
-                            name: 'examine',
-                            text: __('审核'),
-                            title: __('审核'),
-                            classname: 'btn btn-xs btn-primary btn-dialog',
-                            icon: 'fa fa-key',
-                            url: 'finance/verify/examine',
-                            callback: function(data) {
-                                //Layer.alert("接收到回传数据：" + JSON.stringify(data), {title: "回传数据"});
-                            }
+                            field: 'operate',
+                            title: __('Operate'),
+                            table: table,
+                            events: Table.api.events.operate,
+                            buttons: [{
+                                name: 'examine',
+                                text: __('审核'),
+                                title: __('审核'),
+                                classname: 'btn btn-xs btn-primary btn-dialog',
+                                icon: 'fa fa-key',
+                                url: 'finance/verify/examine',
+                                callback: function(data) {
+                                    //Layer.alert("接收到回传数据：" + JSON.stringify(data), {title: "回传数据"});
+                                }
                         }],
                         formatter: Table.api.formatter.operate
                     }]

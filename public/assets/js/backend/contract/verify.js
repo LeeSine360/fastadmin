@@ -180,15 +180,17 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form', 'echarts'], function(
                 series: [{
                     name: ['pay'],
                     data: [
-                            {value: 154000,name: '钢材付款金额',categoryId: 'steel'},
-                            {value: 124000,name: '混凝土付款金额'}
+                            {value: 154000,name: '已拨付金额',categoryId: 'steel'},
+                            {value: 124000,name: '未拨付金额'}
                         ]
                 },{
                      // 根据名字对应到相应的系列
                     name: ['payinfo'],
                     data: [
                             {value: 154000,name: '钢材付款金额',categoryId: 'steel'},
-                            {value: 124000,name: '混凝土付款金额'}
+                            {value: 124000,name: '混凝土付款金额'},
+                            {value: 542400,name: '模板付款金额'},
+                            {value: 24000,name: '砂浆付款金额'}
                         ]
                 }]
              };

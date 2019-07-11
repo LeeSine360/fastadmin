@@ -6,10 +6,6 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
             Table.api.init({
                 extend: {
                     index_url: 'finance/verify/index' + location.search,
-                    add_url: 'finance/verify/add',
-                    edit_url: 'finance/verify/edit',
-                    del_url: 'finance/verify/del',
-                    multi_url: 'finance/verify/multi',
                     table: 'finance_verify',
                 }
             });
@@ -26,14 +22,29 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
                         {checkbox: true},
                         {field: 'id', title: __('Id')},
                         {field: 'agreedata', title: __('Agreedata'), searchList: {"wait":__('Agreedata wait'),"agree":__('Agreedata agree'),"veto":__('Agreedata veto')}, formatter: Table.api.formatter.normal},
-                        {field: 'createtime', title: __('Createtime'), operate:'RANGE', addclass:'datetimerange', formatter: Table.api.formatter.datetime},
                         {field: 'admin.username', title: __('Admin.username')},
                         {field: 'financeinfo.price', title: __('Financeinfo.price'), operate:'BETWEEN'},
                         {field: 'financeinfo.contacts', title: __('Financeinfo.contacts')},
                         {field: 'financeinfo.phone', title: __('Financeinfo.phone')},
                         {field: 'financeinfo.createtime', title: __('Financeinfo.createtime'), operate:'RANGE', addclass:'datetimerange', formatter: Table.api.formatter.datetime},
-                        {field: 'operate', title: __('Operate'), table: table, events: Table.api.events.operate, formatter: Table.api.formatter.operate}
-                    ]
+                        {
+                        field: 'operate',
+                        title: __('Operate'),
+                        table: table,
+                        events: Table.api.events.operate,
+                        buttons: [{
+                            name: 'examine',
+                            text: __('审核'),
+                            title: __('审核'),
+                            classname: 'btn btn-xs btn-primary btn-dialog',
+                            icon: 'fa fa-key',
+                            url: 'finance/verify/examine',
+                            callback: function(data) {
+                                //Layer.alert("接收到回传数据：" + JSON.stringify(data), {title: "回传数据"});
+                            }
+                        }],
+                        formatter: Table.api.formatter.operate
+                    }]
                 ]
             });
 

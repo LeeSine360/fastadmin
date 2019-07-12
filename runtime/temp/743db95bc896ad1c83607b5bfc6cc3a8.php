@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:78:"C:\xampp\htdocs\fastadmin\public/../application/admin\view\auth\rule\edit.html";i:1557482263;s:68:"C:\xampp\htdocs\fastadmin\application\admin\view\layout\default.html";i:1557482263;s:65:"C:\xampp\htdocs\fastadmin\application\admin\view\common\meta.html";i:1557482263;s:67:"C:\xampp\htdocs\fastadmin\application\admin\view\auth\rule\tpl.html";i:1557482263;s:67:"C:\xampp\htdocs\fastadmin\application\admin\view\common\script.html";i:1557482263;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:78:"C:\xampp\htdocs\fastadmin\public/../application/admin\view\auth\rule\edit.html";i:1562812435;s:68:"C:\xampp\htdocs\fastadmin\application\admin\view\layout\default.html";i:1562812435;s:65:"C:\xampp\htdocs\fastadmin\application\admin\view\common\meta.html";i:1562812435;s:67:"C:\xampp\htdocs\fastadmin\application\admin\view\auth\rule\tpl.html";i:1562812435;s:67:"C:\xampp\htdocs\fastadmin\application\admin\view\common\script.html";i:1562812435;}*/ ?>
 <!DOCTYPE html>
 <html lang="<?php echo $config['language']; ?>">
     <head>

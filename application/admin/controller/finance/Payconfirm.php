@@ -3,6 +3,7 @@
 namespace app\admin\controller\finance;
 
 use app\common\controller\Backend;
+use think\Db;
 
 /**
  * 供应商付款
@@ -55,25 +56,76 @@ class Payconfirm extends Backend
                     ->order($sort, $order)
                     ->count();
 
-            $list = $this->model
-                    ->with(['financeinfo','admin'])
-                    ->where($where)
+            $list = Db::table([                             
+                                '__FINANCE_PAYCONFIRM__' => 'finance_payconfirm'
+                            ])  
+                    ->field('
+                        finance_payconfirm.id as id,
+                        finance_info.id as financeId,
+                        project_info.name as projectName,
+                        project_section.name as sectionName,
+                        company_info.name as companyName,
+                        category.name as categoryName,
+                        finance_info.price as financePrice,
+                        finance_payconfirm.payprice as payprice,
+                        finance_info.contacts as financeContacts,
+                        finance_info.phone as financePhone,
+                        finance_info.remark as financeRemark,
+                        finance_project.agreedata as projectAgreeData,
+                        finance_verify.agreedata as verifyAgreeData,
+                        CONCAT(finance_project.opinion,finance_verify.opinion) as opinion,
+                        finance_payconfirm.createtime as createTime
+                    ')
+                    ->join('__FINANCE_INFO__ finance_info','finance_info.id = finance_payconfirm.finance_info_id')
+                    ->join('__FINANCE_PROJECT__ finance_project','finance_info.id = finance_project.finance_info_id')
+                    ->join('__FINANCE_VERIFY__ finance_verify','finance_info.id = finance_verify.finance_info_id')
+                    ->join('__PROJECT_INFO__ project_info','finance_info.project_info_id = project_info.id')
+                    ->join('__PROJECT_SECTION__ project_section','finance_info.project_section_id = project_section.id')
+                    ->join('__COMPANY_INFO__ company_info','finance_info.company_info_id = company_info.id')
+                    ->join('__CATEGORY__ category','finance_info.category_id = category.id')
+                    ->where(['finance_project.agreedata' => 'agree','finance_verify.agreedata' => 'agree'])
+                    ->where('finance_payconfirm.state','wait')
                     ->order($sort, $order)
-                    ->limit($offset, $limit)
                     ->select();
 
-            foreach ($list as $row) {
-                $row->visible(['id','payprice','remark','createtime']);
-                $row->visible(['financeinfo']);
-				$row->getRelation('financeinfo')->visible(['price','contacts','phone','remark']);
-				$row->visible(['admin']);
-				$row->getRelation('admin')->visible(['username']);
-            }
-            $list = collection($list)->toArray();
             $result = array("total" => $total, "rows" => $list);
 
             return json($result);
         }
         return $this->view->fetch();
+    }
+
+    //确认付款
+    public function confirm($ids = null){
+        $row = $this->model->get($ids);
+        if (!$row) {
+            $this->error(__('No Results were found'));
+        }
+        $adminIds = $this->getDataLimitAdminIds();
+        if (is_array($adminIds)) {
+            if (!in_array($row[$this->dataLimitField], $adminIds)) {
+                $this->error(__('You have no permission'));
+            }
+        }
+
+        $list = Db::table([                             
+            '__FINANCE_PAYCONFIRM__' => 'finance_payconfirm'
+        ])
+        ->join('__FINANCE_INFO__ finance_info','finance_info.id = finance_payconfirm.finance_info_id')
+        ->join('__FINANCE_PROJECT__ finance_project','finance_info.id = finance_project.finance_info_id')
+        ->join('__FINANCE_VERIFY__ finance_verify','finance_info.id = finance_verify.finance_info_id')
+        ->where(['finance_project.agreedata' => 'agree','finance_verify.agreedata' => 'agree'])
+        ->where('finance_payconfirm.id',$ids)
+        ->select();
+
+        if(!empty($list)){
+            $row->state = 'yes';
+            $result =   $row->save();
+            if ($result !== false) {
+                $this->success();
+            }
+        }else {
+            $this->error(__('审核流程未完成！'));
+        }  
     }
 }

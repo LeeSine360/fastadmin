@@ -1,4 +1,4 @@
-define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefined, Backend, Table, Form) {
+define(['jquery', 'bootstrap', 'backend', 'table', 'form', 'editable'], function ($, undefined, Backend, Table, Form, undefined) {
 
     var Controller = {
         index: function () {
@@ -6,6 +6,7 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
             Table.api.init({
                 extend: {
                     index_url: 'finance/payconfirm/index' + location.search,
+                    edit_url: 'finance/payconfirm/edit',
                     table: 'finance_payconfirm',
                 }
             });
@@ -37,7 +38,7 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
                         {field: 'verifyAgreeData', title: __('VerifyAgreedata'), searchList: {"wait":__('VerifyAgreedata wait'),"agree":__('VerifyAgreedata agree'),"veto":__('VerifyAgreedata veto')}, formatter: Table.api.formatter.normal},
                         {field: 'opinion', title: __('Opinion')},
                         {field: 'financePrice', title: __('FinancePrice')},
-                        {field: 'payprice', title: __('Payprice')},
+                        {field: 'payprice', title: __('Payprice'), editable: true},
                         {field: 'createTime', title: __('Createtime'), operate:'RANGE', addclass:'datetimerange', formatter: Table.api.formatter.datetime},
 
                         {
@@ -49,11 +50,20 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
                                 name: 'confirm',
                                 text: __('确认'),
                                 title: __('确认'),
-                                classname: 'btn btn-xs btn-primary btn-dialog',
-                                icon: 'fa fa-key',
-                                url: 'finance/project/examine',
-                                callback: function(data) {
-                                    //Layer.alert("接收到回传数据：" + JSON.stringify(data), {title: "回传数据"});
+                                classname: 'btn btn-xs btn-primary btn-ajax',
+                                icon: 'fa fa-check',
+                                url: 'finance/payconfirm/confirm',
+                                success: function (data, ret) {
+                                        table.bootstrapTable('refresh', {});
+                                },
+                                error: function (data, ret) {
+                                    Layer.alert(ret.msg);
+                                    return false;
+                                }
+                            },{
+                                name: 'edit',
+                                hidden: function (row){
+                                    return true;
                                 }
                             }], 
                             formatter: Table.api.formatter.operate

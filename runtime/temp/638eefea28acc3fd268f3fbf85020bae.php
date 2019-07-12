@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:75:"C:\xampp\htdocs\fastadmin\public/../application/index\view\index\index.html";i:1557482263;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:75:"C:\xampp\htdocs\fastadmin\public/../application/index\view\index\index.html";i:1562812435;}*/ ?>
 <!DOCTYPE html>
 <html>
 

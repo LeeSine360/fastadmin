@@ -53,8 +53,9 @@ class Manager extends Backend
                     ->with(['admin'])
                     ->where($where)
                     ->order($sort, $order)
+                    ->fetchSql(true)
                     ->count();
-
+return $total;
             $list = $this->model
                     ->with(['admin'])
                     ->where($where)

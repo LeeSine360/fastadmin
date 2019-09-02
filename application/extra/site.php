@@ -1,7 +1,7 @@
 <?php
 
 return array (
-  'name' => 'FastAdmin',
+  'name' => 'FastAdmins',
   'beian' => '',
   'cdnurl' => '',
   'version' => '1.0.1',
@@ -10,15 +10,15 @@ return array (
   'languages' => 
   array (
     'backend' => 'zh-cn',
-    'frontend' => 'zh-cn',
+    'frontend' => 'zh-cns',
   ),
   'fixedpage' => 'dashboard',
   'categorytype' => 
   array (
-    'default' => 'Default',
-    'page' => 'Page',
-    'article' => 'Article',
-    'test' => 'Test',
+    'classify' => '合同类别',
+    'property' => '企业性质',
+    'cost' => '报账类别',
+    'project' => '项目类型',
   ),
   'configgroup' => 
   array (
@@ -26,7 +26,7 @@ return array (
     'email' => 'Email',
     'dictionary' => 'Dictionary',
     'user' => 'User',
-    'example' => 'Example',
+    'api' => 'Api',
   ),
   'mail_type' => '1',
   'mail_smtp_host' => 'smtp.qq.com',
@@ -35,4 +35,14 @@ return array (
   'mail_smtp_pass' => 'password',
   'mail_verify_type' => '2',
   'mail_from' => '10000@qq.com',
+  'company' => 
+  array (
+    'AppCode' => '4adbc1924d894b79999bbed54e2c57eb',
+  ),
+  'tax' => 
+  array (
+    'AppKey' => '63635FF0189349509D9E7EBF4D797559',
+    'AppSecrect' => '7116edeab6384ceeb50fbc4d54dfb775',
+  ),
+  'time' => '10:30',
 );

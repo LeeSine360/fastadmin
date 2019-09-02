@@ -50,18 +50,42 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
             Controller.api.bindevent();
         },
         api: {
-            bindevent: function () {
+            bindevent: function () { 
+
+                $("#c-label_id").data("params", function(e){
+                    var proId = $("#c-project_info_id").val();
+                    var sectionId = $("#c-project_section_id").val();
+                    var companyId = $("#c-company_info_id").val();
+                    return {custom: {project_info_id: proId, section_info_id: sectionId, company_info_id: companyId}};
+                });
+
                 $("#c-project_section_id").data("params", function(e){
                     var proId = $("#c-project_info_id").val();
                     return {custom: {project_info_id: proId}};
-                }); 
+                });
+
+                $("#c-company_info_id").change(function(data){
+                    $("#c-label_id").val("");
+                    $("#c-label_id_text").val("");
+                });
 
                 $('input:radio').click(function(event) {
                     var radioValue = $(this).val();
                     if(radioValue == 47 ){
-                        $("#c-company_info_id_text").attr("disabled",true);
-                    }else{
                         $("#c-company_info_id_text").attr("disabled",false);
+                        $("#c-company_info_id_text").val("");
+                        $("#c-company_info_id").val("");
+                        $("#c-label_id").val("");
+                        $("#c-label_id_text").val("");
+                        $("#c-label_id_text").attr("disabled",true);
+                    }else if(radioValue == 48){
+                        $("#c-company_info_id_text").attr("disabled",false);
+                        $("#c-label_id").val("");
+                        $("#c-label_id_text").val("");
+                        $("#c-label_id_text").attr("disabled",true);
+                    }else{
+                        $("#c-company_info_id_text").attr("disabled",false);    
+                        $("#c-label_id_text").attr("disabled",false);                    
                     }
                 });
                 Form.api.bindevent($("form[role=form]"));

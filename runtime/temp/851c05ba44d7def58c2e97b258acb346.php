@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:82:"C:\xampp\htdocs\fastadmin\public/../application/admin\view\finance\info\index.html";i:1562634719;s:68:"C:\xampp\htdocs\fastadmin\application\admin\view\layout\default.html";i:1562812435;s:65:"C:\xampp\htdocs\fastadmin\application\admin\view\common\meta.html";i:1562812435;s:67:"C:\xampp\htdocs\fastadmin\application\admin\view\common\script.html";i:1562812435;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:82:"C:\xampp\htdocs\fastadmin\public/../application/admin\view\finance\info\index.html";i:1564565172;s:68:"C:\xampp\htdocs\fastadmin\application\admin\view\layout\default.html";i:1562812435;s:65:"C:\xampp\htdocs\fastadmin\application\admin\view\common\meta.html";i:1562812435;s:67:"C:\xampp\htdocs\fastadmin\application\admin\view\common\script.html";i:1562812435;}*/ ?>
 <!DOCTYPE html>
 <html lang="<?php echo $config['language']; ?>">
     <head>
@@ -113,13 +113,22 @@
                     <div class="row form-row-height">
                         <label class="control-label col-xs-12 col-sm-2"><?php echo __('Company_info_id'); ?>:</label>
                         <div class="col-xs-12 col-sm-3">
-                            <input id="c-company_info_id" data-source="company/info/index" class="form-control selectpage input-left-padding45" name="row[company_info_id]" type="text" value="">
+                            <input id="c-company_info_id" data-source="company/info/index" data-order-by="weigh desc" class="form-control selectpage input-left-padding45" name="row[company_info_id]" type="text" value="">
                         </div>
+                        <label class="control-label col-xs-12 col-sm-2"><?php echo __('ContractInfoName'); ?>:</label>
+                        <div class="col-xs-12 col-sm-3">
+                            <input id="c-label_id" data-source="finance/info/label" class="form-control selectpage input-left-padding45" name="row[label_id]" type="text" value="">
+                        </div>
+                        <!--<div class="col-xs-12 col-sm-2" id="c-label">
+                            
+                        </div>-->
+                    </div>  
+                    <div class="row form-row-height">
                         <label class="control-label col-xs-12 col-sm-2"><?php echo __('Price'); ?>:</label>
                         <div class="col-xs-12 col-sm-3">
                             <input id="c-price" data-rule="required" class="form-control" name="row[price]" type="number">
                         </div>
-                    </div>                   
+                    </div>                 
                     <div class="row form-row-height">
                         <label class="control-label col-xs-12 col-sm-2"><?php echo __('Contacts'); ?>:</label>
                         <div class="col-xs-12 col-sm-3">

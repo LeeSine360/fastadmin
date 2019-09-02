@@ -1,4 +1,4 @@
-define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefined, Backend, Table, Form) {
+define(['jquery', 'bootstrap', 'backend', 'table', 'form', 'echarts'], function ($, undefined, Backend, Table, Form, Echarts) {
 
     var Controller = {
         index: function () {
@@ -134,10 +134,13 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
             $(document).on('click', '.btn-callback', function() {
                 Fast.api.close($("input[name=callback]").val());
             });
+            Controller.api.bindevent();
         },
         api: {
             bindevent: function () {
-                Form.api.bindevent($("form[role=form]"));
+                Form.api.bindevent($("form[role=form]"),function(){
+                    $("#table").bootstrapTable('refresh', {});
+                });
             }
         }
     };

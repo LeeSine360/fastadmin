@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:79:"C:\xampp\htdocs\fastadmin\public/../application/admin\view\dashboard\index.html";i:1562812435;s:68:"C:\xampp\htdocs\fastadmin\application\admin\view\layout\default.html";i:1562812435;s:65:"C:\xampp\htdocs\fastadmin\application\admin\view\common\meta.html";i:1562812435;s:67:"C:\xampp\htdocs\fastadmin\application\admin\view\common\script.html";i:1562812435;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:79:"C:\xampp\htdocs\fastadmin\public/../application/admin\view\dashboard\index.html";i:1566880206;s:68:"C:\xampp\htdocs\fastadmin\application\admin\view\layout\default.html";i:1562812435;s:65:"C:\xampp\htdocs\fastadmin\application\admin\view\common\meta.html";i:1562812435;s:67:"C:\xampp\htdocs\fastadmin\application\admin\view\common\script.html";i:1562812435;}*/ ?>
 <!DOCTYPE html>
 <html lang="<?php echo $config['language']; ?>">
     <head>
@@ -201,6 +201,98 @@
     .item {
         padding: 30px 0;
     }
+    .avatar{
+        flex: 0 1 72px;
+        margin: 0 24px 8px 0;
+        margin-bottom: 16px;
+    }
+    .avatar>span {
+        border-radius: 72px;
+        display: block;
+        width: 72px;
+        height: 72px;
+    }
+    .ant-avatar {
+        font-family: Chinese Quote,-apple-system,BlinkMacSystemFont,Segoe UI,PingFang SC,Hiragino Sans GB,Microsoft YaHei,Helvetica Neue,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+        font-size: 14px;
+        font-variant: tabular-nums;
+        line-height: 1.5;
+        color: rgba(0,0,0,.65);
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: inline-block;
+        text-align: center;
+        background: #ccc;
+        color: #fff;
+        white-space: nowrap;
+        position: relative;
+        overflow: hidden;
+        vertical-align: middle;
+        width: 32px;
+        height: 32px;
+        line-height: 32px;
+        border-radius: 50%;
+    }
+    .ant-avatar-string {
+        position: absolute;
+        left: 50%;
+        transform-origin: 0 center;
+    }
+    .headerContent {
+        -ms-flex: auto;
+        flex: auto;
+        color: rgba(0,0,0,.45);
+        line-height: 22px;
+    }
+    .title {
+        font-size: 20px;
+        line-height: 28px;
+        font-weight: 500;
+        color: rgba(0,0,0,.85);
+        margin-bottom: 16px;
+        -ms-flex: auto;
+        flex: auto;
+    }
+    .extra {
+        -ms-flex: 0 1 auto;
+        flex: 0 1 auto;
+        margin-left: 88px;
+        min-width: 342px;
+        text-align: right;
+    }
+    .ant-row {
+        position: relative;
+        margin-left: 0;
+        margin-right: 0;
+        height: auto;
+        zoom: 1;
+        display: block;
+        box-sizing: border-box;
+    }
+    .ant-col-8 {
+        display: block;
+        box-sizing: border-box;
+        /*width: 33.33333333%;*/
+        float: left;
+        -ms-flex: 0 0 auto;
+        flex: 0 0 auto;
+        text-align: right;
+    }
+    .head-info {
+        position: relative;
+        text-align: left;
+        padding: 0 32px 0 0;
+        min-width: 125px;
+    }
+    .head-info p {
+        color: rgba(0,0,0,.85);
+        font-size: 24px;
+        line-height: 32px;
+        margin: 0;
+    }
+
 </style>
 <?php if(preg_match('/\/admin\/|admin\.php|admin_d75KABNWt\.php/i', url())): ?>
 <div class="alert alert-danger-light">
@@ -434,7 +526,7 @@
                             </div>
                             <div class="box-body">
                                 <ul class="products-list product-list-in-box">
-                                    <?php $__FOR_START_203599578__=1;$__FOR_END_203599578__=8;for($i=$__FOR_START_203599578__;$i < $__FOR_END_203599578__;$i+=1){ ?>
+                                    <?php $__FOR_START_1579253409__=1;$__FOR_END_1579253409__=8;for($i=$__FOR_START_1579253409__;$i < $__FOR_END_1579253409__;$i+=1){ ?>
                                     <li class="item">
                                         <div class="product-img">
                                             <img src="/assets/img/avatar.png" style="height:40px;width:40px;">
@@ -484,6 +576,11 @@
                             <div class="box-header"><h3 class="box-title"><?php echo __('Server info'); ?></h3></div>
                             <div class="box-body" style="padding-top:0;">
                                 <table class="table table-striped">
+                                    <thead>
+                                        <tr>
+                                          <th>#</th>
+                                          <th>First Name</th>
+                                    </thead>
                                     <tbody>
                                     <tr>
                                         <td width="140"><?php echo __('FastAdmin version'); ?></td>
@@ -541,11 +638,40 @@
                 </div>
             </div>
             <div class="tab-pane fade" id="two">
-                <div class="row">
-                    <div class="col-xs-12">
-                        <?php echo __('Custom zone'); ?>
+                <div style="display: flex;background: #fff;padding: 16px 32px 0;">
+                    <div data-v-596c5759="" class="avatar">
+                        <span data-v-596c5759="" class="ant-avatar ant-avatar-circle">
+                            <span class="ant-avatar-string" style="transform: scale(1) translateX(-50%);"></span>
+                        </span>
+                    </div>                        
+                    <div data-v-596c5759="" class="headerContent">
+                        <div data-v-92d03644="" data-v-596c5759="">
+                            <div data-v-92d03644="" data-v-596c5759="" class="title">
+                                汉寿恒大御府
+                            </div>
+                            <div data-v-92d03644="" data-v-596c5759="">A区 | 彭军维：1388888888</div>
+                        </div>
                     </div>
-                </div>
+                    <div data-v-596c5759="" class="extra">
+                        <div data-v-92d03644="" class="more-info ant-row" data-v-596c5759="">
+                            <div data-v-92d03644="" class="ant-col-8">
+                                <div data-v-4d866d96="" data-v-92d03644="" class="head-info">
+                                    <span data-v-4d866d96="">拨付金额占比</span>
+                                    <p data-v-4d866d96="">50%</p>
+                                    <!---->
+                                </div>
+                            </div>
+                            <div data-v-92d03644="" class="ant-col-8">
+                                <div data-v-4d866d96="" data-v-92d03644="" class="head-info">
+                                    <span data-v-4d866d96="">标段总造价</span>
+                                    <p data-v-4d866d96="">56,000,000.00</p>
+                                    <!---->
+                                </div>
+                            </div>                            
+                        </div>
+                    </div>
+                </div>  
+
             </div>
         </div>
     </div>

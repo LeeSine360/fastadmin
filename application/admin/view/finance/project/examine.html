@@ -1,69 +1,72 @@
 <form id="add-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="">
-<div class="form-group">
-    <div class="col-xs-12 col-sm-12">
-        <div id="echarts" style="height:250px;width:100%;">
+    <div class="form-group">
+        <div class="col-xs-12 col-sm-12">
+            <div id="echarts" style="height:250px;width:100%;">
+            </div>
         </div>
     </div>
-</div>
-<div class="form-group">
-        <label class="col-xs-12 col-sm-2 text-right">项目名称:</label>
-        <div class="col-xs-12 col-sm-4">汉寿恒大御府</div>
+    <div class="form-group">
+            <label class="col-xs-12 col-sm-2 text-right">项目名称:</label>
+            <div class="col-xs-12 col-sm-4">汉寿恒大御府</div>
+        </div>
+    <div class="form-group">
+        <label class="col-xs-12 col-sm-2 text-right">标段名称:</label>
+        <div class="col-xs-12 col-sm-4">A区</div>
+        <label class="col-xs-12 col-sm-2 text-right">标段总金额:</label>
+        <div class="col-xs-12 col-sm-4">2239823984.00</div>
     </div>
-<div class="form-group">
-    <label class="col-xs-12 col-sm-2 text-right">标段名称:</label>
-    <div class="col-xs-12 col-sm-4">A区</div>
-    <label class="col-xs-12 col-sm-2 text-right">标段总金额:</label>
-    <div class="col-xs-12 col-sm-4">2239823984.00</div>
-</div>
-<div class="form-group">
-    <label class="col-xs-12 col-sm-2 text-right">项目经理:</label>
-    <div class="col-xs-12 col-sm-4">李恒孝</div>
-    <label class="col-xs-12 col-sm-2 text-right">联系电话:</label>
-    <div class="col-xs-12 col-sm-4">1388888888</div>
-</div>
+    <div class="form-group">
+        <label class="col-xs-12 col-sm-2 text-right">项目经理:</label>
+        <div class="col-xs-12 col-sm-4">李恒孝</div>
+        <label class="col-xs-12 col-sm-2 text-right">联系电话:</label>
+        <div class="col-xs-12 col-sm-4">1388888888</div>
+    </div>
 
-<div class="form-group">
-    <label class="col-xs-12 col-sm-2 text-right">供应商名称:</label>
-    <div class="col-xs-12 col-sm-4">湖南鑫盛达钢材贸易有限公司</div>
-    <label class="col-xs-12 col-sm-2 text-right">类型:</label>
-    <div class="col-xs-12 col-sm-4">混凝土</div>
-    
-</div>
-<div class="form-group">
-    <label class="col-xs-12 col-sm-2 text-right">申请付款金额:</label>
-    <div class="col-xs-12 col-sm-4">2300000.00</div>    
-</div>
-<div class="form-group">
-    <label class="col-xs-12 col-sm-2 text-right">预算金额:</label>
-    <div class="col-xs-12 col-sm-4">230000000.00</div>
-    <label class="col-xs-12 col-sm-2 text-right">已拨付金额:</label>
-    <div class="col-xs-12 col-sm-4">20000000.00</div>
-</div>
-<div class="form-group">
-    <label class="col-xs-12 col-sm-2 text-right">欠款金额:</label>
-    <div class="col-xs-12 col-sm-4">230000000.00</div>
-    <label class="col-xs-12 col-sm-2 text-right">合同详情:</label>
-    <div class="col-xs-12 col-sm-4">点击查看</div>
-</div>
-<div class="form-group">
-    <label class="col-xs-12 col-sm-2 text-right">{:__('Agreedata')}:</label>
-    <div class="col-xs-12 col-sm-10">                
-        <div class="radio">
-        {foreach name="agreedataList" item="vo"}
-        <label for="row[agreedata]-{$key}"><input id="row[agreedata]-{$key}" name="row[agreedata]" type="radio" value="{$key}" {in name="key" value="wait"}checked{/in} /> {$vo}</label> 
-        {/foreach}
+    <div class="form-group">
+        <label class="col-xs-12 col-sm-2 text-right">供应商名称:</label>
+        <div class="col-xs-12 col-sm-4">湖南鑫盛达钢材贸易有限公司</div>
+        <label class="col-xs-12 col-sm-2 text-right">类型:</label>
+        <div class="col-xs-12 col-sm-4">混凝土</div>    
+    </div>
+    <div class="form-group">
+        <label class="col-xs-12 col-sm-2 text-right">合同总价:</label>
+        <div class="col-xs-12 col-sm-4">230000000.00</div>
+        
+        <label class="col-xs-12 col-sm-2 text-right">已拨付金额:</label>
+        <div class="col-xs-12 col-sm-4">20000000.00</div>
+    </div>
+    <div class="form-group">
+        <label class="col-xs-12 col-sm-2 text-right">预算金额: </label>
+        <div class="col-xs-12 col-sm-4">230000000.00</div>
+        <label class="col-xs-12 col-sm-2 text-right">同类型已付合计:</label>
+        <div class="col-xs-12 col-sm-4">20000.00</div>
+    </div>
+    <div class="form-group">
+        <label class="col-xs-12 col-sm-2 text-right">申请付款金额:</label>
+        <div class="col-xs-12 col-sm-4">2300000.00</div>  
+        <label class="col-xs-12 col-sm-2 text-right">欠款金额:</label>
+        <div class="col-xs-12 col-sm-4">20000.00</div>  
+    </div>
+    <div class="form-group">
+        <label class="col-xs-12 col-sm-2 text-right">{:__('Agreedata')}:</label>
+        <div class="col-xs-12 col-sm-10">                
+            <div class="radio">
+            {foreach name="agreedataList" item="vo"}
+            <label for="row[agreedata]-{$key}"><input id="row[agreedata]-{$key}" name="row[agreedata]" type="radio" value="{$key}" {in name="key" value="wait"}checked{/in} /> {$vo}</label> 
+            {/foreach}
+            </div>
         </div>
     </div>
-</div>
-<div class="form-group">
-    <label class="col-xs-12 col-sm-2 text-right">{:__('Opinion')}:</label>
-    <div class="col-xs-12 col-sm-8">
-        <textarea id="c-opinion" class="form-control" rows="5" name="row[opinion]" type="text"></textarea>
+    <div class="form-group">
+        <label class="col-xs-12 col-sm-2 text-right">{:__('Opinion')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <textarea id="c-opinion" class="form-control" rows="5" name="row[opinion]" type="text"></textarea>
+        </div>
     </div>
-</div>
-<div class="hide layer-footer">
-    <label class="col-xs-12 col-sm-2 text-right"></label>
-    <div class="col-xs-12 col-sm-8">
-        <button type="reset" class="btn btn-primary btn-embossed btn-close" onclick="Layer.closeAll();">{:__('Close')}</button>
+    <div class="form-group layer-footer">
+        <label class="control-label col-xs-12 col-sm-2"></label>
+        <div class="col-xs-12 col-sm-8">
+            <button type="submit" class="btn btn-success btn-embossed disabled">{:__('保存')}</button>
+        </div>
     </div>
-</div>
+</form>

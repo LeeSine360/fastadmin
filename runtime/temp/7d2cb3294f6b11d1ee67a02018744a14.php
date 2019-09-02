@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:83:"C:\xampp\htdocs\fastadmin\public/../application/admin\view\contract\info\index.html";i:1562405781;s:68:"C:\xampp\htdocs\fastadmin\application\admin\view\layout\default.html";i:1562812435;s:65:"C:\xampp\htdocs\fastadmin\application\admin\view\common\meta.html";i:1562812435;s:67:"C:\xampp\htdocs\fastadmin\application\admin\view\common\script.html";i:1562812435;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:83:"C:\xampp\htdocs\fastadmin\public/../application/admin\view\contract\info\index.html";i:1566174409;s:68:"C:\xampp\htdocs\fastadmin\application\admin\view\layout\default.html";i:1562812435;s:65:"C:\xampp\htdocs\fastadmin\application\admin\view\common\meta.html";i:1562812435;s:67:"C:\xampp\htdocs\fastadmin\application\admin\view\common\script.html";i:1562812435;}*/ ?>
 <!DOCTYPE html>
 <html lang="<?php echo $config['language']; ?>">
     <head>
@@ -67,7 +67,7 @@
                         <a href="javascript:;" class="btn btn-success btn-edit btn-disabled disabled <?php echo $auth->check('contract/info/edit')?'':'hide'; ?>" title="<?php echo __('Edit'); ?>" ><i class="fa fa-pencil"></i> <?php echo __('Edit'); ?></a>
                         <a href="javascript:;" class="btn btn-danger btn-del btn-disabled disabled <?php echo $auth->check('contract/info/del')?'':'hide'; ?>" title="<?php echo __('Delete'); ?>" ><i class="fa fa-trash"></i> <?php echo __('Delete'); ?></a>
                         <a href="javascript:;" class="btn btn-danger btn-import <?php echo $auth->check('contract/info/import')?'':'hide'; ?>" title="<?php echo __('Import'); ?>" id="btn-import-file" data-url="ajax/upload" data-mimetype="csv,xls,xlsx" data-multiple="false"><i class="fa fa-upload"></i> <?php echo __('Import'); ?></a>
-
+ 
                         <div class="dropdown btn-group <?php echo $auth->check('contract/info/multi')?'':'hide'; ?>">
                             <a class="btn btn-primary btn-more dropdown-toggle btn-disabled disabled" data-toggle="dropdown"><i class="fa fa-cog"></i> <?php echo __('More'); ?></a>
                             <ul class="dropdown-menu text-left" role="menu">
@@ -101,7 +101,7 @@
                     <div class="row form-row-height">
                         <label class="control-label col-xs-12 col-sm-2"><?php echo __('company_info_id'); ?>:</label>
                         <div class="col-xs-12 col-sm-3">
-                            <input id="c-company_info_id" data-rule="required" data-source="company/info/index" class="form-control selectpage" name="row[company_info_id]" type="text" value="">
+                            <input id="c-company_info_id" data-rule="required" data-source="company/info/index" class="form-control selectpage" name="row[company_info_id]" type="text" value="" data-order-by="createtime desc">
                         </div>
                         <label class="control-label col-xs-12 col-sm-2"><?php echo __('Name'); ?>:</label>
                         <div class="col-xs-12 col-sm-3">
@@ -113,9 +113,8 @@
                         <div class="col-xs-12 col-sm-6">
                             <!--<input id="c-category_id" data-rule="required" data-source="category/selectpage" data-params='{"custom[type]":"classify","custom[pid]":0}' class="form-control selectpage" name="row[category_id]" type="text" value="">-->
                             <div class="form-inline" data-toggle="cxselect" data-selects="first,second">
-                                <select class="first form-control" data-url="ajax/category?type=classify&pid=0"></select>
-                                <select class="second form-control" name="row[category_id]" data-url="ajax/category" data-query-name="pid"></select>
-                                <a href="http://www.baidu.com">百度</a>
+                                <select class="first form-control" data-rule="required" data-url="ajax/category?type=classify&pid=0"></select>
+                                <select class="second form-control" data-rule="required" name="row[category_id]" data-url="ajax/category" data-query-name="pid"></select>
                             </div>
                         </div>
                         <!--<label class="control-label col-xs-12 col-sm-2"><?php echo __('Label_ids'); ?>:</label>
@@ -167,12 +166,12 @@
                         </div>
                     </div>
                     
-                    <div class="row form-row-height">
+                    <!--<div class="row form-row-height">
                         <label class="control-label col-xs-12 col-sm-2"><?php echo __('Settlement'); ?>:</label>
                         <div class="col-xs-12 col-sm-8">
                             <textarea id="c-settlement" class="form-control " rows="5" name="row[settlement]" cols="50"></textarea>
                         </div>
-                    </div>
+                    </div>-->
                     <!--<div class="row form-row-height">
                         <label class="control-label col-xs-12 col-sm-2"><?php echo __('Content'); ?>:</label>
                         <div class="col-xs-12 col-sm-8">

@@ -88,14 +88,14 @@ class Project extends Backend
         return $this->view->fetch();
     }
     //审核
-    public function examine(){
+    public function examine($ids = null){
         if ($this->request->isAjax())
         {
-            //如果发送的来源是Selectpage，则转发到Selectpage
-            if ($this->request->request('keyField'))
-            {
-                return $this->selectpage();
+            //保存
+            if($this->request->isPost()){                
+                return $this->edit($ids);
             }
+            
             list($where, $sort, $order, $offset, $limit) = $this->buildparams();
             $total = $this->model
                     ->with(['contractinfo','admin'])

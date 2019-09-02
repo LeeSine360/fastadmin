@@ -4,6 +4,15 @@ return array (
   'autoload' => false,
   'hooks' => 
   array (
+    'app_init' => 
+    array (
+      0 => 'flow',
+      1 => 'log',
+    ),
+    'appendcommand' => 
+    array (
+      0 => 'flow',
+    ),
     'admin_login_init' => 
     array (
       0 => 'loginbg',

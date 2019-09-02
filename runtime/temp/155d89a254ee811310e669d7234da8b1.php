@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:75:"C:\xampp\htdocs\fastadmin\public/../application/admin\view\index\login.html";i:1562812435;s:65:"C:\xampp\htdocs\fastadmin\application\admin\view\common\meta.html";i:1562812435;s:67:"C:\xampp\htdocs\fastadmin\application\admin\view\common\script.html";i:1562812435;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:75:"C:\xampp\htdocs\fastadmin\public/../application/admin\view\index\login.html";i:1564099965;s:65:"C:\xampp\htdocs\fastadmin\application\admin\view\common\meta.html";i:1562812435;s:67:"C:\xampp\htdocs\fastadmin\application\admin\view\common\script.html";i:1562812435;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -116,8 +116,8 @@
                             </form>
                         </div>
                     </div>
-                    <!-- FastAdmin是开源程序，建议在您的网站底部保留一个FastAdmin的链接 -->
-                    <p class="copyright"><a href="https://www.fastadmin.net">Powered By FastAdmin</a></p>
+                    <!-- FastAdmin是开源程序，建议在您的网站底部保留一个FastAdmin的链接 
+                    <p class="copyright"><a href="https://www.fastadmin.net">Powered By FastAdmin</a></p>-->
                 </div>
             </div>
         </div>

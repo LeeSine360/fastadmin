@@ -522,7 +522,6 @@
         // 1. build Dom object
         var elem = {}, p = this.option, css = this.css_class, msg = this.message, input = $(combo_input);
         var orgWidth = input.outerWidth();
-        console.log('orgWidth:'+orgWidth);
         // fix input width in hidden situation
         //if (orgWidth <= 0)
             orgWidth = this.elementRealSize(input, 'outerWidth');

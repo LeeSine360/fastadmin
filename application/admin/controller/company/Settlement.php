@@ -21,7 +21,7 @@ class Settlement extends Backend
     public function _initialize()
     {
         parent::_initialize();
-        $this->model = new \app\admin\model\CompanySettlement;
+        $this->model = new \app\admin\model\company\Settlement;
 
     }
     
@@ -63,7 +63,7 @@ class Settlement extends Backend
                     ->select();
 
             foreach ($list as $row) {
-                $row->visible(['id','payment','unpayment','enddate','remark','createtime','admin_id']);
+                $row->visible(['payment','unpayment','enddate','remark','createtime']);
                 $row->visible(['projectinfo']);
 				$row->getRelation('projectinfo')->visible(['name']);
 				$row->visible(['projectsection']);
@@ -71,7 +71,7 @@ class Settlement extends Backend
 				$row->visible(['companyinfo']);
 				$row->getRelation('companyinfo')->visible(['name']);
 				$row->visible(['admin']);
-				$row->getRelation('admin')->visible(['username']);
+				$row->getRelation('admin')->visible(['nickname']);
             }
             $list = collection($list)->toArray();
             $result = array("total" => $total, "rows" => $list);

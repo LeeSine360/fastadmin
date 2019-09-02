@@ -243,7 +243,7 @@ class Ajax extends Backend
             if ($type) {
                 $where['type'] = $type;
             }
-            if ($pid) {
+            if (is_numeric($pid)) {
                 $where['pid'] = $pid;
             }
 

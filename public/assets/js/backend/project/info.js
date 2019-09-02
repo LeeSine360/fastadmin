@@ -24,7 +24,7 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
                 columns: [
                     [
                         {checkbox: true},
-                        {field: 'id', titile: __('id')},
+                        {field: 'id', title: __('ID')},
                         {field: 'number', title: __('Number')},
                         {field: 'name', title: __('Name')},                        
                         {field: 'price', title: __('Price'), operate:'BETWEEN'},

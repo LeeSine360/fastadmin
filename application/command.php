@@ -1,20 +1,11 @@
 <?php
 
-// +----------------------------------------------------------------------
-// | ThinkPHP [ WE CAN DO IT JUST THINK ]
-// +----------------------------------------------------------------------
-// | Copyright (c) 2006-2016 http://thinkphp.cn All rights reserved.
-// +----------------------------------------------------------------------
-// | Licensed ( http://www.apache.org/licenses/LICENSE-2.0 )
-// +----------------------------------------------------------------------
-// | Author: yunwuxin <448901948@qq.com>
-// +----------------------------------------------------------------------
-
-return [
-    'app\admin\command\Crud',
-    'app\admin\command\Menu',
-    'app\admin\command\Install',
-    'app\admin\command\Min',
-    'app\admin\command\Addon',
-    'app\admin\command\Api',
-];
+return array (
+  0 => 'app\\admin\\command\\Crud',
+  1 => 'app\\admin\\command\\Menu',
+  2 => 'app\\admin\\command\\Install',
+  3 => 'app\\admin\\command\\Min',
+  4 => 'app\\admin\\command\\Addon',
+  5 => 'app\\admin\\command\\Api',
+  6 => 'app\\admin\\command\\FlowCrud',
+);

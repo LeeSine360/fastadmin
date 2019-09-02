@@ -38,10 +38,7 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form', 'echarts'], function(
                             title: __('审核'),
                             classname: 'btn btn-xs btn-primary btn-dialog',
                             icon: 'fa fa-key',
-                            url: 'contract/verify/examine',
-                            callback: function(data) {
-                                //Layer.alert("接收到回传数据：" + JSON.stringify(data), {title: "回传数据"});
-                            }
+                            url: 'contract/verify/examine'
                         }],
                         formatter: Table.api.formatter.operate
                     }]
@@ -176,16 +173,28 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form', 'echarts'], function(
                     }
                 }]
             };
+
+            var contractId = location.href.match(/[\d]+\?/)[0].match(/[\d]+/)[0];
+            Fast.api.ajax({url:"contract/verify/examine/ids/" + contractId,type:"GET"},
+                function(data){
+                    console.log(data);
+                },
+                function(data){
+                    console.log(data);
+                });
+
             var options = {
                 series: [{
-                    name: ['pay'],
+                    name: 'pay',
                     data: [
-                            {value: 154000,name: '已拨付金额',categoryId: 'steel'},
-                            {value: 124000,name: '未拨付金额'}
+                            {value: 12531321,name: '供应商'}, 
+                            {value: 1253132,name: '人工工资'},
+                            {value: 125313,name: '费用报销'},                            
+                            {value: 12400000,name: '未拨付金额'}
                         ]
                 },{
                      // 根据名字对应到相应的系列
-                    name: ['payinfo'],
+                    name: 'payinfo',
                     data: [
                             {value: 154000,name: '钢材付款金额',categoryId: 'steel'},
                             {value: 124000,name: '混凝土付款金额'},
@@ -209,10 +218,13 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form', 'echarts'], function(
             $(document).on("click", ".btn-default", function () {
                 Fast.api.open($(this).data('url'));
             });
+            Controller.api.bindevent();
         },
         api: {
-            bindevent: function() {
-                Form.api.bindevent($("form[role=form]"));
+            bindevent: function() {                
+                Form.api.bindevent($("form[role=form]"),function(){
+                    $("#table").bootstrapTable('refresh', {});
+                });
             }
         }
     };

@@ -3,6 +3,7 @@
 namespace app\admin\controller\finance;
 
 use app\common\controller\Backend;
+use think\Db;
 
 /**
  * 报账单
@@ -87,5 +88,25 @@ class Info extends Backend
         $list = collection($list)->toArray();
         $this->view->assign("categoryList", $list);
         return $this->view->fetch();
+    }
+
+    public function label(){
+        $custom = (array)$this->request->request("custom/a");
+
+        if ($custom && is_array($custom)) {
+            $list = Db::table([                             
+                                '__CONTRACT_INFO__' => 'contract_info'])  
+                    ->field('
+                        category.id as id,
+                        category.name as name
+                    ')
+                    ->join('__CATEGORY__ category',"contract_info.category_id = category.id")                
+                    ->where('contract_info.project_info_id',$custom['project_info_id'])
+                    ->where('contract_info.project_section_ids',$custom['section_info_id'])
+                    ->where('contract_info.company_info_id',$custom['company_info_id'])
+                    ->select();
+
+            return json(['list' => $list]);
+        }
     }
 }

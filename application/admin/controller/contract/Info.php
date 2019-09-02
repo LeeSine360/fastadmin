@@ -87,6 +87,7 @@ class Info extends Backend
                     ->join('__CONTRACT_SYNTHETICAL__ contract_synthetical','contract_info.id = contract_synthetical.contract_info_id','LEFT')
                     ->where('FIND_IN_SET(project_section.id,project_section_ids)')
                     ->where($where)
+                    ->group('contract_info.id')
                     ->order($sort, $order)     
                     ->select();
             

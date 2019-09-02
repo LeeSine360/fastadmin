@@ -37,5 +37,6 @@ return [
     'Verifyagreedata'            => '项目部审核',
     'Verifyagreedata wait'       => '待审核',
     'Verifyagreedata agree'      => '同意',
-    'Verifyagreedata veto'       => '不同意'
+    'Verifyagreedata veto'       => '不同意',
+    'OK'                         => '保存'
 ];

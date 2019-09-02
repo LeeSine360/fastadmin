@@ -1,0 +1,27 @@
+<style>
+    #flowPicture .panel-body {
+        padding: 0px;
+    }
+</style>
+<form id="edit-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="">
+    <input type='hidden' id="flowJson" name="row[flowcontent]" value=''>
+    <div class="form-group">
+        <label for="username" class="control-label col-xs-12 col-sm-2">{:__('流程代码')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <label for="username" class="control-label col-xs-12 col-sm-2">{$row.flowcode}</label>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="email" class="control-label col-xs-12 col-sm-2">{:__('流程名称')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input type="text" class="form-control" id="email" name="row[flowname]" value="{$row.flowname}" data-rule="required"/>
+        </div>
+    </div>
+    <div class="form-group hidden layer-footer">
+        <label class="control-label col-xs-12 col-sm-2"></label>
+        <div class="col-xs-12 col-sm-8">
+            <button type="submit" class="btn btn-success btn-embossed disabled">{:__('OK')}</button>
+            <button type="reset" class="btn btn-default btn-embossed">{:__('Reset')}</button>
+        </div>
+    </div>
+</form>

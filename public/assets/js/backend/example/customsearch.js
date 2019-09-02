@@ -22,7 +22,7 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
                 pk: 'id',
                 sortName: 'id',
                 searchFormVisible: true,
-                searchFormTemplate: 'searchformtpl',
+                searchFormTemplate: 'customformtpl',
                 columns: [
                     [
                         {checkbox: true},

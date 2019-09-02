@@ -20,7 +20,6 @@ class Index extends Controller
         parent::_initialize();
     }
 
-    // 
     public function index()
     {
         return $this->view->fetch();
@@ -59,12 +58,15 @@ class Index extends Controller
             ->setForegroundColor($foregroundcolor)
             ->setBackgroundColor($backgroundcolor)
             ->setLogoSize($logosize)
-            ->setLabelFontPath(ROOT_PATH . 'public/assets/fonts/fzltxh.ttf')
             ->setLabel($label)
             ->setLabelFontSize($labelfontsize)
             ->setLabelHalign($labelhalign)
             ->setLabelValign($labelvalign)
             ->setImageType(QrCode::IMAGE_TYPE_PNG);
+        $fontPath = ROOT_PATH . 'public/assets/fonts/SourceHanSansK-Regular.ttf';
+        if (file_exists($fontPath)) {
+            $qrCode->setLabelFontPath($fontPath);
+        }
         if ($logo) {
             $qrCode->setLogo(ROOT_PATH . 'public/assets/img/qrcode.png');
         }

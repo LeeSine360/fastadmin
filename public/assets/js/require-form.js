@@ -421,7 +421,7 @@ define(['jquery', 'bootstrap', 'upload', 'validator'], function ($, undefined, U
                             params[$(this).prop("name")] = '';
                         }
                     });
-                }
+                }                
                 //调用Ajax请求方法
                 Fast.api.ajax({
                     type: type,
@@ -453,6 +453,7 @@ define(['jquery', 'bootstrap', 'upload', 'validator'], function ($, undefined, U
                     }
                 }, function (data, ret) {
                     if (data && typeof data === 'object' && typeof data.token !== 'undefined') {
+                        console.log('error1');
                         $("input[name='__token__']", form).val(data.token);
                     }
                     if (typeof error === 'function') {

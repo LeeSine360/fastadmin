@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:81:"C:\xampp\htdocs\fastadmin\public/../application/common\view\tpl\dispatch_jump.tpl";i:1557482263;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:81:"C:\xampp\htdocs\fastadmin\public/../application/common\view\tpl\dispatch_jump.tpl";i:1562812435;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -56,7 +56,7 @@
             var interval = setInterval(function () {
                 var time = --wait.innerHTML;
                 if (time <= 0) {
-                    location.href = "<?php echo $url; ?>";
+					location.href = history.length <= 1 ? "/" : "<?php echo $url; ?>";
                     clearInterval(interval);
                 }
             }, 1000);

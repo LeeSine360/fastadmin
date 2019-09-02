@@ -24,16 +24,14 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
                 columns: [
                     [
                         {checkbox: true},
-                        {field: 'id', title: __('Id')},
                         {field: 'payment', title: __('Payment'), operate:'BETWEEN'},
                         {field: 'unpayment', title: __('Unpayment'), operate:'BETWEEN'},
                         {field: 'enddate', title: __('Enddate'), operate:'RANGE', addclass:'datetimerange'},
                         {field: 'createtime', title: __('Createtime'), operate:'RANGE', addclass:'datetimerange', formatter: Table.api.formatter.datetime},
-                        {field: 'admin_id', title: __('Admin_id')},
                         {field: 'projectinfo.name', title: __('Projectinfo.name')},
                         {field: 'projectsection.name', title: __('Projectsection.name')},
                         {field: 'companyinfo.name', title: __('Companyinfo.name')},
-                        {field: 'admin.username', title: __('Admin.username')},
+                        {field: 'admin.nickname', title: __('Admin.nickname')},
                         {field: 'operate', title: __('Operate'), table: table, events: Table.api.events.operate, formatter: Table.api.formatter.operate}
                     ]
                 ]

@@ -71,7 +71,10 @@
                                                 </dl>
                                                 {/case}
                                                 {case datetime}
-                                                <input {$item.extend} type="text" name="row[{$item.name}]" value="{$item.value}" class="form-control datetimepicker" data-tip="{$item.tip}" data-rule="{$item.rule}" />
+                                                <input {$item.extend} type="text" name="row[{$item.name}]" value="{$item.value}" class="form-control datetimepicker" data-tip="{$item.tip}" data-rule="{$item.rule}"/>
+                                                {/case}
+                                                {case time}
+                                                <input {$item.extend} type="text" name="row[{$item.name}]" value="{$item.value}" class="form-control datetimepicker" data-tip="{$item.tip}" data-rule="{$item.rule}" data-date-format="HH:mm"/>
                                                 {/case}
                                                 {case number}
                                                 <input {$item.extend} type="number" name="row[{$item.name}]" value="{$item.value}" class="form-control" data-tip="{$item.tip}" data-rule="{$item.rule}" />

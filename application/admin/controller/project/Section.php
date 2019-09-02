@@ -66,12 +66,14 @@ class Section extends Backend
                         project_info.name as projectName,
                         project_section.name as sectionName,
                         project_section.price as price,
-                        project_manager.name as managerName
+                        project_manager.name as managerName,
+                        project_section.createtime as createtime
                     ')
                     ->join('__PROJECT_INFO__ project_info','project_section.project_info_id = project_info.id')
                     ->join('__PROJECT_MANAGER__ project_manager','project_section.project_manager_id = project_manager.id')
                     ->where($where)
-                    ->order($sort, $order) 
+                    ->order($sort, $order)
+                    ->limit($offset, $limit)
                     ->select();
 
 
@@ -89,6 +91,10 @@ class Section extends Backend
 
             return json($result);
         }
+        return $this->view->fetch();
+    }
+
+    public function detail(){
         return $this->view->fetch();
     }
 }

@@ -38,9 +38,9 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
                         {field: 'contractPhone', title: __('Phone')},
                         {field: 'contractOperatorName', title: __('Operatorname')},
                         {field: 'contractOperatorPhone', title: __('Operatorphone')},
-                        {field: 'projectSavedata', title: __('Projectsavedata')},
-                        {field: 'syntheticalAgreedata', title: __('Syntheticalagreedata')},
-                        {field: 'verifyAgreedata', title: __('Verifyagreedata')},
+                        {field: 'projectSavedata', title: __('Projectsavedata'),searchList: {"wait":__('Projectsavedata wait'),"normal":__('Projectsavedata normal'),"back":__('Projectsavedata back'),"delet":__('Projectsavedata delet'),"end":__('Projectsavedata end')},formatter: Table.api.formatter.normal},
+                        {field: 'syntheticalAgreedata', title: __('Syntheticalagreedata'),searchList: {"wait":__('Syntheticalagreedata wait'),"agree":__('Syntheticalagreedata agree'),"veto":__('Syntheticalagreedata veto')},formatter: Table.api.formatter.normal},
+                        {field: 'verifyAgreedata', title: __('Verifyagreedata'),searchList: {"wait":__('Verifyagreedata wait'),"agree":__('Verifyagreedata agree'),"veto":__('Verifyagreedata veto')},formatter: Table.api.formatter.normal},
                         {field: 'contractCreateTime', title: __('Createtime'), operate:'RANGE', addclass:'datetimerange', formatter: Table.api.formatter.datetime},
                         {field: 'operate', title: __('Operate'), table: table, events: Table.api.events.operate, formatter: Table.api.formatter.operate}
                     ]

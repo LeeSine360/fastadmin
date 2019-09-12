@@ -44,7 +44,7 @@
         color: rgba(0,0,0,.45);
         line-height: 22px;
     }
-    .title {
+    /*.title {
         font-size: 20px;
         line-height: 28px;
         font-weight: 500;
@@ -52,7 +52,7 @@
         margin-bottom: 16px;
         -ms-flex: auto;
         flex: auto;
-    }
+    }*/
     .extra {
         -ms-flex: 0 1 auto;
         flex: 0 1 auto;
@@ -99,15 +99,18 @@
         color: rgba(0,0,0,.85);
         font-weight: 500;
     }
-    .list{
-        margin: 25px 0 0;
+    .rank .list{
+        /*margin: 0px 0 0;*/
         padding: 0;
         list-style: none;
         height: auto;
-        overflow: auto;
+        
     }
-    .active{
-        background-color: #314659;
+    .rank .list li {
+        margin-top: 16px;
+    }
+    .rank .list li span.active {
+        background-color: #314659 !important;
         color: #fff;
     }
     .rank .list li span:first-child {
@@ -116,53 +119,68 @@
         display: inline-block;
         font-size: 12px;
         font-weight: 600;
-        margin-right: 24px;
+        margin-right: 10px;
         height: 20px;
         line-height: 20px;
         width: 20px;
         text-align: center;
     }
-    .rank .list li {
-        margin-top: 16px;
+    .rank .list li span {
+        color: rgba(0,0,0,.65);
+        font-size: 14px;
+        line-height: 22px;
+        width: 50%;
+        display:inline-block;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
     }
-
+    .rank .list li span:last-child {
+        float: right;
+        text-align: right;
+        width: 30%;
+    }
 </style>
 <div style="display: flex;background: #fff;padding: 16px 32px 0;">
-    <div data-v-596c5759="" class="avatar">
-        <span data-v-596c5759="" class="ant-avatar ant-avatar-circle">
+    <div class="avatar">
+        <span class="ant-avatar ant-avatar-circle">
             <span class="ant-avatar-string" style="transform: scale(1) translateX(-50%);"></span>
         </span>
     </div>                        
-    <div data-v-596c5759="" class="headerContent">
-        <div data-v-92d03644="" data-v-596c5759="">
-            <div data-v-92d03644="" data-v-596c5759="" class="title">
+    <div class="headerContent">
+        <div>
+            <div class="title">
                 汉寿恒大御府
             </div>
-            <div data-v-92d03644="" data-v-596c5759="">标段名称：A区 | 彭军维：1388888888</div>
+            <div>标段名称：A区 | 彭军维：1388888888</div>
         </div>
     </div>
-    <div data-v-596c5759="" class="extra">
-        <div data-v-92d03644="" class="more-info ant-row" data-v-596c5759="">
-            <div data-v-92d03644="" class="ant-col-8">
-                <div data-v-4d866d96="" data-v-92d03644="" class="head-info">
-                    <span data-v-4d866d96="">拨付金额占比</span>
-                    <p data-v-4d866d96="">50%</p>
-                    <!---->
+    <div class="extra">
+        <div class="more-info ant-row">
+            <div class="ant-col-8">
+                <div class="head-info">
+                    <span>已拨付金额占比</span>
+                    <p>50%</p>
                 </div>
             </div>
-            <div data-v-92d03644="" class="ant-col-8">
-                <div data-v-4d866d96="" data-v-92d03644="" class="head-info">
-                    <span data-v-4d866d96="">标段总造价</span>
-                    <p data-v-4d866d96="">56,000,000.00</p>
-                    <!---->
+            <div class="ant-col-8">
+                <div class="head-info">
+                    <span>标段总造价</span>
+                    <p>56,000,000.00</p>
                 </div>
-            </div>                            
+            </div>
+            <!--<div class="ant-col-8">
+                <div class="head-info">
+                    <span>当前资金余额</span>
+                    <p>56,000,00.00</p>
+                </div>
+            </div>-->                   
         </div>
     </div>
 </div>
 
 <div style="display: flex;background: #fff;padding: 16px 12px 0;margin-top: 10px">
-    <div id="echart" style="height:200px;width:100%;"></div>
+    <div id="echart" style="height:250px;width:100%;"></div>
     <script>
         var Orderdata = {
             column: ["2019-08-22","2019-08-23","2019-08-24","2019-08-25","2019-08-26","2019-08-27","2019-08-28"],
@@ -174,51 +192,64 @@
 
 <div style="display: flex;margin-top: 10px">
     <div style="flex-grow:3;background: #fff;padding: 16px;width:70%">
-        ff<br />
-        ff<br />
-        ff<br />
-        ff<br />
+        <div id="echart-pie" style="height:100%;width:100%;"></div>
     </div>
     <div style="flex-grow:1;margin-left: 10px;background: #fff;padding: 16px;width:30%">
         <div class="rank">
-            <h4 class="title">付款排行榜</h4>
+            <h4 class="title">拨付排行榜</h4>
             <ul class="list">
                 <li>
                     <span class="active">1</span>
-                    <span>白鹭岛 1 号店</span>
-                    <span>1234.56</span>
+                    <span>常德市卓宝防水保温工程有限公司</span>
+                    <span>1,234,000.56</span>
                 </li>
                 <li>
                     <span class="active">2</span>
-                    <span>白鹭岛 2 号店</span>
+                    <span>常德市钲杰建筑工程有限公司</span>
                     <span>1134.56</span>
                 </li>
                 <li>
                     <span class="active">3</span>
-                    <span>白鹭岛 3 号店</span>
+                    <span>常德宏友建筑设备租赁有限公司</span>
                     <span>1034.56</span>
                 </li>
                 <li>
                     <span>4</span>
-                    <span>白鹭岛 4 号店</span>
+                    <span>常德柳叶湖华元工程服务中心</span>
                     <span>934.56</span>
                 </li>
                 <li>
                     <span>5</span>
-                    <span>白鹭岛 5 号店</span>
+                    <span>湖南天晨新型建材有限公司</span>
                     <span>834.56</span>
                 </li>
                 <li>
                     <span>6</span>
-                    <span>白鹭岛 6 号店</span>
+                    <span>湖南明扬网络工程有限公司</span>
                     <span>734.56</span>
                 </li>
                 <li>
                     <span>7</span>
-                    <span>白鹭岛 7 号店</span>
+                    <span>常德市福丰建材有限公司</span>
                     <span>634.56</span>
                 </li>
             </ul>
         </div>
+    </div>
+</div>
+
+<div style="display: flex;flex-flow:column;margin-top: 10px;background: #fff;padding:20px 20px">
+    <h4 class="title" style="margin-bottom: 20px">预算详情表</h4>
+    <div style="width:100%;"> 
+        <table id="budget_table" class="table table-striped table-bordered table-hover table-nowrap" width="100%">
+        </table>
+    </div>
+</div>
+
+<div style="display: flex;flex-flow:column;margin-top: 10px;background: #fff;padding:20px 20px">
+    <h4 class="title" style="margin-bottom: 20px">欠款明细表</h4>
+    <div style="width:100%;"> 
+        <table id="owe_table" class="table table-striped table-bordered table-hover table-nowrap" width="100%">
+        </table>
     </div>
 </div>

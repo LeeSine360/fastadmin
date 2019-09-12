@@ -163,7 +163,118 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form', 'accounting', 'echart
 
             $(document).on("click", ".btn-checkversion", function () {
                 top.window.$("[data-toggle=checkupdate]").trigger("click");
-            });        
+            });  
+
+            var myChart_pie = Echarts.init(document.getElementById("echart-pie"));
+            var option_pie = {
+                title: {
+                    text: '资金拨付占比情况',
+                    x: 'center'
+                },
+                series: [{
+                    name: 'pay',
+                    type: 'pie',
+                    radius: '60%',
+                    center: ['25%', '60%'],
+                    hoverOffset: 1,
+                    data: [
+                        {value: 125313213,name: '已拨付金额'}, 
+                        {value: 11212445,name: '人工工资'},
+                        {value: 1212124,name: '其他已付金额'},                        
+                        {value: 12121244,name: '未拨付金额'}
+                    ],
+                    itemStyle: {
+                        emphasis: {
+                            shadowBlur: 10,
+                            shadowOffsetX: 0,
+                            shadowColor: 'rgba(0, 0, 0, 0.5)'
+                        },
+                    },
+                    label: {
+                        normal: {
+                            show: true,
+                            formatter: "{b}:\n{d}%" //多值的嵌套
+                        }
+                    }
+                },{
+                    name: 'payinfo',
+                    type: 'pie',
+                    radius: '60%',
+                    center: ['75%', '60%'],
+                    hoverOffset: 1,
+                    data: [
+                        {value: 154000,name: '钢材付款金额',categoryId: 'steel'},
+                        {value: 124000,name: '混凝土付款金额'},
+                        {value: 542400,name: '模板付款金额'},
+                        {value: 24000,name: '砂浆付款金额'}
+                    ],
+                    itemStyle: {
+                        emphasis: {
+                            shadowBlur: 10,
+                            shadowOffsetX: 0,
+                            shadowColor: 'rgba(0, 0, 0, 0.5)'
+                        },
+                    },
+                    label: {
+                        normal: {
+                            show: true,
+                            formatter: "{b}:\n{d}%" //多值的嵌套
+                        }
+                    }
+                }]
+            };
+            myChart_pie.setOption(option_pie);
+
+            //预算详情表
+            var table = $("#budget_table");
+            // 初始化表格
+            table.bootstrapTable({
+                url: 'contract/verify/payinfo',
+                pk: 'id',
+                sortName: 'id',
+                search: false, //是否启用快速搜索
+                commonSearch: false, //是否启用通用搜索
+                showExport: false,
+                showToggle: false,
+                showColumns: false,
+                columns: [
+                    [{field: 'id',title: __('Id'),visible: true}, 
+                    {field: 'companyName',title: __('类型名称')}, 
+                    {field: 'number',title: __('单价')},
+                    {field: 'projectName',title: __('数量')}, 
+                    {field: 'number',title: __('单位')}, 
+                    {field: 'sectionName',title: __('金额')},
+                    {field: 'sectionName',title: __('已付合计')},
+                    {field: 'sectionName',title: __('占比')}]                    
+                ]
+            });
+            // 为表格绑定事件
+            Table.api.bindevent(table);
+            
+            //欠款明细表
+            var table = $("#owe_table");
+            // 初始化表格
+            table.bootstrapTable({
+                url: 'contract/verify/payinfo',
+                pk: 'id',
+                sortName: 'id',
+                search: false, //是否启用快速搜索
+                commonSearch: false, //是否启用通用搜索
+                showExport: false,
+                showToggle: false,
+                showColumns: false,
+                columns: [
+                    [{field: 'id',title: __('Id'),visible: true}, 
+                    {field: 'companyName',title: __('供应商名称')}, 
+                    {field: 'number',title: __('类型')},
+                    {field: 'projectName',title: __('合同金额')}, 
+                    {field: 'number',title: __('已付合计')}, 
+                    {field: 'sectionName',title: __('欠款金额')},
+                    {field: 'sectionName',title: __('对账截止日期')}]                    
+                ]
+            });
+            // 为表格绑定事件
+            Table.api.bindevent(table);
         },
         api: {
             formatter: {

@@ -1,7 +1,7 @@
 <?php
 
 return array (
-  'name' => 'FastAdmins',
+  'name' => 'FastAdmin',
   'beian' => '',
   'cdnurl' => '',
   'version' => '1.0.1',
@@ -19,6 +19,7 @@ return array (
     'property' => '企业性质',
     'cost' => '报账类别',
     'project' => '项目类型',
+    'subject' => '记账科目',
   ),
   'configgroup' => 
   array (
